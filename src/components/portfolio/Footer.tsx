@@ -13,7 +13,7 @@ export function Footer() {
               </span>
             </div>
             <p className="mt-4 text-sm text-muted-foreground max-w-xs">
-              Helping local businesses go digital with premium, AI-powered websites.
+              Helping local businesses go digital with premium websites.
             </p>
           </div>
 
