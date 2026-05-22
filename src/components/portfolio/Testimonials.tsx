@@ -4,21 +4,35 @@ import { Quote, Star } from "lucide-react";
 const testimonials = [
   {
     quote:
-      "Professional work and modern design. Our business now looks premium online.",
+      "Honestly didn't expect this level of polish. Site went live in under two weeks and we started getting inquiries the same week.",
     name: "Rohan M.",
-    role: "Business Owner",
+    role: "Founder, Local Retail Co.",
+    location: "Patna",
+    span: "md:col-span-2",
   },
   {
     quote:
-      "Fast delivery and smooth communication throughout the project.",
+      "Smooth from brief to launch. Felt like working with a small agency, not a freelancer.",
     name: "Priya S.",
-    role: "Salon Founder",
+    role: "Salon Owner",
+    location: "Delhi",
+    span: "",
   },
   {
     quote:
-      "Excellent website quality with modern UI and responsive design.",
+      "Loved the design taste. Looks expensive without being loud.",
     name: "Aman K.",
     role: "Gym Owner",
+    location: "Lucknow",
+    span: "",
+  },
+  {
+    quote:
+      "Responsive, organized, and patient with the back and forth. Recommended.",
+    name: "Neha R.",
+    role: "Boutique Founder",
+    location: "Mumbai",
+    span: "md:col-span-2",
   },
 ];
 
@@ -27,34 +41,34 @@ export function Testimonials() {
     <section id="testimonials" className="py-32 relative">
       <div className="container mx-auto px-6">
         <SectionHeader
-          eyebrow="Testimonials"
+          eyebrow="Kind Words"
           title={
             <>
-              Words From <span className="text-gradient-gold italic">Clients</span>
+              What clients <span className="text-gradient-gold italic">say</span>
             </>
           }
         />
 
-        <div className="mt-20 grid md:grid-cols-3 gap-6">
-          {testimonials.map((t) => (
+        <div className="mt-20 grid md:grid-cols-3 gap-5">
+          {testimonials.map((t, i) => (
             <figure
               key={t.name}
-              className="relative glass rounded-3xl p-8 hover-lift"
+              className={`relative glass rounded-3xl p-8 hover-lift ${t.span} ${i % 2 === 1 ? "md:translate-y-6" : ""}`}
             >
-              <Quote className="text-gold/40 mb-6" size={32} />
-              <blockquote className="text-lg leading-relaxed font-display italic">
+              <Quote className="text-gold/40 mb-5" size={28} />
+              <blockquote className="text-[1.05rem] leading-[1.7] font-display italic">
                 "{t.quote}"
               </blockquote>
               <div className="mt-8 flex items-center justify-between">
                 <figcaption>
                   <div className="text-sm font-medium">{t.name}</div>
-                  <div className="text-xs text-muted-foreground uppercase tracking-wider">
-                    {t.role}
+                  <div className="text-[0.7rem] text-muted-foreground uppercase tracking-[0.18em] mt-1">
+                    {t.role} · {t.location}
                   </div>
                 </figcaption>
                 <div className="flex gap-0.5">
-                  {Array.from({ length: 5 }).map((_, i) => (
-                    <Star key={i} size={14} className="fill-gold text-gold" />
+                  {Array.from({ length: 5 }).map((_, idx) => (
+                    <Star key={idx} size={12} className="fill-gold text-gold" />
                   ))}
                 </div>
               </div>

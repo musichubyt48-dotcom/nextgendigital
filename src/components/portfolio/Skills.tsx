@@ -15,14 +15,15 @@ export function Skills() {
     <section id="skills" className="py-32 relative">
       <div className="container mx-auto px-6">
         <SectionHeader
-          eyebrow="Skills"
+          eyebrow="Toolkit"
           title={
             <>
-              Tools & <span className="text-gradient-gold italic">Expertise</span>
+              Tools I reach for <span className="text-gradient-gold italic">daily</span>
             </>
           }
-          description="A modern toolkit built for the web development."
+          description="A small, sharp toolkit — chosen for quality, not for the buzzword list."
         />
+
 
         <div className="mt-16 flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
           {skills.map((s) => {
