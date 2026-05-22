@@ -57,7 +57,7 @@ export function Footer() {
 
         <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-muted-foreground">
           <div>© {new Date().getFullYear()} Nextgen Digital. All rights reserved.</div>
-          <div className="italic font-display">Crafted with precision · Powered by AI</div>
+          <div className="italic font-display">Crafted with precision · Premium Quality</div>
         </div>
       </div>
     </footer>
