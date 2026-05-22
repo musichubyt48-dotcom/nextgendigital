@@ -147,12 +147,34 @@
   }
 
   .hover-lift {
-    transition: transform 0.5s var(--transition-smooth), box-shadow 0.5s var(--transition-smooth), border-color 0.5s var(--transition-smooth);
+    transition: transform 0.6s var(--transition-smooth), box-shadow 0.6s var(--transition-smooth), border-color 0.6s var(--transition-smooth);
   }
   .hover-lift:hover {
-    transform: translateY(-6px);
-    box-shadow: var(--shadow-glow-soft);
-    border-color: oklch(0.83 0.13 85 / 0.4);
+    transform: translateY(-5px);
+    box-shadow: 0 24px 60px -28px oklch(0 0 0 / 0.7), var(--shadow-glow-soft);
+    border-color: oklch(0.83 0.13 85 / 0.35);
+  }
+
+  .grain::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.05;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+    border-radius: inherit;
+  }
+
+  .underline-gold {
+    background-image: linear-gradient(to right, var(--gold), var(--gold));
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 1px;
+    transition: background-size 0.5s var(--transition-smooth);
+  }
+  .underline-gold:hover {
+    background-size: 100% 1px;
   }
 
   .gold-divider {
