@@ -21,7 +21,7 @@ export function Skills() {
               Tools & <span className="text-gradient-gold italic">Expertise</span>
             </>
           }
-          description="A modern toolkit built for the AI-era of web development."
+          description="A modern toolkit built for the web development."
         />
 
         <div className="mt-16 flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
