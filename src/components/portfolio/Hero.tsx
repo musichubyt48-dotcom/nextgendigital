@@ -2,7 +2,7 @@ import { ArrowRight, Sparkles, Bot, Search, Zap } from "lucide-react";
 
 const floatingCards = [
   { icon: Sparkles, title: "Premium Design", delay: "0s" },
-  { icon: Bot, title: "AI Website Building", delay: "0.4s" },
+  { icon: Bot, title: "Modern Designs", delay: "0.4s" },
   { icon: Search, title: "SEO Optimized", delay: "0.8s" },
   { icon: Zap, title: "Fast Delivery", delay: "1.2s" },
 ];
