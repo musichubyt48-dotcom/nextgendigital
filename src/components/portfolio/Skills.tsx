@@ -2,7 +2,7 @@ import { SectionHeader } from "./SectionHeader";
 import { Bot, Search, Workflow, Video, Smartphone, Sparkles } from "lucide-react";
 
 const skills = [
-  { icon: Bot, label: "AI Website Builders" },
+  { icon: Bot, label: "Premium Website Builders" },
   { icon: Search, label: "SEO Optimization" },
   { icon: Workflow, label: "Automation Tools" },
   { icon: Video, label: "Video Editing" },
