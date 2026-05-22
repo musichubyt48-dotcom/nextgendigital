@@ -58,8 +58,8 @@ export function Hero() {
             </div>
             <div className="h-10 w-px bg-border" />
             <div>
-              <div className="font-display text-2xl text-gold">AI</div>
-              <div className="uppercase tracking-wider">Powered</div>
+              <div className="font-display text-2xl text-gold">Premium</div>
+              <div className="uppercase tracking-wider">Quality</div>
             </div>
             <div className="h-10 w-px bg-border" />
             <div>
