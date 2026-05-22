@@ -44,9 +44,7 @@ export function About() {
 
           <div className="space-y-6 text-muted-foreground leading-relaxed">
             <p>
-              Hi, I'm <span className="text-foreground font-medium">Ashutosh Kumar Srivastava</span>,
-              founder of Nextgen Digital. I help local businesses create premium online presence
-              through modern websites and premium digital solutions.
+              Helping local businesses go digital with premium websites.
             </p>
             <p>
               I started Nextgen Digital with the goal of helping traditional businesses become
