@@ -2,7 +2,7 @@ import { ArrowRight, Sparkles, Bot, Search, Zap } from "lucide-react";
 
 const floatingCards = [
   { icon: Sparkles, title: "Premium Design", delay: "0s" },
-  { icon: Bot, title: "Modern Designs", delay: "0.4s" },
+  { icon: Bot, title: "Professional Website Building", delay: "0.4s" },
   { icon: Search, title: "SEO Optimized", delay: "0.8s" },
   { icon: Zap, title: "Fast Delivery", delay: "1.2s" },
 ];
@@ -31,7 +31,7 @@ export function Hero() {
           </h1>
 
           <p className="mt-8 text-lg text-muted-foreground max-w-xl leading-relaxed">
-            I create premium, modern, and AI-powered websites that help businesses build trust,
+            I create premium, modern, and professional websites that help businesses build trust,
             attract customers, and grow online.
           </p>
 

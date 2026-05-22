@@ -9,8 +9,8 @@ const services = [
   },
   {
     icon: Bot,
-    title: "AI Website Building",
-    desc: "Lightning-fast delivery using cutting-edge AI tools without compromising on design quality.",
+    title: "Professional Website Building",
+    desc: "Lightning-fast delivery using modern tools without compromising on design quality.",
   },
   {
     icon: Briefcase,
