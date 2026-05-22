@@ -3,7 +3,7 @@ import { Crown, Bot, Smartphone, Search, TrendingUp, Wallet } from "lucide-react
 
 const items = [
   { icon: Crown, title: "Premium Modern Design", desc: "Designs that feel expensive and build instant trust." },
-  { icon: Bot, title: "Fast AI Workflow", desc: "AI-accelerated builds without compromising quality." },
+  { icon: Bot, title: "Fast Premium Workflow", desc: "Premium-accelerated builds without compromising quality." },
   { icon: Smartphone, title: "Mobile Responsive", desc: "Flawless across every screen and device size." },
   { icon: Search, title: "SEO-Friendly Structure", desc: "Built for Google from the first line of code." },
   { icon: TrendingUp, title: "Business Growth Focused", desc: "Every section engineered to convert visitors." },
