@@ -17,13 +17,13 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Nextgen Digital by Ashutosh Kumar Srivastava. Premium, AI-powered websites that help local businesses build trust, attract customers, and grow online.",
+          "Nextgen Digital by Ashutosh Kumar Srivastava. Premium websites that help local businesses build trust, attract customers, and grow online.",
       },
       { property: "og:title", content: "Nextgen Digital — Premium Websites for Local Businesses" },
       {
         property: "og:description",
         content:
-          "Premium, AI-powered websites that turn local businesses into powerful online brands.",
+          "Premium websites that turn local businesses into powerful online brands.",
       },
     ],
   }),
