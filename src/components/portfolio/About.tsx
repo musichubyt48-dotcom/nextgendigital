@@ -3,7 +3,7 @@ import { Award, Bot, Search, Crown } from "lucide-react";
 
 const stats = [
   { icon: Award, value: "1.5+", label: "Years Experience" },
-  { icon: Bot, value: "AI", label: "Powered Workflow" },
+  { icon: Bot, value: "Premium", label: "Workflow" },
   { icon: Search, value: "SEO", label: "Focused Build" },
   { icon: Crown, value: "Premium", label: "Design Quality" },
 ];
@@ -46,14 +46,14 @@ export function About() {
             <p>
               Hi, I'm <span className="text-foreground font-medium">Ashutosh Kumar Srivastava</span>,
               founder of Nextgen Digital. I help local businesses create premium online presence
-              through modern websites and AI-powered digital solutions.
+              through modern websites and premium digital solutions.
             </p>
             <p>
               I started Nextgen Digital with the goal of helping traditional businesses become
               professional online brands — without expensive agency costs.
             </p>
             <p>
-              With <span className="text-gold">1.5 years</span> of experience in AI tools and
+              With <span className="text-gold">1.5 years</span> of experience in premium tools and
               website development, I focus on creating modern, responsive, SEO-friendly, and
               high-converting business websites.
             </p>
