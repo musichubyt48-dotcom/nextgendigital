@@ -102,10 +102,12 @@ export function Projects() {
                     ))}
                   </div>
                   <a
-                    href="#contact"
+                    href={p.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex items-center gap-1 text-xs text-gold hover:gap-2 transition-all"
                   >
-                    View
+                    Visit
                     <ArrowUpRight size={14} />
                   </a>
                 </div>
