@@ -1,4 +1,5 @@
 import { Instagram, Linkedin, Twitter, Youtube } from "lucide-react";
+import logoAsset from "@/assets/nextgen-logo.png.asset.json";
 
 export function Footer() {
   return (
@@ -7,7 +8,7 @@ export function Footer() {
         <div className="grid md:grid-cols-3 gap-10 pb-12">
           <div>
             <div className="flex items-center gap-2">
-              <span className="h-8 w-8 rounded-full bg-gradient-to-br from-gold to-gold-soft shadow-glow-soft" />
+              <img src={logoAsset.url} alt="Nextgen Digital" className="h-10 w-10 object-contain" />
               <span className="font-display text-xl">
                 Nextgen <span className="text-gradient-gold">Digital</span>
               </span>
