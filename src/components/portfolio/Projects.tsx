@@ -1,39 +1,54 @@
 import { SectionHeader } from "./SectionHeader";
 import { ArrowUpRight } from "lucide-react";
-import gymImg from "@/assets/project-gym.jpg";
-import salonImg from "@/assets/project-salon.jpg";
-import portfolioImg from "@/assets/project-portfolio.jpg";
+import constructionImg from "@/assets/project-construction.png";
+import dentalImg from "@/assets/project-dental.png";
+import gymImg from "@/assets/project-gym-demo.png";
+import salonImg from "@/assets/project-salon-demo.png";
 
 const projects = [
   {
-    img: gymImg,
-    category: "Fitness",
-    title: "Iron & Oak Gym",
+    img: constructionImg,
+    category: "Construction",
+    title: "A B Construction",
     year: "2025",
-    desc: "High-energy fitness brand with class booking, trainer profiles, and a bold landing page.",
-    tags: ["Branding", "Booking", "Mobile-first"],
+    desc: "Premium dark-theme site for a South Sikkim construction firm — built to project trust, scale, and 25+ years of heritage.",
+    tags: ["Branding", "Editorial", "Lead-gen"],
+    href: "https://ab-build-trust.musichubyt48.workers.dev/",
     span: "lg:col-span-2 lg:row-span-2",
     aspect: "aspect-[4/5]",
   },
   {
-    img: salonImg,
-    category: "Beauty",
-    title: "Luxe Salon",
+    img: dentalImg,
+    category: "Healthcare",
+    title: "Gayatri Dental Clinic",
     year: "2025",
-    desc: "Elegant salon experience with online appointments and service showcase.",
-    tags: ["E-commerce", "SEO"],
+    desc: "Clean, calming clinic site with online appointment booking, services, and gallery.",
+    tags: ["Booking", "SEO", "Local"],
+    href: "https://gayatridentalclinic.musichubyt48.workers.dev/",
     span: "",
     aspect: "aspect-[4/3]",
   },
   {
-    img: portfolioImg,
-    category: "Business",
-    title: "Sterling Group",
-    year: "2024",
-    desc: "Premium corporate portfolio engineered to establish instant trust.",
-    tags: ["Corporate", "Editorial"],
+    img: gymImg,
+    category: "Fitness",
+    title: "Fit Fitness Gym",
+    year: "2025",
+    desc: "Bold, high-energy gym website with membership plans, BMI tool, and trainer call-to-actions.",
+    tags: ["Conversion", "Mobile-first"],
+    href: "https://gymwebsite.musichubyt48.workers.dev/",
     span: "",
     aspect: "aspect-[4/3]",
+  },
+  {
+    img: salonImg,
+    category: "Beauty",
+    title: "Looks Salon",
+    year: "2025",
+    desc: "Luxurious unisex salon experience with online appointments, services, and franchise inquiries.",
+    tags: ["Luxury", "Booking", "Multi-branch"],
+    href: "https://salonwebsitedemo.musichubyt48.workers.dev/",
+    span: "lg:col-span-2",
+    aspect: "aspect-[16/9]",
   },
 ];
 
