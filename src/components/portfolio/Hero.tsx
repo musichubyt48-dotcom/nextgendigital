@@ -1,4 +1,5 @@
 import { ArrowRight, Sparkles, Bot, Search, Zap } from "lucide-react";
+import logoAsset from "@/assets/nextgen-logo.png.asset.json";
 
 const floatingCards = [
   { icon: Sparkles, title: "Premium Design", delay: "0s" },
@@ -104,11 +105,12 @@ export function Hero() {
               </div>
             );
           })}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-44 w-44 rounded-full glass-gold animate-glow-pulse flex items-center justify-center">
-            <div className="text-center">
-              <div className="font-display text-3xl text-gradient-gold leading-none">ND</div>
-              <div className="text-[0.6rem] uppercase tracking-[0.3em] text-muted-foreground mt-2">Est. 2024</div>
-            </div>
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-44 w-44 rounded-full glass-gold animate-glow-pulse flex items-center justify-center overflow-hidden">
+            <img
+              src={logoAsset.url}
+              alt="Nextgen Digital"
+              className="h-24 w-24 object-contain"
+            />
           </div>
         </div>
       </div>
