@@ -1,4 +1,5 @@
 import { ArrowRight, Sparkles, Bot, Search, Zap } from "lucide-react";
+import logoAsset from "@/assets/nextgen-logo.png.asset.json";
 
 const floatingCards = [
   { icon: Sparkles, title: "Premium Design", delay: "0s" },
