@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
-import logoAsset from "@/assets/nextgen-logo.png.asset.json";
+import logo from "@/assets/ChatGPT_Image_Jun_12,_2026,_02_34_28_PM.png";
 
 const links = [
   { label: "Home", href: "#home" },
@@ -37,9 +37,9 @@ export function Navbar() {
         >
           <a href="#home" className="flex items-center gap-2 group">
             <img
-              src={logoAsset.url}
+              src={logo}
               alt="Nextgen Digital"
-              className="h-10 w-10 object-contain group-hover:scale-105 transition-transform"
+              className="h-10 w-10 rounded-full object-cover group-hover:scale-105 transition-transform"
             />
             <span className="font-display text-xl tracking-tight">
               Nextgen <span className="text-gradient-gold">Digital</span>

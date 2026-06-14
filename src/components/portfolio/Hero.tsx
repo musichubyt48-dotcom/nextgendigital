@@ -1,5 +1,5 @@
 import { ArrowRight, Sparkles, Bot, Search, Zap } from "lucide-react";
-import logoAsset from "@/assets/nextgen-logo.png.asset.json";
+import logo from "@/assets/ChatGPT_Image_Jun_12,_2026,_02_34_28_PM.png";
 
 const floatingCards = [
   { icon: Sparkles, title: "Premium Design", delay: "0s" },
@@ -107,7 +107,7 @@ export function Hero() {
           })}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-44 w-44 rounded-full glass-gold animate-glow-pulse flex items-center justify-center overflow-hidden p-3">
             <img
-              src={logoAsset.url}
+              src={logo}
               alt="Nextgen Digital"
               className="h-full w-full object-contain"
             />
