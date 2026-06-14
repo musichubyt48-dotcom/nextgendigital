@@ -1,4 +1,3 @@
-import { createFileRoute } from "@tanstack/react-router";
 import { Navbar } from "@/components/portfolio/Navbar";
 import { Hero } from "@/components/portfolio/Hero";
 import { About } from "@/components/portfolio/About";
@@ -10,27 +9,7 @@ import { WhyChoose } from "@/components/portfolio/WhyChoose";
 import { Contact } from "@/components/portfolio/Contact";
 import { Footer } from "@/components/portfolio/Footer";
 
-export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "Nextgen Digital — Premium Websites for Local Businesses" },
-      {
-        name: "description",
-        content:
-          "Nextgen Digital by Ashutosh Kumar Srivastava. Premium websites that help local businesses build trust, attract customers, and grow online.",
-      },
-      { property: "og:title", content: "Nextgen Digital — Premium Websites for Local Businesses" },
-      {
-        property: "og:description",
-        content:
-          "Premium websites that turn local businesses into powerful online brands.",
-      },
-    ],
-  }),
-  component: Index,
-});
-
-function Index() {
+function App() {
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
       <Navbar />
@@ -48,3 +27,5 @@ function Index() {
     </div>
   );
 }
+
+export default App;
