@@ -38,8 +38,8 @@ const testimonials = [
 
 export function Testimonials() {
   return (
-    <section id="testimonials" className="py-32 relative">
-      <div className="container mx-auto px-6">
+    <section id="testimonials" className="py-20 md:py-32 relative">
+      <div className="container mx-auto px-5 sm:px-6">
         <SectionHeader
           eyebrow="Kind Words"
           title={
@@ -49,11 +49,11 @@ export function Testimonials() {
           }
         />
 
-        <div className="mt-20 grid md:grid-cols-3 gap-5">
+        <div className="mt-14 md:mt-20 grid md:grid-cols-3 gap-5">
           {testimonials.map((t, i) => (
             <figure
               key={t.name}
-              className={`relative glass rounded-3xl p-8 hover-lift ${t.span} ${i % 2 === 1 ? "md:translate-y-6" : ""}`}
+              className={`relative glass rounded-3xl p-6 sm:p-8 hover-lift ${t.span} ${i % 2 === 1 ? "md:translate-y-6" : ""}`}
             >
               <Quote className="text-gold/40 mb-5" size={28} />
               <blockquote className="text-[1.05rem] leading-[1.7] font-display italic">

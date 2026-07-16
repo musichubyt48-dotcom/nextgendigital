@@ -54,8 +54,8 @@ const projects = [
 
 export function Projects() {
   return (
-    <section id="projects" className="py-32 relative">
-      <div className="container mx-auto px-6">
+    <section id="projects" className="py-20 md:py-32 relative">
+      <div className="container mx-auto px-5 sm:px-6">
         <SectionHeader
           eyebrow="Selected Work"
           align="left"
@@ -67,7 +67,7 @@ export function Projects() {
           description="A small, curated look at the kind of premium experiences I build for local businesses."
         />
 
-        <div className="mt-20 grid lg:grid-cols-3 lg:grid-rows-2 gap-5">
+        <div className="mt-14 md:mt-20 grid lg:grid-cols-3 lg:grid-rows-2 gap-5">
           {projects.map((p) => (
             <article
               key={p.title}
@@ -90,9 +90,9 @@ export function Projects() {
                   </span>
                 </div>
               </div>
-              <div className="absolute bottom-0 left-0 right-0 p-7">
-                <h3 className="font-display text-[1.7rem] mb-2 leading-tight">{p.title}</h3>
-                <p className="text-[0.88rem] text-muted-foreground mb-4 leading-relaxed">{p.desc}</p>
+              <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-7">
+                <h3 className="font-display text-[1.4rem] sm:text-[1.7rem] mb-2 leading-tight">{p.title}</h3>
+                <p className="text-[0.82rem] sm:text-[0.88rem] text-muted-foreground mb-4 leading-relaxed line-clamp-3 sm:line-clamp-none">{p.desc}</p>
                 <div className="flex items-center justify-between">
                   <div className="flex flex-wrap gap-1.5">
                     {p.tags.map((t) => (

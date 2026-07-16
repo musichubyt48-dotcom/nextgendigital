@@ -12,7 +12,7 @@ export function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center pt-32 pb-24 overflow-hidden bg-hero grain"
+      className="relative min-h-screen flex items-center justify-center pt-28 pb-16 md:pt-32 md:pb-24 overflow-hidden bg-hero grain"
     >
       <div className="absolute inset-0 -z-10">
         <div className="absolute top-1/4 -left-32 h-[28rem] w-[28rem] rounded-full bg-gold/10 blur-3xl animate-float" />
@@ -20,14 +20,14 @@ export function Hero() {
         <div className="absolute top-1/3 left-1/2 h-px w-72 bg-gradient-to-r from-transparent via-gold/30 to-transparent rotate-12" />
       </div>
 
-      <div className="container mx-auto px-6 grid lg:grid-cols-12 gap-12 items-center">
+      <div className="container mx-auto px-5 sm:px-6 grid lg:grid-cols-12 gap-12 items-center">
         <div className="lg:col-span-7 animate-fade-up">
           <div className="inline-flex items-center gap-2 rounded-full glass-gold px-4 py-1.5 mb-8 text-[0.68rem] uppercase tracking-[0.25em]">
             <span className="h-1.5 w-1.5 rounded-full bg-gold animate-pulse" />
             <span className="text-gold-soft">Available for new projects · 2026</span>
           </div>
 
-          <h1 className="text-[2.7rem] md:text-6xl lg:text-[4.6rem] font-normal leading-[1.02] tracking-tight">
+          <h1 className="text-[2rem] sm:text-5xl md:text-6xl lg:text-[4.6rem] font-normal leading-[1.05] tracking-tight">
             Turning local shops into{" "}
             <span className="relative inline-block">
               <span className="text-gradient-gold italic">trusted online brands</span>
@@ -57,20 +57,20 @@ export function Hero() {
             </a>
           </div>
 
-          <div className="mt-14 flex items-center gap-8 text-xs text-muted-foreground">
+          <div className="mt-12 flex items-center gap-5 sm:gap-8 text-[0.7rem] sm:text-xs text-muted-foreground">
             <div>
-              <div className="font-display text-[1.7rem] text-gold leading-none">1.5+</div>
-              <div className="uppercase tracking-[0.2em] mt-2">Years</div>
+              <div className="font-display text-[1.4rem] sm:text-[1.7rem] text-gold leading-none">1.5+</div>
+              <div className="uppercase tracking-[0.18em] sm:tracking-[0.2em] mt-2">Years</div>
             </div>
             <div className="h-10 w-px bg-border" />
             <div>
-              <div className="font-display text-[1.7rem] text-gold leading-none">12+</div>
-              <div className="uppercase tracking-[0.2em] mt-2">Projects</div>
+              <div className="font-display text-[1.4rem] sm:text-[1.7rem] text-gold leading-none">12+</div>
+              <div className="uppercase tracking-[0.18em] sm:tracking-[0.2em] mt-2">Projects</div>
             </div>
             <div className="h-10 w-px bg-border" />
             <div>
-              <div className="font-display text-[1.7rem] text-gold leading-none">100%</div>
-              <div className="uppercase tracking-[0.2em] mt-2">Responsive</div>
+              <div className="font-display text-[1.4rem] sm:text-[1.7rem] text-gold leading-none">100%</div>
+              <div className="uppercase tracking-[0.18em] sm:tracking-[0.2em] mt-2">Responsive</div>
             </div>
           </div>
         </div>

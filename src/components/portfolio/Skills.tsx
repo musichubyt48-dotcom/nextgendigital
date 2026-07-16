@@ -12,8 +12,8 @@ const skills = [
 
 export function Skills() {
   return (
-    <section id="skills" className="py-32 relative">
-      <div className="container mx-auto px-6">
+    <section id="skills" className="py-20 md:py-32 relative">
+      <div className="container mx-auto px-5 sm:px-6">
         <SectionHeader
           eyebrow="Toolkit"
           title={
@@ -25,13 +25,13 @@ export function Skills() {
         />
 
 
-        <div className="mt-16 flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
+        <div className="mt-12 md:mt-16 flex flex-wrap justify-center gap-3 sm:gap-4 max-w-4xl mx-auto">
           {skills.map((s) => {
             const Icon = s.icon;
             return (
               <div
                 key={s.label}
-                className="group inline-flex items-center gap-3 rounded-full glass px-6 py-3 hover:border-gold/50 hover:shadow-glow-soft transition-all duration-500"
+                className="group inline-flex items-center gap-2 sm:gap-3 rounded-full glass px-4 sm:px-6 py-2.5 sm:py-3 hover:border-gold/50 hover:shadow-glow-soft transition-all duration-500"
               >
                 <Icon size={16} className="text-gold group-hover:scale-110 transition-transform" />
                 <span className="text-sm">{s.label}</span>
