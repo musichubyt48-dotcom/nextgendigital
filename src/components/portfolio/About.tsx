@@ -10,9 +10,9 @@ const stats = [
 
 export function About() {
   return (
-    <section id="about" className="py-32 relative">
+    <section id="about" className="py-20 md:py-32 relative">
       <div className="absolute top-20 right-10 h-64 w-64 rounded-full bg-gold/5 blur-3xl -z-10" />
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-5 sm:px-6">
         <SectionHeader
           eyebrow="About"
           align="left"
@@ -24,19 +24,19 @@ export function About() {
           }
         />
 
-        <div className="mt-20 grid lg:grid-cols-12 gap-12 items-start">
+        <div className="mt-14 md:mt-20 grid lg:grid-cols-12 gap-10 md:gap-12 items-start">
           <div className="relative lg:col-span-5 lg:sticky lg:top-32">
             <div className="absolute -inset-6 bg-gradient-to-br from-gold/20 to-transparent rounded-[2rem] blur-2xl" />
-            <div className="relative glass-gold rounded-[2rem] p-10 aspect-[4/5] flex flex-col justify-between rotate-[-1deg] hover:rotate-0 transition-transform duration-700">
+            <div className="relative glass-gold rounded-[2rem] p-7 sm:p-10 aspect-[4/5] flex flex-col justify-between rotate-[-1deg] hover:rotate-0 transition-transform duration-700">
               <div>
                 <div className="text-[0.65rem] uppercase tracking-[0.35em] text-gold">Founder</div>
-                <div className="mt-5 font-display text-[2.7rem] leading-[1.05]">
+                <div className="mt-5 font-display text-[2rem] sm:text-[2.7rem] leading-[1.05]">
                   Ashutosh<br />
                   <span className="text-gradient-gold italic">Kumar Srivastava</span>
                 </div>
               </div>
-              <div className="flex items-end justify-between">
-                <div className="font-display text-7xl text-gradient-gold leading-none">ND</div>
+              <div className="flex items-end justify-between gap-4">
+                <div className="font-display text-6xl sm:text-7xl text-gradient-gold leading-none">ND</div>
                 <div className="text-right text-[0.6rem] uppercase tracking-[0.25em] text-muted-foreground">
                   Est. India<br />Digital Studio
                 </div>

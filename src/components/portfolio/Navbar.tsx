@@ -29,9 +29,9 @@ export function Navbar() {
         scrolled ? "py-3" : "py-5"
       }`}
     >
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-4 sm:px-6">
         <nav
-          className={`flex items-center justify-between rounded-full px-6 py-3 transition-all duration-500 ${
+          className={`flex items-center justify-between rounded-full px-4 sm:px-6 py-3 transition-all duration-500 ${
             scrolled ? "glass shadow-elegant" : "bg-transparent"
           }`}
         >

@@ -12,8 +12,8 @@ export function Contact() {
   };
 
   return (
-    <section id="contact" className="py-32 relative">
-      <div className="container mx-auto px-6">
+    <section id="contact" className="py-20 md:py-32 relative">
+      <div className="container mx-auto px-5 sm:px-6">
         <SectionHeader
           eyebrow="Contact"
           title={
@@ -24,7 +24,7 @@ export function Contact() {
           description="Let's craft a premium website that grows your business. Reach out — I respond fast."
         />
 
-        <div className="mt-20 grid lg:grid-cols-5 gap-6">
+        <div className="mt-14 md:mt-20 grid lg:grid-cols-5 gap-6">
           <div className="lg:col-span-2 space-y-4">
             <a
               href="tel:8509332038"
@@ -65,7 +65,7 @@ export function Contact() {
 
           <form
             onSubmit={onSubmit}
-            className="lg:col-span-3 glass-gold rounded-3xl p-8 md:p-10 space-y-5"
+            className="lg:col-span-3 glass-gold rounded-3xl p-6 sm:p-8 md:p-10 space-y-5"
           >
             <div className="grid sm:grid-cols-2 gap-5">
               <div>

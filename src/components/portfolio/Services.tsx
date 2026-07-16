@@ -42,8 +42,8 @@ const services = [
 
 export function Services() {
   return (
-    <section id="services" className="py-32 relative">
-      <div className="container mx-auto px-6">
+    <section id="services" className="py-20 md:py-32 relative">
+      <div className="container mx-auto px-5 sm:px-6">
         <SectionHeader
           eyebrow="Services"
           title={
@@ -54,13 +54,13 @@ export function Services() {
           description="Everything you need to launch a premium online presence — and grow with confidence."
         />
 
-        <div className="mt-20 grid md:grid-cols-3 gap-5 auto-rows-fr">
+        <div className="mt-14 md:mt-20 grid md:grid-cols-3 gap-5 auto-rows-fr">
           {services.map((s, i) => {
             const Icon = s.icon;
             return (
               <div
                 key={s.title}
-                className={`group relative glass rounded-3xl p-8 hover-lift overflow-hidden ${s.span}`}
+                className={`group relative glass rounded-3xl p-6 sm:p-8 hover-lift overflow-hidden ${s.span}`}
               >
                 <div className="absolute -top-20 -right-20 h-40 w-40 rounded-full bg-gold/10 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
                 <div className="relative flex flex-col h-full">
@@ -76,7 +76,7 @@ export function Services() {
                   <div className="text-[0.65rem] text-gold/70 uppercase tracking-[0.25em] mb-2">
                     0{i + 1}
                   </div>
-                  <h3 className="font-display text-[1.6rem] mb-3 leading-tight">{s.title}</h3>
+                  <h3 className="font-display text-[1.4rem] sm:text-[1.6rem] mb-3 leading-tight">{s.title}</h3>
                   <p className="text-[0.92rem] text-muted-foreground leading-[1.7]">{s.desc}</p>
                 </div>
               </div>

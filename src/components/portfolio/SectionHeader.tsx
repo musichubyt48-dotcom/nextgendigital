@@ -23,7 +23,7 @@ export function SectionHeader({
           <span className="h-px w-6 bg-gradient-to-l from-transparent to-gold" />
         )}
       </div>
-      <h2 className="font-display text-[2.4rem] md:text-5xl lg:text-[3.6rem] leading-[1.05] tracking-tight">
+      <h2 className="font-display text-[1.9rem] sm:text-[2.4rem] md:text-5xl lg:text-[3.6rem] leading-[1.05] tracking-tight">
         {title}
       </h2>
       {description && (
