@@ -1,24 +1,5 @@
 import { SectionHeader } from "./SectionHeader";
-import {
-  Compass,
-  PenTool,
-  Code2,
-  Rocket,
-  LifeBuoy,
-  Store,
-  Dumbbell,
-  Scissors,
-  Stethoscope,
-  Building2,
-  UtensilsCrossed,
-  Gauge,
-  ShieldCheck,
-  Sparkles,
-  TrendingUp,
-  Smartphone,
-  Search,
-  MessageCircle,
-} from "lucide-react";
+import { Compass, PenTool, Code as Code2, Rocket, LifeBuoy, Store, Dumbbell, Scissors, Stethoscope, Building2, UtensilsCrossed, Gauge, ShieldCheck, Sparkles, TrendingUp, Smartphone, Search, MessageCircle } from "lucide-react";
 
 /* ---------------- Website Development Process ---------------- */
 
@@ -434,21 +415,6 @@ export function FAQ() {
             </details>
           ))}
         </div>
-
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "FAQPage",
-              mainEntity: faqs.map((f) => ({
-                "@type": "Question",
-                name: f.q,
-                acceptedAnswer: { "@type": "Answer", text: f.a },
-              })),
-            }),
-          }}
-        />
       </div>
     </section>
   );

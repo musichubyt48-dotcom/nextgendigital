@@ -8,6 +8,7 @@ import { Testimonials } from "@/components/portfolio/Testimonials";
 import { WhyChoose } from "@/components/portfolio/WhyChoose";
 import { Contact } from "@/components/portfolio/Contact";
 import { Footer } from "@/components/portfolio/Footer";
+import { StructuredData } from "@/components/portfolio/StructuredData";
 import {
   Process,
   Industries,
@@ -21,6 +22,7 @@ import {
 function App() {
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
+      <StructuredData />
       <Navbar />
       <main>
         <Hero />
