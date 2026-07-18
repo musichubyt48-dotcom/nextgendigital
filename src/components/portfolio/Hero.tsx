@@ -1,5 +1,5 @@
 import { ArrowRight, Sparkles, Bot, Search, Zap } from "lucide-react";
-import logo from "@/assets/ChatGPT_Image_Jun_12,_2026,_02_34_28_PM.png";
+import logo from "@/assets/ChatGPT_Image_Jun_12.webp";
 
 const floatingCards = [
   { icon: Sparkles, title: "Premium Design", delay: "0s" },
@@ -110,6 +110,10 @@ export function Hero() {
             <img
               src={logo}
               alt="Nextgen Digital"
+              width={176}
+              height={176}
+              fetchPriority="high"
+              decoding="async"
               className="h-full w-full object-contain"
             />
           </div>

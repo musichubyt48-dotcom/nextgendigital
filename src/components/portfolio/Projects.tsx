@@ -1,9 +1,9 @@
 import { SectionHeader } from "./SectionHeader";
 import { ArrowUpRight } from "lucide-react";
-import constructionImg from "@/assets/project-construction.png";
-import dentalImg from "@/assets/project-dental.png";
-import gymImg from "@/assets/project-gym-demo.png";
-import salonImg from "@/assets/project-salon-demo.png";
+import constructionImg from "@/assets/project-construction.webp";
+import dentalImg from "@/assets/project-dental.webp";
+import gymImg from "@/assets/project-gym-demo.webp";
+import salonImg from "@/assets/project-salon-demo.webp";
 
 const projects = [
   {
@@ -77,8 +77,11 @@ export function Projects() {
                 <img
                   src={p.img}
                   alt={`${p.title} preview`}
-                  className="h-full w-full object-cover transition-transform duration-1000 group-hover:scale-105"
+                  width={1280}
+                  height={960}
                   loading="lazy"
+                  decoding="async"
+                  className="h-full w-full object-cover transition-transform duration-1000 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background via-background/30 to-transparent" />
                 <div className="absolute top-5 left-5 right-5 flex items-start justify-between">
