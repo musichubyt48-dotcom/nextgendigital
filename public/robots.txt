@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+Disallow: /*.json$
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+Sitemap: https://nextgendigital.services/sitemap.xml
