@@ -8,6 +8,15 @@ import { Testimonials } from "@/components/portfolio/Testimonials";
 import { WhyChoose } from "@/components/portfolio/WhyChoose";
 import { Contact } from "@/components/portfolio/Contact";
 import { Footer } from "@/components/portfolio/Footer";
+import {
+  Process,
+  Industries,
+  Technologies,
+  Benefits,
+  ClientExperience,
+  FutureSupport,
+  FAQ,
+} from "@/components/portfolio/SeoSections";
 
 function App() {
   return (
@@ -17,10 +26,17 @@ function App() {
         <Hero />
         <About />
         <Services />
+        <Process />
         <Skills />
+        <Technologies />
         <Projects />
-        <Testimonials />
+        <Industries />
         <WhyChoose />
+        <Benefits />
+        <Testimonials />
+        <ClientExperience />
+        <FutureSupport />
+        <FAQ />
         <Contact />
       </main>
       <Footer />
