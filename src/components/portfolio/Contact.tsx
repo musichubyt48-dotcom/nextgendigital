@@ -21,7 +21,7 @@ export function Contact() {
               Ready To Build Your <span className="text-gradient-gold italic">Online Presence?</span>
             </>
           }
-          description="Let's craft a premium website that grows your business. Reach out — I respond fast."
+          description="Working with clients worldwide. Share a few details about your project — you'll usually hear back within 24 hours, in your time zone."
         />
 
         <div className="mt-14 md:mt-20 grid lg:grid-cols-5 gap-6">
