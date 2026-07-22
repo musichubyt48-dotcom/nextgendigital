@@ -27,15 +27,16 @@ export function Contact() {
         <div className="mt-14 md:mt-20 grid lg:grid-cols-5 gap-6">
           <div className="lg:col-span-2 space-y-4">
             <a
-              href="tel:8509332038"
+              href="tel:+918509332038"
               className="flex items-center gap-4 glass rounded-2xl p-6 hover-lift group"
             >
               <div className="h-12 w-12 rounded-xl glass-gold flex items-center justify-center text-gold group-hover:scale-110 transition-transform">
                 <Phone size={18} />
               </div>
               <div>
-                <div className="text-xs uppercase tracking-wider text-muted-foreground">Call</div>
-                <div className="font-medium">8509332038</div>
+                <div className="text-xs uppercase tracking-wider text-muted-foreground">Call / WhatsApp</div>
+                <div className="font-medium">+91 85093 32038</div>
+                <div className="text-[0.65rem] uppercase tracking-[0.2em] text-muted-foreground mt-1">Available worldwide · Mon–Fri</div>
               </div>
             </a>
 
