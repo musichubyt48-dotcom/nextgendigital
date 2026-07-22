@@ -3,7 +3,7 @@ import { useEffect } from "react";
 const SITE_URL = "https://nextgendigital.services";
 const ORG_NAME = "Nextgen Digital";
 const ORG_DESC =
-  "Nextgen Digital is a premium website development agency founded by Ashutosh Kumar Srivastava, building modern, SEO-friendly websites for local businesses in India and worldwide.";
+  "Nextgen Digital is a premium website development studio founded by Ashutosh Kumar Srivastava, building modern, SEO-friendly, AI-powered websites for small businesses, startups, hotels, clinics, gyms, agencies, creators and ecommerce brands worldwide.";
 const FOUNDER = "Ashutosh Kumar Srivastava";
 const PHONE = "+91 8509332038";
 const EMAIL = "demoemail@example.com";
