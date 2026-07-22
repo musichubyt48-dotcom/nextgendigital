@@ -28,18 +28,18 @@ export function Hero() {
           </div>
 
           <h1 className="text-[2rem] sm:text-5xl md:text-6xl lg:text-[4.6rem] font-normal leading-[1.05] tracking-tight">
-            Premium Website Development for{" "}
+            Premium Websites for{" "}
             <span className="relative inline-block">
-              <span className="text-gradient-gold italic">trusted local brands</span>
+              <span className="text-gradient-gold italic">businesses worldwide</span>
               <span className="absolute -bottom-2 left-0 h-px w-2/3 bg-gradient-to-r from-gold/60 to-transparent" />
             </span>
             .
           </h1>
 
           <p className="mt-8 text-[1.05rem] text-muted-foreground max-w-[34rem] leading-[1.75]">
-            Nextgen Digital is a premium website development agency in India crafting modern
-            business websites, AI-powered web experiences and SEO-ready designs that load
-            fast and quietly bring customers in.
+            Nextgen Digital is a premium website development studio helping small businesses,
+            startups, hotels, clinics, gyms, agencies, creators and ecommerce brands around
+            the world launch modern, fast and AI-powered digital experiences.
           </p>
 
           <div className="mt-10 flex flex-wrap gap-4">
