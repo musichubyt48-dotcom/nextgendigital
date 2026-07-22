@@ -95,7 +95,7 @@ export function Industries() {
               Websites built for <span className="text-gradient-gold italic">real businesses</span>
             </>
           }
-          description="As a website development agency serving businesses across India, Nextgen Digital works with founders across service, retail and lifestyle industries."
+          description="From neighbourhood cafés to fast-growing startups, Nextgen Digital works with founders across service, retail, hospitality and lifestyle industries around the world."
         />
 
         <div className="mt-14 md:mt-20 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -208,7 +208,7 @@ export function Benefits() {
               Real outcomes from a <span className="text-gradient-gold italic">premium website</span>
             </>
           }
-          description="Working with a focused website developer in India means every decision is made to protect your speed, rankings and reputation."
+          description="Working with a focused, senior-led team means every decision — from design to performance — protects your speed, rankings and reputation, wherever your customers are."
         />
 
         <div className="mt-14 md:mt-20 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -357,8 +357,8 @@ const faqs = [
     a: "Every Nextgen Digital website is hand-crafted rather than templated. We combine premium design, modern frameworks like React and Next.js, AI-powered features and on-page SEO to deliver business websites that feel expensive and perform under real traffic.",
   },
   {
-    q: "How much does a business website cost in India?",
-    a: "Pricing depends on scope, but most premium business websites we build fall between an affordable starter package and a fully custom multi-page build. We share a clear fixed quote after the first discovery call, with no hidden fees.",
+    q: "How much does a premium business website cost?",
+    a: "Pricing depends on scope and region, but most premium business websites we build fall between an affordable starter package and a fully custom multi-page build. We share a clear fixed quote in your preferred currency after the first discovery call, with no hidden fees.",
   },
   {
     q: "Do you offer AI website development?",
@@ -370,11 +370,15 @@ const faqs = [
   },
   {
     q: "Are your websites SEO friendly?",
-    a: "Absolutely. As a modern website design company, we ship every project with semantic HTML, structured data, optimised Core Web Vitals, XML sitemaps and clean canonical URLs so search engines can index your pages correctly.",
+    a: "Absolutely. Every project ships with semantic HTML, structured data, optimised Core Web Vitals, XML sitemaps, hreflang-ready markup and clean canonical URLs so search engines can index and rank your pages correctly in any market.",
   },
   {
-    q: "Do you work with clients outside India?",
-    a: "Yes. While we are proudly a website development agency based in India, most of our work is delivered fully online, and we regularly collaborate with founders across Asia, the Middle East, Europe and North America.",
+    q: "Do you work with clients internationally?",
+    a: "Yes. Nextgen Digital serves clients worldwide. Our work is delivered fully online and we regularly collaborate with founders across North America, Europe, the Middle East, Africa, Asia and Australia — communicating in your time zone.",
+  },
+  {
+    q: "Can you build multilingual websites?",
+    a: "Yes. We build websites that are ready for multilingual and multi-region expansion, including proper hreflang tags, locale-aware routing and translation-friendly content structures so you can launch in new markets without a rebuild.",
   },
 ];
 

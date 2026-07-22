@@ -3,7 +3,7 @@ import { useEffect } from "react";
 const SITE_URL = "https://nextgendigital.services";
 const ORG_NAME = "Nextgen Digital";
 const ORG_DESC =
-  "Nextgen Digital is a premium website development agency founded by Ashutosh Kumar Srivastava, building modern, SEO-friendly websites for local businesses in India and worldwide.";
+  "Nextgen Digital is a premium website development studio founded by Ashutosh Kumar Srivastava, building modern, SEO-friendly, AI-powered websites for small businesses, startups, hotels, clinics, gyms, agencies, creators and ecommerce brands worldwide.";
 const FOUNDER = "Ashutosh Kumar Srivastava";
 const PHONE = "+91 8509332038";
 const EMAIL = "demoemail@example.com";
@@ -41,8 +41,8 @@ const organization = {
       contactType: "customer support",
       telephone: PHONE,
       email: EMAIL,
-      areaServed: ["IN", "Global"],
-      availableLanguage: ["en"],
+      areaServed: ["Global"],
+      availableLanguage: ["en", "hi"],
     },
   ],
   address: {
@@ -89,7 +89,7 @@ const professionalService = {
   priceRange: "₹₹",
   telephone: PHONE,
   email: EMAIL,
-  areaServed: ["IN", "Global"],
+  areaServed: ["Global"],
   serviceType: [
     "Website Design",
     "Website Development",
@@ -126,7 +126,7 @@ const services = [
       "Premium, modern interfaces designed pixel by pixel — built to convert, not just look pretty.",
     provider: { "@id": `${SITE_URL}/#organization` },
     serviceType: "Website Design",
-    areaServed: ["IN", "Global"],
+    areaServed: ["Global"],
     url: `${SITE_URL}/#services`,
   },
   {
@@ -137,7 +137,7 @@ const services = [
       "Modern tools, quick turnaround — without cutting corners on quality.",
     provider: { "@id": `${SITE_URL}/#organization` },
     serviceType: "Website Development",
-    areaServed: ["IN", "Global"],
+    areaServed: ["Global"],
     url: `${SITE_URL}/#services`,
   },
   {
@@ -148,7 +148,7 @@ const services = [
       "Professional sites that establish authority and turn visitors into qualified leads.",
     provider: { "@id": `${SITE_URL}/#organization` },
     serviceType: "Business Website Development",
-    areaServed: ["IN", "Global"],
+    areaServed: ["Global"],
     url: `${SITE_URL}/#services`,
   },
   {
@@ -159,7 +159,7 @@ const services = [
       "Tailored web experiences built around your brand, workflow, and customers.",
     provider: { "@id": `${SITE_URL}/#organization` },
     serviceType: "Custom Website Development",
-    areaServed: ["IN", "Global"],
+    areaServed: ["Global"],
     url: `${SITE_URL}/#services`,
   },
   {
@@ -170,7 +170,7 @@ const services = [
       "On-page SEO baked in from day one so Google can actually find you.",
     provider: { "@id": `${SITE_URL}/#organization` },
     serviceType: "Search Engine Optimization",
-    areaServed: ["IN", "Global"],
+    areaServed: ["Global"],
     url: `${SITE_URL}/#services`,
   },
   {
@@ -181,7 +181,7 @@ const services = [
       "Intuitive experiences that feel premium and keep customers coming back.",
     provider: { "@id": `${SITE_URL}/#organization` },
     serviceType: "UI/UX Design",
-    areaServed: ["IN", "Global"],
+    areaServed: ["Global"],
     url: `${SITE_URL}/#services`,
   },
 ];
@@ -230,8 +230,8 @@ const faqs = [
     a: "Every Nextgen Digital website is hand-crafted rather than templated. We combine premium design, modern frameworks like React and Next.js, AI-powered features and on-page SEO to deliver business websites that feel expensive and perform under real traffic.",
   },
   {
-    q: "How much does a business website cost in India?",
-    a: "Pricing depends on scope, but most premium business websites we build fall between an affordable starter package and a fully custom multi-page build. We share a clear fixed quote after the first discovery call, with no hidden fees.",
+    q: "How much does a premium business website cost?",
+    a: "Pricing depends on scope and region, but most premium business websites we build fall between an affordable starter package and a fully custom multi-page build. We share a clear fixed quote in your preferred currency after the first discovery call, with no hidden fees.",
   },
   {
     q: "Do you offer AI website development?",
@@ -243,11 +243,15 @@ const faqs = [
   },
   {
     q: "Are your websites SEO friendly?",
-    a: "Absolutely. As a modern website design company, we ship every project with semantic HTML, structured data, optimised Core Web Vitals, XML sitemaps and clean canonical URLs so search engines can index your pages correctly.",
+    a: "Absolutely. Every project ships with semantic HTML, structured data, optimised Core Web Vitals, XML sitemaps, hreflang-ready markup and clean canonical URLs so search engines can index and rank your pages correctly in any market.",
   },
   {
-    q: "Do you work with clients outside India?",
-    a: "Yes. While we are proudly a website development agency based in India, most of our work is delivered fully online, and we regularly collaborate with founders across Asia, the Middle East, Europe and North America.",
+    q: "Do you work with clients internationally?",
+    a: "Yes. Nextgen Digital serves clients worldwide. Our work is delivered fully online and we regularly collaborate with founders across North America, Europe, the Middle East, Africa, Asia and Australia — communicating in your time zone.",
+  },
+  {
+    q: "Can you build multilingual websites?",
+    a: "Yes. We build websites that are ready for multilingual and multi-region expansion, including proper hreflang tags, locale-aware routing and translation-friendly content structures so you can launch in new markets without a rebuild.",
   },
 ];
 
@@ -306,7 +310,7 @@ const contactPage = {
       contactType: "customer support",
       telephone: PHONE,
       email: EMAIL,
-      availableLanguage: ["en"],
+      availableLanguage: ["en", "hi"],
     },
   },
   inLanguage: "en",
@@ -319,7 +323,7 @@ const collectionPage = {
   url: `${SITE_URL}/#projects`,
   name: `Projects by ${ORG_NAME}`,
   description:
-    "A collection of premium website projects built by Nextgen Digital for local businesses.",
+    "A collection of premium website projects built by Nextgen Digital for businesses worldwide.",
   isPartOf: { "@id": `${SITE_URL}/#website` },
   inLanguage: "en",
   hasPart: [

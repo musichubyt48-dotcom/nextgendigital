@@ -48,10 +48,10 @@ export function Services() {
           eyebrow="Services"
           title={
             <>
-              What I build for your <span className="text-gradient-gold italic">business</span>
+              What we build for <span className="text-gradient-gold italic">your business</span>
             </>
           }
-          description="Everything you need to launch a premium online presence — and grow with confidence."
+          description="Everything you need to launch a premium online presence — trusted by founders, small businesses and creators across multiple countries."
         />
 
         <div className="mt-14 md:mt-20 grid md:grid-cols-3 gap-5 auto-rows-fr">

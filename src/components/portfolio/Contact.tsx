@@ -18,24 +18,25 @@ export function Contact() {
           eyebrow="Contact"
           title={
             <>
-              Ready To Build Your <span className="text-gradient-gold italic">Online Presence?</span>
+              Ready to grow your <span className="text-gradient-gold italic">business online?</span>
             </>
           }
-          description="Let's craft a premium website that grows your business. Reach out — I respond fast."
+          description="Working with clients worldwide. Share a few details about your project — you'll usually hear back within 24 hours, in your time zone."
         />
 
         <div className="mt-14 md:mt-20 grid lg:grid-cols-5 gap-6">
           <div className="lg:col-span-2 space-y-4">
             <a
-              href="tel:8509332038"
+              href="tel:+918509332038"
               className="flex items-center gap-4 glass rounded-2xl p-6 hover-lift group"
             >
               <div className="h-12 w-12 rounded-xl glass-gold flex items-center justify-center text-gold group-hover:scale-110 transition-transform">
                 <Phone size={18} />
               </div>
               <div>
-                <div className="text-xs uppercase tracking-wider text-muted-foreground">Call</div>
-                <div className="font-medium">8509332038</div>
+                <div className="text-xs uppercase tracking-wider text-muted-foreground">Call / WhatsApp</div>
+                <div className="font-medium">+91 85093 32038</div>
+                <div className="text-[0.65rem] uppercase tracking-[0.2em] text-muted-foreground mt-1">Available worldwide · Mon–Fri</div>
               </div>
             </a>
 
