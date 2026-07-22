@@ -18,7 +18,7 @@ export function Contact() {
           eyebrow="Contact"
           title={
             <>
-              Ready To Build Your <span className="text-gradient-gold italic">Online Presence?</span>
+              Ready to grow your <span className="text-gradient-gold italic">business online?</span>
             </>
           }
           description="Working with clients worldwide. Share a few details about your project — you'll usually hear back within 24 hours, in your time zone."
