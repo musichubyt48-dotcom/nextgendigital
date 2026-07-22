@@ -323,7 +323,7 @@ const collectionPage = {
   url: `${SITE_URL}/#projects`,
   name: `Projects by ${ORG_NAME}`,
   description:
-    "A collection of premium website projects built by Nextgen Digital for local businesses.",
+    "A collection of premium website projects built by Nextgen Digital for businesses worldwide.",
   isPartOf: { "@id": `${SITE_URL}/#website` },
   inLanguage: "en",
   hasPart: [
