@@ -95,7 +95,7 @@ export function Industries() {
               Websites built for <span className="text-gradient-gold italic">real businesses</span>
             </>
           }
-          description="As a website development agency serving businesses across India, Nextgen Digital works with founders across service, retail and lifestyle industries."
+          description="From neighbourhood cafés to fast-growing startups, Nextgen Digital works with founders across service, retail, hospitality and lifestyle industries around the world."
         />
 
         <div className="mt-14 md:mt-20 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
