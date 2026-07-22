@@ -38,7 +38,7 @@ export function About() {
               <div className="flex items-end justify-between gap-4">
                 <div className="font-display text-6xl sm:text-7xl text-gradient-gold leading-none">ND</div>
                 <div className="text-right text-[0.6rem] uppercase tracking-[0.25em] text-muted-foreground">
-                  Est. India<br />Digital Studio
+                  Serving clients<br />worldwide
                 </div>
               </div>
             </div>
