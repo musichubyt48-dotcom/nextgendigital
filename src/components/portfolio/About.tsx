@@ -50,14 +50,16 @@ export function About() {
               clean, fast, and quietly impressive."
             </p>
             <p>
-              I started Nextgen Digital after watching too many small businesses lose
-              customers to outdated websites. Most don't need a huge agency — they need
-              someone who actually cares about the details.
+              I founded Nextgen Digital after watching too many small businesses — from
+              neighbourhood cafés to fast-growing startups — lose customers to outdated,
+              slow websites. Great brands deserve a digital presence that matches the
+              quality of what they offer offline.
             </p>
             <p>
-              Over the last <span className="text-gold">1.5 years</span>, I've focused on
-              one thing: building modern, SEO-friendly websites that feel premium and
-              convert visitors into real customers.
+              Today we work with founders across multiple countries, building modern,
+              SEO-friendly, AI-powered websites that feel premium and turn visitors into
+              real customers. Every project is hand-crafted, transparently priced and
+              backed by ongoing support.
             </p>
 
             <div className="grid grid-cols-2 gap-4 pt-8">
