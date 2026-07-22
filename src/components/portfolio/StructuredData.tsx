@@ -41,8 +41,8 @@ const organization = {
       contactType: "customer support",
       telephone: PHONE,
       email: EMAIL,
-      areaServed: ["IN", "Global"],
-      availableLanguage: ["en"],
+      areaServed: ["Global"],
+      availableLanguage: ["en", "hi"],
     },
   ],
   address: {
@@ -89,7 +89,7 @@ const professionalService = {
   priceRange: "₹₹",
   telephone: PHONE,
   email: EMAIL,
-  areaServed: ["IN", "Global"],
+  areaServed: ["Global"],
   serviceType: [
     "Website Design",
     "Website Development",
@@ -126,7 +126,7 @@ const services = [
       "Premium, modern interfaces designed pixel by pixel — built to convert, not just look pretty.",
     provider: { "@id": `${SITE_URL}/#organization` },
     serviceType: "Website Design",
-    areaServed: ["IN", "Global"],
+    areaServed: ["Global"],
     url: `${SITE_URL}/#services`,
   },
   {
@@ -137,7 +137,7 @@ const services = [
       "Modern tools, quick turnaround — without cutting corners on quality.",
     provider: { "@id": `${SITE_URL}/#organization` },
     serviceType: "Website Development",
-    areaServed: ["IN", "Global"],
+    areaServed: ["Global"],
     url: `${SITE_URL}/#services`,
   },
   {
@@ -148,7 +148,7 @@ const services = [
       "Professional sites that establish authority and turn visitors into qualified leads.",
     provider: { "@id": `${SITE_URL}/#organization` },
     serviceType: "Business Website Development",
-    areaServed: ["IN", "Global"],
+    areaServed: ["Global"],
     url: `${SITE_URL}/#services`,
   },
   {
@@ -159,7 +159,7 @@ const services = [
       "Tailored web experiences built around your brand, workflow, and customers.",
     provider: { "@id": `${SITE_URL}/#organization` },
     serviceType: "Custom Website Development",
-    areaServed: ["IN", "Global"],
+    areaServed: ["Global"],
     url: `${SITE_URL}/#services`,
   },
   {
@@ -170,7 +170,7 @@ const services = [
       "On-page SEO baked in from day one so Google can actually find you.",
     provider: { "@id": `${SITE_URL}/#organization` },
     serviceType: "Search Engine Optimization",
-    areaServed: ["IN", "Global"],
+    areaServed: ["Global"],
     url: `${SITE_URL}/#services`,
   },
   {
@@ -181,7 +181,7 @@ const services = [
       "Intuitive experiences that feel premium and keep customers coming back.",
     provider: { "@id": `${SITE_URL}/#organization` },
     serviceType: "UI/UX Design",
-    areaServed: ["IN", "Global"],
+    areaServed: ["Global"],
     url: `${SITE_URL}/#services`,
   },
 ];
@@ -306,7 +306,7 @@ const contactPage = {
       contactType: "customer support",
       telephone: PHONE,
       email: EMAIL,
-      availableLanguage: ["en"],
+      availableLanguage: ["en", "hi"],
     },
   },
   inLanguage: "en",
