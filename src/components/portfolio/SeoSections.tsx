@@ -208,7 +208,7 @@ export function Benefits() {
               Real outcomes from a <span className="text-gradient-gold italic">premium website</span>
             </>
           }
-          description="Working with a focused website developer in India means every decision is made to protect your speed, rankings and reputation."
+          description="Working with a focused, senior-led team means every decision — from design to performance — protects your speed, rankings and reputation, wherever your customers are."
         />
 
         <div className="mt-14 md:mt-20 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
