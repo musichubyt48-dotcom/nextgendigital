@@ -42,14 +42,14 @@ export function Contact() {
 
             <a
               href="mailto:nextgendigitalofficial2026@gmail.com"
-              className="flex items-center gap-4 glass rounded-2xl p-6 hover-lift group"
+              className="flex items-center gap-4 glass rounded-2xl p-5 sm:p-6 hover-lift group min-w-0"
             >
-              <div className="h-12 w-12 rounded-xl glass-gold flex items-center justify-center text-gold group-hover:scale-110 transition-transform">
+              <div className="h-12 w-12 shrink-0 rounded-xl glass-gold flex items-center justify-center text-gold group-hover:scale-110 transition-transform">
                 <Mail size={18} />
               </div>
-              <div>
+              <div className="min-w-0 flex-1">
                 <div className="text-xs uppercase tracking-wider text-muted-foreground">Email</div>
-                <div className="font-medium">nextgendigitalofficial2026@gmail.com</div>
+                <div className="font-medium text-sm sm:text-base break-all">nextgendigitalofficial2026@gmail.com</div>
               </div>
             </a>
 
