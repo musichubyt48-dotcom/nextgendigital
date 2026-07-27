@@ -41,7 +41,7 @@ export function Contact() {
             </a>
 
             <a
-              href="mailto:demoemail@example.com"
+              href="mailto:nextgendigitalofficial2026@gmail.com"
               className="flex items-center gap-4 glass rounded-2xl p-6 hover-lift group"
             >
               <div className="h-12 w-12 rounded-xl glass-gold flex items-center justify-center text-gold group-hover:scale-110 transition-transform">
@@ -49,7 +49,7 @@ export function Contact() {
               </div>
               <div>
                 <div className="text-xs uppercase tracking-wider text-muted-foreground">Email</div>
-                <div className="font-medium">demoemail@example.com</div>
+                <div className="font-medium">nextgendigitalofficial2026@gmail.com</div>
               </div>
             </a>
 
