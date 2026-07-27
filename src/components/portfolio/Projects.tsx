@@ -64,7 +64,7 @@ export function Projects() {
               A few recent <span className="text-gradient-gold italic">favorites</span>.
             </>
           }
-          description="A small, curated look at the kind of premium experiences I build for local businesses."
+          description="Look at Our Premium Website Design and Demo's. "
         />
 
         <div className="mt-14 md:mt-20 grid lg:grid-cols-3 lg:grid-rows-2 gap-5">
