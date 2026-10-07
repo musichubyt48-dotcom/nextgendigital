@@ -146,7 +146,7 @@ export function HowWeWorkSection() {
   return (
     <section
       id="how-we-work"
-      className="py-12 sm:py-20 md:py-32 bg-[#DAF1DE]/30 border-t border-[#235347]/15 relative overflow-hidden"
+      className="py-12 sm:py-20 md:py-32 bg-[#F8FAF9] border-t border-[#00D285]/15 relative overflow-hidden"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
@@ -155,20 +155,20 @@ export function HowWeWorkSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.25 }}
           transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-          className="flex flex-col md:flex-row md:items-end justify-between gap-4 sm:gap-6 pb-6 sm:pb-12 border-b border-[#235347]/15"
+          className="flex flex-col md:flex-row md:items-end justify-between gap-4 sm:gap-6 pb-6 sm:pb-12 border-b border-[#00D285]/15"
         >
           <div className="space-y-2 sm:space-y-4 max-w-2xl">
-            <div className="inline-flex items-center gap-1.5 sm:gap-2 rounded-full bg-[#DAF1DE] px-2.5 py-0.5 sm:px-3.5 sm:py-1 text-[11px] sm:text-xs font-mono uppercase tracking-widest text-[#163832] border border-[#235347]/15">
-              <Layers size={12} className="text-[#235347]" />
+            <div className="inline-flex items-center gap-1.5 sm:gap-2 rounded-full bg-[#00D285]/10 px-2.5 py-0.5 sm:px-3.5 sm:py-1 text-[11px] sm:text-xs font-mono uppercase tracking-widest text-[#00D285] border border-[#00D285]/25">
+              <Layers size={12} className="text-[#00D285]" />
               <span>05 / Development Lifecycle</span>
             </div>
-            <h2 className="text-2xl sm:text-3xl md:text-fluid-section font-display font-bold uppercase text-[#0B2B26] tracking-tight leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-fluid-section font-display font-bold uppercase text-[#041510] tracking-tight leading-tight">
               From Idea <br className="hidden sm:inline" />
-              <span className="underline decoration-[#8EB69B] decoration-4 underline-offset-8">
+              <span className="underline decoration-[#00D285] decoration-4 underline-offset-8">
                 To Launch.
               </span>
             </h2>
-            <p className="text-xs sm:text-sm md:text-base font-sans text-[#163832]/80 leading-relaxed">
+            <p className="text-xs sm:text-sm md:text-base font-sans text-[#0A241D]/80 leading-relaxed">
               A disciplined, transparent seven-phase roadmap ensuring every project delivers on
               schedule, on budget, and to institutional software standards.
             </p>
@@ -176,10 +176,10 @@ export function HowWeWorkSection() {
 
           {/* Progress Indication & Navigation Controls */}
           <div className="flex items-center justify-between sm:justify-start gap-2.5 sm:gap-4 pt-1 sm:pt-0">
-            <div className="flex items-center gap-1.5 sm:gap-2 font-mono text-xs sm:text-sm font-bold text-[#0B2B26] bg-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-full border border-[#235347]/15 shadow-xs">
-              <span className="text-[#0B2B26]">{current.num}</span>
-              <span className="text-[#163832]/40">/</span>
-              <span className="text-[#163832]/60">07</span>
+            <div className="flex items-center gap-1.5 sm:gap-2 font-mono text-xs sm:text-sm font-bold text-[#041510] bg-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-full border border-[#00D285]/20 shadow-xs">
+              <span className="text-[#041510]">{current.num}</span>
+              <span className="text-[#0A241D]/40">/</span>
+              <span className="text-[#0A241D]/60">07</span>
             </div>
 
             <div className="flex items-center gap-2">
@@ -188,7 +188,7 @@ export function HowWeWorkSection() {
                 onClick={handlePrev}
                 disabled={activeStep === 0}
                 aria-label="Previous lifecycle phase"
-                className="flex items-center gap-1 px-3 sm:px-4 py-1.5 sm:py-2.5 rounded-full font-mono text-[11px] sm:text-xs uppercase tracking-wider font-bold transition-all border border-[#235347]/20 text-[#163832] bg-white hover:bg-[#DAF1DE] disabled:opacity-30 disabled:pointer-events-none cursor-pointer active:scale-95"
+                className="flex items-center gap-1 px-3 sm:px-4 py-1.5 sm:py-2.5 rounded-full font-mono text-[11px] sm:text-xs uppercase tracking-wider font-bold transition-all border border-[#00D285]/25 text-[#041510] bg-white hover:bg-[#00D285]/15 disabled:opacity-30 disabled:pointer-events-none cursor-pointer active:scale-95"
               >
                 <ArrowLeft size={13} />
                 <span>Prev</span>
@@ -199,7 +199,7 @@ export function HowWeWorkSection() {
                 onClick={handleNext}
                 disabled={activeStep === steps.length - 1}
                 aria-label="Next lifecycle phase"
-                className="flex items-center gap-1 px-3 sm:px-4 py-1.5 sm:py-2.5 rounded-full font-mono text-[11px] sm:text-xs uppercase tracking-wider font-bold transition-all bg-[#235347] text-[#FFFFFF] hover:bg-[#163832] disabled:opacity-30 disabled:pointer-events-none cursor-pointer active:scale-95"
+                className="flex items-center gap-1 px-3 sm:px-4 py-1.5 sm:py-2.5 rounded-full font-mono text-[11px] sm:text-xs uppercase tracking-wider font-bold transition-all bg-[#00D285] text-[#041510] hover:bg-[#00e599] disabled:opacity-30 disabled:pointer-events-none cursor-pointer active:scale-95 shadow-[0_0_15px_rgba(0,210,133,0.3)]"
               >
                 <span>Next</span>
                 <ArrowRight size={13} />
@@ -209,9 +209,9 @@ export function HowWeWorkSection() {
         </motion.div>
 
         {/* Progress Bar Track with Smooth Draw */}
-        <div className="mt-3 sm:mt-6 w-full h-1 sm:h-1.5 bg-[#235347]/10 rounded-full overflow-hidden">
+        <div className="mt-3 sm:mt-6 w-full h-1 sm:h-1.5 bg-[#00D285]/15 rounded-full overflow-hidden">
           <motion.div
-            className="h-full bg-[#235347]"
+            className="h-full bg-[#00D285]"
             initial={{ width: 0 }}
             whileInView={{ width: `${progressRatio}%` }}
             viewport={{ once: true }}
@@ -235,18 +235,18 @@ export function HowWeWorkSection() {
                 onClick={() => handleSelect(idx)}
                 className={`shrink-0 min-w-[100px] sm:min-w-0 p-2 sm:p-3 rounded-xl sm:rounded-2xl border transition-all text-left group cursor-pointer ${
                   isSelected
-                    ? "bg-[#0B2B26] text-[#DAF1DE] border-[#0B2B26] shadow-sm scale-[1.02]"
-                    : "bg-white text-[#163832] border-[#235347]/15 hover:bg-[#DAF1DE] hover:border-[#235347]/30"
+                    ? "bg-[#041510] text-white border-[#00D285] shadow-[0_0_15px_rgba(0,210,133,0.25)] scale-[1.02]"
+                    : "bg-white text-[#041510] border-[#00D285]/20 hover:bg-[#00D285]/10 hover:border-[#00D285]/40"
                 }`}
               >
                 <div className="flex items-center justify-between font-mono text-[10px] sm:text-xs mb-0.5 sm:mb-1.5">
-                  <span className={isSelected ? "text-[#8EB69B] font-bold" : "text-[#163832]/60"}>
+                  <span className={isSelected ? "text-[#00D285] font-bold" : "text-[#0A241D]/60"}>
                     {step.num}
                   </span>
                   {isSelected && (
                     <motion.span
                       layoutId="active-dot"
-                      className="h-1.5 w-1.5 sm:h-2 sm:w-2 rounded-full bg-[#8EB69B]"
+                      className="h-1.5 w-1.5 sm:h-2 sm:w-2 rounded-full bg-[#00D285] shadow-[0_0_6px_#00D285]"
                     />
                   )}
                 </div>
@@ -259,9 +259,9 @@ export function HowWeWorkSection() {
         </div>
 
         {/* Active Stage Interactive Card with Animated Transition - Compact on mobile */}
-        <div className="relative bg-white rounded-2xl sm:rounded-3xl p-4 sm:p-8 md:p-12 border border-[#235347]/15 shadow-card overflow-hidden">
+        <div className="relative bg-white rounded-2xl sm:rounded-3xl p-4 sm:p-8 md:p-12 border border-[#00D285]/20 shadow-[0_4px_24px_rgba(4,21,16,0.06)] overflow-hidden">
           {/* Watermark number */}
-          <div className="absolute top-1 right-3 sm:top-2 sm:right-6 font-mono text-5xl sm:text-8xl md:text-9xl font-black text-[#235347]/5 select-none pointer-events-none">
+          <div className="absolute top-1 right-3 sm:top-2 sm:right-6 font-mono text-5xl sm:text-8xl md:text-9xl font-black text-[#00D285]/5 select-none pointer-events-none">
             {current.num}
           </div>
 
@@ -277,31 +277,31 @@ export function HowWeWorkSection() {
             >
               {/* Left Column: Number & Header */}
               <div className="lg:col-span-4 space-y-2 sm:space-y-3.5">
-                <div className="inline-flex items-center gap-1.5 font-mono text-[10px] sm:text-xs uppercase tracking-wider text-[#0B2B26] bg-[#DAF1DE] px-2.5 py-0.5 sm:px-3.5 sm:py-1 rounded-full font-bold border border-[#235347]/15">
-                  <Sparkles size={11} className="shrink-0 text-[#235347]" />
+                <div className="inline-flex items-center gap-1.5 font-mono text-[10px] sm:text-xs uppercase tracking-wider text-[#041510] bg-[#00D285]/15 px-2.5 py-0.5 sm:px-3.5 sm:py-1 rounded-full font-bold border border-[#00D285]/30">
+                  <Sparkles size={11} className="shrink-0 text-[#00D285]" />
                   <span>Phase {current.num} of 07</span>
                 </div>
 
-                <h3 className="font-display font-extrabold text-2xl sm:text-3xl md:text-4xl text-[#0B2B26] tracking-tight uppercase leading-tight">
+                <h3 className="font-display font-extrabold text-2xl sm:text-3xl md:text-4xl text-[#041510] tracking-tight uppercase leading-tight">
                   {current.title}
                 </h3>
 
-                <p className="font-mono text-[11px] sm:text-xs uppercase tracking-wider text-[#163832]/70 font-semibold">
+                <p className="font-mono text-[11px] sm:text-xs uppercase tracking-wider text-[#0A241D]/70 font-semibold">
                   {current.subtitle} · {current.timeframe}
                 </p>
 
-                <p className="text-xs sm:text-sm md:text-base text-[#163832]/85 font-sans leading-relaxed pt-0.5 sm:pt-1">
+                <p className="text-xs sm:text-sm md:text-base text-[#0A241D]/85 font-sans leading-relaxed pt-0.5 sm:pt-1">
                   {current.desc}
                 </p>
               </div>
 
               {/* Right Column: Key Deliverables Checklist - Compact items */}
-              <div className="lg:col-span-8 bg-[#DAF1DE]/40 rounded-xl sm:rounded-2xl p-3.5 sm:p-6 md:p-8 border border-[#235347]/15">
-                <div className="flex items-center justify-between pb-2.5 mb-2.5 sm:pb-4 sm:mb-4 border-b border-[#235347]/10">
-                  <span className="font-mono text-[10px] sm:text-xs uppercase tracking-wider text-[#0B2B26] font-bold">
+              <div className="lg:col-span-8 bg-[#F4FAF6] rounded-xl sm:rounded-2xl p-3.5 sm:p-6 md:p-8 border border-[#00D285]/15">
+                <div className="flex items-center justify-between pb-2.5 mb-2.5 sm:pb-4 sm:mb-4 border-b border-[#00D285]/15">
+                  <span className="font-mono text-[10px] sm:text-xs uppercase tracking-wider text-[#041510] font-bold">
                     Key Deliverables & Milestones
                   </span>
-                  <span className="font-mono text-[10px] sm:text-xs text-[#163832]/60 hidden xs:inline">
+                  <span className="font-mono text-[10px] sm:text-xs text-[#0A241D]/60 hidden xs:inline">
                     Verified Production Output
                   </span>
                 </div>
@@ -313,10 +313,10 @@ export function HowWeWorkSection() {
                       initial={{ opacity: 0, y: shouldReduceMotion ? 0 : 8 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: idx * 0.05, duration: 0.25 }}
-                      className="flex items-center gap-2 sm:gap-3 bg-white p-2.5 sm:p-3.5 rounded-lg sm:rounded-xl border border-[#235347]/10 shadow-xs"
+                      className="flex items-center gap-2 sm:gap-3 bg-white p-2.5 sm:p-3.5 rounded-lg sm:rounded-xl border border-[#00D285]/15 shadow-xs"
                     >
-                      <CheckCircle2 size={14} className="text-[#235347] shrink-0" />
-                      <span className="text-xs sm:text-sm font-sans font-medium text-[#163832] leading-snug">
+                      <CheckCircle2 size={14} className="text-[#00D285] shrink-0" />
+                      <span className="text-xs sm:text-sm font-sans font-medium text-[#0A241D] leading-snug">
                         {item}
                       </span>
                     </motion.div>
@@ -327,8 +327,8 @@ export function HowWeWorkSection() {
           </AnimatePresence>
 
           {/* Bottom Card Navigation Row */}
-          <div className="mt-4 pt-3.5 sm:mt-8 sm:pt-6 border-t border-[#235347]/10 flex flex-wrap items-center justify-between gap-2.5">
-            <div className="font-mono text-[10px] sm:text-xs text-[#163832]/60">
+          <div className="mt-4 pt-3.5 sm:mt-8 sm:pt-6 border-t border-[#00D285]/15 flex flex-wrap items-center justify-between gap-2.5">
+            <div className="font-mono text-[10px] sm:text-xs text-[#0A241D]/60">
               Phase {current.num}: {current.title} · {current.timeframe}
             </div>
 
@@ -337,7 +337,7 @@ export function HowWeWorkSection() {
                 type="button"
                 onClick={handlePrev}
                 disabled={activeStep === 0}
-                className="px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-lg sm:rounded-xl border border-[#235347]/20 text-[11px] sm:text-xs font-mono text-[#163832] hover:bg-[#DAF1DE] disabled:opacity-30 cursor-pointer active:scale-95"
+                className="px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-lg sm:rounded-xl border border-[#00D285]/25 text-[11px] sm:text-xs font-mono text-[#041510] hover:bg-[#00D285]/15 disabled:opacity-30 cursor-pointer active:scale-95"
               >
                 ← Prev
               </button>
@@ -345,7 +345,7 @@ export function HowWeWorkSection() {
                 type="button"
                 onClick={handleNext}
                 disabled={activeStep === steps.length - 1}
-                className="px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-lg sm:rounded-xl bg-[#235347] text-[#FFFFFF] text-[11px] sm:text-xs font-mono hover:bg-[#163832] disabled:opacity-30 cursor-pointer active:scale-95"
+                className="px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-lg sm:rounded-xl bg-[#00D285] text-[#041510] font-bold text-[11px] sm:text-xs font-mono hover:bg-[#00e599] disabled:opacity-30 cursor-pointer active:scale-95 shadow-[0_0_12px_rgba(0,210,133,0.25)]"
               >
                 Next →
               </button>

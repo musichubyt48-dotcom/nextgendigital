@@ -1,4 +1,5 @@
 import { ArrowUpRight, MessageCircle, Mail, Instagram, ArrowUp } from "lucide-react";
+import logo from "@/assets/ChatGPT_Image_Jun_12,_2026,_02_34_28_PM.png";
 
 interface FooterProps {
   onNavigate: (path: string) => void;
@@ -10,32 +11,34 @@ export function Footer({ onNavigate }: FooterProps) {
   };
 
   return (
-    <footer className="bg-[#051F20] text-[#DAF1DE] border-t border-[#8EB69B]/20 pt-10 sm:pt-16 pb-8 sm:pb-12">
+    <footer className="bg-[#041510] text-[#E8F7EE] border-t border-[#00D285]/20 pt-10 sm:pt-16 pb-8 sm:pb-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 sm:gap-10 pb-8 sm:pb-14 border-b border-[#8EB69B]/15">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 sm:gap-10 pb-8 sm:pb-14 border-b border-[#00D285]/15">
           {/* Col 1: Studio Brand & Positioning (5 cols) */}
           <div className="md:col-span-5 space-y-4">
             <div className="flex items-center gap-2.5">
-              <span className="h-9 w-9 rounded-xl bg-[#235347] text-[#FFFFFF] flex items-center justify-center font-display font-extrabold text-lg">
-                N
-              </span>
+              <img
+                src={logo}
+                alt="JIVDEV"
+                className="h-9 w-9 object-contain rounded-xl shadow-[0_0_15px_rgba(0,210,133,0.35)]"
+              />
               <span className="font-display font-bold text-xl uppercase tracking-tight text-[#FFFFFF]">
-                NextGen Digital
+                JIVDEV
               </span>
             </div>
-            <p className="text-sm text-[#DAF1DE]/75 max-w-sm leading-relaxed font-sans">
+            <p className="text-sm text-[#A4CBB7] max-w-sm leading-relaxed font-sans">
               We build professional websites and digital systems around your business. Custom
               architecture, direct lead flows, and zero vendor lock-in.
             </p>
-            <div className="pt-2 flex items-center gap-2 text-xs font-mono text-[#8EB69B]">
-              <span className="h-2 w-2 rounded-full bg-[#8EB69B] animate-pulse" />
+            <div className="pt-2 flex items-center gap-2 text-xs font-mono text-[#00D285]">
+              <span className="h-2 w-2 rounded-full bg-[#00D285] animate-pulse shadow-[0_0_6px_#00D285]" />
               <span>Operating Worldwide · Studio HQ India</span>
             </div>
           </div>
 
           {/* Col 2: Navigation Links (3 cols) */}
           <div className="md:col-span-3 space-y-3">
-            <span className="font-mono text-xs uppercase tracking-widest text-[#8EB69B] font-bold block">
+            <span className="font-mono text-xs uppercase tracking-widest text-[#00D285] font-bold block">
               Navigation
             </span>
             <ul className="space-y-2 text-sm font-sans">
@@ -52,7 +55,7 @@ export function Footer({ onNavigate }: FooterProps) {
                   <button
                     type="button"
                     onClick={() => onNavigate(link.path)}
-                    className="text-[#DAF1DE]/80 hover:text-[#FFFFFF] transition-colors py-0.5"
+                    className="text-[#E8F7EE]/80 hover:text-[#00D285] transition-colors py-0.5 cursor-pointer text-left"
                   >
                     {link.label}
                   </button>
@@ -63,15 +66,15 @@ export function Footer({ onNavigate }: FooterProps) {
 
           {/* Col 3: Legal & Governance (2 cols) */}
           <div className="md:col-span-2 space-y-3">
-            <span className="font-mono text-xs uppercase tracking-widest text-[#8EB69B] font-bold block">
+            <span className="font-mono text-xs uppercase tracking-widest text-[#00D285] font-bold block">
               Legal & Terms
             </span>
-            <ul className="space-y-2 text-xs font-sans text-[#DAF1DE]/70">
+            <ul className="space-y-2 text-xs font-sans text-[#A4CBB7]">
               <li>
                 <button
                   type="button"
                   onClick={() => onNavigate("/privacy-policy")}
-                  className="hover:text-[#FFFFFF] transition-colors text-left"
+                  className="hover:text-white transition-colors text-left cursor-pointer"
                 >
                   Privacy Policy
                 </button>
@@ -80,7 +83,7 @@ export function Footer({ onNavigate }: FooterProps) {
                 <button
                   type="button"
                   onClick={() => onNavigate("/terms-and-conditions")}
-                  className="hover:text-[#FFFFFF] transition-colors text-left"
+                  className="hover:text-white transition-colors text-left cursor-pointer"
                 >
                   Terms & Conditions
                 </button>
@@ -89,7 +92,7 @@ export function Footer({ onNavigate }: FooterProps) {
                 <button
                   type="button"
                   onClick={() => onNavigate("/cancellation-refund")}
-                  className="hover:text-[#FFFFFF] transition-colors text-left"
+                  className="hover:text-white transition-colors text-left cursor-pointer"
                 >
                   Cancellation / Refund
                 </button>
@@ -99,7 +102,7 @@ export function Footer({ onNavigate }: FooterProps) {
 
           {/* Col 4: Contact & Social (2 cols) */}
           <div className="md:col-span-2 space-y-3">
-            <span className="font-mono text-xs uppercase tracking-widest text-[#8EB69B] font-bold block">
+            <span className="font-mono text-xs uppercase tracking-widest text-[#00D285] font-bold block">
               Connect
             </span>
             <ul className="space-y-2.5 text-xs font-mono">
@@ -108,7 +111,7 @@ export function Footer({ onNavigate }: FooterProps) {
                   href="https://wa.me/918509332038"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-[#DAF1DE]/80 hover:text-[#FFFFFF] transition-colors"
+                  className="flex items-center gap-2 text-[#E8F7EE]/80 hover:text-[#00D285] transition-colors"
                 >
                   <MessageCircle size={14} />
                   <span>WhatsApp</span>
@@ -117,8 +120,8 @@ export function Footer({ onNavigate }: FooterProps) {
               </li>
               <li>
                 <a
-                  href="mailto:nextgendigitalofficial2026@gmail.com"
-                  className="flex items-center gap-2 text-[#DAF1DE]/80 hover:text-[#FFFFFF] transition-colors"
+                  href="mailto:zivdevofficial@gmail.com"
+                  className="flex items-center gap-2 text-[#E8F7EE]/80 hover:text-[#00D285] transition-colors"
                 >
                   <Mail size={14} />
                   <span>Email</span>
@@ -130,7 +133,7 @@ export function Footer({ onNavigate }: FooterProps) {
                   href="https://instagram.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-[#DAF1DE]/80 hover:text-[#FFFFFF] transition-colors"
+                  className="flex items-center gap-2 text-[#E8F7EE]/80 hover:text-[#00D285] transition-colors"
                 >
                   <Instagram size={14} />
                   <span>Instagram</span>
@@ -142,12 +145,12 @@ export function Footer({ onNavigate }: FooterProps) {
         </div>
 
         {/* Sub-footer */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-[#DAF1DE]/60">
-          <p>© {new Date().getFullYear()} NextGen Digital. All rights reserved.</p>
+        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-[#A4CBB7]/60">
+          <p>© {new Date().getFullYear()} JIVDEV. All rights reserved.</p>
           <button
             type="button"
             onClick={scrollToTop}
-            className="flex items-center gap-1.5 text-[#DAF1DE] hover:text-[#FFFFFF] transition-colors"
+            className="flex items-center gap-1.5 text-[#E8F7EE] hover:text-[#00D285] transition-colors cursor-pointer"
           >
             <span>Back to top</span>
             <ArrowUp size={13} />

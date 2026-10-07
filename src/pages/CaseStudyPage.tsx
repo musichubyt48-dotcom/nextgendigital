@@ -43,12 +43,12 @@ export function CaseStudyPage({
   return (
     <div className="w-full flex flex-col bg-[#FFFFFF]">
       {/* Top Breadcrumb Header */}
-      <div className="pt-20 pb-3.5 sm:pt-28 sm:pb-6 border-b border-[#235347]/15 bg-white/60">
+      <div className="pt-20 pb-3.5 sm:pt-28 sm:pb-6 border-b border-[#00D285]/15 bg-white/60">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-2">
           <button
             type="button"
             onClick={() => onNavigate("/work")}
-            className="inline-flex items-center gap-1.5 sm:gap-2 text-[11px] sm:text-xs font-mono font-bold uppercase tracking-wider text-[#235347] hover:text-[#0B2B26] cursor-pointer"
+            className="inline-flex items-center gap-1.5 sm:gap-2 text-[11px] sm:text-xs font-mono font-bold uppercase tracking-wider text-[#041510] hover:text-[#00D285] cursor-pointer transition-colors"
           >
             <ArrowLeft size={13} />
             <span>All Projects</span>
@@ -59,7 +59,7 @@ export function CaseStudyPage({
               href={currentProject.liveUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 text-[11px] sm:text-xs font-mono font-bold text-[#FFFFFF] bg-[#235347] px-3 sm:px-3.5 py-1 sm:py-1.5 rounded-full hover:bg-[#163832] transition-colors shadow-sm"
+              className="inline-flex items-center gap-1.5 text-[11px] sm:text-xs font-mono font-bold text-[#041510] bg-[#00D285] px-3 sm:px-3.5 py-1 sm:py-1.5 rounded-full hover:bg-[#00e599] transition-colors shadow-[0_0_12px_rgba(0,210,133,0.3)]"
             >
               <span>Live Platform</span>
               <ArrowUpRight size={13} />
@@ -69,63 +69,63 @@ export function CaseStudyPage({
       </div>
 
       {/* Case Study Hero */}
-      <section className="pt-8 pb-10 sm:pt-12 sm:pb-16 md:pt-16 md:pb-24 border-b border-[#235347]/15 grain-overlay">
+      <section className="pt-8 pb-10 sm:pt-12 sm:pb-16 md:pt-16 md:pb-24 border-b border-[#00D285]/15 grain-overlay">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6 sm:space-y-8">
           <div className="space-y-3 sm:space-y-4 max-w-4xl">
             <div className="flex flex-wrap items-center gap-2 sm:gap-3">
-              <span className="font-mono text-[10px] sm:text-xs font-bold text-[#FFFFFF] bg-[#235347] px-2.5 sm:px-3 py-0.5 sm:py-1 rounded-full uppercase tracking-wider">
+              <span className="font-mono text-[10px] sm:text-xs font-bold text-[#041510] bg-[#00D285] px-2.5 sm:px-3 py-0.5 sm:py-1 rounded-full uppercase tracking-wider shadow-sm">
                 Case Study
               </span>
-              <span className="font-mono text-[10px] sm:text-xs font-semibold text-[#235347] uppercase tracking-wider">
+              <span className="font-mono text-[10px] sm:text-xs font-bold text-[#00D285] uppercase tracking-wider">
                 {currentProject.category} · {currentProject.industry}
               </span>
             </div>
 
-            <h1 className="text-2xl sm:text-4xl md:text-fluid-section font-display font-extrabold uppercase text-[#0B2B26] tracking-tight leading-tight">
+            <h1 className="text-2xl sm:text-4xl md:text-fluid-section font-display font-extrabold uppercase text-[#041510] tracking-tight leading-tight">
               {currentProject.title}
             </h1>
 
-            <p className="text-sm sm:text-xl md:text-2xl font-sans text-[#235347] leading-relaxed max-w-3xl">
+            <p className="text-sm sm:text-xl md:text-2xl font-sans text-[#0A241D]/85 leading-relaxed max-w-3xl">
               {currentProject.subtitle}
             </p>
           </div>
 
           {/* Project Metadata Grid */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 p-4 sm:p-6 rounded-2xl sm:rounded-3xl bg-white border border-[#235347]/15 shadow-subtle text-xs font-mono text-[#0B2B26]">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 p-4 sm:p-6 rounded-2xl sm:rounded-3xl bg-white border border-[#00D285]/20 shadow-subtle text-xs font-mono text-[#041510]">
             <div className="space-y-0.5 sm:space-y-1">
-              <span className="text-[#235347]/60 uppercase tracking-wider block text-[10px] sm:text-xs">
+              <span className="text-[#0A241D]/60 uppercase tracking-wider block text-[10px] sm:text-xs font-semibold">
                 Client
               </span>
-              <span className="font-bold text-xs sm:text-sm block truncate">
+              <span className="font-bold text-xs sm:text-sm block truncate text-[#041510]">
                 {currentProject.client}
               </span>
             </div>
             <div className="space-y-0.5 sm:space-y-1">
-              <span className="text-[#235347]/60 uppercase tracking-wider block text-[10px] sm:text-xs">
+              <span className="text-[#0A241D]/60 uppercase tracking-wider block text-[10px] sm:text-xs font-semibold">
                 Location
               </span>
-              <span className="font-bold text-xs sm:text-sm block truncate">
+              <span className="font-bold text-xs sm:text-sm block truncate text-[#041510]">
                 {currentProject.location}
               </span>
             </div>
             <div className="space-y-0.5 sm:space-y-1">
-              <span className="text-[#235347]/60 uppercase tracking-wider block text-[10px] sm:text-xs">
+              <span className="text-[#0A241D]/60 uppercase tracking-wider block text-[10px] sm:text-xs font-semibold">
                 Year
               </span>
-              <span className="font-bold text-xs sm:text-sm block">{currentProject.year}</span>
+              <span className="font-bold text-xs sm:text-sm block text-[#041510]">{currentProject.year}</span>
             </div>
             <div className="space-y-0.5 sm:space-y-1">
-              <span className="text-[#235347]/60 uppercase tracking-wider block text-[10px] sm:text-xs">
+              <span className="text-[#0A241D]/60 uppercase tracking-wider block text-[10px] sm:text-xs font-semibold">
                 Discipline
               </span>
-              <span className="font-bold text-xs sm:text-sm block truncate">
+              <span className="font-bold text-xs sm:text-sm block truncate text-[#041510]">
                 {currentProject.category}
               </span>
             </div>
           </div>
 
           {/* Main Visual */}
-          <div className="rounded-2xl sm:rounded-3xl overflow-hidden border border-[#235347]/20 shadow-card bg-[#0B2B26]">
+          <div className="rounded-2xl sm:rounded-3xl overflow-hidden border border-[#00D285]/20 shadow-card bg-[#041510]">
             <ImageReveal
               src={currentProject.image}
               alt={currentProject.title}
@@ -140,26 +140,26 @@ export function CaseStudyPage({
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-20 md:py-28 space-y-10 sm:space-y-20">
         {/* 01. Overview */}
         <div className="space-y-2.5 sm:space-y-4">
-          <span className="font-mono text-[10px] sm:text-xs uppercase tracking-widest text-[#235347] font-bold block">
+          <span className="font-mono text-[10px] sm:text-xs uppercase tracking-widest text-[#00D285] font-bold block">
             01 / Executive Overview
           </span>
-          <h2 className="text-xl sm:text-3xl font-display font-bold text-[#0B2B26]">
+          <h2 className="text-xl sm:text-3xl font-display font-bold text-[#041510]">
             Project Purpose & Mandate
           </h2>
-          <p className="text-xs sm:text-lg text-[#235347] leading-relaxed font-sans">
+          <p className="text-xs sm:text-lg text-[#0A241D]/85 leading-relaxed font-sans">
             {currentProject.overview}
           </p>
         </div>
 
         {/* 02. Business & Project Context */}
-        <div className="space-y-3 sm:space-y-4 p-4 sm:p-8 rounded-2xl sm:rounded-3xl bg-white border border-[#235347]/15 shadow-subtle">
-          <span className="font-mono text-[10px] sm:text-xs uppercase tracking-widest text-[#235347] font-bold block">
+        <div className="space-y-3 sm:space-y-4 p-4 sm:p-8 rounded-2xl sm:rounded-3xl bg-[#F8FAF9] border border-[#00D285]/20 shadow-subtle">
+          <span className="font-mono text-[10px] sm:text-xs uppercase tracking-widest text-[#00D285] font-bold block">
             02 / Business Context
           </span>
-          <h2 className="text-lg sm:text-2xl font-display font-bold text-[#0B2B26]">
+          <h2 className="text-lg sm:text-2xl font-display font-bold text-[#041510]">
             Operating Environment
           </h2>
-          <p className="text-xs sm:text-base text-[#235347] leading-relaxed font-sans">
+          <p className="text-xs sm:text-base text-[#0A241D]/80 leading-relaxed font-sans">
             {currentProject.client} needed a reliable, modern web presence that speaks directly to
             their local market and potential customers, providing instant access to service pricing,
             schedules, and direct booking mechanisms.
@@ -168,52 +168,52 @@ export function CaseStudyPage({
 
         {/* 03. Challenge */}
         <div className="space-y-2.5 sm:space-y-4">
-          <span className="font-mono text-[10px] sm:text-xs uppercase tracking-widest text-[#235347] font-bold block">
+          <span className="font-mono text-[10px] sm:text-xs uppercase tracking-widest text-[#00D285] font-bold block">
             03 / The Challenge
           </span>
-          <h2 className="text-xl sm:text-3xl font-display font-bold text-[#0B2B26]">
+          <h2 className="text-xl sm:text-3xl font-display font-bold text-[#041510]">
             Operational Friction & Inefficiencies
           </h2>
-          <p className="text-xs sm:text-lg text-[#235347] leading-relaxed font-sans">
+          <p className="text-xs sm:text-lg text-[#0A241D]/85 leading-relaxed font-sans">
             {currentProject.challenge}
           </p>
         </div>
 
         {/* 04. Approach */}
         <div className="space-y-2.5 sm:space-y-4">
-          <span className="font-mono text-[10px] sm:text-xs uppercase tracking-widest text-[#235347] font-bold block">
+          <span className="font-mono text-[10px] sm:text-xs uppercase tracking-widest text-[#00D285] font-bold block">
             04 / Strategic Approach
           </span>
-          <h2 className="text-xl sm:text-3xl font-display font-bold text-[#0B2B26]">
+          <h2 className="text-xl sm:text-3xl font-display font-bold text-[#041510]">
             Engineering Around The User Journey
           </h2>
-          <p className="text-xs sm:text-lg text-[#235347] leading-relaxed font-sans">
+          <p className="text-xs sm:text-lg text-[#0A241D]/85 leading-relaxed font-sans">
             {currentProject.approach}
           </p>
         </div>
 
         {/* 05. Design & 06. Development */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-8">
-          <div className="p-4 sm:p-8 rounded-2xl sm:rounded-3xl bg-white border border-[#235347]/15 shadow-subtle space-y-2 sm:space-y-3">
-            <span className="font-mono text-[10px] sm:text-xs uppercase tracking-widest text-[#235347] font-bold block">
+          <div className="p-4 sm:p-8 rounded-2xl sm:rounded-3xl bg-white border border-[#00D285]/20 shadow-subtle space-y-2 sm:space-y-3">
+            <span className="font-mono text-[10px] sm:text-xs uppercase tracking-widest text-[#00D285] font-bold block">
               05 / Design Architecture
             </span>
-            <h3 className="font-display font-bold text-lg sm:text-xl text-[#0B2B26]">
+            <h3 className="font-display font-bold text-lg sm:text-xl text-[#041510]">
               Visual Hierarchy
             </h3>
-            <p className="text-xs sm:text-sm text-[#235347] leading-relaxed font-sans">
+            <p className="text-xs sm:text-sm text-[#0A241D]/75 leading-relaxed font-sans">
               {currentProject.design}
             </p>
           </div>
 
-          <div className="p-4 sm:p-8 rounded-2xl sm:rounded-3xl bg-white border border-[#235347]/15 shadow-subtle space-y-2 sm:space-y-3">
-            <span className="font-mono text-[10px] sm:text-xs uppercase tracking-widest text-[#235347] font-bold block">
+          <div className="p-4 sm:p-8 rounded-2xl sm:rounded-3xl bg-white border border-[#00D285]/20 shadow-subtle space-y-2 sm:space-y-3">
+            <span className="font-mono text-[10px] sm:text-xs uppercase tracking-widest text-[#00D285] font-bold block">
               06 / Code & Engineering
             </span>
-            <h3 className="font-display font-bold text-lg sm:text-xl text-[#0B2B26]">
+            <h3 className="font-display font-bold text-lg sm:text-xl text-[#041510]">
               Technical Implementation
             </h3>
-            <p className="text-xs sm:text-sm text-[#235347] leading-relaxed font-sans">
+            <p className="text-xs sm:text-sm text-[#0A241D]/75 leading-relaxed font-sans">
               {currentProject.development}
             </p>
           </div>
@@ -221,20 +221,20 @@ export function CaseStudyPage({
 
         {/* 07. Key Features */}
         <div className="space-y-3 sm:space-y-6">
-          <span className="font-mono text-[10px] sm:text-xs uppercase tracking-widest text-[#235347] font-bold block">
+          <span className="font-mono text-[10px] sm:text-xs uppercase tracking-widest text-[#00D285] font-bold block">
             07 / Key Functionality
           </span>
-          <h2 className="text-xl sm:text-3xl font-display font-bold text-[#0B2B26]">
+          <h2 className="text-xl sm:text-3xl font-display font-bold text-[#041510]">
             Engineered Capabilities
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
             {currentProject.keyFeatures.map((feat, idx) => (
               <div
                 key={idx}
-                className="p-3.5 sm:p-5 rounded-xl sm:rounded-2xl bg-white border border-[#235347]/15 flex items-start gap-2.5 sm:gap-3"
+                className="p-3.5 sm:p-5 rounded-xl sm:rounded-2xl bg-[#F8FAF9] border border-[#00D285]/20 flex items-start gap-2.5 sm:gap-3"
               >
-                <CheckCircle2 size={16} className="text-[#235347] shrink-0 mt-0.5" />
-                <span className="text-xs sm:text-sm font-sans text-[#0B2B26] font-medium">
+                <CheckCircle2 size={16} className="text-[#00D285] shrink-0 mt-0.5" strokeWidth={2.5} />
+                <span className="text-xs sm:text-sm font-sans text-[#041510] font-medium">
                   {feat}
                 </span>
               </div>
@@ -243,14 +243,14 @@ export function CaseStudyPage({
         </div>
 
         {/* 08. Final Experience */}
-        <div className="p-5 sm:p-10 rounded-2xl sm:rounded-3xl bg-[#051F20] text-[#FFFFFF] border border-[#8EB69B]/20 space-y-3 sm:space-y-4">
-          <span className="font-mono text-[10px] sm:text-xs uppercase tracking-widest text-[#DAF1DE] font-bold block">
+        <div className="p-5 sm:p-10 rounded-2xl sm:rounded-3xl bg-[#06211A] text-[#FFFFFF] border border-[#00D285]/20 space-y-3 sm:space-y-4">
+          <span className="font-mono text-[10px] sm:text-xs uppercase tracking-widest text-[#00D285] font-bold block">
             08 / Delivered Experience
           </span>
           <h2 className="text-xl sm:text-3xl font-display font-bold text-[#FFFFFF]">
             Operational Result
           </h2>
-          <p className="text-xs sm:text-lg text-[#DAF1DE]/90 leading-relaxed font-sans">
+          <p className="text-xs sm:text-lg text-[#E8F7EE]/90 leading-relaxed font-sans">
             {currentProject.finalExperience}
           </p>
 
@@ -258,7 +258,7 @@ export function CaseStudyPage({
             {currentProject.techStack.map((tech, idx) => (
               <span
                 key={idx}
-                className="font-mono text-[10px] sm:text-xs px-2.5 sm:px-3 py-0.5 sm:py-1 rounded-full bg-[#163832] border border-[#8EB69B]/25 text-[#DAF1DE]"
+                className="font-mono text-[10px] sm:text-xs px-2.5 sm:px-3 py-0.5 sm:py-1 rounded-full bg-[#092C22] border border-[#00D285]/25 text-[#E8F7EE]"
               >
                 {tech}
               </span>
@@ -267,12 +267,12 @@ export function CaseStudyPage({
         </div>
 
         {/* 09. Next Project Navigation */}
-        <div className="pt-8 sm:pt-12 border-t border-[#235347]/15 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 sm:gap-6">
+        <div className="pt-8 sm:pt-12 border-t border-[#00D285]/15 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 sm:gap-6">
           <div>
-            <span className="font-mono text-[10px] sm:text-xs uppercase tracking-widest text-[#235347]/70 font-bold block mb-1">
+            <span className="font-mono text-[10px] sm:text-xs uppercase tracking-widest text-[#00D285] font-bold block mb-1">
               09 / Next Project
             </span>
-            <span className="font-display font-bold text-lg sm:text-2xl text-[#0B2B26]">
+            <span className="font-display font-bold text-lg sm:text-2xl text-[#041510]">
               {nextProject.title} ({nextProject.category})
             </span>
           </div>
@@ -280,7 +280,7 @@ export function CaseStudyPage({
           <button
             type="button"
             onClick={() => handleNextClick(nextProject)}
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 py-3 sm:py-3.5 px-5 sm:px-6 rounded-full bg-[#235347] text-[#FFFFFF] hover:bg-[#163832] font-mono text-xs uppercase tracking-wider font-bold transition-colors cursor-pointer shadow-sm"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 py-3 sm:py-3.5 px-5 sm:px-6 rounded-full bg-[#00D285] text-[#041510] hover:bg-[#00e599] font-mono text-xs uppercase tracking-wider font-bold transition-all cursor-pointer shadow-[0_0_15px_rgba(0,210,133,0.3)]"
           >
             <span>VIEW NEXT CASE STUDY</span>
             <ArrowRight size={14} />

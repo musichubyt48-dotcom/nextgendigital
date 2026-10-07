@@ -101,7 +101,7 @@ const skillCategories = [
 
 export function SkillsPage({ onNavigate }: SkillsPageProps) {
   return (
-    <div className="min-h-screen bg-background text-foreground pt-32 pb-24 animate-in fade-in duration-500">
+    <div className="min-h-screen bg-[#FFFFFF] text-[#041510] pt-24 pb-12 sm:pt-32 sm:pb-24 animate-in fade-in duration-500">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-20">
         {/* Page Header */}
         <SectionHeader
@@ -109,7 +109,7 @@ export function SkillsPage({ onNavigate }: SkillsPageProps) {
           align="center"
           title={
             <>
-              Engineered for <span className="text-gradient-gold italic">business performance</span>
+              Engineered for <span className="underline decoration-[#00D285] decoration-4 underline-offset-8">business performance</span>
               .
             </>
           }
@@ -121,25 +121,25 @@ export function SkillsPage({ onNavigate }: SkillsPageProps) {
           {skillCategories.map((cat, idx) => (
             <div
               key={idx}
-              className="glass rounded-3xl p-7 sm:p-8 hover-lift flex flex-col justify-between border border-white/10 group"
+              className="bg-[#FFFFFF] rounded-3xl p-7 sm:p-8 hover-lift flex flex-col justify-between border border-[#00D285]/20 shadow-sm hover:border-[#00D285]/60 hover:shadow-md transition-all group"
             >
               <div className="space-y-4">
-                <span className="font-mono text-xs uppercase tracking-widest text-gold/80 block">
+                <span className="font-mono text-xs uppercase tracking-widest text-[#00D285] font-semibold block">
                   {cat.category}
                 </span>
 
-                <h3 className="font-display text-2xl text-foreground group-hover:text-gold transition-colors">
+                <h3 className="font-display font-bold text-2xl text-[#041510] group-hover:text-[#00D285] transition-colors">
                   {cat.title}
                 </h3>
 
-                <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
+                <p className="text-xs sm:text-sm text-[#0A241D]/75 leading-relaxed font-sans">
                   {cat.description}
                 </p>
 
-                <div className="pt-4 space-y-2 border-t border-white/10">
+                <div className="pt-4 space-y-2 border-t border-[#00D285]/15">
                   {cat.skills.map((skill, sIdx) => (
-                    <div key={sIdx} className="flex items-start gap-2.5 text-xs text-foreground/90">
-                      <CheckCircle2 size={13} className="text-gold shrink-0 mt-0.5" />
+                    <div key={sIdx} className="flex items-start gap-2.5 text-xs text-[#041510]">
+                      <CheckCircle2 size={13} className="text-[#00D285] shrink-0 mt-0.5" />
                       <span>{skill}</span>
                     </div>
                   ))}
@@ -150,31 +150,31 @@ export function SkillsPage({ onNavigate }: SkillsPageProps) {
         </div>
 
         {/* Custom Code vs Page Builder Note */}
-        <div className="glass rounded-3xl p-8 sm:p-12 border border-gold/20 max-w-4xl mx-auto space-y-6">
-          <div className="inline-flex items-center gap-2 rounded-full glass-gold px-3.5 py-1 text-[0.6875rem] font-mono uppercase tracking-wider text-gold">
+        <div className="bg-[#FFFFFF] rounded-3xl p-8 sm:p-12 border border-[#00D285]/25 max-w-4xl mx-auto space-y-6 shadow-sm">
+          <div className="inline-flex items-center gap-2 rounded-full bg-[#00D285]/10 border border-[#00D285]/25 px-3.5 py-1 text-[0.6875rem] font-mono uppercase tracking-wider text-[#00D285] font-semibold">
             Why Custom Engineering Matters
           </div>
 
-          <h3 className="font-display text-2xl sm:text-3xl text-foreground">
+          <h3 className="font-display font-bold text-2xl sm:text-3xl text-[#041510]">
             Custom Code vs. Bloated Template Builders
           </h3>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-sm text-muted-foreground leading-relaxed">
-            <div className="space-y-2 p-5 rounded-2xl bg-surface-secondary border border-white/5">
-              <div className="font-mono text-xs text-red-400 font-semibold uppercase">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-sm text-[#0A241D]/80 leading-relaxed font-sans">
+            <div className="space-y-2 p-5 rounded-2xl bg-rose-50/50 border border-rose-200">
+              <div className="font-mono text-xs text-rose-700 font-semibold uppercase">
                 Generic Page Builders (WordPress / Wix)
               </div>
-              <p className="text-xs">
+              <p className="text-xs text-rose-900/80 leading-relaxed">
                 Slow initial load times, dozens of conflicting plugins, frequent security
                 vulnerabilities, and messy monthly licensing costs that slow your website down.
               </p>
             </div>
 
-            <div className="space-y-2 p-5 rounded-2xl glass-gold border border-gold/30">
-              <div className="font-mono text-xs text-gold font-semibold uppercase">
+            <div className="space-y-2 p-5 rounded-2xl bg-[#F8FAF9] border border-[#00D285]/30">
+              <div className="font-mono text-xs text-[#00D285] font-bold uppercase">
                 NextGen Digital Custom Code
               </div>
-              <p className="text-xs text-foreground/90">
+              <p className="text-xs text-[#041510] leading-relaxed">
                 Lightweight, hand-crafted code running on global edge CDNs. Loads in milliseconds,
                 has zero monthly plugin subscriptions, and you own 100% of your source code forever.
               </p>
@@ -184,13 +184,13 @@ export function SkillsPage({ onNavigate }: SkillsPageProps) {
 
         {/* CTA Banner */}
         <div className="text-center pt-8 space-y-4">
-          <p className="text-muted-foreground text-sm">
+          <p className="text-[#0A241D]/75 text-sm font-sans">
             Have a project in mind with unique technical or workflow requirements?
           </p>
           <button
             type="button"
             onClick={() => onNavigate("/contact")}
-            className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-gold to-gold-soft px-8 py-3.5 text-xs font-semibold uppercase tracking-wider text-background shadow-glow-soft hover:shadow-glow transition-all"
+            className="inline-flex items-center gap-2 rounded-full bg-[#00D285] hover:bg-[#00B873] px-8 py-3.5 text-xs font-mono font-bold uppercase tracking-wider text-[#041510] shadow-md shadow-[#00D285]/20 transition-all cursor-pointer"
           >
             <span>Start a Project</span>
             <ArrowRight size={14} />

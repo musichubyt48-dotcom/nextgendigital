@@ -35,7 +35,7 @@ export function LegalPage({ type, onNavigate }: LegalPageProps) {
         },
         {
           heading: "6. Direct Inquiries",
-          body: "For privacy questions, data removal requests, or confidentiality queries, contact our principal founder directly at nextgendigitalofficial2026@gmail.com or via WhatsApp at +91 85093 32038.",
+          body: "For privacy questions, data removal requests, or confidentiality queries, contact our principal founder directly at zivdevofficial@gmail.com or via WhatsApp at +91 85093 32038.",
         },
       ],
     },
@@ -47,7 +47,7 @@ export function LegalPage({ type, onNavigate }: LegalPageProps) {
       sections: [
         {
           heading: "1. Engagement Structure",
-          body: "NextGen Digital provides professional digital design, software engineering, and website development services. Each engagement is governed by an agreed written scope specifying deliverables, timeline estimates, and fixed commercial fees.",
+          body: "JIVDEV provides professional digital design, software engineering, and website development services. Each engagement is governed by an agreed written scope specifying deliverables, timeline estimates, and fixed commercial fees.",
         },
         {
           heading: "2. Payment Milestones",
@@ -55,7 +55,7 @@ export function LegalPage({ type, onNavigate }: LegalPageProps) {
         },
         {
           heading: "3. Intellectual Property Transfer",
-          body: "Upon full settlement of project fees, 100% of the custom design files, frontend source code, stylesheets, and authored digital assets are transferred to the client. NextGen Digital retains no proprietary hostage claims, vendor lock-ins, or mandatory recurring royalties.",
+          body: "Upon full settlement of project fees, 100% of the custom design files, frontend source code, stylesheets, and authored digital assets are transferred to the client. JIVDEV retains no proprietary hostage claims, vendor lock-ins, or mandatory recurring royalties.",
         },
         {
           heading: "4. Client Assets & Approvals",
@@ -96,52 +96,52 @@ export function LegalPage({ type, onNavigate }: LegalPageProps) {
   const Icon = content.icon;
 
   return (
-    <div className="min-h-screen bg-[#FFFFFF] text-[#163832] pt-24 pb-12 sm:pt-32 sm:pb-24">
+    <div className="min-h-screen bg-[#FFFFFF] text-[#041510] pt-24 pb-12 sm:pt-32 sm:pb-24">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6 sm:space-y-12">
         <button
           type="button"
           onClick={() => onNavigate("/")}
-          className="inline-flex items-center gap-1.5 sm:gap-2 text-[11px] sm:text-xs font-mono uppercase tracking-wider text-[#235347] hover:text-[#0B2B26] transition-colors cursor-pointer"
+          className="inline-flex items-center gap-1.5 sm:gap-2 text-[11px] sm:text-xs font-mono uppercase tracking-wider text-[#00D285] hover:text-[#00B873] transition-colors cursor-pointer"
         >
           <ArrowLeft size={13} />
           <span>Return Home</span>
         </button>
 
-        <div className="space-y-2.5 sm:space-y-4 pb-6 sm:pb-8 border-b border-[#235347]/15">
-          <div className="inline-flex items-center gap-1.5 sm:gap-2 rounded-full bg-[#DAF1DE] border border-[#8EB69B]/30 px-3 sm:px-3.5 py-1 text-[10px] sm:text-[0.6875rem] font-mono uppercase tracking-wider text-[#0B2B26]">
-            <Icon size={12} className="text-[#235347]" />
+        <div className="space-y-2.5 sm:space-y-4 pb-6 sm:pb-8 border-b border-[#00D285]/15">
+          <div className="inline-flex items-center gap-1.5 sm:gap-2 rounded-full bg-[#00D285]/10 border border-[#00D285]/25 px-3 sm:px-3.5 py-1 text-[10px] sm:text-[0.6875rem] font-mono uppercase tracking-wider text-[#00D285] font-semibold">
+            <Icon size={12} className="text-[#00D285]" />
             <span>{content.tag}</span>
           </div>
 
-          <h1 className="font-display font-bold text-2xl sm:text-4xl md:text-5xl text-[#0B2B26] uppercase tracking-tight leading-tight">
+          <h1 className="font-display font-bold text-2xl sm:text-4xl md:text-5xl text-[#041510] uppercase tracking-tight leading-tight">
             {content.title}
           </h1>
-          <p className="text-[11px] sm:text-xs font-mono text-[#235347]/70">{content.updated}</p>
+          <p className="text-[11px] sm:text-xs font-mono text-[#0A241D]/60">{content.updated}</p>
         </div>
 
         <div className="space-y-4 sm:space-y-8">
           {content.sections.map((sec, idx) => (
             <div
               key={idx}
-              className="bg-white rounded-2xl sm:rounded-3xl p-4 sm:p-9 border border-[#235347]/15 shadow-subtle space-y-2 sm:space-y-3"
+              className="bg-white rounded-2xl sm:rounded-3xl p-4 sm:p-9 border border-[#00D285]/20 shadow-xs space-y-2 sm:space-y-3"
             >
-              <h2 className="font-display font-bold text-lg sm:text-2xl text-[#0B2B26]">
+              <h2 className="font-display font-bold text-lg sm:text-2xl text-[#041510]">
                 {sec.heading}
               </h2>
-              <p className="text-xs sm:text-sm text-[#235347] leading-relaxed font-sans">
+              <p className="text-xs sm:text-sm text-[#0A241D]/80 leading-relaxed font-sans">
                 {sec.body}
               </p>
             </div>
           ))}
         </div>
 
-        <div className="pt-8 text-center text-xs font-mono text-[#235347]">
+        <div className="pt-8 text-center text-xs font-mono text-[#0A241D]/70">
           Questions regarding these terms? Contact us at{" "}
           <a
-            href="mailto:nextgendigitalofficial2026@gmail.com"
-            className="text-[#0B2B26] font-bold underline hover:text-[#163832]"
+            href="mailto:zivdevofficial@gmail.com"
+            className="text-[#00D285] font-bold underline hover:text-[#041510]"
           >
-            nextgendigitalofficial2026@gmail.com
+            zivdevofficial@gmail.com
           </a>
         </div>
       </div>

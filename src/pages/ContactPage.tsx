@@ -46,15 +46,15 @@ export function ContactPage({ onNavigate }: ContactPageProps) {
       title: "WhatsApp Direct",
       value: "+91 85093 32038",
       sub: "Typical response: Under 15 mins",
-      link: "https://wa.me/918509332038?text=Hello%20NextGen%20Digital,%20I%20would%20like%20to%20discuss%20a%20website%20project.",
+      link: "https://wa.me/918509332038?text=Hello%20JIVDEV,%20I%20would%20like%20to%20discuss%20a%20website%20project.",
       cta: "Chat on WhatsApp",
     },
     {
       icon: Mail,
       title: "Direct Email",
-      value: "nextgendigitalofficial2026@gmail.com",
+      value: "zivdevofficial@gmail.com",
       sub: "RFPs, formal briefs & proposals",
-      link: "mailto:nextgendigitalofficial2026@gmail.com",
+      link: "mailto:zivdevofficial@gmail.com",
       cta: "Send an Email",
     },
     {
@@ -148,7 +148,7 @@ export function ContactPage({ onNavigate }: ContactPageProps) {
               }
         }
         transition={{ duration: 18, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute top-20 left-10 w-96 h-96 bg-[#DAF1DE]/70 rounded-full blur-[130px] pointer-events-none -z-10"
+        className="absolute top-20 left-10 w-96 h-96 bg-[#00D285]/10 rounded-full blur-[130px] pointer-events-none -z-10"
       />
       <motion.div
         animate={
@@ -160,7 +160,7 @@ export function ContactPage({ onNavigate }: ContactPageProps) {
               }
         }
         transition={{ duration: 22, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute bottom-20 right-10 w-96 h-96 bg-[#8EB69B]/20 rounded-full blur-[120px] pointer-events-none -z-10"
+        className="absolute bottom-20 right-10 w-96 h-96 bg-[#0E3D30]/20 rounded-full blur-[120px] pointer-events-none -z-10"
       />
 
       <div className="pt-24 pb-12 sm:pt-32 md:pt-40 md:pb-32 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
@@ -177,7 +177,7 @@ export function ContactPage({ onNavigate }: ContactPageProps) {
               initial={{ opacity: 0, y: shouldReduceMotion ? 0 : 12 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-              className="inline-flex items-center gap-1.5 sm:gap-2 rounded-full bg-[#DAF1DE] border border-[#8EB69B]/30 px-3 sm:px-3.5 py-0.5 sm:py-1 text-[11px] sm:text-xs font-mono uppercase tracking-widest text-[#0B2B26]"
+              className="inline-flex items-center gap-1.5 sm:gap-2 rounded-full bg-[#00D285]/10 border border-[#00D285]/25 px-3 sm:px-3.5 py-0.5 sm:py-1 text-[11px] sm:text-xs font-mono uppercase tracking-widest text-[#00D285] font-bold"
             >
               <span>Direct Studio Communication</span>
             </motion.div>
@@ -188,10 +188,10 @@ export function ContactPage({ onNavigate }: ContactPageProps) {
                 initial={{ opacity: 0, y: shouldReduceMotion ? 0 : 18 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.08, duration: 0.55, ease: [0.16, 1, 0.3, 1] }}
-                className="text-2xl sm:text-4xl md:text-5xl font-display font-extrabold uppercase text-[#0B2B26] tracking-tight leading-[1.08]"
+                className="text-2xl sm:text-4xl md:text-5xl font-display font-extrabold uppercase text-[#041510] tracking-tight leading-[1.08]"
               >
                 Get In Touch <br />
-                <span className="underline decoration-[#8EB69B] decoration-4 underline-offset-8">
+                <span className="underline decoration-[#00D285] decoration-4 underline-offset-8">
                   With Our Team.
                 </span>
               </motion.h1>
@@ -199,7 +199,7 @@ export function ContactPage({ onNavigate }: ContactPageProps) {
                 initial={{ opacity: 0, y: shouldReduceMotion ? 0 : 16 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.16, duration: 0.55, ease: [0.16, 1, 0.3, 1] }}
-                className="text-sm sm:text-lg text-[#235347] font-sans leading-relaxed pt-1 sm:pt-2"
+                className="text-sm sm:text-lg text-[#0A241D]/80 font-sans leading-relaxed pt-1 sm:pt-2"
               >
                 Have a new project, booking engine, or custom digital system in mind? Speak directly
                 with our lead developers for technical feasibility, honest timelines, and exact
@@ -228,32 +228,32 @@ export function ContactPage({ onNavigate }: ContactPageProps) {
                       href={card.link || undefined}
                       target={card.link?.startsWith("http") ? "_blank" : undefined}
                       rel={card.link?.startsWith("http") ? "noopener noreferrer" : undefined}
-                      className={`block p-3.5 sm:p-5 rounded-xl sm:rounded-2xl bg-white border border-[#235347]/15 shadow-xs transition-all duration-300 group transform-gpu ${
+                      className={`block p-3.5 sm:p-5 rounded-xl sm:rounded-2xl bg-white border border-[#00D285]/20 shadow-xs transition-all duration-300 group transform-gpu ${
                         card.link
-                          ? "hover:border-[#8EB69B]/60 hover:shadow-[0_10px_28px_rgba(11,43,38,0.08)] hover:-translate-y-1 cursor-pointer"
+                          ? "hover:border-[#00D285]/60 hover:shadow-[0_10px_28px_rgba(0,210,133,0.12)] hover:-translate-y-1 cursor-pointer"
                           : ""
                       }`}
                     >
                       <div className="flex items-start gap-3 sm:gap-4">
-                        <div className="h-9 w-9 sm:h-10 sm:w-10 rounded-xl bg-[#DAF1DE] flex items-center justify-center text-[#0B2B26] shrink-0 group-hover:bg-[#235347] group-hover:text-[#FFFFFF] group-hover:scale-105 transition-all duration-300">
+                        <div className="h-9 w-9 sm:h-10 sm:w-10 rounded-xl bg-[#00D285]/15 flex items-center justify-center text-[#00D285] shrink-0 group-hover:bg-[#00D285] group-hover:text-[#041510] group-hover:scale-105 transition-all duration-300">
                           <IconComponent size={17} />
                         </div>
                         <div className="space-y-0.5 flex-1 min-w-0">
                           <div className="flex items-center justify-between gap-2">
-                            <span className="font-mono text-[10px] sm:text-xs text-[#235347]/80 uppercase tracking-wider font-semibold">
+                            <span className="font-mono text-[10px] sm:text-xs text-[#00D285] uppercase tracking-wider font-bold">
                               {card.title}
                             </span>
                             {card.link && (
-                              <span className="text-[10px] sm:text-[0.6875rem] font-mono font-bold text-[#235347] group-hover:text-[#0B2B26] group-hover:translate-x-1 transition-transform flex items-center gap-1">
+                              <span className="text-[10px] sm:text-[0.6875rem] font-mono font-bold text-[#041510] group-hover:text-[#00D285] group-hover:translate-x-1 transition-transform flex items-center gap-1">
                                 <span>{card.cta}</span>
                                 <ArrowRight size={11} />
                               </span>
                             )}
                           </div>
-                          <div className="font-display font-bold text-xs sm:text-base text-[#0B2B26] truncate">
+                          <div className="font-display font-bold text-xs sm:text-base text-[#041510] truncate">
                             {card.value}
                           </div>
-                          <div className="font-sans text-[11px] sm:text-xs text-[#235347]">
+                          <div className="font-sans text-[11px] sm:text-xs text-[#0A241D]/70">
                             {card.sub}
                           </div>
                         </div>
@@ -269,14 +269,14 @@ export function ContactPage({ onNavigate }: ContactPageProps) {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5, duration: 0.5 }}
-              className="pt-3 sm:pt-4 border-t border-[#235347]/15 grid grid-cols-2 gap-2 sm:gap-3 text-[11px] sm:text-xs font-mono text-[#235347]"
+              className="pt-3 sm:pt-4 border-t border-[#00D285]/15 grid grid-cols-2 gap-2 sm:gap-3 text-[11px] sm:text-xs font-mono text-[#0A241D]/80"
             >
               <div className="flex items-center gap-1.5 sm:gap-2">
-                <Shield size={14} className="text-[#235347]" />
+                <Shield size={14} className="text-[#00D285]" />
                 <span>NDA & Confidentiality</span>
               </div>
               <div className="flex items-center gap-1.5 sm:gap-2">
-                <Clock size={14} className="text-[#235347]" />
+                <Clock size={14} className="text-[#00D285]" />
                 <span>Direct Engineer Review</span>
               </div>
             </motion.div>
@@ -293,7 +293,7 @@ export function ContactPage({ onNavigate }: ContactPageProps) {
             transition={{ delay: 0.15, duration: 0.62, ease: [0.16, 1, 0.3, 1] }}
             className="lg:col-span-7"
           >
-            <div className="bg-white rounded-3xl p-7 sm:p-10 md:p-12 border border-[#235347]/15 shadow-card">
+            <div className="bg-white rounded-3xl p-7 sm:p-10 md:p-12 border border-[#00D285]/20 shadow-card">
               {isSuccess ? (
                 /* Success State */
                 <motion.div
@@ -301,16 +301,16 @@ export function ContactPage({ onNavigate }: ContactPageProps) {
                   animate={{ opacity: 1, scale: 1 }}
                   className="py-10 text-center space-y-6"
                 >
-                  <div className="h-16 w-16 rounded-full bg-[#DAF1DE] border border-[#8EB69B]/30 flex items-center justify-center text-[#0B2B26] mx-auto">
+                  <div className="h-16 w-16 rounded-full bg-[#00D285]/15 border border-[#00D285]/30 flex items-center justify-center text-[#00D285] mx-auto">
                     <CheckCircle2 size={32} />
                   </div>
                   <div className="space-y-2">
-                    <h3 className="font-display font-bold text-2xl sm:text-3xl text-[#0B2B26]">
+                    <h3 className="font-display font-bold text-2xl sm:text-3xl text-[#041510]">
                       Inquiry Received Successfully
                     </h3>
-                    <p className="text-sm sm:text-base font-sans text-[#235347] max-w-md mx-auto">
+                    <p className="text-sm sm:text-base font-sans text-[#0A241D]/80 max-w-md mx-auto">
                       Thank you,{" "}
-                      <strong className="text-[#0B2B26]">
+                      <strong className="text-[#041510]">
                         {submittedData.name || formData.name}
                       </strong>
                       . Our engineering team will review your project brief and respond within 24
@@ -322,7 +322,7 @@ export function ContactPage({ onNavigate }: ContactPageProps) {
                     <button
                       type="button"
                       onClick={handleOpenWhatsAppBrief}
-                      className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full font-mono text-xs font-bold uppercase tracking-wider text-[#FFFFFF] bg-[#235347] hover:bg-[#163832] transition-colors cursor-pointer shadow-sm"
+                      className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full font-mono text-xs font-bold uppercase tracking-wider text-[#041510] bg-[#00D285] hover:bg-[#00e599] transition-all cursor-pointer shadow-[0_0_15px_rgba(0,210,133,0.3)]"
                     >
                       <MessageCircle size={15} />
                       <span>Send Summary to WhatsApp</span>
@@ -342,7 +342,7 @@ export function ContactPage({ onNavigate }: ContactPageProps) {
                           message: "",
                         });
                       }}
-                      className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full font-mono text-xs font-bold uppercase tracking-wider text-[#235347] bg-white border border-[#235347]/20 hover:bg-[#DAF1DE] transition-colors cursor-pointer"
+                      className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full font-mono text-xs font-bold uppercase tracking-wider text-[#041510] bg-white border border-[#00D285]/30 hover:bg-[#00D285]/10 transition-colors cursor-pointer"
                     >
                       <span>Send Another Inquiry</span>
                     </button>
@@ -351,11 +351,11 @@ export function ContactPage({ onNavigate }: ContactPageProps) {
               ) : (
                 /* Contact Form with Animated Fields */
                 <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="border-b border-[#235347]/10 pb-4">
-                    <h2 className="font-display font-bold text-2xl sm:text-3xl text-[#0B2B26] tracking-tight">
+                  <div className="border-b border-[#00D285]/15 pb-4">
+                    <h2 className="font-display font-bold text-2xl sm:text-3xl text-[#041510] tracking-tight">
                       Send Us a Message
                     </h2>
-                    <p className="text-xs sm:text-sm font-sans text-[#235347] mt-1">
+                    <p className="text-xs sm:text-sm font-sans text-[#0A241D]/75 mt-1">
                       Fill out the form below. We provide concrete line-item scopes, not vague
                       estimates.
                     </p>
@@ -370,7 +370,7 @@ export function ContactPage({ onNavigate }: ContactPageProps) {
                   >
                     {/* Name */}
                     <div className="space-y-1.5">
-                      <label className="block text-xs font-mono uppercase tracking-wider text-[#0B2B26] font-bold">
+                      <label className="block text-xs font-mono uppercase tracking-wider text-[#041510] font-bold">
                         Your Name *
                       </label>
                       <input
@@ -380,10 +380,10 @@ export function ContactPage({ onNavigate }: ContactPageProps) {
                         onFocus={() => setFocusedField("name")}
                         onBlur={() => setFocusedField(null)}
                         placeholder="Ashutosh Kumar"
-                        className={`w-full px-4 py-3 rounded-xl border text-sm font-sans text-[#0B2B26] placeholder-[#235347]/40 outline-none transition-all duration-200 ${
+                        className={`w-full px-4 py-3 rounded-xl border text-sm font-sans text-[#041510] placeholder-[#0A241D]/40 outline-none transition-all duration-200 ${
                           focusedField === "name"
-                            ? "border-[#235347] ring-4 ring-[#235347]/10 bg-white shadow-[0_0_15px_rgba(35,83,71,0.08)]"
-                            : "border-[#235347]/20 bg-[#DAF1DE]/25 hover:border-[#235347]/40"
+                            ? "border-[#00D285] ring-4 ring-[#00D285]/15 bg-white shadow-[0_0_15px_rgba(0,210,133,0.1)]"
+                            : "border-[#00D285]/20 bg-[#F8FAF9] hover:border-[#00D285]/40"
                         } ${errors.name ? "!border-rose-500 !bg-rose-50/50" : ""}`}
                       />
                       {errors.name && (
@@ -396,7 +396,7 @@ export function ContactPage({ onNavigate }: ContactPageProps) {
 
                     {/* Business Name */}
                     <div className="space-y-1.5">
-                      <label className="block text-xs font-mono uppercase tracking-wider text-[#0B2B26] font-bold">
+                      <label className="block text-xs font-mono uppercase tracking-wider text-[#041510] font-bold">
                         Business / Brand Name *
                       </label>
                       <input
@@ -406,10 +406,10 @@ export function ContactPage({ onNavigate }: ContactPageProps) {
                         onFocus={() => setFocusedField("businessName")}
                         onBlur={() => setFocusedField(null)}
                         placeholder="Sungava Resort, Rawfit Gym, etc."
-                        className={`w-full px-4 py-3 rounded-xl border text-sm font-sans text-[#0B2B26] placeholder-[#235347]/40 outline-none transition-all duration-200 ${
+                        className={`w-full px-4 py-3 rounded-xl border text-sm font-sans text-[#041510] placeholder-[#0A241D]/40 outline-none transition-all duration-200 ${
                           focusedField === "businessName"
-                            ? "border-[#235347] ring-4 ring-[#235347]/10 bg-white shadow-[0_0_15px_rgba(35,83,71,0.08)]"
-                            : "border-[#235347]/20 bg-[#DAF1DE]/25 hover:border-[#235347]/40"
+                            ? "border-[#00D285] ring-4 ring-[#00D285]/15 bg-white shadow-[0_0_15px_rgba(0,210,133,0.1)]"
+                            : "border-[#00D285]/20 bg-[#F8FAF9] hover:border-[#00D285]/40"
                         } ${errors.businessName ? "!border-rose-500 !bg-rose-50/50" : ""}`}
                       />
                       {errors.businessName && (
@@ -422,7 +422,7 @@ export function ContactPage({ onNavigate }: ContactPageProps) {
 
                     {/* Email */}
                     <div className="space-y-1.5">
-                      <label className="block text-xs font-mono uppercase tracking-wider text-[#0B2B26] font-bold">
+                      <label className="block text-xs font-mono uppercase tracking-wider text-[#041510] font-bold">
                         Email Address *
                       </label>
                       <input
@@ -432,10 +432,10 @@ export function ContactPage({ onNavigate }: ContactPageProps) {
                         onFocus={() => setFocusedField("email")}
                         onBlur={() => setFocusedField(null)}
                         placeholder="you@yourcompany.com"
-                        className={`w-full px-4 py-3 rounded-xl border text-sm font-sans text-[#0B2B26] placeholder-[#235347]/40 outline-none transition-all duration-200 ${
+                        className={`w-full px-4 py-3 rounded-xl border text-sm font-sans text-[#041510] placeholder-[#0A241D]/40 outline-none transition-all duration-200 ${
                           focusedField === "email"
-                            ? "border-[#235347] ring-4 ring-[#235347]/10 bg-white shadow-[0_0_15px_rgba(35,83,71,0.08)]"
-                            : "border-[#235347]/20 bg-[#DAF1DE]/25 hover:border-[#235347]/40"
+                            ? "border-[#00D285] ring-4 ring-[#00D285]/15 bg-white shadow-[0_0_15px_rgba(0,210,133,0.1)]"
+                            : "border-[#00D285]/20 bg-[#F8FAF9] hover:border-[#00D285]/40"
                         } ${errors.email ? "!border-rose-500 !bg-rose-50/50" : ""}`}
                       />
                       {errors.email && (
@@ -448,7 +448,7 @@ export function ContactPage({ onNavigate }: ContactPageProps) {
 
                     {/* Phone / WhatsApp */}
                     <div className="space-y-1.5">
-                      <label className="block text-xs font-mono uppercase tracking-wider text-[#0B2B26] font-bold">
+                      <label className="block text-xs font-mono uppercase tracking-wider text-[#041510] font-bold">
                         Phone / WhatsApp *
                       </label>
                       <input
@@ -458,10 +458,10 @@ export function ContactPage({ onNavigate }: ContactPageProps) {
                         onFocus={() => setFocusedField("phone")}
                         onBlur={() => setFocusedField(null)}
                         placeholder="+91 98765 43210"
-                        className={`w-full px-4 py-3 rounded-xl border text-sm font-sans text-[#0B2B26] placeholder-[#235347]/40 outline-none transition-all duration-200 ${
+                        className={`w-full px-4 py-3 rounded-xl border text-sm font-sans text-[#041510] placeholder-[#0A241D]/40 outline-none transition-all duration-200 ${
                           focusedField === "phone"
-                            ? "border-[#235347] ring-4 ring-[#235347]/10 bg-white shadow-[0_0_15px_rgba(35,83,71,0.08)]"
-                            : "border-[#235347]/20 bg-[#DAF1DE]/25 hover:border-[#235347]/40"
+                            ? "border-[#00D285] ring-4 ring-[#00D285]/15 bg-white shadow-[0_0_15px_rgba(0,210,133,0.1)]"
+                            : "border-[#00D285]/20 bg-[#F8FAF9] hover:border-[#00D285]/40"
                         } ${errors.phone ? "!border-rose-500 !bg-rose-50/50" : ""}`}
                       />
                       {errors.phone && (
@@ -474,13 +474,13 @@ export function ContactPage({ onNavigate }: ContactPageProps) {
 
                     {/* Project Type */}
                     <div className="space-y-1.5">
-                      <label className="block text-xs font-mono uppercase tracking-wider text-[#0B2B26] font-bold">
+                      <label className="block text-xs font-mono uppercase tracking-wider text-[#041510] font-bold">
                         Project Type
                       </label>
                       <select
                         value={formData.projectType}
                         onChange={(e) => setFormData({ ...formData, projectType: e.target.value })}
-                        className="w-full px-4 py-3 rounded-xl border border-[#235347]/20 bg-[#DAF1DE]/25 text-sm font-sans text-[#0B2B26] outline-none focus:border-[#235347] focus:ring-4 focus:ring-[#235347]/10 focus:bg-white transition-all cursor-pointer"
+                        className="w-full px-4 py-3 rounded-xl border border-[#00D285]/20 bg-[#F8FAF9] text-sm font-sans text-[#041510] outline-none focus:border-[#00D285] focus:ring-4 focus:ring-[#00D285]/10 focus:bg-white transition-all cursor-pointer"
                       >
                         <option value="Business Website">Business Website (Multi-Page)</option>
                         <option value="Landing Page">High-Converting Landing Page</option>
@@ -493,13 +493,13 @@ export function ContactPage({ onNavigate }: ContactPageProps) {
 
                     {/* Budget Tier */}
                     <div className="space-y-1.5">
-                      <label className="block text-xs font-mono uppercase tracking-wider text-[#0B2B26] font-bold">
+                      <label className="block text-xs font-mono uppercase tracking-wider text-[#041510] font-bold">
                         Investment Preference
                       </label>
                       <select
                         value={formData.budget}
                         onChange={(e) => setFormData({ ...formData, budget: e.target.value })}
-                        className="w-full px-4 py-3 rounded-xl border border-[#235347]/20 bg-[#DAF1DE]/25 text-sm font-sans text-[#0B2B26] outline-none focus:border-[#235347] focus:ring-4 focus:ring-[#235347]/10 focus:bg-white transition-all cursor-pointer"
+                        className="w-full px-4 py-3 rounded-xl border border-[#00D285]/20 bg-[#F8FAF9] text-sm font-sans text-[#041510] outline-none focus:border-[#00D285] focus:ring-4 focus:ring-[#00D285]/10 focus:bg-white transition-all cursor-pointer"
                       >
                         <option value="Starter (₹4,999+)">Starter Tier (₹4,999+)</option>
                         <option value="Growth (₹14,999 - ₹24,999)">
@@ -518,7 +518,7 @@ export function ContactPage({ onNavigate }: ContactPageProps) {
                     transition={{ delay: 0.32, duration: 0.5 }}
                     className="space-y-1.5"
                   >
-                    <label className="block text-xs font-mono uppercase tracking-wider text-[#0B2B26] font-bold">
+                    <label className="block text-xs font-mono uppercase tracking-wider text-[#041510] font-bold">
                       Project Brief & Requirements *
                     </label>
                     <textarea
@@ -528,10 +528,10 @@ export function ContactPage({ onNavigate }: ContactPageProps) {
                       onFocus={() => setFocusedField("message")}
                       onBlur={() => setFocusedField(null)}
                       placeholder="Tell us what you want to achieve, target features (e.g. WhatsApp booking, payment gateway), and any reference links..."
-                      className={`w-full px-4 py-3 rounded-xl border text-sm font-sans text-[#0B2B26] placeholder-[#235347]/40 outline-none transition-all duration-200 resize-none ${
+                      className={`w-full px-4 py-3 rounded-xl border text-sm font-sans text-[#041510] placeholder-[#0A241D]/40 outline-none transition-all duration-200 resize-none ${
                         focusedField === "message"
-                          ? "border-[#235347] ring-4 ring-[#235347]/10 bg-white shadow-[0_0_15px_rgba(35,83,71,0.08)]"
-                          : "border-[#235347]/20 bg-[#DAF1DE]/25 hover:border-[#235347]/40"
+                          ? "border-[#00D285] ring-4 ring-[#00D285]/15 bg-white shadow-[0_0_15px_rgba(0,210,133,0.1)]"
+                          : "border-[#00D285]/20 bg-[#F8FAF9] hover:border-[#00D285]/40"
                       } ${errors.message ? "!border-rose-500 !bg-rose-50/50" : ""}`}
                     />
                     {errors.message && (
@@ -566,7 +566,7 @@ export function ContactPage({ onNavigate }: ContactPageProps) {
                     <button
                       type="submit"
                       disabled={isSubmitting}
-                      className="w-full group relative inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-full font-mono text-xs sm:text-sm font-bold tracking-wider uppercase cursor-pointer select-none bg-[#235347] text-[#FFFFFF] border border-[#235347] hover:bg-[#163832] hover:border-[#163832] hover:shadow-[0_8px_25px_rgba(11,43,38,0.25)] hover:-translate-y-0.5 transition-all duration-200 active:scale-[0.98] active:translate-y-0 disabled:opacity-50 transform-gpu"
+                      className="w-full group relative inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-full font-mono text-xs sm:text-sm font-bold tracking-wider uppercase cursor-pointer select-none bg-[#00D285] text-[#041510] border border-[#00D285] hover:bg-[#00e599] hover:border-[#00e599] hover:shadow-[0_8px_25px_rgba(0,210,133,0.35)] hover:-translate-y-0.5 transition-all duration-200 active:scale-[0.98] active:translate-y-0 disabled:opacity-50 transform-gpu"
                     >
                       {isSubmitting ? (
                         <span className="flex items-center gap-2">
@@ -586,12 +586,12 @@ export function ContactPage({ onNavigate }: ContactPageProps) {
                   </motion.div>
 
                   <div className="pt-2 text-center">
-                    <p className="text-[0.6875rem] font-mono text-[#235347]/70">
+                    <p className="text-[0.6875rem] font-mono text-[#0A241D]/70">
                       Need a formal multi-step scoping breakdown?{" "}
                       <button
                         type="button"
                         onClick={() => onNavigate("/start-a-project")}
-                        className="text-[#0B2B26] underline font-bold hover:text-[#163832] cursor-pointer"
+                        className="text-[#041510] underline font-bold hover:text-[#00D285] cursor-pointer transition-colors"
                       >
                         Open the Interactive Questionnaire →
                       </button>

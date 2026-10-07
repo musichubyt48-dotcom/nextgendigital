@@ -117,7 +117,7 @@ export function EnquiryForm({ initialProjectType, initialBudget, onSubmitted }: 
   const generateWhatsAppUrl = () => {
     if (!submittedData) return "https://wa.me/918509332038";
 
-    const text = `*New Project Inquiry — NextGen Digital*
+    const text = `*New Project Inquiry — JIVDEV*
 ---------------------------------------
 • *Name:* ${submittedData.name}
 • *Business:* ${submittedData.businessName} (${submittedData.businessType})
@@ -129,7 +129,7 @@ export function EnquiryForm({ initialProjectType, initialBudget, onSubmitted }: 
 *Project Requirements:*
 ${submittedData.requirements}
 ---------------------------------------
-Sent via NextGen Digital Inquiry Portal`;
+Sent via JIVDEV Inquiry Portal`;
 
     return `https://wa.me/918509332038?text=${encodeURIComponent(text)}`;
   };
@@ -137,21 +137,21 @@ Sent via NextGen Digital Inquiry Portal`;
   return (
     <div
       id="enquiry-form"
-      className="glass rounded-2xl sm:rounded-3xl p-4 sm:p-10 border border-white/10 relative shadow-2xl"
+      className="bg-white rounded-2xl sm:rounded-3xl p-4 sm:p-10 border border-[#00D285]/20 relative shadow-2xl"
     >
       {!submittedData ? (
         <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
-          <div className="border-b border-white/10 pb-4 sm:pb-5 mb-4 sm:mb-6">
+          <div className="border-b border-[#00D285]/15 pb-4 sm:pb-5 mb-4 sm:mb-6">
             <div className="flex items-center gap-2">
-              <span className="h-2 w-2 rounded-full bg-gold" />
-              <span className="font-mono text-[11px] sm:text-xs uppercase tracking-[0.2em] text-gold">
+              <span className="h-2 w-2 rounded-full bg-[#00D285]" />
+              <span className="font-mono text-[11px] sm:text-xs uppercase tracking-[0.2em] text-[#00D285] font-bold">
                 Project Intake
               </span>
             </div>
-            <h3 className="font-display text-xl sm:text-3xl text-foreground mt-1">
+            <h3 className="font-display font-bold text-xl sm:text-3xl text-[#041510] mt-1">
               Start Your Project Consultation
             </h3>
-            <p className="text-xs sm:text-sm text-muted-foreground mt-1">
+            <p className="text-xs sm:text-sm text-[#0A241D]/75 mt-1 font-sans">
               Share your project details. We review your requirements and respond within 24 hours
               with an honest scope and transparent proposal.
             </p>
@@ -162,9 +162,9 @@ Sent via NextGen Digital Inquiry Portal`;
             <div>
               <label
                 htmlFor="client-name"
-                className="block text-xs font-mono uppercase tracking-wider text-foreground mb-1.5 font-medium"
+                className="block text-xs font-mono uppercase tracking-wider text-[#041510] mb-1.5 font-bold"
               >
-                Your Full Name <span className="text-gold">*</span>
+                Your Full Name <span className="text-[#00D285]">*</span>
               </label>
               <input
                 id="client-name"
@@ -172,12 +172,12 @@ Sent via NextGen Digital Inquiry Portal`;
                 value={formData.name}
                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                 placeholder="e.g. Rajesh Sharma"
-                className={`w-full bg-surface-secondary/80 border rounded-xl px-3.5 py-2.5 sm:px-4 sm:py-3 text-base sm:text-sm text-foreground placeholder-muted-foreground/50 focus:outline-none focus:ring-1 focus:ring-gold transition-all ${
-                  errors.name ? "border-red-500/80 bg-red-950/20" : "border-white/10"
+                className={`w-full bg-[#F8FAF9] border rounded-xl px-3.5 py-2.5 sm:px-4 sm:py-3 text-base sm:text-sm text-[#041510] placeholder-[#0A241D]/40 focus:outline-none focus:ring-1 focus:ring-[#00D285] focus:border-[#00D285] transition-all ${
+                  errors.name ? "border-red-500/80 bg-red-50" : "border-[#00D285]/20"
                 }`}
               />
               {errors.name && (
-                <p className="text-[0.75rem] text-red-400 mt-1 flex items-center gap-1">
+                <p className="text-[0.75rem] text-red-500 mt-1 flex items-center gap-1">
                   <AlertCircle size={12} /> {errors.name}
                 </p>
               )}
@@ -187,9 +187,9 @@ Sent via NextGen Digital Inquiry Portal`;
             <div>
               <label
                 htmlFor="business-name"
-                className="block text-xs font-mono uppercase tracking-wider text-foreground mb-1.5 font-medium"
+                className="block text-xs font-mono uppercase tracking-wider text-[#041510] mb-1.5 font-bold"
               >
-                Business Name <span className="text-gold">*</span>
+                Business Name <span className="text-[#00D285]">*</span>
               </label>
               <input
                 id="business-name"
@@ -197,12 +197,12 @@ Sent via NextGen Digital Inquiry Portal`;
                 value={formData.businessName}
                 onChange={(e) => setFormData({ ...formData, businessName: e.target.value })}
                 placeholder="e.g. Apex Enterprise"
-                className={`w-full bg-surface-secondary/80 border rounded-xl px-3.5 py-2.5 sm:px-4 sm:py-3 text-base sm:text-sm text-foreground placeholder-muted-foreground/50 focus:outline-none focus:ring-1 focus:ring-gold transition-all ${
-                  errors.businessName ? "border-red-500/80 bg-red-950/20" : "border-white/10"
+                className={`w-full bg-[#F8FAF9] border rounded-xl px-3.5 py-2.5 sm:px-4 sm:py-3 text-base sm:text-sm text-[#041510] placeholder-[#0A241D]/40 focus:outline-none focus:ring-1 focus:ring-[#00D285] focus:border-[#00D285] transition-all ${
+                  errors.businessName ? "border-red-500/80 bg-red-50" : "border-[#00D285]/20"
                 }`}
               />
               {errors.businessName && (
-                <p className="text-[0.75rem] text-red-400 mt-1 flex items-center gap-1">
+                <p className="text-[0.75rem] text-red-500 mt-1 flex items-center gap-1">
                   <AlertCircle size={12} /> {errors.businessName}
                 </p>
               )}
@@ -214,7 +214,7 @@ Sent via NextGen Digital Inquiry Portal`;
             <div>
               <label
                 htmlFor="business-type"
-                className="block text-xs font-mono uppercase tracking-wider text-foreground mb-1.5 font-medium"
+                className="block text-xs font-mono uppercase tracking-wider text-[#041510] mb-1.5 font-bold"
               >
                 Business Type
               </label>
@@ -222,10 +222,10 @@ Sent via NextGen Digital Inquiry Portal`;
                 id="business-type"
                 value={formData.businessType}
                 onChange={(e) => setFormData({ ...formData, businessType: e.target.value })}
-                className="w-full bg-surface-secondary/80 border border-white/10 rounded-xl px-3.5 py-2.5 sm:px-4 sm:py-3 text-base sm:text-sm text-foreground focus:outline-none focus:ring-1 focus:ring-gold transition-all"
+                className="w-full bg-[#F8FAF9] border border-[#00D285]/20 rounded-xl px-3.5 py-2.5 sm:px-4 sm:py-3 text-base sm:text-sm text-[#041510] focus:outline-none focus:ring-1 focus:ring-[#00D285] focus:border-[#00D285] transition-all"
               >
                 {businessTypes.map((type, i) => (
-                  <option key={i} value={type} className="bg-surface text-foreground">
+                  <option key={i} value={type} className="bg-white text-[#041510]">
                     {type}
                   </option>
                 ))}
@@ -236,9 +236,9 @@ Sent via NextGen Digital Inquiry Portal`;
             <div>
               <label
                 htmlFor="contact-phone"
-                className="block text-xs font-mono uppercase tracking-wider text-foreground mb-1.5 font-medium"
+                className="block text-xs font-mono uppercase tracking-wider text-[#041510] mb-1.5 font-bold"
               >
-                Phone / WhatsApp <span className="text-gold">*</span>
+                Phone / WhatsApp <span className="text-[#00D285]">*</span>
               </label>
               <input
                 id="contact-phone"
@@ -246,12 +246,12 @@ Sent via NextGen Digital Inquiry Portal`;
                 value={formData.phone}
                 onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                 placeholder="+91 98765 43210"
-                className={`w-full bg-surface-secondary/80 border rounded-xl px-3.5 py-2.5 sm:px-4 sm:py-3 text-base sm:text-sm text-foreground placeholder-muted-foreground/50 focus:outline-none focus:ring-1 focus:ring-gold transition-all ${
-                  errors.phone ? "border-red-500/80 bg-red-950/20" : "border-white/10"
+                className={`w-full bg-[#F8FAF9] border rounded-xl px-3.5 py-2.5 sm:px-4 sm:py-3 text-base sm:text-sm text-[#041510] placeholder-[#0A241D]/40 focus:outline-none focus:ring-1 focus:ring-[#00D285] focus:border-[#00D285] transition-all ${
+                  errors.phone ? "border-red-500/80 bg-red-50" : "border-[#00D285]/20"
                 }`}
               />
               {errors.phone && (
-                <p className="text-[0.75rem] text-red-400 mt-1 flex items-center gap-1">
+                <p className="text-[0.75rem] text-red-500 mt-1 flex items-center gap-1">
                   <AlertCircle size={12} /> {errors.phone}
                 </p>
               )}
@@ -263,9 +263,9 @@ Sent via NextGen Digital Inquiry Portal`;
             <div>
               <label
                 htmlFor="contact-email"
-                className="block text-xs font-mono uppercase tracking-wider text-foreground mb-1.5 font-medium"
+                className="block text-xs font-mono uppercase tracking-wider text-[#041510] mb-1.5 font-bold"
               >
-                Email Address <span className="text-gold">*</span>
+                Email Address <span className="text-[#00D285]">*</span>
               </label>
               <input
                 id="contact-email"
@@ -273,12 +273,12 @@ Sent via NextGen Digital Inquiry Portal`;
                 value={formData.email}
                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                 placeholder="rajesh@resort.com"
-                className={`w-full bg-surface-secondary/80 border rounded-xl px-3.5 py-2.5 sm:px-4 sm:py-3 text-base sm:text-sm text-foreground placeholder-muted-foreground/50 focus:outline-none focus:ring-1 focus:ring-gold transition-all ${
-                  errors.email ? "border-red-500/80 bg-red-950/20" : "border-white/10"
+                className={`w-full bg-[#F8FAF9] border rounded-xl px-3.5 py-2.5 sm:px-4 sm:py-3 text-base sm:text-sm text-[#041510] placeholder-[#0A241D]/40 focus:outline-none focus:ring-1 focus:ring-[#00D285] focus:border-[#00D285] transition-all ${
+                  errors.email ? "border-red-500/80 bg-red-50" : "border-[#00D285]/20"
                 }`}
               />
               {errors.email && (
-                <p className="text-[0.75rem] text-red-400 mt-1 flex items-center gap-1">
+                <p className="text-[0.75rem] text-red-500 mt-1 flex items-center gap-1">
                   <AlertCircle size={12} /> {errors.email}
                 </p>
               )}
@@ -288,18 +288,18 @@ Sent via NextGen Digital Inquiry Portal`;
             <div>
               <label
                 htmlFor="project-type"
-                className="block text-xs font-mono uppercase tracking-wider text-foreground mb-1.5 font-medium"
+                className="block text-xs font-mono uppercase tracking-wider text-[#041510] mb-1.5 font-bold"
               >
-                Project Type <span className="text-gold">*</span>
+                Project Type <span className="text-[#00D285]">*</span>
               </label>
               <select
                 id="project-type"
                 value={formData.projectType}
                 onChange={(e) => setFormData({ ...formData, projectType: e.target.value })}
-                className="w-full bg-surface-secondary/80 border border-white/10 rounded-xl px-3.5 py-2.5 sm:px-4 sm:py-3 text-base sm:text-sm text-foreground focus:outline-none focus:ring-1 focus:ring-gold transition-all"
+                className="w-full bg-[#F8FAF9] border border-[#00D285]/20 rounded-xl px-3.5 py-2.5 sm:px-4 sm:py-3 text-base sm:text-sm text-[#041510] focus:outline-none focus:ring-1 focus:ring-[#00D285] focus:border-[#00D285] transition-all"
               >
                 {projectTypes.map((type, i) => (
-                  <option key={i} value={type} className="bg-surface text-foreground">
+                  <option key={i} value={type} className="bg-white text-[#041510]">
                     {type}
                   </option>
                 ))}
@@ -311,7 +311,7 @@ Sent via NextGen Digital Inquiry Portal`;
           <div>
             <label
               htmlFor="budget-range"
-              className="block text-xs font-mono uppercase tracking-wider text-foreground mb-1.5 font-medium"
+              className="block text-xs font-mono uppercase tracking-wider text-[#041510] mb-1.5 font-bold"
             >
               Budget Range
             </label>
@@ -319,10 +319,10 @@ Sent via NextGen Digital Inquiry Portal`;
               id="budget-range"
               value={formData.budget}
               onChange={(e) => setFormData({ ...formData, budget: e.target.value })}
-              className="w-full bg-surface-secondary/80 border border-white/10 rounded-xl px-3.5 py-2.5 sm:px-4 sm:py-3 text-base sm:text-sm text-foreground focus:outline-none focus:ring-1 focus:ring-gold transition-all"
+              className="w-full bg-[#F8FAF9] border border-[#00D285]/20 rounded-xl px-3.5 py-2.5 sm:px-4 sm:py-3 text-base sm:text-sm text-[#041510] focus:outline-none focus:ring-1 focus:ring-[#00D285] focus:border-[#00D285] transition-all"
             >
               {budgetRanges.map((range, i) => (
-                <option key={i} value={range} className="bg-surface text-foreground">
+                <option key={i} value={range} className="bg-white text-[#041510]">
                   {range}
                 </option>
               ))}
@@ -333,9 +333,9 @@ Sent via NextGen Digital Inquiry Portal`;
           <div>
             <label
               htmlFor="requirements"
-              className="block text-xs font-mono uppercase tracking-wider text-foreground mb-1.5 font-medium"
+              className="block text-xs font-mono uppercase tracking-wider text-[#041510] mb-1.5 font-bold"
             >
-              Project Requirements & Goals <span className="text-gold">*</span>
+              Project Requirements & Goals <span className="text-[#00D285]">*</span>
             </label>
             <textarea
               id="requirements"
@@ -343,12 +343,12 @@ Sent via NextGen Digital Inquiry Portal`;
               value={formData.requirements}
               onChange={(e) => setFormData({ ...formData, requirements: e.target.value })}
               placeholder="Tell us what you are looking to build (e.g. 5-page hotel website with direct WhatsApp room booking, existing domain, ready in 2-3 weeks)..."
-              className={`w-full bg-surface-secondary/80 border rounded-xl px-3.5 py-2.5 sm:px-4 sm:py-3 text-base sm:text-sm text-foreground placeholder-muted-foreground/50 focus:outline-none focus:ring-1 focus:ring-gold transition-all resize-none ${
-                errors.requirements ? "border-red-500/80 bg-red-950/20" : "border-white/10"
+              className={`w-full bg-[#F8FAF9] border rounded-xl px-3.5 py-2.5 sm:px-4 sm:py-3 text-base sm:text-sm text-[#041510] placeholder-[#0A241D]/40 focus:outline-none focus:ring-1 focus:ring-[#00D285] focus:border-[#00D285] transition-all resize-none ${
+                errors.requirements ? "border-red-500/80 bg-red-50" : "border-[#00D285]/20"
               }`}
             />
             {errors.requirements && (
-              <p className="text-[0.75rem] text-red-400 mt-1 flex items-center gap-1">
+              <p className="text-[0.75rem] text-red-500 mt-1 flex items-center gap-1">
                 <AlertCircle size={12} /> {errors.requirements}
               </p>
             )}
@@ -358,7 +358,7 @@ Sent via NextGen Digital Inquiry Portal`;
           <button
             type="submit"
             disabled={submitting}
-            className="w-full py-4 rounded-full bg-gradient-to-r from-gold to-gold-soft text-background text-xs font-semibold uppercase tracking-wider shadow-glow-soft hover:shadow-glow hover:-translate-y-0.5 transition-all flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50"
+            className="w-full py-4 rounded-full bg-[#00D285] hover:bg-[#00e599] text-[#041510] text-xs font-mono font-bold uppercase tracking-wider shadow-[0_0_20px_rgba(0,210,133,0.3)] hover:-translate-y-0.5 transition-all flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50"
           >
             {submitting ? (
               <span>Preparing Consultation Brief...</span>
@@ -372,26 +372,26 @@ Sent via NextGen Digital Inquiry Portal`;
         </form>
       ) : (
         <div className="text-center py-8 space-y-6 animate-in fade-in duration-500">
-          <div className="h-16 w-16 rounded-full glass-gold flex items-center justify-center text-gold mx-auto">
+          <div className="h-16 w-16 rounded-full bg-[#00D285]/20 flex items-center justify-center text-[#00D285] mx-auto border border-[#00D285]/30">
             <CheckCircle2 size={32} />
           </div>
 
           <div className="space-y-2">
-            <h3 className="font-display text-3xl text-foreground">Inquiry Received</h3>
-            <p className="text-sm text-muted-foreground max-w-md mx-auto">
-              Thank you, <strong className="text-foreground">{submittedData.name}</strong>. We have
+            <h3 className="font-display font-bold text-3xl text-[#041510]">Inquiry Received</h3>
+            <p className="text-sm text-[#0A241D]/80 max-w-md mx-auto font-sans">
+              Thank you, <strong className="text-[#041510]">{submittedData.name}</strong>. We have
               received your brief for{" "}
-              <strong className="text-foreground">{submittedData.businessName}</strong>.
+              <strong className="text-[#041510]">{submittedData.businessName}</strong>.
             </p>
           </div>
 
           {/* Forward via WhatsApp for instant review */}
-          <div className="p-6 rounded-2xl glass border border-gold/30 max-w-md mx-auto space-y-4 text-left">
-            <div className="text-xs font-mono uppercase tracking-wider text-gold flex items-center gap-2">
+          <div className="p-6 rounded-2xl bg-[#F8FAF9] border border-[#00D285]/30 max-w-md mx-auto space-y-4 text-left">
+            <div className="text-xs font-mono uppercase tracking-wider text-[#00D285] font-bold flex items-center gap-2">
               <MessageCircle size={14} />
               <span>Instant WhatsApp Handoff</span>
             </div>
-            <p className="text-xs text-muted-foreground leading-relaxed">
+            <p className="text-xs text-[#0A241D]/75 leading-relaxed font-sans">
               Want an immediate response? You can send this completed brief directly to our
               founder's WhatsApp with one click:
             </p>
@@ -399,7 +399,7 @@ Sent via NextGen Digital Inquiry Portal`;
               href={generateWhatsAppUrl()}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 w-full py-3 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-semibold uppercase tracking-wider transition-colors shadow-md"
+              className="inline-flex items-center justify-center gap-2 w-full py-3 rounded-full bg-[#00D285] hover:bg-[#00e599] text-[#041510] text-xs font-mono font-bold uppercase tracking-wider transition-all shadow-[0_0_15px_rgba(0,210,133,0.3)]"
             >
               <MessageCircle size={15} />
               <span>Forward Brief via WhatsApp</span>
@@ -422,7 +422,7 @@ Sent via NextGen Digital Inquiry Portal`;
                   requirements: "",
                 });
               }}
-              className="text-xs font-mono uppercase tracking-wider text-muted-foreground hover:text-gold transition-colors"
+              className="text-xs font-mono uppercase tracking-wider text-[#0A241D]/60 hover:text-[#00D285] transition-colors cursor-pointer"
             >
               Submit another project brief
             </button>

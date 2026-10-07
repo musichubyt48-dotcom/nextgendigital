@@ -140,7 +140,7 @@ export function PricingPage({ onNavigate }: PricingPageProps) {
             }}
             className="inline-block"
           >
-            <div className="inline-flex items-center gap-1.5 sm:gap-2 rounded-full bg-[#DAF1DE] px-3 sm:px-3.5 py-0.5 sm:py-1 text-[11px] sm:text-xs font-mono uppercase tracking-widest text-[#163832] border border-[#235347]/15">
+            <div className="inline-flex items-center gap-1.5 sm:gap-2 rounded-full bg-[#00D285]/10 px-3 sm:px-3.5 py-0.5 sm:py-1 text-[11px] sm:text-xs font-mono uppercase tracking-widest text-[#00D285] border border-[#00D285]/25">
               <span>Investment & Packages</span>
             </div>
           </motion.div>
@@ -154,10 +154,10 @@ export function PricingPage({ onNavigate }: PricingPageProps) {
                 transition: { duration: 0.55, ease: [0.16, 1, 0.3, 1] },
               },
             }}
-            className="text-2xl sm:text-4xl md:text-5xl font-display font-extrabold uppercase text-[#0B2B26] tracking-tight leading-tight"
+            className="text-2xl sm:text-4xl md:text-5xl font-display font-extrabold uppercase text-[#041510] tracking-tight leading-tight"
           >
             Transparent Pricing. <br />
-            <span className="underline decoration-[#8EB69B] decoration-4 underline-offset-8">
+            <span className="underline decoration-[#00D285] decoration-4 underline-offset-8">
               Guaranteed Milestones.
             </span>
           </motion.h1>
@@ -171,7 +171,7 @@ export function PricingPage({ onNavigate }: PricingPageProps) {
                 transition: { duration: 0.55, ease: [0.16, 1, 0.3, 1] },
               },
             }}
-            className="text-xs sm:text-base font-sans text-[#163832]/80 max-w-2xl mx-auto"
+            className="text-xs sm:text-base font-sans text-[#0A241D]/80 max-w-2xl mx-auto"
           >
             Choose your starting investment below. All packages include 100% complete source code
             ownership, zero ongoing vendor lock-in, and guaranteed delivery sprints.
@@ -210,22 +210,22 @@ export function PricingPage({ onNavigate }: PricingPageProps) {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="bg-white rounded-2xl sm:rounded-3xl p-4 sm:p-8 md:p-10 border border-[#235347]/15 shadow-subtle"
+          className="bg-white rounded-2xl sm:rounded-3xl p-4 sm:p-8 md:p-10 border border-[#00D285]/20 shadow-subtle"
         >
           {/* Matrix Header with Subtle Swipe Cue for Mobile */}
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-2.5 mb-4 sm:mb-6 pb-1">
             <div className="space-y-1">
-              <h3 className="font-display font-bold text-xl sm:text-2xl text-[#0B2B26]">
+              <h3 className="font-display font-bold text-xl sm:text-2xl text-[#041510]">
                 Feature Comparison Matrix
               </h3>
-              <p className="text-xs sm:text-sm text-[#163832]/70 font-sans">
+              <p className="text-xs sm:text-sm text-[#0A241D]/70 font-sans">
                 Compare architectural deliverables across starter, growth, and premium tiers.
               </p>
             </div>
             {/* Subtle visual indication for mobile touch swipe */}
-            <div className="inline-flex items-center gap-1.5 self-start sm:self-auto rounded-full bg-[#DAF1DE] border border-[#235347]/15 px-2.5 py-1 text-[11px] font-mono font-medium text-[#163832] md:hidden select-none">
+            <div className="inline-flex items-center gap-1.5 self-start sm:self-auto rounded-full bg-[#00D285]/10 border border-[#00D285]/20 px-2.5 py-1 text-[11px] font-mono font-bold text-[#00D285] md:hidden select-none">
               <span>Swipe to compare</span>
-              <ArrowRight size={12} className="text-[#235347] shrink-0" />
+              <ArrowRight size={12} className="text-[#00D285] shrink-0" />
             </div>
           </div>
 
@@ -233,14 +233,14 @@ export function PricingPage({ onNavigate }: PricingPageProps) {
           <div className="w-full max-w-full overflow-x-auto overscroll-x-contain touch-pan-x rounded-xl pb-2 focus:outline-none">
             <table className="w-full text-left text-xs font-mono min-w-[660px] md:min-w-full border-collapse">
               <thead>
-                <tr className="border-b border-[#235347]/15 text-[#0B2B26] uppercase">
+                <tr className="border-b border-[#00D285]/15 text-[#041510] uppercase">
                   <th className="py-3 px-3.5 sm:px-4 font-bold min-w-[210px] sm:min-w-[230px] md:min-w-0 md:w-2/5">
                     Deliverable
                   </th>
                   <th className="py-3 px-3.5 sm:px-4 font-bold min-w-[140px] sm:min-w-[150px] md:min-w-0 md:w-1/5">
                     Starter (₹4,999+)
                   </th>
-                  <th className="py-3 px-3.5 sm:px-4 font-bold bg-[#DAF1DE] rounded-t-lg min-w-[140px] sm:min-w-[150px] md:min-w-0 md:w-1/5">
+                  <th className="py-3 px-3.5 sm:px-4 font-bold bg-[#00D285]/15 text-[#041510] rounded-t-lg min-w-[140px] sm:min-w-[150px] md:min-w-0 md:w-1/5">
                     Growth (₹14,999+)
                   </th>
                   <th className="py-3 px-3.5 sm:px-4 font-bold min-w-[140px] sm:min-w-[150px] md:min-w-0 md:w-1/5">
@@ -248,40 +248,40 @@ export function PricingPage({ onNavigate }: PricingPageProps) {
                   </th>
                 </tr>
               </thead>
-              <tbody className="divide-y divide-[#235347]/10">
+              <tbody className="divide-y divide-[#00D285]/10">
                 {comparisonRows.map((row, idx) => (
-                  <tr key={idx} className="hover:bg-[#DAF1DE]/20 transition-colors">
-                    <td className="py-3 px-3.5 sm:px-4 font-medium text-[#0B2B26] leading-snug">
+                  <tr key={idx} className="hover:bg-[#F4FAF6] transition-colors">
+                    <td className="py-3 px-3.5 sm:px-4 font-medium text-[#041510] leading-snug">
                       {row.feature}
                     </td>
-                    <td className="py-3 px-3.5 sm:px-4 text-[#163832]/80">
+                    <td className="py-3 px-3.5 sm:px-4 text-[#0A241D]/80">
                       {typeof row.starter === "boolean" ? (
                         row.starter ? (
-                          <Check size={16} className="text-[#235347]" />
+                          <Check size={16} className="text-[#00D285]" strokeWidth={2.5} />
                         ) : (
-                          <X size={16} className="text-[#163832]/30" />
+                          <X size={16} className="text-[#0A241D]/30" />
                         )
                       ) : (
                         row.starter
                       )}
                     </td>
-                    <td className="py-3 px-3.5 sm:px-4 text-[#0B2B26] font-semibold bg-[#DAF1DE]/40">
+                    <td className="py-3 px-3.5 sm:px-4 text-[#041510] font-semibold bg-[#00D285]/10">
                       {typeof row.growth === "boolean" ? (
                         row.growth ? (
-                          <Check size={16} className="text-[#235347]" />
+                          <Check size={16} className="text-[#00D285]" strokeWidth={2.5} />
                         ) : (
-                          <X size={16} className="text-[#163832]/30" />
+                          <X size={16} className="text-[#0A241D]/30" />
                         )
                       ) : (
                         row.growth
                       )}
                     </td>
-                    <td className="py-3 px-3.5 sm:px-4 text-[#163832]/80">
+                    <td className="py-3 px-3.5 sm:px-4 text-[#0A241D]/80">
                       {typeof row.premium === "boolean" ? (
                         row.premium ? (
-                          <Check size={16} className="text-[#235347]" />
+                          <Check size={16} className="text-[#00D285]" strokeWidth={2.5} />
                         ) : (
-                          <X size={16} className="text-[#163832]/30" />
+                          <X size={16} className="text-[#0A241D]/30" />
                         )
                       ) : (
                         row.premium
@@ -297,15 +297,15 @@ export function PricingPage({ onNavigate }: PricingPageProps) {
 
       {/* Enterprise Custom Note */}
       <section className="pb-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-        <div className="bg-[#DAF1DE]/30 rounded-2xl p-6 sm:p-8 border border-[#235347]/15 flex flex-col sm:flex-row items-center justify-between gap-6">
+        <div className="bg-[#F4FAF6] rounded-2xl p-6 sm:p-8 border border-[#00D285]/20 flex flex-col sm:flex-row items-center justify-between gap-6">
           <div className="space-y-1.5 text-center sm:text-left">
             <div className="flex items-center gap-2 justify-center sm:justify-start">
-              <Shield size={16} className="text-[#235347]" />
-              <h4 className="font-display font-bold text-base sm:text-lg text-[#0B2B26]">
+              <Shield size={16} className="text-[#00D285]" />
+              <h4 className="font-display font-bold text-base sm:text-lg text-[#041510]">
                 Need custom integrations or bespoke enterprise architecture?
               </h4>
             </div>
-            <p className="text-xs sm:text-sm text-[#163832]/75 max-w-2xl font-sans">
+            <p className="text-xs sm:text-sm text-[#0A241D]/75 max-w-2xl font-sans">
               For complex booking workflows, high-scale database portals, or internal business
               calculators, we prepare formal line-item proposals following a brief scoping call.
             </p>
@@ -313,7 +313,7 @@ export function PricingPage({ onNavigate }: PricingPageProps) {
           <button
             type="button"
             onClick={() => onNavigate("/start-a-project?bundle=Custom")}
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-full font-mono text-xs font-bold uppercase tracking-wider text-[#FFFFFF] bg-[#235347] hover:bg-[#163832] transition-colors cursor-pointer shrink-0"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-full font-mono text-xs font-bold uppercase tracking-wider text-[#041510] bg-[#00D285] hover:bg-[#00e599] transition-all cursor-pointer shrink-0 shadow-[0_0_12px_rgba(0,210,133,0.3)]"
           >
             <span>CUSTOM SCOPE INQUIRY</span>
             <ArrowRight size={14} />

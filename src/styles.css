@@ -15,24 +15,25 @@
   --color-primary: var(--primary);
   --color-primary-foreground: #ffffff;
 
-  /* Reference Palette */
-  --color-deepest: #051f20;
-  --color-dark-forest: #0b2b26;
-  --color-deep-green: #163832;
-  --color-forest: #235347;
-  --color-sage: #8eb69b;
-  --color-mint: #daf1de;
+  /* Reference Palette - Modern Premium Professional Green System */
+  --color-deepest: #041510;
+  --color-dark-forest: #06211a;
+  --color-deep-green: #092c22;
+  --color-forest: #0e3d30;
+  --color-emerald: #00d285;
+  --color-sage: #74b28f;
+  --color-mint: #e8f7ee;
 
   /* Semantic / Legacy Compatibility Mappings */
-  --color-teal: #163832;
-  --color-teal-dark: #0b2b26;
-  --color-lime: #235347;
-  --color-pistachio: #daf1de;
+  --color-teal: #092c22;
+  --color-teal-dark: #06211a;
+  --color-lime: #00d285;
+  --color-pistachio: #e8f7ee;
 
   --color-surface: var(--surface);
   --color-surface-card: var(--surface-card);
   --color-surface-secondary: var(--surface-secondary);
-  --color-surface-teal: #0b2b26;
+  --color-surface-teal: #06211a;
 
   --color-card: var(--surface-card);
   --color-card-foreground: var(--text-primary);
@@ -42,7 +43,7 @@
   --color-muted: var(--surface-secondary);
   --color-muted-foreground: var(--text-secondary);
   --color-accent: var(--accent);
-  --color-accent-foreground: #051f20;
+  --color-accent-foreground: #041510;
 
   --color-border: var(--border);
   --color-input: var(--border);
@@ -57,46 +58,47 @@
   --radius: 1rem;
 
   /* ==================================================
-     NEXTGEN DIGITAL SOPHISTICATED GREEN BRAND TOKENS
-     Reference Palette:
-     Deepest Green:     #051F20
-     Dark Forest Green: #0B2B26
-     Deep Green:        #163832
-     Forest Green:      #235347
-     Muted Sage:        #8EB69B
-     Very Light Mint:   #DAF1DE
-     Primary Background:#FFFFFF
+     JIVDEV PROFESSIONAL GREEN BRAND TOKENS
+     Deepest Green:     #041510
+     Dark Forest Green: #06211A
+     Deep Green:        #092C22
+     Forest Green:      #0E3D30
+     Vibrant Emerald:   #00D285
+     Soft Sage:         #74B28F
+     Crisp Light Mint:  #E8F7EE
+     Pure Background:   #FFFFFF
      ================================================== */
   --background: #ffffff;
-  --background-secondary: #daf1de;
-  --primary: #235347;
-  --accent: #8eb69b;
+  --background-secondary: #f4faf6;
+  --primary: #00d285;
+  --accent: #10b981;
 
-  --text-primary: #163832;
-  --text-heading: #0b2b26;
-  --text-secondary: rgba(22, 56, 50, 0.76);
-  --text-tertiary: rgba(22, 56, 50, 0.52);
+  --text-primary: #0a241d;
+  --text-heading: #041510;
+  --text-secondary: rgba(10, 36, 29, 0.78);
+  --text-tertiary: rgba(10, 36, 29, 0.54);
 
-  --border: rgba(35, 83, 71, 0.16);
-  --border-strong: rgba(35, 83, 71, 0.32);
-  --border-sage: rgba(142, 182, 155, 0.45);
+  --border: rgba(14, 61, 48, 0.14);
+  --border-strong: rgba(14, 61, 48, 0.28);
+  --border-sage: rgba(116, 178, 143, 0.4);
+  --border-emerald: rgba(0, 210, 133, 0.35);
 
   --surface: #ffffff;
   --surface-card: #ffffff;
-  --surface-mint: #daf1de;
-  --surface-secondary: rgba(35, 83, 71, 0.05);
+  --surface-mint: #e8f7ee;
+  --surface-secondary: rgba(14, 61, 48, 0.04);
 
   /* Contrast Dark Surface Tokens */
-  --surface-dark: #051f20;
-  --surface-dark-card: #0b2b26;
-  --text-on-dark: #daf1de;
-  --text-on-dark-secondary: rgba(218, 241, 222, 0.82);
-  --border-on-dark: rgba(142, 182, 155, 0.22);
+  --surface-dark: #041510;
+  --surface-dark-card: #06211a;
+  --text-on-dark: #e8f7ee;
+  --text-on-dark-secondary: rgba(232, 247, 238, 0.85);
+  --border-on-dark: rgba(0, 210, 133, 0.2);
 
-  --shadow-subtle: 0 4px 20px -2px rgba(11, 43, 38, 0.06);
-  --shadow-card: 0 10px 30px -4px rgba(11, 43, 38, 0.09);
-  --shadow-float: 0 20px 45px -8px rgba(5, 31, 32, 0.15);
-  --shadow-sage: 0 0 25px -4px rgba(142, 182, 155, 0.35);
+  --shadow-subtle: 0 4px 20px -2px rgba(4, 21, 16, 0.06);
+  --shadow-card: 0 10px 30px -4px rgba(4, 21, 16, 0.09);
+  --shadow-float: 0 20px 45px -8px rgba(4, 21, 16, 0.2);
+  --shadow-emerald: 0 0 30px -4px rgba(0, 210, 133, 0.35);
 
   --transition-editorial: cubic-bezier(0.16, 1, 0.3, 1);
 }
@@ -153,14 +155,14 @@
 
 /* Glass & Card Surfaces */
 .glass-surface {
-  background: rgba(255, 255, 255, 0.88);
+  background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border: 1px solid var(--border);
 }
 
 .glass-teal {
-  background: rgba(11, 43, 38, 0.95);
+  background: rgba(6, 33, 26, 0.92);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border: 1px solid var(--border-on-dark);
@@ -168,19 +170,27 @@
 }
 
 .glass-mint {
-  background: rgba(218, 241, 222, 0.92);
+  background: rgba(232, 247, 238, 0.92);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(35, 83, 71, 0.2);
-  color: #163832;
+  border: 1px solid rgba(14, 61, 48, 0.16);
+  color: #0a241d;
 }
 
 .glass-lime {
-  background: rgba(218, 241, 222, 0.92);
+  background: rgba(232, 247, 238, 0.92);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(35, 83, 71, 0.2);
-  color: #163832;
+  border: 1px solid rgba(14, 61, 48, 0.16);
+  color: #0a241d;
+}
+
+.glass-emerald {
+  background: rgba(4, 21, 16, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 210, 133, 0.25);
+  box-shadow: 0 16px 40px -8px rgba(0, 0, 0, 0.5);
 }
 
 /* Marquee Animations */
@@ -212,7 +222,7 @@
 
 /* Grain texture overlay */
 .grain-overlay {
-  background-image: radial-gradient(rgba(35, 83, 71, 0.05) 1px, transparent 1px);
+  background-image: radial-gradient(rgba(0, 210, 133, 0.04) 1px, transparent 1px);
   background-size: 24px 24px;
 }
 

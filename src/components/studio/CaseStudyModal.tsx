@@ -20,16 +20,16 @@ export function CaseStudyModal({ project, onClose, onStartProject }: CaseStudyMo
   if (!project) return null;
 
   return (
-    <div className="fixed inset-0 z-50 overflow-y-auto bg-[#17202A]/70 backdrop-blur-sm flex items-center justify-center p-4 sm:p-6">
-      <div className="relative w-full max-w-4xl bg-[#FFFDF8] border border-[#DED6C8] rounded-3xl shadow-2xl overflow-hidden animate-in fade-in zoom-in-95 duration-200">
+    <div className="fixed inset-0 z-50 overflow-y-auto bg-[#041510]/80 backdrop-blur-sm flex items-center justify-center p-4 sm:p-6">
+      <div className="relative w-full max-w-4xl bg-[#FFFFFF] border border-[#00D285]/25 rounded-3xl shadow-2xl overflow-hidden animate-in fade-in zoom-in-95 duration-200">
         {/* Header Bar */}
-        <div className="sticky top-0 z-10 bg-[#FFFDF8]/95 backdrop-blur-md border-b border-[#DED6C8] px-6 py-4 flex items-center justify-between">
+        <div className="sticky top-0 z-10 bg-[#FFFFFF]/95 backdrop-blur-md border-b border-[#00D285]/15 px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <span className="font-mono text-xs uppercase tracking-widest text-[#C9A45C] font-semibold">
+            <span className="font-mono text-xs uppercase tracking-widest text-[#00D285] font-bold">
               Case Archive // {project.id.toUpperCase()}
             </span>
-            <span className="hidden sm:inline-block h-1 w-1 rounded-full bg-[#DED6C8]" />
-            <span className="hidden sm:inline-block text-xs text-[#687078]">
+            <span className="hidden sm:inline-block h-1 w-1 rounded-full bg-[#00D285]/40" />
+            <span className="hidden sm:inline-block text-xs text-[#0A241D]/70 font-mono">
               {project.category}
             </span>
           </div>
@@ -37,7 +37,7 @@ export function CaseStudyModal({ project, onClose, onStartProject }: CaseStudyMo
           <button
             type="button"
             onClick={onClose}
-            className="h-8 w-8 rounded-full bg-[#EFE8DA] hover:bg-[#DED6C8] text-[#17202A] flex items-center justify-center transition-colors focus:outline-none"
+            className="h-8 w-8 rounded-full bg-[#F4FAF6] hover:bg-[#00D285]/20 text-[#041510] flex items-center justify-center transition-colors focus:outline-none cursor-pointer border border-[#00D285]/20"
             aria-label="Close case study"
           >
             <X size={16} />
@@ -49,30 +49,30 @@ export function CaseStudyModal({ project, onClose, onStartProject }: CaseStudyMo
           {/* Main Title & Hero Banner */}
           <div className="space-y-3">
             <div className="flex flex-wrap items-center gap-2 text-xs">
-              <span className="bg-[#EFE8DA] text-[#17202A] px-2.5 py-1 rounded-full font-mono text-[0.6875rem]">
+              <span className="bg-[#00D285]/10 text-[#041510] border border-[#00D285]/25 px-2.5 py-1 rounded-full font-mono text-[0.6875rem] font-bold">
                 {project.industry}
               </span>
-              <span className="flex items-center gap-1 text-[#687078]">
-                <MapPin size={12} className="text-[#C9A45C]" /> {project.location}
+              <span className="flex items-center gap-1 text-[#0A241D]/70 font-mono">
+                <MapPin size={12} className="text-[#00D285]" /> {project.location}
               </span>
-              <span className="flex items-center gap-1 text-[#687078]">
-                <Calendar size={12} className="text-[#C9A45C]" /> {project.year}
+              <span className="flex items-center gap-1 text-[#0A241D]/70 font-mono">
+                <Calendar size={12} className="text-[#00D285]" /> {project.year}
               </span>
               {project.score && (
-                <span className="bg-emerald-50 text-emerald-800 border border-emerald-200 px-2 py-0.5 rounded-full font-mono text-[0.6875rem] font-medium">
+                <span className="bg-[#00D285]/15 text-[#041510] border border-[#00D285]/35 px-2 py-0.5 rounded-full font-mono text-[0.6875rem] font-bold">
                   {project.score}
                 </span>
               )}
             </div>
 
-            <h2 className="font-display text-3xl sm:text-4xl text-[#17202A] leading-tight">
+            <h2 className="font-display font-bold text-3xl sm:text-4xl text-[#041510] leading-tight">
               {project.title}
             </h2>
-            <p className="text-base text-[#687078] leading-relaxed">{project.subtitle}</p>
+            <p className="text-base text-[#0A241D]/80 leading-relaxed font-sans">{project.subtitle}</p>
           </div>
 
           {/* Project Preview Image */}
-          <div className="rounded-2xl overflow-hidden border border-[#DED6C8] bg-[#EFE8DA] aspect-[16/9] relative group">
+          <div className="rounded-2xl overflow-hidden border border-[#00D285]/20 bg-[#06211A] aspect-[16/9] relative group">
             <img src={project.image} alt={project.title} className="w-full h-full object-cover" />
             {project.liveUrl && (
               <div className="absolute bottom-4 right-4">
@@ -80,63 +80,63 @@ export function CaseStudyModal({ project, onClose, onStartProject }: CaseStudyMo
                   href={project.liveUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 bg-[#17202A]/90 hover:bg-[#17202A] text-[#FFFDF8] px-4 py-2 rounded-full text-xs font-medium backdrop-blur-md shadow-lg transition-all"
+                  className="inline-flex items-center gap-1.5 bg-[#041510]/90 hover:bg-[#00D285] hover:text-[#041510] text-[#FFFFFF] px-4 py-2 rounded-full text-xs font-mono font-bold backdrop-blur-md shadow-lg transition-all border border-[#00D285]/30"
                 >
                   <span>Launch Live Demo</span>
-                  <ExternalLink size={13} className="text-[#E4C98D]" />
+                  <ExternalLink size={13} className="text-[#00D285] group-hover:text-[#041510]" />
                 </a>
               </div>
             )}
           </div>
 
           {/* Overview & Core Summary */}
-          <div className="bg-[#F7F3EA] border border-[#DED6C8] rounded-2xl p-6 sm:p-7 space-y-4">
-            <h3 className="font-mono text-xs uppercase tracking-widest text-[#17202A] font-semibold flex items-center gap-2">
-              <span className="h-2 w-2 rounded-full bg-[#C9A45C]" />
+          <div className="bg-[#F8FAF9] border border-[#00D285]/20 rounded-2xl p-6 sm:p-7 space-y-4">
+            <h3 className="font-mono text-xs uppercase tracking-widest text-[#041510] font-bold flex items-center gap-2">
+              <span className="h-2 w-2 rounded-full bg-[#00D285]" />
               Executive Case Summary
             </h3>
-            <p className="text-sm sm:text-base text-[#17202A] leading-relaxed">{project.summary}</p>
+            <p className="text-sm sm:text-base text-[#0A241D]/85 leading-relaxed font-sans">{project.summary}</p>
           </div>
 
           {/* The Challenge & The Studio Solution */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="border border-[#DED6C8] rounded-2xl p-6 bg-[#FFFDF8] space-y-2">
-              <div className="font-mono text-xs uppercase tracking-wider text-red-700 font-semibold">
+            <div className="border border-red-200/60 rounded-2xl p-6 bg-[#FEF2F2]/40 space-y-2">
+              <div className="font-mono text-xs uppercase tracking-wider text-red-600 font-bold">
                 The Commercial Challenge
               </div>
-              <p className="text-sm text-[#687078] leading-relaxed">{project.challenge}</p>
+              <p className="text-sm text-[#0A241D]/75 leading-relaxed font-sans">{project.challenge}</p>
             </div>
 
-            <div className="border border-[#DED6C8] rounded-2xl p-6 bg-[#FFFDF8] space-y-2">
-              <div className="font-mono text-xs uppercase tracking-wider text-[#C9A45C] font-semibold">
+            <div className="border border-[#00D285]/25 rounded-2xl p-6 bg-[#F8FAF9] space-y-2">
+              <div className="font-mono text-xs uppercase tracking-wider text-[#00D285] font-bold">
                 NextGen Studio Architecture
               </div>
-              <p className="text-sm text-[#17202A] leading-relaxed">{project.solution}</p>
+              <p className="text-sm text-[#0A241D]/85 leading-relaxed font-sans">{project.solution}</p>
             </div>
           </div>
 
           {/* Commercial Impact Callout */}
-          <div className="border-l-2 border-[#C9A45C] pl-5 py-2 bg-[#FAF5EB] rounded-r-xl">
-            <div className="font-mono text-xs uppercase tracking-wider text-[#C9A45C] font-semibold">
+          <div className="border-l-4 border-[#00D285] pl-5 py-3 bg-[#F4FAF6] rounded-r-xl border border-l-0 border-[#00D285]/15">
+            <div className="font-mono text-xs uppercase tracking-wider text-[#00D285] font-bold">
               Commercial Impact & Results
             </div>
-            <p className="text-sm text-[#17202A] mt-1 font-medium leading-relaxed">
+            <p className="text-sm text-[#041510] mt-1 font-medium leading-relaxed font-sans">
               {project.commercialImpact}
             </p>
           </div>
 
           {/* Deliverables Checklist */}
           <div className="space-y-3">
-            <h4 className="font-mono text-xs uppercase tracking-widest text-[#17202A] font-semibold">
+            <h4 className="font-mono text-xs uppercase tracking-widest text-[#041510] font-bold">
               Engineered Deliverables
             </h4>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
               {project.deliverables.map((deliv) => (
                 <div
                   key={deliv}
-                  className="flex items-center gap-2.5 text-xs text-[#17202A] bg-[#F7F3EA] border border-[#DED6C8] rounded-xl px-3.5 py-2"
+                  className="flex items-center gap-2.5 text-xs text-[#0A241D] bg-[#F8FAF9] border border-[#00D285]/15 rounded-xl px-3.5 py-2 font-sans"
                 >
-                  <Check size={14} className="text-[#C9A45C] shrink-0" />
+                  <Check size={14} className="text-[#00D285] shrink-0" strokeWidth={2.5} />
                   <span>{deliv}</span>
                 </div>
               ))}
@@ -144,12 +144,12 @@ export function CaseStudyModal({ project, onClose, onStartProject }: CaseStudyMo
           </div>
 
           {/* Tech Stack */}
-          <div className="pt-2 border-t border-[#DED6C8] flex flex-wrap items-center gap-2">
-            <span className="font-mono text-xs text-[#687078]">Technology Stack:</span>
+          <div className="pt-2 border-t border-[#00D285]/15 flex flex-wrap items-center gap-2">
+            <span className="font-mono text-xs text-[#0A241D]/70 font-semibold">Technology Stack:</span>
             {project.techStack.map((tech) => (
               <span
                 key={tech}
-                className="bg-[#EFE8DA] text-[#17202A] text-xs px-2.5 py-1 rounded-md font-mono"
+                className="bg-[#00D285]/10 text-[#041510] border border-[#00D285]/20 text-xs px-2.5 py-1 rounded-md font-mono font-medium"
               >
                 {tech}
               </span>
@@ -158,8 +158,8 @@ export function CaseStudyModal({ project, onClose, onStartProject }: CaseStudyMo
         </div>
 
         {/* Footer CTA */}
-        <div className="sticky bottom-0 bg-[#EFE8DA] border-t border-[#DED6C8] px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <div className="text-xs text-[#687078] text-center sm:text-left">
+        <div className="sticky bottom-0 bg-[#F8FAF9] border-t border-[#00D285]/15 px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-3">
+          <div className="text-xs text-[#0A241D]/70 text-center sm:text-left font-sans">
             Need similar custom web architecture for your business?
           </div>
 
@@ -169,10 +169,10 @@ export function CaseStudyModal({ project, onClose, onStartProject }: CaseStudyMo
                 href={project.liveUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex-1 sm:flex-initial inline-flex items-center justify-center gap-1.5 bg-[#FFFDF8] border border-[#DED6C8] text-[#17202A] px-4 py-2 rounded-full text-xs font-medium hover:border-[#C9A45C] transition-colors"
+                className="flex-1 sm:flex-initial inline-flex items-center justify-center gap-1.5 bg-white border border-[#00D285]/30 text-[#041510] hover:border-[#00D285] px-4 py-2 rounded-full text-xs font-mono font-bold transition-colors shadow-xs"
               >
                 <span>Live Demo</span>
-                <ExternalLink size={12} />
+                <ExternalLink size={12} className="text-[#00D285]" />
               </a>
             )}
 
@@ -182,10 +182,10 @@ export function CaseStudyModal({ project, onClose, onStartProject }: CaseStudyMo
                 onClose();
                 onStartProject(project.category);
               }}
-              className="flex-1 sm:flex-initial inline-flex items-center justify-center gap-1.5 bg-[#17202A] hover:bg-[#222E3C] text-[#FFFDF8] px-5 py-2 rounded-full text-xs font-medium tracking-wide shadow-sm transition-all"
+              className="flex-1 sm:flex-initial inline-flex items-center justify-center gap-1.5 bg-[#06211A] hover:bg-[#00D285] text-white hover:text-[#041510] px-5 py-2 rounded-full text-xs font-mono font-bold tracking-wide shadow-sm transition-all cursor-pointer"
             >
               <span>Build Something Similar</span>
-              <ArrowUpRight size={13} className="text-[#E4C98D]" />
+              <ArrowUpRight size={13} className="text-[#00D285]" />
             </button>
           </div>
         </div>

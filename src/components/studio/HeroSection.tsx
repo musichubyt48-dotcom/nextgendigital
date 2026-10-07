@@ -1,6 +1,7 @@
-import { ArrowRight, CheckCircle2, Shield, Zap, Code2, Clock } from "lucide-react";
+import { ArrowRight, Sparkles, Clock, ShieldCheck, Headphones, Zap } from "lucide-react";
 import { motion, useReducedMotion } from "motion/react";
-import { ExploreWorkButton } from "@/components/studio/ExploreWorkButton";
+import heroDevicesImg from "@/assets/images/hero_devices_showcase_1791390832079.jpg";
+import heroMountainsImg from "@/assets/images/hero_misty_mountains_1791390846280.jpg";
 
 interface HeroSectionProps {
   onStartProject?: () => void;
@@ -10,243 +11,225 @@ interface HeroSectionProps {
 export function HeroSection({ onStartProject, onViewWork }: HeroSectionProps) {
   const shouldReduceMotion = useReducedMotion();
 
-  // Staggered container for page load
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.12,
-        delayChildren: 0.08,
-      },
-    },
-  };
-
-  const itemVariants = {
-    hidden: {
-      opacity: 0,
-      y: shouldReduceMotion ? 0 : 20,
-    },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.65,
-        ease: [0.16, 1, 0.3, 1],
-      },
-    },
-  };
-
-  const headlineWords = [
-    { text: "WEBSITES", highlight: false },
-    { text: "BUILT", highlight: false },
-    { text: "AROUND", highlight: false },
-    { text: "YOUR BUSINESS.", highlight: true },
-  ];
-
-  const wordVariants = {
-    hidden: {
-      opacity: 0,
-      y: shouldReduceMotion ? 0 : 24,
-      filter: shouldReduceMotion ? "none" : "blur(6px)",
-      scale: shouldReduceMotion ? 1 : 0.98,
-    },
-    visible: {
-      opacity: 1,
-      y: 0,
-      filter: "blur(0px)",
-      scale: 1,
-      transition: {
-        duration: 0.7,
-        ease: [0.16, 1, 0.3, 1],
-      },
-    },
-  };
-
-  const statItems = [
+  // 4 Bottom Dock Feature Cards matching reference
+  const featureCards = [
     {
-      metric: "< 1.2s",
-      label: "Core Web Vitals",
-      sub: "Instant mobile loading",
-      icon: Zap,
+      title: "Modern Design",
+      subtitle: "Clean & Professional",
+      icon: Sparkles,
     },
     {
-      metric: "100%",
-      label: "Code Ownership",
-      sub: "Zero vendor lock-in",
-      icon: Code2,
-    },
-    {
-      metric: "Direct",
-      label: "Lead & Booking Funnels",
-      sub: "No aggregator commissions",
-      icon: Shield,
-    },
-    {
-      metric: "14–60d",
-      label: "Technical Warranty",
-      sub: "Dedicated post-launch care",
+      title: "Fast Delivery",
+      subtitle: "On Time, Always",
       icon: Clock,
     },
+    {
+      title: "Affordable Price",
+      subtitle: "Best Value, Always",
+      icon: ShieldCheck,
+    },
+    {
+      title: "24/7 Support",
+      subtitle: "We're Always Here",
+      icon: Headphones,
+    },
   ];
 
-  return (
-    <section className="relative min-h-[92vh] flex flex-col justify-center items-center pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden bg-[#FFFFFF] grain-overlay">
-      {/* Subtle ambient moving glow fields */}
-      <motion.div
-        animate={
-          shouldReduceMotion
-            ? {}
-            : {
-                x: [-15, 15, -15],
-                y: [-10, 10, -10],
-                scale: [1, 1.08, 1],
-              }
-        }
-        transition={{ duration: 18, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute top-16 left-1/2 -translate-x-1/2 w-[46rem] h-[24rem] bg-[#DAF1DE]/70 rounded-full blur-[130px] pointer-events-none -z-10"
-      />
-      <motion.div
-        animate={
-          shouldReduceMotion
-            ? {}
-            : {
-                x: [10, -10, 10],
-                y: [12, -12, 12],
-              }
-        }
-        transition={{ duration: 22, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute -bottom-10 right-1/4 w-[30rem] h-[26rem] bg-[#235347]/8 rounded-full blur-[120px] pointer-events-none -z-10"
-      />
+  const handlePrimaryClick = () => {
+    if (onStartProject) {
+      onStartProject();
+    } else {
+      onViewWork();
+    }
+  };
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full text-center">
+  return (
+    <section className="relative min-h-[95vh] lg:min-h-screen flex flex-col justify-between pt-28 pb-10 md:pt-36 md:pb-14 overflow-hidden bg-[#041510] text-white selection:bg-[#00D285] selection:text-[#041510]">
+      {/* 1. Cinematic Background Mountain Silhouettes & Deep Emerald Atmosphere */}
+      <div className="absolute inset-0 pointer-events-none -z-10 overflow-hidden">
+        {/* Misty Mountain Background */}
+        <img
+          src={heroMountainsImg}
+          alt="Atmospheric Mountain Backdrop"
+          referrerPolicy="no-referrer"
+          className="w-full h-full object-cover object-center opacity-30 mix-blend-luminosity scale-105"
+        />
+
+        {/* Ambient Emerald Volumetric Glow Fields */}
+        <div className="absolute inset-0 bg-gradient-to-b from-[#041510]/80 via-[#041510]/60 to-[#041510]" />
+
         <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          animate="visible"
-          className="space-y-4 sm:space-y-8"
-        >
-          {/* 1. Eyebrow badge */}
-          <motion.div variants={itemVariants} className="inline-block">
-            <div className="inline-flex items-center gap-2 rounded-full bg-[#DAF1DE]/60 backdrop-blur-md px-3 sm:px-4 py-1 sm:py-1.5 border border-[#235347]/15 shadow-xs">
-              <span className="h-1.5 w-1.5 sm:h-2 sm:w-2 rounded-full bg-[#235347] animate-pulse" />
-              <span className="font-mono text-[10px] sm:text-xs uppercase tracking-widest text-[#163832] font-semibold">
-                NextGen Digital · Digital Studio & Systems
+          animate={
+            shouldReduceMotion
+              ? {}
+              : {
+                  x: [-20, 20, -20],
+                  y: [-15, 15, -15],
+                  scale: [1, 1.1, 1],
+                }
+          }
+          transition={{ duration: 16, repeat: Infinity, ease: "easeInOut" }}
+          className="absolute top-10 right-10 lg:right-1/4 w-[28rem] sm:w-[38rem] h-[28rem] bg-[#00D285]/12 rounded-full blur-[140px] pointer-events-none"
+        />
+
+        <motion.div
+          animate={
+            shouldReduceMotion
+              ? {}
+              : {
+                  x: [15, -15, 15],
+                  y: [10, -10, 10],
+                }
+          }
+          transition={{ duration: 20, repeat: Infinity, ease: "easeInOut" }}
+          className="absolute -bottom-10 left-10 w-[24rem] h-[24rem] bg-[#0E3D30]/35 rounded-full blur-[130px] pointer-events-none"
+        />
+
+        {/* Subtle grid texture overlay */}
+        <div className="absolute inset-0 bg-[radial-gradient(rgba(0,210,133,0.06)_1px,transparent_1px)] [background-size:28px_28px] opacity-60" />
+      </div>
+
+      {/* 2. Main Hero Container (Desktop 2-Col / Mobile Stacked) */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex-1 flex flex-col justify-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center pt-2 sm:pt-6">
+          {/* Left Column: Value Proposition & CTAs (7 cols on desktop) */}
+          <motion.div
+            initial={{ opacity: 0, y: shouldReduceMotion ? 0 : 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.65, ease: [0.16, 1, 0.3, 1] }}
+            className="lg:col-span-7 space-y-4 sm:space-y-6 text-left"
+          >
+            {/* Eyebrow Pill Badge */}
+            <div className="inline-flex items-center gap-2 rounded-full bg-[#06261E]/85 border border-[#00D285]/35 px-3.5 py-1 sm:px-4 sm:py-1.5 shadow-[0_0_20px_rgba(0,210,133,0.18)] backdrop-blur-md">
+              <span className="h-2 w-2 rounded-full bg-[#00D285] animate-pulse shadow-[0_0_8px_#00D285]" />
+              <span className="font-mono text-[10px] sm:text-xs uppercase tracking-widest text-[#00D285] font-semibold">
+                ✦ YOUR GROWTH PARTNER
               </span>
             </div>
-          </motion.div>
 
-          {/* 2. Large Centered Animated Headline */}
-          <motion.h1
-            variants={itemVariants}
-            className="text-fluid-hero font-display font-extrabold uppercase text-[#0B2B26] tracking-tight leading-[0.98] max-w-5xl mx-auto"
-          >
-            <span className="flex flex-wrap items-center justify-center gap-x-2 sm:gap-x-5 gap-y-1 sm:gap-y-2">
-              {headlineWords.map((word, idx) => (
-                <motion.span
-                  key={idx}
-                  variants={wordVariants}
-                  className={
-                    word.highlight
-                      ? "inline-block bg-[#0B2B26] text-[#DAF1DE] px-2.5 sm:px-4 py-0.5 sm:py-1 rounded-xl sm:rounded-2xl shadow-sm transition-transform duration-300 hover:scale-[1.02]"
-                      : "inline-block"
-                  }
-                >
-                  {word.text}
-                </motion.span>
-              ))}
-            </span>
-          </motion.h1>
+            {/* Main Headline with Glowing Green Highlight */}
+            <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-[4.25rem] font-display font-extrabold uppercase tracking-tight leading-[1.03] text-white">
+              WEBSITES BUILT{" "}
+              <span className="block text-[#00D285] drop-shadow-[0_0_35px_rgba(0,210,133,0.4)]">
+                AROUND YOUR BUSINESS.
+              </span>
+            </h1>
 
-          {/* 3. Supporting Description */}
-          <motion.p
-            variants={itemVariants}
-            className="text-sm sm:text-lg md:text-xl font-sans text-[#163832]/85 leading-relaxed max-w-2xl sm:max-w-3xl mx-auto font-normal px-2 sm:px-0"
-          >
-            We architect high-converting business websites, direct WhatsApp booking engines, and
-            bespoke digital systems engineered for authentic commercial growth — with complete
-            source code ownership and zero lock-in.
-          </motion.p>
+            {/* Supporting Description */}
+            <p className="text-sm sm:text-base md:text-lg font-sans text-[#A4CBB7] leading-relaxed max-w-xl font-normal">
+              We create fast, modern and high-performing websites, custom web applications and
+              digital solutions to help your business grow. Simple process, clear communication and
+              real support — always.
+            </p>
 
-          {/* 4. Centered CTA Arrangement (Primary + Secondary) */}
-          <motion.div
-            variants={itemVariants}
-            className="pt-1 sm:pt-2 flex flex-col sm:flex-row items-center justify-center gap-2.5 sm:gap-4 w-full"
-          >
-            <div className="w-full sm:w-auto">
-              <ExploreWorkButton onClick={onViewWork} />
-            </div>
-
-            {onStartProject && (
+            {/* Action Buttons Row */}
+            <div className="pt-2 sm:pt-3 flex flex-row flex-wrap items-center gap-3 sm:gap-4">
+              {/* Primary Glowing Capsule Button */}
               <button
                 type="button"
-                onClick={onStartProject}
-                className="w-full sm:w-auto group relative inline-flex items-center justify-center gap-2 px-6 sm:px-7 py-3 sm:py-3.5 rounded-full font-mono text-xs sm:text-sm font-bold tracking-wider uppercase cursor-pointer select-none bg-[#DAF1DE] text-[#163832] border border-[#8EB69B] hover:bg-[#235347] hover:text-[#FFFFFF] hover:border-[#235347] hover:shadow-xs transition-all duration-200 active:scale-98"
+                onClick={handlePrimaryClick}
+                className="group relative inline-flex items-center justify-center gap-2.5 px-6 sm:px-8 py-3.5 sm:py-4 rounded-full font-mono text-xs sm:text-sm font-bold uppercase tracking-wider bg-[#00D285] text-[#041510] hover:bg-[#00e599] hover:shadow-[0_0_32px_rgba(0,210,133,0.55)] transition-all duration-300 active:scale-98 cursor-pointer select-none"
               >
-                <span>START A PROJECT</span>
+                <span>Get Started</span>
                 <ArrowRight
-                  size={15}
+                  size={16}
                   className="transition-transform duration-200 group-hover:translate-x-1"
                 />
               </button>
-            )}
-          </motion.div>
 
-          {/* 5. Reassurance tags */}
-          <motion.div
-            variants={itemVariants}
-            className="pt-1 sm:pt-2 flex flex-wrap items-center justify-center gap-2.5 sm:gap-6 text-[10px] sm:text-[0.6875rem] font-mono text-[#163832]/75"
-          >
-            <div className="flex items-center gap-1.5">
-              <CheckCircle2 size={12} className="text-[#235347]" />
-              <span>Full Code Ownership</span>
-            </div>
-            <div className="flex items-center gap-1.5">
-              <CheckCircle2 size={12} className="text-[#235347]" />
-              <span>Zero Monthly Platform Fees</span>
-            </div>
-            <div className="flex items-center gap-1.5">
-              <CheckCircle2 size={12} className="text-[#235347]" />
-              <span>Institutional TypeScript</span>
+              {/* Secondary Dark Frosted Glass Capsule Button */}
+              <button
+                type="button"
+                onClick={onViewWork}
+                className="inline-flex items-center justify-center gap-2 px-6 sm:px-7 py-3.5 sm:py-4 rounded-full font-mono text-xs sm:text-sm font-medium uppercase tracking-wider bg-[#06261E]/75 hover:bg-[#0a382c] text-[#E8F7EE] border border-[#00D285]/30 hover:border-[#00D285]/60 hover:text-white backdrop-blur-md transition-all duration-300 active:scale-98 cursor-pointer select-none"
+              >
+                <span>View Our Work</span>
+              </button>
             </div>
           </motion.div>
 
-          {/* 6. Supporting Statistics / Features Row */}
+          {/* Right Column: 3D Laptop & Smartphone Showcase Render (5 cols on desktop) */}
           <motion.div
-            variants={itemVariants}
-            className="pt-6 sm:pt-14 mt-6 sm:mt-12 border-t border-[#235347]/15"
+            initial={{ opacity: 0, scale: shouldReduceMotion ? 1 : 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
+            className="lg:col-span-5 relative mt-4 lg:mt-0 flex items-center justify-center"
           >
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-6 max-w-5xl mx-auto">
-              {statItems.map((item, idx) => {
-                const IconComponent = item.icon;
-                return (
-                  <motion.div
-                    key={idx}
-                    initial={{ opacity: 0, y: shouldReduceMotion ? 0 : 16 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: 0.1 + idx * 0.08, duration: 0.5 }}
-                    className="p-3 sm:p-5 rounded-xl sm:rounded-2xl bg-white/80 backdrop-blur-sm border border-[#235347]/12 text-left transition-all duration-300 hover:bg-[#DAF1DE]/30 hover:border-[#235347]/25 hover:shadow-xs group"
-                  >
-                    <div className="flex items-center justify-between mb-1.5 sm:mb-3">
-                      <span className="font-display font-black text-lg sm:text-3xl text-[#0B2B26] tracking-tight tabular-nums">
-                        {item.metric}
-                      </span>
-                      <div className="h-6 w-6 sm:h-8 sm:w-8 rounded-lg sm:rounded-xl bg-[#DAF1DE] flex items-center justify-center text-[#235347] group-hover:bg-[#235347] group-hover:text-[#FFFFFF] transition-colors">
-                        <IconComponent size={13} />
-                      </div>
-                    </div>
-                    <div className="font-display font-bold text-[11px] sm:text-sm text-[#0B2B26] tracking-tight">
-                      {item.label}
-                    </div>
-                    <div className="font-sans text-[10px] sm:text-[0.6875rem] text-[#163832]/65 mt-0.5">
-                      {item.sub}
-                    </div>
-                  </motion.div>
-                );
-              })}
+            <div className="relative w-full max-w-[540px] group">
+              {/* Soft atmospheric green back-glow */}
+              <div className="absolute inset-0 bg-[#00D285]/20 rounded-3xl blur-[60px] transform group-hover:scale-105 transition-transform duration-700 pointer-events-none" />
+
+              {/* High-Fidelity 3D Devices Showcase Image */}
+              <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden border border-[#00D285]/25 bg-[#06211A]/60 shadow-[0_20px_50px_rgba(0,0,0,0.7)] backdrop-blur-sm">
+                <img
+                  src={heroDevicesImg}
+                  alt="JIVDEV 3D Website Showcase"
+                  referrerPolicy="no-referrer"
+                  className="w-full h-auto object-cover transform transition-transform duration-700 group-hover:scale-[1.02]"
+                />
+
+                {/* Subtle dark gradient overlay at bottom edge */}
+                <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-[#041510]/80 to-transparent pointer-events-none" />
+              </div>
+
+              {/* Floating Frosted Glass Feature Pill (⚡ Modern · Fast · Secure) */}
+              <motion.div
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.45, duration: 0.6 }}
+                className="absolute -top-3 sm:-top-4 -right-2 sm:-right-4 bg-[#06261E]/90 border border-[#00D285]/40 rounded-xl px-3 sm:px-4 py-1.5 sm:py-2 backdrop-blur-xl shadow-[0_8px_24px_rgba(0,0,0,0.6)] flex items-center gap-2"
+              >
+                <div className="h-6 w-6 rounded-lg bg-[#00D285]/20 flex items-center justify-center text-[#00D285]">
+                  <Zap size={13} className="fill-[#00D285]" />
+                </div>
+                <div className="flex flex-col">
+                  <span className="font-mono text-[9px] sm:text-[10px] text-[#00D285] font-bold uppercase tracking-wider">
+                    JIVDEV Performance
+                  </span>
+                  <span className="font-sans text-[10px] sm:text-xs text-white font-medium">
+                    Modern · Fast · Secure
+                  </span>
+                </div>
+              </motion.div>
             </div>
           </motion.div>
+        </div>
+      </div>
+
+      {/* 3. Bottom Docked Feature Cards Bar (Frosted Glass Container with 4 Cards) */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full mt-8 sm:mt-12 lg:mt-14">
+        <motion.div
+          initial={{ opacity: 0, y: shouldReduceMotion ? 0 : 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.3, duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+          className="bg-[#06211A]/80 backdrop-blur-xl border border-[#00D285]/25 rounded-2xl sm:rounded-3xl p-3 sm:p-5 lg:p-6 shadow-[0_16px_40px_rgba(0,0,0,0.55)]"
+        >
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 lg:gap-6">
+            {featureCards.map((card, idx) => {
+              const IconComp = card.icon;
+              return (
+                <div
+                  key={idx}
+                  className="flex items-center gap-2.5 sm:gap-4 p-2 sm:p-3 rounded-xl sm:rounded-2xl transition-all duration-300 hover:bg-[#00D285]/10 group"
+                >
+                  {/* Icon Circle */}
+                  <div className="h-9 w-9 sm:h-11 sm:w-11 rounded-xl bg-[#0A3326] flex items-center justify-center shrink-0 border border-[#00D285]/30 group-hover:border-[#00D285] group-hover:bg-[#00D285] group-hover:text-[#041510] text-[#00D285] transition-all duration-300 shadow-[0_0_12px_rgba(0,210,133,0.15)]">
+                    <IconComp className="w-4 h-4 sm:w-5 sm:h-5 transition-transform duration-300 group-hover:scale-110" />
+                  </div>
+
+                  {/* Text Details */}
+                  <div className="min-w-0 flex-1">
+                    <div className="font-display font-bold text-xs sm:text-sm text-white tracking-tight truncate group-hover:text-[#00D285] transition-colors">
+                      {card.title}
+                    </div>
+                    <div className="font-sans text-[10px] sm:text-xs text-[#8DB8A2] truncate">
+                      {card.subtitle}
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
         </motion.div>
       </div>
     </section>

@@ -192,7 +192,7 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
   return (
     <div className="w-full flex flex-col bg-[#FFFFFF]">
       {/* 1. Services Header */}
-      <section className="pt-24 pb-10 sm:pt-32 md:pt-40 md:pb-24 border-b border-[#235347]/15 grain-overlay">
+      <section className="pt-24 pb-10 sm:pt-32 md:pt-40 md:pb-24 border-b border-[#00D285]/15 grain-overlay">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0 }}
@@ -205,7 +205,7 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
             >
-              <div className="inline-flex items-center gap-1.5 sm:gap-2 rounded-full bg-[#DAF1DE] px-3 sm:px-4 py-1 sm:py-1.5 text-[11px] sm:text-xs font-mono uppercase tracking-widest text-[#163832] border border-[#235347]/15">
+              <div className="inline-flex items-center gap-1.5 sm:gap-2 rounded-full bg-[#00D285]/10 px-3 sm:px-4 py-1 sm:py-1.5 text-[11px] sm:text-xs font-mono uppercase tracking-widest text-[#00D285] border border-[#00D285]/25">
                 <span>01 / Core Capabilities & Deliverables</span>
               </div>
             </motion.div>
@@ -214,10 +214,10 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
               initial={{ opacity: 0, y: shouldReduceMotion ? 0 : 18 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.08, duration: 0.55, ease: [0.16, 1, 0.3, 1] }}
-              className="text-2xl sm:text-4xl md:text-fluid-hero font-display font-extrabold uppercase text-[#0B2B26] tracking-tight leading-tight"
+              className="text-2xl sm:text-4xl md:text-fluid-hero font-display font-extrabold uppercase text-[#041510] tracking-tight leading-tight"
             >
               Commercial Web <br />
-              <span className="underline decoration-[#8EB69B] decoration-4 underline-offset-8">
+              <span className="underline decoration-[#00D285] decoration-4 underline-offset-8">
                 Disciplines.
               </span>
             </motion.h1>
@@ -226,7 +226,7 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
               initial={{ opacity: 0, y: shouldReduceMotion ? 0 : 18 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.16, duration: 0.55, ease: [0.16, 1, 0.3, 1] }}
-              className="text-sm sm:text-lg md:text-xl font-sans text-[#163832]/85 leading-relaxed max-w-3xl"
+              className="text-sm sm:text-lg md:text-xl font-sans text-[#0A241D]/85 leading-relaxed max-w-3xl"
             >
               Six specialized engineering tracks designed to capture high-intent inquiries, automate
               bookings, and scale digital revenue — built exclusively with modern TypeScript
@@ -239,7 +239,7 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
             initial={{ opacity: 0, y: shouldReduceMotion ? 0 : 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.24, duration: 0.5 }}
-            className="mt-6 sm:mt-10 flex overflow-x-auto no-scrollbar flex-nowrap sm:flex-wrap items-center gap-2 pt-4 sm:pt-6 border-t border-[#235347]/10 pb-1"
+            className="mt-6 sm:mt-10 flex overflow-x-auto no-scrollbar flex-nowrap sm:flex-wrap items-center gap-2 pt-4 sm:pt-6 border-t border-[#00D285]/15 pb-1"
           >
             <button
               type="button"
@@ -249,8 +249,8 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
               }}
               className={`shrink-0 px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-full font-mono text-[11px] sm:text-xs font-bold uppercase tracking-wider transition-all cursor-pointer ${
                 activeFilter === "all"
-                  ? "bg-[#0B2B26] text-[#DAF1DE] shadow-xs"
-                  : "bg-white text-[#163832] border border-[#235347]/15 hover:bg-[#DAF1DE]"
+                  ? "bg-[#041510] text-[#00D285] shadow-xs border border-[#00D285]"
+                  : "bg-white text-[#041510] border border-[#00D285]/20 hover:bg-[#00D285]/10"
               }`}
             >
               All Disciplines (06)
@@ -265,8 +265,8 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
                 }}
                 className={`shrink-0 px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-full font-mono text-[11px] sm:text-xs font-bold uppercase tracking-wider transition-all cursor-pointer ${
                   activeFilter === s.id
-                    ? "bg-[#0B2B26] text-[#DAF1DE] shadow-xs"
-                    : "bg-white text-[#163832] border border-[#235347]/15 hover:bg-[#DAF1DE]"
+                    ? "bg-[#041510] text-[#00D285] shadow-xs border border-[#00D285]"
+                    : "bg-white text-[#041510] border border-[#00D285]/20 hover:bg-[#00D285]/10"
                 }`}
               >
                 {s.title}
@@ -304,8 +304,8 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
               }}
               className={`rounded-2xl sm:rounded-3xl p-4 sm:p-10 md:p-12 border transition-all duration-300 ${
                 isHighlighted
-                  ? "bg-white border-[#235347] ring-4 ring-[#8EB69B]/40 shadow-float"
-                  : "bg-white border-[#235347]/15 shadow-card hover:border-[#235347]/35"
+                  ? "bg-white border-[#00D285] ring-4 ring-[#00D285]/20 shadow-float"
+                  : "bg-white border-[#00D285]/20 shadow-card hover:border-[#00D285]/40"
               }`}
             >
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 sm:gap-8 lg:gap-12 items-start">
@@ -318,37 +318,37 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
                   className="lg:col-span-5 space-y-4 sm:space-y-6"
                 >
                   <div className="flex items-center gap-2.5 sm:gap-3">
-                    <span className="font-mono text-xs font-bold text-[#0B2B26] bg-[#DAF1DE] border border-[#235347]/15 px-2.5 sm:px-3 py-0.5 sm:py-1 rounded-md">
+                    <span className="font-mono text-xs font-bold text-[#041510] bg-[#00D285]/15 border border-[#00D285]/25 px-2.5 sm:px-3 py-0.5 sm:py-1 rounded-md">
                       {service.num}
                     </span>
-                    <div className="h-8 w-8 sm:h-9 sm:w-9 rounded-xl bg-[#DAF1DE] flex items-center justify-center text-[#235347]">
+                    <div className="h-8 w-8 sm:h-9 sm:w-9 rounded-xl bg-[#00D285]/15 flex items-center justify-center text-[#00D285]">
                       <IconComponent size={17} />
                     </div>
                     {isHighlighted && (
-                      <span className="font-mono text-[10px] sm:text-[0.6875rem] font-bold uppercase tracking-wider text-[#0B2B26] bg-[#DAF1DE] px-2.5 py-0.5 rounded-full border border-[#235347]/20 animate-pulse">
+                      <span className="font-mono text-[10px] sm:text-[0.6875rem] font-bold uppercase tracking-wider text-[#041510] bg-[#00D285] px-2.5 py-0.5 rounded-full border border-[#00D285] animate-pulse">
                         Selected Service
                       </span>
                     )}
                   </div>
 
-                  <h2 className="font-display font-extrabold text-xl sm:text-3xl md:text-4xl text-[#0B2B26] tracking-tight">
+                  <h2 className="font-display font-extrabold text-xl sm:text-3xl md:text-4xl text-[#041510] tracking-tight">
                     {service.title}
                   </h2>
 
-                  <p className="text-xs sm:text-base font-sans font-medium text-[#163832]/90 leading-relaxed">
+                  <p className="text-xs sm:text-base font-sans font-medium text-[#0A241D]/90 leading-relaxed">
                     {service.tagline}
                   </p>
 
-                  <div className="space-y-2.5 sm:space-y-3 pt-1 sm:pt-2 text-xs sm:text-sm font-sans text-[#163832]/75">
+                  <div className="space-y-2.5 sm:space-y-3 pt-1 sm:pt-2 text-xs sm:text-sm font-sans text-[#0A241D]/75">
                     <div>
-                      <strong className="block font-mono text-[11px] sm:text-xs uppercase tracking-wider text-[#0B2B26]">
+                      <strong className="block font-mono text-[11px] sm:text-xs uppercase tracking-wider text-[#041510]">
                         What It Is:
                       </strong>
                       <p className="mt-0.5 sm:mt-1 leading-relaxed">{service.whatItIs}</p>
                     </div>
 
                     <div className="pt-1 sm:pt-2">
-                      <strong className="block font-mono text-[11px] sm:text-xs uppercase tracking-wider text-[#0B2B26]">
+                      <strong className="block font-mono text-[11px] sm:text-xs uppercase tracking-wider text-[#041510]">
                         Ideal Business Category:
                       </strong>
                       <p className="mt-0.5 sm:mt-1 leading-relaxed">{service.whoItsFor}</p>
@@ -361,7 +361,7 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
                       onClick={() =>
                         onNavigate(`/start-a-project?bundle=${encodeURIComponent(service.tier)}`)
                       }
-                      className="w-full sm:w-auto justify-center inline-flex items-center gap-2 px-5 sm:px-6 py-3 sm:py-3.5 rounded-full font-mono text-xs font-bold uppercase tracking-wider text-[#FFFFFF] bg-[#235347] hover:bg-[#163832] border border-[#235347]/20 transition-all duration-200 cursor-pointer shadow-xs hover:shadow-sm group"
+                      className="w-full sm:w-auto justify-center inline-flex items-center gap-2 px-5 sm:px-6 py-3 sm:py-3.5 rounded-full font-mono text-xs font-bold uppercase tracking-wider text-[#041510] bg-[#00D285] hover:bg-[#00e599] border border-[#00D285]/30 transition-all duration-200 cursor-pointer shadow-[0_0_15px_rgba(0,210,133,0.3)] hover:shadow-md group"
                     >
                       <span>{service.ctaText}</span>
                       <ArrowRight
@@ -378,13 +378,13 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true, amount: 0.2 }}
                   transition={{ delay: 0.08, duration: 0.55, ease: [0.16, 1, 0.3, 1] }}
-                  className="lg:col-span-7 bg-[#DAF1DE]/40 rounded-xl sm:rounded-2xl p-4 sm:p-8 border border-[#235347]/15 space-y-4 sm:space-y-6"
+                  className="lg:col-span-7 bg-[#F4FAF6] rounded-xl sm:rounded-2xl p-4 sm:p-8 border border-[#00D285]/15 space-y-4 sm:space-y-6"
                 >
-                  <div className="flex items-center justify-between border-b border-[#235347]/15 pb-3 sm:pb-4">
-                    <span className="font-mono text-[11px] sm:text-xs uppercase tracking-wider font-bold text-[#0B2B26]">
+                  <div className="flex items-center justify-between border-b border-[#00D285]/15 pb-3 sm:pb-4">
+                    <span className="font-mono text-[11px] sm:text-xs uppercase tracking-wider font-bold text-[#041510]">
                       Verified Production Inclusions
                     </span>
-                    <span className="font-mono text-[11px] sm:text-xs text-[#163832]/60">
+                    <span className="font-mono text-[11px] sm:text-xs text-[#0A241D]/60 font-semibold">
                       Complete Ownership
                     </span>
                   </div>
@@ -392,15 +392,15 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
                   <div className="space-y-2.5 sm:space-y-4">
                     {service.included.map((item, iIdx) => (
                       <div key={iIdx} className="flex items-start gap-2.5 sm:gap-3.5">
-                        <CheckCircle2 size={16} className="text-[#235347] shrink-0 mt-0.5" />
-                        <span className="text-xs sm:text-sm font-sans font-medium text-[#163832] leading-relaxed">
+                        <CheckCircle2 size={16} className="text-[#00D285] shrink-0 mt-0.5" />
+                        <span className="text-xs sm:text-sm font-sans font-medium text-[#0A241D] leading-relaxed">
                           {item}
                         </span>
                       </div>
                     ))}
                   </div>
 
-                  <div className="pt-3 sm:pt-4 border-t border-[#235347]/10 flex flex-wrap items-center justify-between gap-2.5 sm:gap-3 text-[11px] sm:text-xs font-mono text-[#163832]/75">
+                  <div className="pt-3 sm:pt-4 border-t border-[#00D285]/15 flex flex-wrap items-center justify-between gap-2.5 sm:gap-3 text-[11px] sm:text-xs font-mono text-[#0A241D]/75">
                     <span>14–60d Warranty Included</span>
                     <span>100% Code Handover</span>
                   </div>
@@ -412,7 +412,7 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
       </section>
 
       {/* 3. Why Choose Us Section */}
-      <section className="py-12 sm:py-20 md:py-28 bg-[#DAF1DE]/25 border-t border-[#235347]/15">
+      <section className="py-12 sm:py-20 md:py-28 bg-[#F8FAF9] border-t border-[#00D285]/15">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: shouldReduceMotion ? 0 : 20 }}
@@ -421,16 +421,16 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
             transition={{ duration: 0.55, ease: [0.16, 1, 0.3, 1] }}
             className="text-center max-w-3xl mx-auto space-y-3 sm:space-y-4 mb-8 sm:mb-16"
           >
-            <div className="inline-flex items-center gap-1.5 sm:gap-2 rounded-full bg-[#DAF1DE] px-3 sm:px-3.5 py-0.5 sm:py-1 text-[11px] sm:text-xs font-mono uppercase tracking-widest text-[#163832] border border-[#235347]/15">
+            <div className="inline-flex items-center gap-1.5 sm:gap-2 rounded-full bg-[#00D285]/10 px-3 sm:px-3.5 py-0.5 sm:py-1 text-[11px] sm:text-xs font-mono uppercase tracking-widest text-[#00D285] border border-[#00D285]/25">
               <span>Why Choose NextGen Digital</span>
             </div>
-            <h2 className="text-2xl sm:text-4xl md:text-5xl font-display font-extrabold uppercase text-[#0B2B26] tracking-tight leading-tight">
+            <h2 className="text-2xl sm:text-4xl md:text-5xl font-display font-extrabold uppercase text-[#041510] tracking-tight leading-tight">
               Engineering Value Over <br />
-              <span className="underline decoration-[#8EB69B] decoration-4 underline-offset-8">
+              <span className="underline decoration-[#00D285] decoration-4 underline-offset-8">
                 Marketing Fluff.
               </span>
             </h2>
-            <p className="text-xs sm:text-base font-sans text-[#163832]/80">
+            <p className="text-xs sm:text-base font-sans text-[#0A241D]/80">
               Four fundamental pillars that protect your business from obsolete code, aggregator
               commissions, and unexpected monthly builder fees.
             </p>
@@ -454,15 +454,15 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
                     duration: 0.5,
                     ease: [0.16, 1, 0.3, 1],
                   }}
-                  className="p-4 sm:p-6 rounded-2xl bg-white border border-[#235347]/15 space-y-2 sm:space-y-3 hover:bg-[#DAF1DE]/30 hover:border-[#8EB69B]/50 hover:-translate-y-1 transition-all duration-200 group"
+                  className="p-4 sm:p-6 rounded-2xl bg-white border border-[#00D285]/15 space-y-2 sm:space-y-3 hover:bg-[#F4FAF6] hover:border-[#00D285]/40 hover:-translate-y-1 transition-all duration-200 group"
                 >
-                  <div className="h-9 w-9 sm:h-10 sm:w-10 rounded-xl bg-[#DAF1DE] text-[#235347] flex items-center justify-center group-hover:bg-[#235347] group-hover:text-[#FFFFFF] transition-colors">
+                  <div className="h-9 w-9 sm:h-10 sm:w-10 rounded-xl bg-[#00D285]/10 text-[#00D285] flex items-center justify-center group-hover:bg-[#00D285] group-hover:text-[#041510] transition-colors">
                     <IconComponent size={17} />
                   </div>
-                  <h3 className="font-display font-bold text-sm sm:text-lg text-[#0B2B26]">
+                  <h3 className="font-display font-bold text-sm sm:text-lg text-[#041510]">
                     {pillar.title}
                   </h3>
-                  <p className="text-xs sm:text-sm text-[#163832]/75 font-sans leading-relaxed">
+                  <p className="text-xs sm:text-sm text-[#0A241D]/75 font-sans leading-relaxed">
                     {pillar.desc}
                   </p>
                 </motion.div>
@@ -479,11 +479,11 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-          className="bg-[#0B2B26] text-[#DAF1DE] rounded-2xl sm:rounded-3xl overflow-hidden shadow-card border border-[#8EB69B]/20"
+          className="bg-[#06211A] text-[#E8F7EE] rounded-2xl sm:rounded-3xl overflow-hidden shadow-card border border-[#00D285]/20"
         >
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-0 items-center">
             {/* Visual (5 cols) with image reveal */}
-            <div className="lg:col-span-5 relative min-h-[220px] sm:min-h-[420px] bg-[#051F20] overflow-hidden group">
+            <div className="lg:col-span-5 relative min-h-[220px] sm:min-h-[420px] bg-[#041510] overflow-hidden group">
               <motion.img
                 initial={{ scale: shouldReduceMotion ? 1 : 1.06 }}
                 whileInView={{ scale: 1 }}
@@ -493,18 +493,18 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
                 alt="Precision Code Review"
                 className="w-full h-full object-cover object-center group-hover:scale-103 transition-transform duration-700"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0B2B26] via-transparent to-transparent lg:bg-gradient-to-r lg:from-transparent lg:to-[#0B2B26]" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#06211A] via-transparent to-transparent lg:bg-gradient-to-r lg:from-transparent lg:to-[#06211A]" />
             </div>
 
             {/* Content (7 cols) */}
             <div className="lg:col-span-7 p-5 sm:p-12 md:p-14 space-y-4 sm:space-y-6">
-              <div className="inline-flex items-center gap-1.5 sm:gap-2 rounded-full bg-[#DAF1DE]/10 px-3 sm:px-3.5 py-0.5 sm:py-1 text-[11px] sm:text-xs font-mono uppercase tracking-widest text-[#8EB69B] border border-[#8EB69B]/20">
+              <div className="inline-flex items-center gap-1.5 sm:gap-2 rounded-full bg-[#00D285]/10 px-3 sm:px-3.5 py-0.5 sm:py-1 text-[11px] sm:text-xs font-mono uppercase tracking-widest text-[#00D285] border border-[#00D285]/25">
                 <span>The Engineering Advantage</span>
               </div>
               <h3 className="font-display font-bold text-xl sm:text-3xl md:text-4xl text-white tracking-tight uppercase leading-tight">
                 Designed to Increase Direct Calls & Customer Bookings.
               </h3>
-              <p className="text-xs sm:text-base font-sans text-[#DAF1DE]/80 leading-relaxed">
+              <p className="text-xs sm:text-base font-sans text-[#E8F7EE]/80 leading-relaxed">
                 Whether you run a resort, healthcare practice, fitness center, or professional
                 consultancy, your website should actively handle client inquiries rather than
                 passively sitting on the web. We build high-converting inquiry funnels, instant
@@ -515,7 +515,7 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
                 <button
                   type="button"
                   onClick={() => onNavigate("/work")}
-                  className="w-full sm:w-auto justify-center inline-flex items-center gap-2 px-5 sm:px-6 py-3 sm:py-3.5 rounded-full font-mono text-xs font-bold uppercase tracking-wider text-[#FFFFFF] bg-[#235347] hover:bg-[#163832] transition-colors cursor-pointer group"
+                  className="w-full sm:w-auto justify-center inline-flex items-center gap-2 px-5 sm:px-6 py-3 sm:py-3.5 rounded-full font-mono text-xs font-bold uppercase tracking-wider text-[#041510] bg-[#00D285] hover:bg-[#00e599] transition-all cursor-pointer group shadow-[0_0_15px_rgba(0,210,133,0.3)]"
                 >
                   <span>EXPLORE CLIENT WORK</span>
                   <ArrowRight
@@ -526,7 +526,7 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
                 <button
                   type="button"
                   onClick={() => onNavigate("/start-a-project")}
-                  className="w-full sm:w-auto justify-center inline-flex items-center gap-2 px-5 sm:px-6 py-3 sm:py-3.5 rounded-full font-mono text-xs font-bold uppercase tracking-wider text-[#DAF1DE] border border-[#8EB69B]/30 hover:bg-[#DAF1DE] hover:text-[#0B2B26] transition-colors cursor-pointer group"
+                  className="w-full sm:w-auto justify-center inline-flex items-center gap-2 px-5 sm:px-6 py-3 sm:py-3.5 rounded-full font-mono text-xs font-bold uppercase tracking-wider text-[#E8F7EE] border border-[#00D285]/35 hover:bg-[#00D285] hover:text-[#041510] transition-colors cursor-pointer group"
                 >
                   <span>START A PROJECT</span>
                   <ArrowRight

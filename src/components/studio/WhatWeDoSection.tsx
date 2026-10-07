@@ -103,8 +103,11 @@ export function WhatWeDoSection({ onExploreServices, onSelectService }: WhatWeDo
   return (
     <section
       id="services"
-      className="py-14 sm:py-20 md:py-32 bg-[#FFFFFF] border-t border-[#235347]/15 relative overflow-hidden"
+      className="py-14 sm:py-20 md:py-32 bg-[#041612] text-white border-t border-[#00D285]/20 relative overflow-hidden"
     >
+      {/* Ambient background glow */}
+      <div className="absolute top-1/2 left-1/4 w-[36rem] h-[36rem] bg-[#00D285]/5 rounded-full blur-[140px] pointer-events-none -z-10" />
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header with Coordinated Staggered Reveal */}
         <motion.div
@@ -112,12 +115,12 @@ export function WhatWeDoSection({ onExploreServices, onSelectService }: WhatWeDo
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.25 }}
-          className="flex flex-col md:flex-row md:items-end justify-between gap-4 sm:gap-6 pb-6 sm:pb-12 border-b border-[#235347]/15"
+          className="flex flex-col md:flex-row md:items-end justify-between gap-4 sm:gap-6 pb-6 sm:pb-12 border-b border-[#00D285]/15"
         >
           <div className="space-y-2 sm:space-y-4">
             {/* 1. Small label reveals first */}
             <motion.div variants={headerItemVariants} className="inline-block">
-              <div className="inline-flex items-center gap-1.5 sm:gap-2 rounded-full bg-[#DAF1DE] px-2.5 sm:px-3.5 py-0.5 sm:py-1 text-[11px] sm:text-xs font-mono uppercase tracking-widest text-[#163832] border border-[#235347]/15">
+              <div className="inline-flex items-center gap-1.5 sm:gap-2 rounded-full bg-[#00D285]/10 px-2.5 sm:px-3.5 py-0.5 sm:py-1 text-[11px] sm:text-xs font-mono uppercase tracking-widest text-[#00D285] border border-[#00D285]/30">
                 <span>03 / What We Do</span>
               </div>
             </motion.div>
@@ -125,10 +128,10 @@ export function WhatWeDoSection({ onExploreServices, onSelectService }: WhatWeDo
             {/* 2. Main heading reveals with smooth upward movement */}
             <motion.h2
               variants={headerItemVariants}
-              className="text-2xl sm:text-3xl md:text-fluid-section font-display font-bold uppercase text-[#0B2B26] tracking-tight leading-tight"
+              className="text-2xl sm:text-3xl md:text-fluid-section font-display font-bold uppercase text-white tracking-tight leading-tight"
             >
               What We{" "}
-              <span className="underline decoration-[#8EB69B] decoration-4 underline-offset-8">
+              <span className="text-[#00D285] underline decoration-[#00D285] decoration-4 underline-offset-8">
                 Build.
               </span>
             </motion.h2>
@@ -136,7 +139,7 @@ export function WhatWeDoSection({ onExploreServices, onSelectService }: WhatWeDo
             {/* 3. Supporting description follows slightly after */}
             <motion.p
               variants={headerItemVariants}
-              className="text-xs sm:text-base font-sans text-[#163832]/75 max-w-xl"
+              className="text-xs sm:text-base font-sans text-[#A4CBB7] max-w-xl"
             >
               Six core digital disciplines engineered for measurable commercial outcomes, not vanity
               metrics. Click any card to explore full specifications.
@@ -147,7 +150,7 @@ export function WhatWeDoSection({ onExploreServices, onSelectService }: WhatWeDo
             <button
               type="button"
               onClick={onExploreServices}
-              className="inline-flex items-center gap-1.5 sm:gap-2 text-[11px] sm:text-sm font-mono font-bold uppercase tracking-wider text-[#163832] hover:text-[#0B2B26] group self-start md:self-end cursor-pointer"
+              className="inline-flex items-center gap-1.5 sm:gap-2 text-[11px] sm:text-sm font-mono font-bold uppercase tracking-wider text-[#00D285] hover:text-white group self-start md:self-end cursor-pointer transition-colors"
             >
               <span>EXPLORE ALL SERVICES</span>
               <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
@@ -187,30 +190,30 @@ export function WhatWeDoSection({ onExploreServices, onSelectService }: WhatWeDo
               >
                 {/* Outer Card with Glow and Subtle Hover Lift */}
                 <div
-                  className={`relative p-[2px] rounded-2xl sm:rounded-3xl transition-all duration-300 transform-gpu ${
+                  className={`relative p-[1px] rounded-2xl sm:rounded-3xl transition-all duration-300 transform-gpu ${
                     isHovered
-                      ? "-translate-y-1 sm:-translate-y-1.5 bg-gradient-to-br from-[#163832] via-[#235347] to-[#8EB69B] shadow-[0_16px_36px_rgba(5,31,32,0.18)]"
-                      : "bg-gradient-to-br from-[#235347]/15 via-[#8EB69B]/20 to-transparent shadow-xs"
+                      ? "-translate-y-1 sm:-translate-y-1.5 shadow-[0_16px_40px_rgba(0,0,0,0.6)]"
+                      : "shadow-lg"
                   }`}
                 >
-                  {/* Inner Card (Settles, scales on hover) */}
+                  {/* Inner Card */}
                   <div
-                    className={`relative rounded-[14px] sm:rounded-[22px] p-4 sm:p-7 flex flex-col justify-between min-h-[250px] sm:min-h-[330px] transition-all duration-200 ${
+                    className={`relative rounded-2xl sm:rounded-3xl p-5 sm:p-7 flex flex-col justify-between min-h-[250px] sm:min-h-[330px] transition-all duration-300 border backdrop-blur-md ${
                       isHovered
-                        ? "bg-[#DAF1DE]/25 scale-[0.985] text-[#163832]"
-                        : "bg-white text-[#163832]"
+                        ? "bg-[#093328]/90 border-[#00D285]/60 shadow-[0_0_24px_rgba(0,210,133,0.15)]"
+                        : "bg-[#06261E]/80 border-[#00D285]/20 hover:border-[#00D285]/40"
                     }`}
                   >
                     {/* Top Row: Service Number & Icon */}
                     <div className="flex items-center justify-between">
-                      <span className="font-mono text-xs font-bold text-[#163832]/60 group-hover:text-[#0B2B26] transition-colors">
+                      <span className="font-mono text-xs font-bold text-[#00D285] transition-colors">
                         {service.num}
                       </span>
                       <div
                         className={`h-11 w-11 rounded-2xl flex items-center justify-center transition-all duration-300 ${
                           isHovered
-                            ? "bg-[#235347] text-[#FFFFFF] scale-105 shadow-xs"
-                            : "bg-[#DAF1DE] text-[#235347]"
+                            ? "bg-[#00D285] text-[#041510] scale-105 shadow-[0_0_16px_rgba(0,210,133,0.4)]"
+                            : "bg-[#0A3326] text-[#00D285] border border-[#00D285]/25"
                         }`}
                       >
                         <IconComponent size={20} />
@@ -219,20 +222,20 @@ export function WhatWeDoSection({ onExploreServices, onSelectService }: WhatWeDo
 
                     {/* Middle: Title & Description */}
                     <div className="my-4 space-y-2.5">
-                      <h3 className="font-display font-bold text-xl sm:text-2xl text-[#0B2B26] tracking-tight group-hover:text-[#0B2B26]">
+                      <h3 className="font-display font-bold text-xl sm:text-2xl text-white tracking-tight group-hover:text-[#00D285] transition-colors">
                         {service.title}
                       </h3>
-                      <p className="text-xs sm:text-sm text-[#163832]/75 font-sans leading-relaxed line-clamp-3">
+                      <p className="text-xs sm:text-sm text-[#A4CBB7] font-sans leading-relaxed line-clamp-3">
                         {service.desc}
                       </p>
                     </div>
 
                     {/* Tags */}
-                    <div className="flex flex-wrap gap-1.5 pt-2 border-t border-[#235347]/10">
+                    <div className="flex flex-wrap gap-1.5 pt-2 border-t border-[#00D285]/15">
                       {service.tags.map((tag, tIdx) => (
                         <span
                           key={tIdx}
-                          className="text-[0.625rem] font-mono px-2 py-0.5 rounded-full bg-[#DAF1DE] text-[#163832] border border-[#235347]/10"
+                          className="text-[0.625rem] font-mono px-2 py-0.5 rounded-full bg-[#0A3326]/60 text-[#00D285] border border-[#00D285]/25"
                         >
                           {tag}
                         </span>
@@ -240,15 +243,15 @@ export function WhatWeDoSection({ onExploreServices, onSelectService }: WhatWeDo
                     </div>
 
                     {/* Action Arrow Footer with Refined Movement */}
-                    <div className="mt-5 pt-3 border-t border-[#235347]/10 flex items-center justify-between">
-                      <span className="text-xs font-mono font-bold tracking-wider text-[#163832] group-hover:underline">
+                    <div className="mt-5 pt-3 border-t border-[#00D285]/15 flex items-center justify-between">
+                      <span className="text-xs font-mono font-bold tracking-wider text-[#00D285] group-hover:underline">
                         VIEW SERVICE SPECS
                       </span>
                       <div
                         className={`h-8 w-8 rounded-full flex items-center justify-center border transition-all duration-300 ${
                           isHovered
-                            ? "bg-[#235347] text-[#FFFFFF] border-[#235347] rotate-45 scale-110 shadow-xs translate-x-1"
-                            : "border-[#235347]/20 text-[#163832]"
+                            ? "bg-[#00D285] text-[#041510] border-[#00D285] rotate-45 scale-110 shadow-[0_0_12px_rgba(0,210,133,0.5)] translate-x-1"
+                            : "border-[#00D285]/30 text-[#00D285]"
                         }`}
                       >
                         <ArrowUpRight size={15} />

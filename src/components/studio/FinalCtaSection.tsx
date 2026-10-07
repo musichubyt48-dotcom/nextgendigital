@@ -32,7 +32,7 @@ export function FinalCtaSection({ onStartProject, onExploreWork }: FinalCtaSecti
   };
 
   return (
-    <section className="py-14 sm:py-24 md:py-36 bg-gradient-to-b from-[#0B2B26] to-[#051F20] text-[#DAF1DE] relative overflow-hidden border-t border-[#8EB69B]/20">
+    <section className="py-14 sm:py-24 md:py-36 bg-gradient-to-b from-[#06211A] to-[#041510] text-[#E8F7EE] relative overflow-hidden border-t border-[#00D285]/20">
       {/* Subtle ambient moving blur discs */}
       <motion.div
         animate={
@@ -40,11 +40,11 @@ export function FinalCtaSection({ onStartProject, onExploreWork }: FinalCtaSecti
             ? {}
             : {
                 scale: [1, 1.15, 1],
-                opacity: [0.12, 0.22, 0.12],
+                opacity: [0.15, 0.25, 0.15],
               }
         }
         transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute -top-24 -left-24 w-96 h-96 bg-[#235347] rounded-full blur-[110px] pointer-events-none"
+        className="absolute -top-24 -left-24 w-96 h-96 bg-[#00D285]/20 rounded-full blur-[120px] pointer-events-none"
       />
       <motion.div
         animate={
@@ -56,7 +56,7 @@ export function FinalCtaSection({ onStartProject, onExploreWork }: FinalCtaSecti
               }
         }
         transition={{ duration: 15, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-        className="absolute -bottom-24 -right-24 w-96 h-96 bg-[#163832] rounded-full blur-[110px] pointer-events-none"
+        className="absolute -bottom-24 -right-24 w-96 h-96 bg-[#0E3D30]/40 rounded-full blur-[110px] pointer-events-none"
       />
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
@@ -68,7 +68,7 @@ export function FinalCtaSection({ onStartProject, onExploreWork }: FinalCtaSecti
           className="space-y-4 sm:space-y-8"
         >
           <motion.div variants={itemVariants}>
-            <div className="inline-flex items-center gap-1.5 sm:gap-2 rounded-full bg-[#DAF1DE]/10 px-3 sm:px-4 py-1 sm:py-1.5 text-[11px] sm:text-xs font-mono uppercase tracking-widest text-[#8EB69B] border border-[#8EB69B]/25">
+            <div className="inline-flex items-center gap-1.5 sm:gap-2 rounded-full bg-[#00D285]/10 px-3 sm:px-4 py-1 sm:py-1.5 text-[11px] sm:text-xs font-mono uppercase tracking-widest text-[#00D285] border border-[#00D285]/30">
               <span>08 / Direct Studio Consultation</span>
             </div>
           </motion.div>
@@ -78,14 +78,14 @@ export function FinalCtaSection({ onStartProject, onExploreWork }: FinalCtaSecti
             className="text-2xl sm:text-3xl md:text-fluid-section font-display font-extrabold uppercase tracking-tight text-[#FFFFFF] max-w-4xl mx-auto leading-tight"
           >
             Ready to Build Your Next <br />
-            <span className="text-[#DAF1DE] underline decoration-[#8EB69B] decoration-4 underline-offset-8">
+            <span className="text-[#00D285] underline decoration-[#00D285] decoration-4 underline-offset-8">
               Digital Presence?
             </span>
           </motion.h2>
 
           <motion.p
             variants={itemVariants}
-            className="text-xs sm:text-base md:text-xl text-[#DAF1DE]/80 max-w-2xl mx-auto leading-relaxed font-sans"
+            className="text-xs sm:text-base md:text-xl text-[#A4CBB7] max-w-2xl mx-auto leading-relaxed font-sans"
           >
             Tell us what you're building and let's turn the idea into a professional digital
             experience designed for your business.
@@ -96,18 +96,18 @@ export function FinalCtaSection({ onStartProject, onExploreWork }: FinalCtaSecti
             variants={itemVariants}
             className="pt-2 sm:pt-4 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4"
           >
-            <MagneticButton
-              variant="lime"
+            <button
+              type="button"
               onClick={onStartProject}
-              className="w-full sm:w-auto !py-3.5 sm:!py-4 !px-6 sm:!px-8 text-xs sm:text-sm font-mono tracking-wider font-bold shadow-[0_4px_20px_rgba(5,31,32,0.3)] transition-shadow"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full font-mono text-xs sm:text-sm font-bold tracking-wider uppercase bg-[#00D285] text-[#041510] hover:bg-[#00e599] shadow-[0_0_28px_rgba(0,210,133,0.45)] transition-all cursor-pointer select-none active:scale-98"
             >
               <span>START A PROJECT →</span>
               <ArrowRight size={16} />
-            </MagneticButton>
+            </button>
 
             <ExploreWorkButton
               onClick={onExploreWork}
-              className="w-full sm:w-auto !py-3.5 sm:!py-4 !px-6 sm:!px-8 !bg-[#163832] !border-[#8EB69B]/30 !text-[#DAF1DE] hover:!bg-[#235347] hover:!text-[#FFFFFF]"
+              className="w-full sm:w-auto !py-3.5 sm:!py-4 !px-6 sm:!px-8 !bg-[#06261E]/80 !border-[#00D285]/30 !text-[#E8F7EE] hover:!bg-[#0E3D30] hover:!text-white backdrop-blur-md"
             />
           </motion.div>
 
@@ -117,7 +117,7 @@ export function FinalCtaSection({ onStartProject, onExploreWork }: FinalCtaSecti
             className="pt-6 sm:pt-8 border-t border-[#8EB69B]/15 flex flex-col sm:flex-row items-center justify-center gap-2.5 sm:gap-6 text-[11px] sm:text-xs font-mono text-[#DAF1DE]/70"
           >
             <a
-              href="https://wa.me/918509332038?text=Hello%20NextGen%20Digital,%20I%20would%20like%20to%20discuss%20a%20website%20project."
+              href="https://wa.me/918509332038?text=Hello%20JIVDEV,%20I%20would%20like%20to%20discuss%20a%20website%20project."
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 hover:text-[#FFFFFF] transition-colors"
@@ -127,11 +127,11 @@ export function FinalCtaSection({ onStartProject, onExploreWork }: FinalCtaSecti
             </a>
             <span className="hidden sm:inline">·</span>
             <a
-              href="mailto:nextgendigitalofficial2026@gmail.com"
+              href="mailto:zivdevofficial@gmail.com"
               className="flex items-center gap-2 hover:text-[#FFFFFF] transition-colors"
             >
               <Mail size={14} className="text-[#8EB69B]" />
-              <span>nextgendigitalofficial2026@gmail.com</span>
+              <span>zivdevofficial@gmail.com</span>
             </a>
           </motion.div>
         </motion.div>

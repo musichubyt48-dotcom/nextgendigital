@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Menu, X, ArrowRight, Phone, MessageCircle } from "lucide-react";
 import { motion, AnimatePresence, useReducedMotion } from "motion/react";
 import { MagneticButton } from "@/components/motion/MagneticButton";
+import logo from "@/assets/ChatGPT_Image_Jun_12,_2026,_02_34_28_PM.png";
 
 interface NavbarProps {
   currentPath: string;
@@ -51,7 +52,7 @@ export function Navbar({ currentPath, onNavigate }: NavbarProps) {
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-out ${
           isScrolled
-            ? "bg-white/90 backdrop-blur-md border-b border-[#235347]/15 py-3 shadow-[0_4px_24px_rgba(11,43,38,0.06)]"
+            ? "bg-[#041510]/90 backdrop-blur-md border-b border-[#00D285]/15 py-3 shadow-[0_4px_28px_rgba(0,0,0,0.45)]"
             : "bg-transparent py-5 sm:py-6"
         }`}
       >
@@ -63,14 +64,16 @@ export function Navbar({ currentPath, onNavigate }: NavbarProps) {
               onClick={() => handleLinkClick("/")}
               className="flex items-center gap-2.5 text-left group focus:outline-none cursor-pointer"
             >
-              <span className="h-8 w-8 rounded-lg bg-[#0B2B26] flex items-center justify-center text-[#DAF1DE] font-display font-bold text-base transition-transform duration-300 group-hover:scale-105 group-hover:bg-[#235347]">
-                N
-              </span>
+              <img
+                src={logo}
+                alt="JIVDEV"
+                className="h-8 w-8 object-contain rounded-lg transition-transform duration-300 group-hover:scale-105 shadow-[0_0_15px_rgba(0,210,133,0.35)]"
+              />
               <div className="flex flex-col">
-                <span className="font-display font-bold tracking-tight text-base sm:text-lg text-[#0B2B26] uppercase">
-                  NextGen Digital
+                <span className="font-display font-bold tracking-tight text-base sm:text-lg text-white uppercase">
+                  JIVDEV
                 </span>
-                <span className="font-mono text-[0.625rem] uppercase tracking-widest text-[#163832]/60 -mt-0.5">
+                <span className="font-mono text-[0.625rem] uppercase tracking-widest text-[#00D285]/80 -mt-0.5">
                   Studio & Systems
                 </span>
               </div>
@@ -86,16 +89,14 @@ export function Navbar({ currentPath, onNavigate }: NavbarProps) {
                     type="button"
                     onClick={() => handleLinkClick(link.path)}
                     className={`relative text-xs font-mono font-medium uppercase tracking-widest transition-colors duration-200 py-1 cursor-pointer ${
-                      isActive
-                        ? "text-[#0B2B26] font-bold"
-                        : "text-[#163832]/75 hover:text-[#0B2B26]"
+                      isActive ? "text-white font-bold" : "text-white/75 hover:text-white"
                     }`}
                   >
                     <span>{link.label}</span>
                     {isActive && (
                       <motion.span
                         layoutId="activeNavIndicator"
-                        className="absolute -bottom-0.5 left-0 right-0 h-[2px] bg-[#235347] rounded-full"
+                        className="absolute -bottom-0.5 left-0 right-0 h-[2px] bg-[#00D285] rounded-full shadow-[0_0_8px_rgba(0,210,133,0.8)]"
                         transition={{
                           type: "spring",
                           stiffness: 400,
@@ -113,7 +114,7 @@ export function Navbar({ currentPath, onNavigate }: NavbarProps) {
               <MagneticButton
                 variant="primary"
                 onClick={() => handleLinkClick("/start-a-project")}
-                className="!py-2.5 !px-5 text-xs font-mono font-bold tracking-wider hover:shadow-[0_4px_16px_rgba(35,83,71,0.25)] transition-shadow"
+                className="!py-2.5 !px-5 text-xs font-mono font-bold tracking-wider !bg-[#00D285] !text-[#041510] hover:!bg-[#00e599] !border-[#00D285] hover:shadow-[0_0_24px_rgba(0,210,133,0.45)] transition-all"
               >
                 <span>START A PROJECT</span>
                 <ArrowRight size={13} className="transition-transform group-hover:translate-x-1" />
@@ -124,7 +125,7 @@ export function Navbar({ currentPath, onNavigate }: NavbarProps) {
             <button
               type="button"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="md:hidden h-10 w-10 rounded-full border border-[#235347]/20 bg-white flex items-center justify-center text-[#0B2B26] hover:bg-[#DAF1DE] transition-colors cursor-pointer"
+              className="md:hidden h-10 w-10 rounded-full border border-[#00D285]/30 bg-[#06211a]/80 backdrop-blur-md flex items-center justify-center text-white hover:bg-[#00D285] hover:text-[#041510] transition-colors cursor-pointer shadow-[0_0_12px_rgba(0,210,133,0.15)]"
               aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
             >
               {mobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
@@ -141,10 +142,10 @@ export function Navbar({ currentPath, onNavigate }: NavbarProps) {
             animate={{ opacity: 1, y: 0 }}
             exit={shouldReduceMotion ? { opacity: 0 } : { opacity: 0, y: -20 }}
             transition={{ duration: 0.28, ease: [0.16, 1, 0.3, 1] }}
-            className="fixed inset-0 z-40 md:hidden bg-white pt-24 pb-8 px-6 flex flex-col justify-between overflow-y-auto"
+            className="fixed inset-0 z-40 md:hidden bg-[#041510]/95 backdrop-blur-xl pt-24 pb-8 px-6 flex flex-col justify-between overflow-y-auto text-white"
           >
             <div className="space-y-6 pt-4">
-              <span className="font-mono text-[0.6875rem] uppercase tracking-widest text-[#163832]/50 block">
+              <span className="font-mono text-[0.6875rem] uppercase tracking-widest text-[#00D285]/80 block">
                 Menu Navigation
               </span>
               <nav className="flex flex-col space-y-4">
@@ -156,40 +157,40 @@ export function Navbar({ currentPath, onNavigate }: NavbarProps) {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: 0.05 * idx, duration: 0.25 }}
                     onClick={() => handleLinkClick(link.path)}
-                    className={`text-left font-display text-2xl font-bold uppercase tracking-tight flex items-center justify-between py-2 border-b border-[#235347]/10 cursor-pointer ${
-                      currentPath === link.path ? "text-[#0B2B26]" : "text-[#163832]/70"
+                    className={`text-left font-display text-2xl font-bold uppercase tracking-tight flex items-center justify-between py-2 border-b border-[#00D285]/15 cursor-pointer ${
+                      currentPath === link.path ? "text-[#00D285]" : "text-white/85"
                     }`}
                   >
                     <span>{link.label}</span>
-                    <ArrowRight size={18} className="opacity-60" />
+                    <ArrowRight size={18} className="opacity-60 text-[#00D285]" />
                   </motion.button>
                 ))}
               </nav>
             </div>
 
-            <div className="pt-8 space-y-4 border-t border-[#235347]/15">
-              <MagneticButton
-                variant="primary"
+            <div className="pt-8 space-y-4 border-t border-[#00D285]/15">
+              <button
+                type="button"
                 onClick={() => handleLinkClick("/start-a-project")}
-                className="w-full !py-4 text-sm"
+                className="w-full py-4 rounded-full font-mono text-sm font-bold tracking-wider uppercase bg-[#00D285] text-[#041510] hover:bg-[#00e599] flex items-center justify-center gap-2 shadow-[0_0_24px_rgba(0,210,133,0.4)] transition-all cursor-pointer"
               >
                 <span>START A PROJECT</span>
                 <ArrowRight size={16} />
-              </MagneticButton>
+              </button>
 
               <div className="grid grid-cols-2 gap-2 pt-2">
                 <a
-                  href="https://wa.me/918509332038?text=Hello%20NextGen%20Digital,%20I%20would%20like%20to%20discuss%20a%20website%20project."
+                  href="https://wa.me/918509332038?text=Hello%20JIVDEV,%20I%20would%20like%20to%20discuss%20a%20website%20project."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 py-3 px-3 rounded-xl border border-[#235347]/20 text-xs font-mono font-medium text-[#163832] bg-[#DAF1DE]/40 hover:bg-[#DAF1DE]"
+                  className="flex items-center justify-center gap-2 py-3 px-3 rounded-xl border border-[#00D285]/30 text-xs font-mono font-medium text-[#E8F7EE] bg-[#06211a] hover:bg-[#00D285] hover:text-[#041510] transition-colors"
                 >
                   <MessageCircle size={14} />
                   <span>WhatsApp</span>
                 </a>
                 <a
                   href="tel:+918509332038"
-                  className="flex items-center justify-center gap-2 py-3 px-3 rounded-xl border border-[#235347]/20 text-xs font-mono font-medium text-[#163832] bg-[#DAF1DE]/40 hover:bg-[#DAF1DE]"
+                  className="flex items-center justify-center gap-2 py-3 px-3 rounded-xl border border-[#00D285]/30 text-xs font-mono font-medium text-[#E8F7EE] bg-[#06211a] hover:bg-[#00D285] hover:text-[#041510] transition-colors"
                 >
                   <Phone size={14} />
                   <span>Call Studio</span>

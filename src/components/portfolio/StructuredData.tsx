@@ -1,12 +1,12 @@
 import { useEffect } from "react";
 
 const SITE_URL = "https://nextgendigital.services";
-const ORG_NAME = "NextGen Digital";
+const ORG_NAME = "JIVDEV";
 const ORG_DESC =
-  "NextGen Digital is an independent digital development studio founded by Ashutosh Kumar Srivastava, building high-conversion websites, booking engines, and digital systems for growing businesses across India.";
+  "JIVDEV is an independent digital development studio founded by Ashutosh Kumar Srivastava, building modern websites, booking engines, and digital systems for growing businesses.";
 const FOUNDER = "Ashutosh Kumar Srivastava";
 const PHONE = "+91 8509332038";
-const EMAIL = "nextgendigitalofficial2026@gmail.com";
+const EMAIL = "zivdevofficial@gmail.com";
 
 const logoUrl = `${SITE_URL}/logo.svg`;
 const logoObject = {
@@ -23,7 +23,7 @@ const organization = {
   "@type": "Organization",
   "@id": `${SITE_URL}/#organization`,
   name: ORG_NAME,
-  alternateName: "Nextgen Digital Studio",
+  alternateName: "JIVDEV Studio",
   url: SITE_URL,
   logo: logoObject,
   image: logoObject,
@@ -214,32 +214,32 @@ const breadcrumbs = {
 
 const faqs = [
   {
-    q: "What makes Nextgen Digital a premium website development agency?",
-    a: "Every Nextgen Digital website is hand-crafted rather than templated. We combine premium design, modern frameworks like React and Next.js, AI-powered features and on-page SEO to deliver business websites that feel expensive and perform under real traffic.",
+    q: "What makes JIVDEV a premium website development studio?",
+    a: "Every JIVDEV website is hand-crafted rather than templated. We combine premium design, modern frameworks like React and Next.js, and clean code to deliver business websites that feel expensive and perform under real traffic.",
   },
   {
     q: "How much does a premium business website cost?",
-    a: "Pricing depends on scope and region, but most premium business websites we build fall between an affordable starter package and a fully custom multi-page build. We share a clear fixed quote in your preferred currency after the first discovery call, with no hidden fees.",
+    a: "Pricing depends on scope and region, but most business websites we build fall between an affordable starter package and a fully custom multi-page build. We share a clear fixed quote with no hidden fees.",
   },
   {
-    q: "Do you offer AI website development?",
-    a: "Yes. We integrate AI features such as smart chat assistants, content generation, personalised search and workflow automation into websites where they genuinely help your business — never as a gimmick.",
+    q: "Do you offer custom website development?",
+    a: "Yes. We build tailored websites with custom booking flows, product catalogs, and direct inquiry channels designed specifically for your operations.",
   },
   {
     q: "How long does it take to build a website?",
-    a: "A typical premium business website from Nextgen Digital takes two to four weeks from kickoff to launch, depending on how quickly content, images and feedback are shared.",
+    a: "A typical business website from JIVDEV takes two to four weeks from kickoff to launch, depending on how quickly content, images and feedback are shared.",
   },
   {
     q: "Are your websites SEO friendly?",
-    a: "Absolutely. Every project ships with semantic HTML, structured data, optimised Core Web Vitals, XML sitemaps, hreflang-ready markup and clean canonical URLs so search engines can index and rank your pages correctly in any market.",
+    a: "Absolutely. Every project ships with semantic HTML, structured data, optimised Core Web Vitals, and clean canonical URLs so search engines can index and rank your pages correctly.",
   },
   {
     q: "Do you work with clients internationally?",
-    a: "Yes. Nextgen Digital serves clients worldwide. Our work is delivered fully online and we regularly collaborate with founders across North America, Europe, the Middle East, Africa, Asia and Australia — communicating in your time zone.",
+    a: "Yes. JIVDEV serves clients worldwide. Our work is delivered fully online and we regularly collaborate with founders globally — communicating in your time zone.",
   },
   {
-    q: "Can you build multilingual websites?",
-    a: "Yes. We build websites that are ready for multilingual and multi-region expansion, including proper hreflang tags, locale-aware routing and translation-friendly content structures so you can launch in new markets without a rebuild.",
+    q: "Can you build responsive websites?",
+    a: "Yes. We build websites that are fully responsive and optimized across mobile, tablet, and desktop devices.",
   },
 ];
 
@@ -311,7 +311,7 @@ const collectionPage = {
   url: `${SITE_URL}/#projects`,
   name: `Projects by ${ORG_NAME}`,
   description:
-    "A collection of premium website projects built by Nextgen Digital for businesses worldwide.",
+    "A collection of website projects built by JIVDEV for businesses worldwide.",
   isPartOf: { "@id": `${SITE_URL}/#website` },
   inLanguage: "en",
   hasPart: [

@@ -72,7 +72,7 @@ export function WhyNextGenSection() {
               and technical transparency."
             </p>
             <div className="text-xs text-[#163832]/70 pt-1">
-              — Ashutosh Kumar Srivastava, Founder & Principal Developer
+              — Ashutosh Kumar Srivastava, Founder
             </div>
           </div>
         </div>
@@ -94,7 +94,7 @@ export function WhyNextGenSection() {
 
               <div className="pt-4 mt-4 border-t border-[#235347]/10 flex items-center gap-1.5 text-xs text-[#163832] font-mono">
                 <CheckCircle2 size={13} className="text-[#235347]" />
-                <span>NextGen Standard</span>
+                <span>JIVDEV Standard</span>
               </div>
             </div>
           ))}

@@ -220,46 +220,46 @@ export function StartAProjectPage({ initialBundle = "", onNavigate }: StartAProj
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center space-y-3 sm:space-y-4 mb-8 sm:mb-12">
-          <div className="inline-flex items-center gap-1.5 sm:gap-2 rounded-full bg-[#DAF1DE] border border-[#8EB69B]/30 px-3 sm:px-4 py-1 sm:py-1.5 text-[11px] sm:text-xs font-mono uppercase tracking-widest text-[#0B2B26]">
-            <Sparkles size={13} className="text-[#235347]" />
+          <div className="inline-flex items-center gap-1.5 sm:gap-2 rounded-full bg-[#00D285]/10 border border-[#00D285]/25 px-3 sm:px-4 py-1 sm:py-1.5 text-[11px] sm:text-xs font-mono uppercase tracking-widest text-[#00D285] font-semibold">
+            <Sparkles size={13} className="text-[#00D285]" />
             <span>Start a Project · 24-Hour Scope Response</span>
           </div>
 
-          <h1 className="text-2xl sm:text-4xl md:text-fluid-section font-display font-extrabold uppercase text-[#0B2B26] tracking-tight leading-tight">
+          <h1 className="text-2xl sm:text-4xl md:text-fluid-section font-display font-extrabold uppercase text-[#041510] tracking-tight leading-tight">
             Let's Build Something <br />
-            <span className="underline decoration-[#8EB69B] decoration-4 underline-offset-8">
+            <span className="underline decoration-[#00D285] decoration-4 underline-offset-8">
               For Your Business.
             </span>
           </h1>
 
-          <p className="text-xs sm:text-base text-[#235347] max-w-xl mx-auto font-sans leading-relaxed">
+          <p className="text-xs sm:text-base text-[#0A241D]/75 max-w-xl mx-auto font-sans leading-relaxed">
             Tell us about your target audience, commercial requirements, and expectations. We review
             every enquiry directly with engineering proposals and transparent milestones.
           </p>
         </div>
 
         {/* Form Container */}
-        <div className="bg-white rounded-2xl sm:rounded-3xl p-4 sm:p-10 md:p-12 border border-[#235347]/15 shadow-card relative">
+        <div className="bg-white rounded-2xl sm:rounded-3xl p-4 sm:p-10 md:p-12 border border-[#00D285]/20 shadow-xl relative">
           {isSuccess ? (
             <div className="text-center py-8 sm:py-12 space-y-6">
-              <div className="h-16 w-16 rounded-full bg-[#DAF1DE] border border-[#8EB69B]/30 text-[#0B2B26] flex items-center justify-center mx-auto shadow-sm">
-                <CheckCircle2 size={36} className="text-[#235347]" />
+              <div className="h-16 w-16 rounded-full bg-[#00D285]/15 border border-[#00D285]/30 text-[#00D285] flex items-center justify-center mx-auto shadow-sm">
+                <CheckCircle2 size={36} className="text-[#00D285]" />
               </div>
 
               <div className="space-y-2">
-                <span className="font-mono text-xs uppercase tracking-widest text-[#235347] font-bold block">
+                <span className="font-mono text-xs uppercase tracking-widest text-[#00D285] font-bold block">
                   Enquiry Successfully Logged
                 </span>
-                <h3 className="font-display font-extrabold text-3xl sm:text-4xl text-[#0B2B26]">
+                <h3 className="font-display font-extrabold text-3xl sm:text-4xl text-[#041510]">
                   Project Request Confirmed
                 </h3>
-                <p className="text-base text-[#235347] max-w-lg mx-auto font-sans leading-relaxed">
+                <p className="text-base text-[#0A241D]/80 max-w-lg mx-auto font-sans leading-relaxed">
                   Thank you,{" "}
-                  <span className="font-bold text-[#0B2B26]">
+                  <span className="font-bold text-[#041510]">
                     {submittedData.name || formData.name}
                   </span>
                   ! Our technical lead has received the project brief for{" "}
-                  <span className="font-bold text-[#0B2B26]">
+                  <span className="font-bold text-[#041510]">
                     {submittedData.businessName || formData.businessName}
                   </span>{" "}
                   and will reach out via email (
@@ -269,20 +269,20 @@ export function StartAProjectPage({ initialBundle = "", onNavigate }: StartAProj
               </div>
 
               {/* Brief Summary Box */}
-              <div className="my-6 p-5 rounded-2xl bg-[#DAF1DE]/40 border border-[#235347]/15 text-left max-w-lg mx-auto space-y-2 text-xs font-mono text-[#0B2B26]">
-                <div className="flex items-center justify-between pb-2 border-b border-[#235347]/15">
-                  <span className="font-bold uppercase tracking-wider text-[#0B2B26]">
+              <div className="my-6 p-5 rounded-2xl bg-[#F8FAF9] border border-[#00D285]/20 text-left max-w-lg mx-auto space-y-2 text-xs font-mono text-[#041510]">
+                <div className="flex items-center justify-between pb-2 border-b border-[#00D285]/15">
+                  <span className="font-bold uppercase tracking-wider text-[#041510]">
                     Submitted Scope Summary
                   </span>
                   <button
                     type="button"
                     onClick={handleCopySummary}
-                    className="inline-flex items-center gap-1 text-[0.6875rem] font-bold text-[#235347] hover:text-[#0B2B26] cursor-pointer"
+                    className="inline-flex items-center gap-1 text-[0.6875rem] font-bold text-[#00D285] hover:text-[#00B873] cursor-pointer"
                   >
                     {copiedBrief ? (
                       <>
-                        <Check size={12} className="text-[#235347]" />
-                        <span className="text-[#235347]">Copied!</span>
+                        <Check size={12} className="text-[#00D285]" />
+                        <span className="text-[#00D285]">Copied!</span>
                       </>
                     ) : (
                       <>
@@ -292,17 +292,17 @@ export function StartAProjectPage({ initialBundle = "", onNavigate }: StartAProj
                     )}
                   </button>
                 </div>
-                <div className="grid grid-cols-2 gap-2 pt-1 text-[0.75rem] text-[#235347]">
+                <div className="grid grid-cols-2 gap-2 pt-1 text-[0.75rem] text-[#0A241D]/80">
                   <div>
-                    <span className="text-[#235347]/70 font-semibold">Type:</span>{" "}
+                    <span className="text-[#0A241D]/60 font-semibold">Type:</span>{" "}
                     {submittedData.projectType || formData.projectType}
                   </div>
                   <div>
-                    <span className="text-[#235347]/70 font-semibold">Timeline:</span>{" "}
+                    <span className="text-[#0A241D]/60 font-semibold">Timeline:</span>{" "}
                     {submittedData.timeline || formData.timeline}
                   </div>
                   <div className="col-span-2">
-                    <span className="text-[#235347]/70 font-semibold">Budget:</span>{" "}
+                    <span className="text-[#0A241D]/60 font-semibold">Budget:</span>{" "}
                     {submittedData.budgetRange || formData.budgetRange}
                   </div>
                 </div>
@@ -314,21 +314,21 @@ export function StartAProjectPage({ initialBundle = "", onNavigate }: StartAProj
                   href={generateWhatsAppHandoff()}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full inline-flex items-center justify-center gap-2.5 py-4 px-6 rounded-full bg-[#235347] text-[#FFFFFF] hover:bg-[#163832] font-mono text-xs uppercase tracking-wider font-bold transition-all shadow-sm"
+                  className="w-full inline-flex items-center justify-center gap-2.5 py-4 px-6 rounded-full bg-[#00D285] text-[#041510] hover:bg-[#00B873] font-mono text-xs uppercase tracking-wider font-extrabold transition-all shadow-md shadow-[#00D285]/20"
                 >
                   <MessageCircle size={16} />
                   <span>Send Direct Copy to Lead on WhatsApp</span>
                 </a>
-                <p className="text-xs font-mono text-[#235347]/70">
+                <p className="text-xs font-mono text-[#0A241D]/60">
                   Prefer real-time chat? Connect with our technical lead directly on WhatsApp.
                 </p>
               </div>
 
-              <div className="pt-6 border-t border-[#235347]/15">
+              <div className="pt-6 border-t border-[#00D285]/15">
                 <button
                   type="button"
                   onClick={() => onNavigate("/")}
-                  className="text-xs font-mono font-bold uppercase tracking-wider text-[#235347] hover:text-[#0B2B26] hover:underline cursor-pointer"
+                  className="text-xs font-mono font-bold uppercase tracking-wider text-[#00D285] hover:text-[#041510] hover:underline cursor-pointer"
                 >
                   ← Return to NextGen Digital Home
                 </button>
@@ -342,15 +342,15 @@ export function StartAProjectPage({ initialBundle = "", onNavigate }: StartAProj
                 <div className="space-y-1.5">
                   <label
                     htmlFor="client-name"
-                    className="block text-xs font-mono uppercase tracking-wider font-bold text-[#0B2B26]"
+                    className="block text-xs font-mono uppercase tracking-wider font-bold text-[#041510]"
                   >
                     Your Name *
                   </label>
                   <div
                     className={`relative rounded-xl transition-all duration-200 ${
                       focusedField === "name"
-                        ? "ring-2 ring-[#235347] shadow-sm"
-                        : "hover:border-[#235347]/40"
+                        ? "ring-2 ring-[#00D285] shadow-sm"
+                        : "hover:border-[#00D285]/40"
                     }`}
                   >
                     <input
@@ -365,8 +365,8 @@ export function StartAProjectPage({ initialBundle = "", onNavigate }: StartAProj
                         if (errors.name) setErrors({ ...errors, name: "" });
                       }}
                       placeholder="e.g. Anand Sen"
-                      className={`w-full px-3.5 sm:px-4 py-2.5 sm:py-3.5 rounded-xl border text-base sm:text-sm font-sans text-[#0B2B26] bg-[#DAF1DE]/25 focus:bg-white focus:outline-none transition-all ${
-                        errors.name ? "border-red-500 bg-red-50/40" : "border-[#235347]/20"
+                      className={`w-full px-3.5 sm:px-4 py-2.5 sm:py-3.5 rounded-xl border text-base sm:text-sm font-sans text-[#041510] bg-[#F8FAF9] focus:bg-white focus:outline-none transition-all ${
+                        errors.name ? "border-red-500 bg-red-50/40" : "border-[#00D285]/20"
                       }`}
                     />
                   </div>
@@ -389,15 +389,15 @@ export function StartAProjectPage({ initialBundle = "", onNavigate }: StartAProj
                 <div className="space-y-1.5">
                   <label
                     htmlFor="business-name"
-                    className="block text-xs font-mono uppercase tracking-wider font-bold text-[#0B2B26]"
+                    className="block text-xs font-mono uppercase tracking-wider font-bold text-[#041510]"
                   >
                     Business Name *
                   </label>
                   <div
                     className={`relative rounded-xl transition-all duration-200 ${
                       focusedField === "businessName"
-                        ? "ring-2 ring-[#235347] shadow-sm"
-                        : "hover:border-[#235347]/40"
+                        ? "ring-2 ring-[#00D285] shadow-sm"
+                        : "hover:border-[#00D285]/40"
                     }`}
                   >
                     <input
@@ -412,8 +412,8 @@ export function StartAProjectPage({ initialBundle = "", onNavigate }: StartAProj
                         if (errors.businessName) setErrors({ ...errors, businessName: "" });
                       }}
                       placeholder="e.g. Himalaya Heights Retreat"
-                      className={`w-full px-3.5 sm:px-4 py-2.5 sm:py-3.5 rounded-xl border text-base sm:text-sm font-sans text-[#0B2B26] bg-[#DAF1DE]/25 focus:bg-white focus:outline-none transition-all ${
-                        errors.businessName ? "border-red-500 bg-red-50/40" : "border-[#235347]/20"
+                      className={`w-full px-3.5 sm:px-4 py-2.5 sm:py-3.5 rounded-xl border text-base sm:text-sm font-sans text-[#041510] bg-[#F8FAF9] focus:bg-white focus:outline-none transition-all ${
+                        errors.businessName ? "border-red-500 bg-red-50/40" : "border-[#00D285]/20"
                       }`}
                     />
                   </div>
@@ -439,15 +439,15 @@ export function StartAProjectPage({ initialBundle = "", onNavigate }: StartAProj
                 <div className="space-y-1.5">
                   <label
                     htmlFor="client-email"
-                    className="block text-xs font-mono uppercase tracking-wider font-bold text-[#0B2B26]"
+                    className="block text-xs font-mono uppercase tracking-wider font-bold text-[#041510]"
                   >
                     Email Address *
                   </label>
                   <div
                     className={`relative rounded-xl transition-all duration-200 ${
                       focusedField === "email"
-                        ? "ring-2 ring-[#235347] shadow-sm"
-                        : "hover:border-[#235347]/40"
+                        ? "ring-2 ring-[#00D285] shadow-sm"
+                        : "hover:border-[#00D285]/40"
                     }`}
                   >
                     <input
@@ -462,8 +462,8 @@ export function StartAProjectPage({ initialBundle = "", onNavigate }: StartAProj
                         if (errors.email) setErrors({ ...errors, email: "" });
                       }}
                       placeholder="e.g. anand@business.com"
-                      className={`w-full px-3.5 sm:px-4 py-2.5 sm:py-3.5 rounded-xl border text-base sm:text-sm font-sans text-[#0B2B26] bg-[#DAF1DE]/25 focus:bg-white focus:outline-none transition-all ${
-                        errors.email ? "border-red-500 bg-red-50/40" : "border-[#235347]/20"
+                      className={`w-full px-3.5 sm:px-4 py-2.5 sm:py-3.5 rounded-xl border text-base sm:text-sm font-sans text-[#041510] bg-[#F8FAF9] focus:bg-white focus:outline-none transition-all ${
+                        errors.email ? "border-red-500 bg-red-50/40" : "border-[#00D285]/20"
                       }`}
                     />
                   </div>
@@ -486,15 +486,15 @@ export function StartAProjectPage({ initialBundle = "", onNavigate }: StartAProj
                 <div className="space-y-1.5">
                   <label
                     htmlFor="client-contact"
-                    className="block text-xs font-mono uppercase tracking-wider font-bold text-[#0B2B26]"
+                    className="block text-xs font-mono uppercase tracking-wider font-bold text-[#041510]"
                   >
                     Phone / WhatsApp *
                   </label>
                   <div
                     className={`relative rounded-xl transition-all duration-200 ${
                       focusedField === "contact"
-                        ? "ring-2 ring-[#235347] shadow-sm"
-                        : "hover:border-[#235347]/40"
+                        ? "ring-2 ring-[#00D285] shadow-sm"
+                        : "hover:border-[#00D285]/40"
                     }`}
                   >
                     <input
@@ -509,8 +509,8 @@ export function StartAProjectPage({ initialBundle = "", onNavigate }: StartAProj
                         if (errors.contact) setErrors({ ...errors, contact: "" });
                       }}
                       placeholder="e.g. +91 98765 43210"
-                      className={`w-full px-3.5 sm:px-4 py-2.5 sm:py-3.5 rounded-xl border text-base sm:text-sm font-sans text-[#0B2B26] bg-[#DAF1DE]/25 focus:bg-white focus:outline-none transition-all ${
-                        errors.contact ? "border-red-500 bg-red-50/40" : "border-[#235347]/20"
+                      className={`w-full px-3.5 sm:px-4 py-2.5 sm:py-3.5 rounded-xl border text-base sm:text-sm font-sans text-[#041510] bg-[#F8FAF9] focus:bg-white focus:outline-none transition-all ${
+                        errors.contact ? "border-red-500 bg-red-50/40" : "border-[#00D285]/20"
                       }`}
                     />
                   </div>
@@ -532,7 +532,7 @@ export function StartAProjectPage({ initialBundle = "", onNavigate }: StartAProj
 
               {/* Project Type */}
               <div className="space-y-2.5 pt-1">
-                <label className="block text-xs font-mono uppercase tracking-wider font-bold text-[#0B2B26]">
+                <label className="block text-xs font-mono uppercase tracking-wider font-bold text-[#041510]">
                   Project Type *
                 </label>
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-2.5">
@@ -548,8 +548,8 @@ export function StartAProjectPage({ initialBundle = "", onNavigate }: StartAProj
                         }}
                         className={`p-3.5 rounded-xl border text-xs font-mono font-medium text-left transition-all cursor-pointer ${
                           isSelected
-                            ? "bg-[#235347] text-[#FFFFFF] border-[#235347] shadow-sm font-bold scale-102"
-                            : "bg-[#DAF1DE]/30 text-[#0B2B26] border-[#235347]/15 hover:bg-[#DAF1DE]"
+                            ? "bg-[#06211A] text-[#00D285] border-[#00D285] shadow-sm font-bold scale-102"
+                            : "bg-[#F8FAF9] text-[#041510] border-[#00D285]/15 hover:bg-[#E8F7EE]"
                         }`}
                       >
                         {type}
@@ -565,10 +565,10 @@ export function StartAProjectPage({ initialBundle = "", onNavigate }: StartAProj
               {/* Budget Range */}
               <div className="space-y-2.5 pt-1">
                 <div className="flex items-center justify-between">
-                  <label className="block text-xs font-mono uppercase tracking-wider font-bold text-[#0B2B26]">
+                  <label className="block text-xs font-mono uppercase tracking-wider font-bold text-[#041510]">
                     Budget Range *
                   </label>
-                  <span className="text-[0.6875rem] font-mono text-[#235347]/70">
+                  <span className="text-[0.6875rem] font-mono text-[#0A241D]/60">
                     Transparent milestones
                   </span>
                 </div>
@@ -585,16 +585,16 @@ export function StartAProjectPage({ initialBundle = "", onNavigate }: StartAProj
                         }}
                         className={`p-4 rounded-2xl border text-left transition-all cursor-pointer flex flex-col justify-between ${
                           isSelected
-                            ? "bg-[#235347] text-[#FFFFFF] border-[#235347] shadow-md ring-2 ring-[#8EB69B]"
-                            : "bg-[#DAF1DE]/25 text-[#0B2B26] border-[#235347]/15 hover:bg-[#DAF1DE]/60"
+                            ? "bg-[#06211A] text-[#FFFFFF] border-[#00D285] shadow-md ring-2 ring-[#00D285]/40"
+                            : "bg-[#F8FAF9] text-[#041510] border-[#00D285]/15 hover:bg-[#E8F7EE]"
                         }`}
                       >
                         <div className="flex items-center justify-between w-full">
-                          <span className="font-mono text-xs font-bold uppercase tracking-wider">
+                          <span className={`font-mono text-xs font-bold uppercase tracking-wider ${isSelected ? "text-[#00D285]" : "text-[#041510]"}`}>
                             {range.tier}
                           </span>
                           {isSelected && (
-                            <span className="h-2 w-2 rounded-full bg-[#8EB69B] animate-ping" />
+                            <span className="h-2 w-2 rounded-full bg-[#00D285] animate-ping" />
                           )}
                         </div>
                         <div className="mt-2 space-y-0.5">
@@ -603,7 +603,7 @@ export function StartAProjectPage({ initialBundle = "", onNavigate }: StartAProj
                           </span>
                           <span
                             className={`text-[0.6875rem] block font-sans ${
-                              isSelected ? "text-[#DAF1DE]/80" : "text-[#235347]/80"
+                              isSelected ? "text-[#E8F7EE]/80" : "text-[#0A241D]/70"
                             }`}
                           >
                             {range.desc}
@@ -621,11 +621,11 @@ export function StartAProjectPage({ initialBundle = "", onNavigate }: StartAProj
               {/* Timeline */}
               <div className="space-y-2.5 pt-1">
                 <div className="flex items-center justify-between">
-                  <label className="block text-xs font-mono uppercase tracking-wider font-bold text-[#0B2B26] flex items-center gap-1.5">
-                    <Clock size={13} className="text-[#235347]" />
+                  <label className="block text-xs font-mono uppercase tracking-wider font-bold text-[#041510] flex items-center gap-1.5">
+                    <Clock size={13} className="text-[#00D285]" />
                     <span>Timeline *</span>
                   </label>
-                  <span className="text-[0.6875rem] font-mono text-[#235347]/70">
+                  <span className="text-[0.6875rem] font-mono text-[#0A241D]/60">
                     Expected launch date
                   </span>
                 </div>
@@ -642,14 +642,14 @@ export function StartAProjectPage({ initialBundle = "", onNavigate }: StartAProj
                         }}
                         className={`p-3 rounded-xl border text-left transition-all cursor-pointer flex flex-col justify-between ${
                           isSelected
-                            ? "bg-[#235347] text-[#FFFFFF] border-[#235347] shadow-sm font-bold"
-                            : "bg-[#DAF1DE]/25 text-[#0B2B26] border-[#235347]/15 hover:bg-[#DAF1DE]"
+                            ? "bg-[#06211A] text-[#00D285] border-[#00D285] shadow-sm font-bold"
+                            : "bg-[#F8FAF9] text-[#041510] border-[#00D285]/15 hover:bg-[#E8F7EE]"
                         }`}
                       >
                         <span className="font-mono text-xs font-bold block">{opt.label}</span>
                         <span
                           className={`text-[0.625rem] mt-1 block font-sans ${
-                            isSelected ? "text-[#DAF1DE]/80" : "text-[#235347]/70"
+                            isSelected ? "text-[#00D285]/80" : "text-[#0A241D]/70"
                           }`}
                         >
                           {opt.note}
@@ -666,10 +666,10 @@ export function StartAProjectPage({ initialBundle = "", onNavigate }: StartAProj
               {/* Extra Features / Addons */}
               <div className="space-y-2.5 pt-1">
                 <div className="flex items-center justify-between">
-                  <label className="block text-xs font-mono uppercase tracking-wider font-bold text-[#0B2B26]">
+                  <label className="block text-xs font-mono uppercase tracking-wider font-bold text-[#041510]">
                     Business Integrations (Optional)
                   </label>
-                  <span className="text-[0.6875rem] font-mono text-[#235347]/70">
+                  <span className="text-[0.6875rem] font-mono text-[#0A241D]/60">
                     Select any that apply
                   </span>
                 </div>
@@ -683,8 +683,8 @@ export function StartAProjectPage({ initialBundle = "", onNavigate }: StartAProj
                         onClick={() => toggleFeature(feat)}
                         className={`px-3.5 py-2 rounded-full text-xs font-mono transition-all border cursor-pointer ${
                           isSelected
-                            ? "bg-[#235347] text-[#FFFFFF] border-[#235347] shadow-xs"
-                            : "bg-[#DAF1DE]/30 text-[#0B2B26] border-[#235347]/15 hover:bg-[#DAF1DE]"
+                            ? "bg-[#00D285] text-[#041510] border-[#00D285] font-bold shadow-xs"
+                            : "bg-[#F8FAF9] text-[#041510] border-[#00D285]/15 hover:bg-[#E8F7EE]"
                         }`}
                       >
                         {isSelected ? "✓ " : "+ "}
@@ -700,19 +700,19 @@ export function StartAProjectPage({ initialBundle = "", onNavigate }: StartAProj
                 <div className="flex items-center justify-between">
                   <label
                     htmlFor="project-details"
-                    className="block text-xs font-mono uppercase tracking-wider font-bold text-[#0B2B26]"
+                    className="block text-xs font-mono uppercase tracking-wider font-bold text-[#041510]"
                   >
                     Project Details *
                   </label>
-                  <span className="text-[0.6875rem] font-mono text-[#235347]/70">
+                  <span className="text-[0.6875rem] font-mono text-[#0A241D]/60">
                     {formData.projectDetails.length} characters
                   </span>
                 </div>
                 <div
                   className={`relative rounded-xl transition-all duration-200 ${
                     focusedField === "projectDetails"
-                      ? "ring-2 ring-[#235347] shadow-sm"
-                      : "hover:border-[#235347]/40"
+                      ? "ring-2 ring-[#00D285] shadow-sm"
+                      : "hover:border-[#00D285]/40"
                   }`}
                 >
                   <textarea
@@ -727,8 +727,8 @@ export function StartAProjectPage({ initialBundle = "", onNavigate }: StartAProj
                       if (errors.projectDetails) setErrors({ ...errors, projectDetails: "" });
                     }}
                     placeholder="Describe your business model, customer booking flow, reference websites, or special requirements (e.g., 'We operate a 12-suite boutique resort and want direct bookings to replace high OTA commission fees')..."
-                    className={`w-full px-3.5 sm:px-4 py-2.5 sm:py-3.5 rounded-xl border text-base sm:text-sm font-sans text-[#0B2B26] bg-[#DAF1DE]/25 focus:bg-white focus:outline-none transition-all resize-none ${
-                      errors.projectDetails ? "border-red-500 bg-red-50/40" : "border-[#235347]/20"
+                    className={`w-full px-3.5 sm:px-4 py-2.5 sm:py-3.5 rounded-xl border text-base sm:text-sm font-sans text-[#041510] bg-[#F8FAF9] focus:bg-white focus:outline-none transition-all resize-none ${
+                      errors.projectDetails ? "border-red-500 bg-red-50/40" : "border-[#00D285]/20"
                     }`}
                   />
                 </div>
@@ -749,8 +749,8 @@ export function StartAProjectPage({ initialBundle = "", onNavigate }: StartAProj
 
               {/* Trust Guarantee & Submit Button */}
               <div className="pt-4 space-y-4">
-                <div className="flex items-center gap-2 text-xs font-mono text-[#235347]">
-                  <ShieldCheck size={14} className="text-[#235347]" />
+                <div className="flex items-center gap-2 text-xs font-mono text-[#0A241D]/75">
+                  <ShieldCheck size={14} className="text-[#00D285]" />
                   <span>
                     Zero spam guarantee · Direct engineering consultation · Full asset ownership
                   </span>
@@ -779,7 +779,7 @@ export function StartAProjectPage({ initialBundle = "", onNavigate }: StartAProj
                 >
                   {isSubmitting ? (
                     <span className="inline-flex items-center gap-2">
-                      <span className="h-4 w-4 rounded-full border-2 border-[#FFFFFF] border-t-transparent animate-spin" />
+                      <span className="h-4 w-4 rounded-full border-2 border-[#041510] border-t-transparent animate-spin" />
                       <span>Transmitting Project Brief to Studio...</span>
                     </span>
                   ) : (

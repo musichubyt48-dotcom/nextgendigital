@@ -67,11 +67,11 @@ export function PricingCard3D({ plan, onSelect }: PricingCard3DProps) {
       className={`relative rounded-2xl sm:rounded-3xl transition-all duration-300 ease-out select-none flex flex-col justify-between transform-gpu w-full ${
         isGrowth
           ? isHovered
-            ? "bg-[#0B2B26] text-[#DAF1DE] shadow-[0_24px_55px_rgba(5,31,32,0.35),0_0_35px_rgba(142,182,155,0.25)] md:scale-[1.035] -translate-y-1 sm:-translate-y-2 border-2 border-[#8EB69B] z-20"
-            : "bg-[#0B2B26] text-[#DAF1DE] shadow-2xl md:scale-[1.02] border-2 border-[#8EB69B]/60 z-10"
+            ? "bg-[#06211A] text-[#E8F7EE] shadow-[0_24px_55px_rgba(0,0,0,0.5),0_0_35px_rgba(0,210,133,0.35)] md:scale-[1.035] -translate-y-1 sm:-translate-y-2 border-2 border-[#00D285] z-20"
+            : "bg-[#06211A] text-[#E8F7EE] shadow-2xl md:scale-[1.02] border-2 border-[#00D285]/70 z-10"
           : isHovered
-            ? "bg-white text-[#163832] shadow-float md:scale-[1.015] -translate-y-1 sm:-translate-y-1.5 border border-[#235347]/30"
-            : "bg-white text-[#163832] shadow-card border border-[#235347]/15"
+            ? "bg-white text-[#0A241D] shadow-float md:scale-[1.015] -translate-y-1 sm:-translate-y-1.5 border border-[#00D285]/40"
+            : "bg-white text-[#0A241D] shadow-card border border-[#00D285]/20"
       }`}
     >
       {/* 3D Moving Wrapper */}
@@ -89,9 +89,9 @@ export function PricingCard3D({ plan, onSelect }: PricingCard3DProps) {
         <div
           className="pointer-events-none absolute inset-0 rounded-2xl sm:rounded-3xl opacity-0 transition-opacity duration-300"
           style={{
-            opacity: isHovered ? (isGrowth ? 0.3 : 0.12) : 0,
+            opacity: isHovered ? (isGrowth ? 0.35 : 0.12) : 0,
             background: `radial-gradient(420px circle at ${mousePos.x}% ${mousePos.y}%, ${
-              isGrowth ? "#8EB69B" : "#DAF1DE"
+              isGrowth ? "#00D285" : "#E8F7EE"
             }, transparent 60%)`,
           }}
         />
@@ -102,22 +102,22 @@ export function PricingCard3D({ plan, onSelect }: PricingCard3DProps) {
             <span
               className={`font-mono text-[11px] sm:text-xs uppercase tracking-widest font-bold px-2.5 sm:px-3 py-0.5 sm:py-1 rounded-full ${
                 isGrowth
-                  ? "bg-[#163832] text-[#DAF1DE] border border-[#8EB69B]/30"
-                  : "bg-[#DAF1DE] text-[#163832] border border-[#235347]/15"
+                  ? "bg-[#00D285]/20 text-[#00D285] border border-[#00D285]/40"
+                  : "bg-[#00D285]/10 text-[#041510] border border-[#00D285]/20"
               }`}
             >
               {plan.name}
             </span>
 
             {isGrowth && (
-              <span className="inline-flex items-center gap-1 sm:gap-1.5 font-mono text-[10px] sm:text-[0.6875rem] uppercase tracking-wider text-[#0B2B26] bg-[#DAF1DE] px-2.5 sm:px-3 py-0.5 sm:py-1 rounded-full font-bold shadow-sm">
+              <span className="inline-flex items-center gap-1 sm:gap-1.5 font-mono text-[10px] sm:text-[0.6875rem] uppercase tracking-wider text-[#041510] bg-[#00D285] px-2.5 sm:px-3 py-0.5 sm:py-1 rounded-full font-bold shadow-[0_0_12px_rgba(0,210,133,0.4)]">
                 <Sparkles size={11} />
                 <span>MOST POPULAR</span>
               </span>
             )}
 
             {!isGrowth && plan.badge && (
-              <span className="font-mono text-[10px] sm:text-[0.6875rem] uppercase tracking-wider text-[#163832]/65 border border-[#235347]/15 px-2 sm:px-2.5 py-0.5 rounded-full">
+              <span className="font-mono text-[10px] sm:text-[0.6875rem] uppercase tracking-wider text-[#0A241D]/65 border border-[#00D285]/20 px-2 sm:px-2.5 py-0.5 rounded-full">
                 {plan.badge}
               </span>
             )}
@@ -125,13 +125,13 @@ export function PricingCard3D({ plan, onSelect }: PricingCard3DProps) {
 
           <div>
             <div className="flex items-baseline gap-2">
-              <span className="font-display font-extrabold text-3xl sm:text-5xl tracking-tight text-[#0B2B26]">
-                <span className={isGrowth ? "text-[#FFFFFF]" : "text-[#0B2B26]"}>{plan.price}</span>
+              <span className="font-display font-extrabold text-3xl sm:text-5xl tracking-tight text-[#041510]">
+                <span className={isGrowth ? "text-[#FFFFFF]" : "text-[#041510]"}>{plan.price}</span>
               </span>
             </div>
             <p
               className={`font-mono text-[11px] sm:text-xs mt-1 ${
-                isGrowth ? "text-[#DAF1DE]/70" : "text-[#163832]/65"
+                isGrowth ? "text-[#A4CBB7]" : "text-[#0A241D]/65"
               }`}
             >
               {plan.priceNote} · {plan.idealFor}
@@ -142,7 +142,7 @@ export function PricingCard3D({ plan, onSelect }: PricingCard3DProps) {
           <div className="pt-4 space-y-2.5 border-t border-current/10">
             <span
               className={`font-mono text-[0.6875rem] uppercase tracking-widest block font-bold ${
-                isGrowth ? "text-[#8EB69B]" : "text-[#235347]"
+                isGrowth ? "text-[#00D285]" : "text-[#041510]"
               }`}
             >
               Included In Scope:
@@ -152,12 +152,12 @@ export function PricingCard3D({ plan, onSelect }: PricingCard3DProps) {
                 <li key={idx} className="flex items-start gap-2.5 text-xs sm:text-sm leading-snug">
                   <span
                     className={`h-4 w-4 rounded-full flex items-center justify-center shrink-0 mt-0.5 ${
-                      isGrowth ? "bg-[#DAF1DE] text-[#0B2B26]" : "bg-[#DAF1DE] text-[#235347]"
+                      isGrowth ? "bg-[#00D285] text-[#041510]" : "bg-[#00D285]/20 text-[#00D285]"
                     }`}
                   >
                     <Check size={11} strokeWidth={3} />
                   </span>
-                  <span className={isGrowth ? "text-[#DAF1DE]/90" : "text-[#163832]/85"}>
+                  <span className={isGrowth ? "text-[#E8F7EE]" : "text-[#0A241D]/85"}>
                     {item}
                   </span>
                 </li>
@@ -173,8 +173,8 @@ export function PricingCard3D({ plan, onSelect }: PricingCard3DProps) {
             onClick={() => onSelect(plan.name, plan.price)}
             className={`group w-full py-4 px-6 rounded-2xl font-mono text-xs sm:text-sm font-bold tracking-wider uppercase flex items-center justify-center gap-2 transition-all duration-300 cursor-pointer shadow-sm active:scale-95 ${
               isGrowth
-                ? "bg-[#DAF1DE] text-[#0B2B26] hover:bg-[#FFFFFF] hover:shadow-[0_4px_25px_rgba(218,241,222,0.4)]"
-                : "bg-[#235347] text-[#FFFFFF] hover:bg-[#163832]"
+                ? "bg-[#00D285] text-[#041510] hover:bg-[#00e599] hover:shadow-[0_0_24px_rgba(0,210,133,0.5)]"
+                : "bg-[#06211A] text-white hover:bg-[#00D285] hover:text-[#041510]"
             }`}
           >
             <span>{plan.cta}</span>
@@ -185,7 +185,7 @@ export function PricingCard3D({ plan, onSelect }: PricingCard3DProps) {
           </button>
           <div
             className={`text-center font-mono text-[0.6875rem] mt-2 ${
-              isGrowth ? "text-[#DAF1DE]/60" : "text-[#163832]/50"
+              isGrowth ? "text-[#E8F7EE]/60" : "text-[#0A241D]/50"
             }`}
           >
             Full asset & code ownership included

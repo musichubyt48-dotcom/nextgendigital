@@ -53,20 +53,20 @@ export function FaqSection({ onContactClick }: FaqSectionProps) {
   };
 
   return (
-    <section id="faq" className="py-20 md:py-32 bg-[#FFFFFF] border-t border-[#235347]/15 relative">
+    <section id="faq" className="py-20 md:py-32 bg-[#FFFFFF] border-t border-[#00D285]/15 relative">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center space-y-4 pb-14 border-b border-[#235347]/15">
-          <div className="inline-flex items-center gap-2 rounded-full bg-[#DAF1DE] px-3.5 py-1 text-xs font-mono uppercase tracking-widest text-[#163832] border border-[#235347]/15">
+        <div className="text-center space-y-4 pb-14 border-b border-[#00D285]/15">
+          <div className="inline-flex items-center gap-2 rounded-full bg-[#00D285]/10 px-3.5 py-1 text-xs font-mono uppercase tracking-widest text-[#00D285] border border-[#00D285]/25">
             <span>07 / Common Queries</span>
           </div>
-          <h2 className="text-fluid-section font-display font-bold uppercase text-[#0B2B26] tracking-tight">
+          <h2 className="text-fluid-section font-display font-bold uppercase text-[#041510] tracking-tight">
             Frequently Asked <br />
-            <span className="underline decoration-[#8EB69B] decoration-4 underline-offset-8">
+            <span className="underline decoration-[#00D285] decoration-4 underline-offset-8">
               Questions.
             </span>
           </h2>
-          <p className="text-sm sm:text-base font-sans text-[#163832]/75 max-w-lg mx-auto">
+          <p className="text-sm sm:text-base font-sans text-[#0A241D]/75 max-w-lg mx-auto">
             Honest answers about costs, timelines, hosting, code ownership, and technical scope.
           </p>
         </div>
@@ -80,8 +80,8 @@ export function FaqSection({ onContactClick }: FaqSectionProps) {
                 key={idx}
                 className={`rounded-2xl border transition-all duration-200 overflow-hidden ${
                   isOpen
-                    ? "bg-white border-[#235347]/30 shadow-card"
-                    : "bg-[#DAF1DE]/25 border-[#235347]/15 hover:bg-white"
+                    ? "bg-white border-[#00D285]/40 shadow-card"
+                    : "bg-[#F8FAF9] border-[#00D285]/15 hover:bg-white"
                 }`}
               >
                 <button
@@ -89,12 +89,12 @@ export function FaqSection({ onContactClick }: FaqSectionProps) {
                   onClick={() => toggleFaq(idx)}
                   className="w-full py-5 px-6 sm:px-8 flex items-center justify-between text-left gap-4 focus:outline-none cursor-pointer"
                 >
-                  <span className="font-display font-bold text-base sm:text-lg text-[#0B2B26] tracking-tight">
+                  <span className="font-display font-bold text-base sm:text-lg text-[#041510] tracking-tight">
                     {faq.q}
                   </span>
                   <span
-                    className={`h-8 w-8 rounded-full border border-[#235347]/15 flex items-center justify-center shrink-0 transition-transform duration-300 ${
-                      isOpen ? "rotate-180 bg-[#235347] text-[#FFFFFF]" : "text-[#163832]/60"
+                    className={`h-8 w-8 rounded-full border border-[#00D285]/20 flex items-center justify-center shrink-0 transition-transform duration-300 ${
+                      isOpen ? "rotate-180 bg-[#00D285] text-[#041510]" : "text-[#0A241D]/60"
                     }`}
                   >
                     <ChevronDown size={16} />
@@ -110,7 +110,7 @@ export function FaqSection({ onContactClick }: FaqSectionProps) {
                       transition={{ duration: 0.28, ease: [0.16, 1, 0.3, 1] }}
                       className="overflow-hidden"
                     >
-                      <div className="px-6 sm:px-8 pb-6 pt-1 text-sm sm:text-base text-[#163832]/85 leading-relaxed border-t border-[#235347]/10">
+                      <div className="px-6 sm:px-8 pb-6 pt-1 text-sm sm:text-base text-[#0A241D]/85 leading-relaxed border-t border-[#00D285]/15">
                         {faq.a}
                       </div>
                     </motion.div>
@@ -123,12 +123,12 @@ export function FaqSection({ onContactClick }: FaqSectionProps) {
 
         {/* Contact reassurance */}
         {onContactClick && (
-          <div className="mt-12 text-center text-xs font-mono text-[#163832]/70">
+          <div className="mt-12 text-center text-xs font-mono text-[#0A241D]/70">
             Have a different question?{" "}
             <button
               type="button"
               onClick={onContactClick}
-              className="text-[#0B2B26] font-bold underline underline-offset-4 hover:text-[#235347] cursor-pointer"
+              className="text-[#041510] font-bold underline underline-offset-4 hover:text-[#00D285] cursor-pointer transition-colors"
             >
               Ask our studio directly →
             </button>
