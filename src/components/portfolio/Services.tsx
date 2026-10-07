@@ -76,7 +76,9 @@ export function Services() {
                   <div className="text-[0.65rem] text-gold/70 uppercase tracking-[0.25em] mb-2">
                     0{i + 1}
                   </div>
-                  <h3 className="font-display text-[1.4rem] sm:text-[1.6rem] mb-3 leading-tight">{s.title}</h3>
+                  <h3 className="font-display text-[1.4rem] sm:text-[1.6rem] mb-3 leading-tight">
+                    {s.title}
+                  </h3>
                   <p className="text-[0.92rem] text-muted-foreground leading-[1.7]">{s.desc}</p>
                 </div>
               </div>

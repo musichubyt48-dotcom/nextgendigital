@@ -31,14 +31,19 @@ export function About() {
               <div>
                 <div className="text-[0.65rem] uppercase tracking-[0.35em] text-gold">Founder</div>
                 <div className="mt-5 font-display text-[2rem] sm:text-[2.7rem] leading-[1.05]">
-                  Ashutosh<br />
+                  Ashutosh
+                  <br />
                   <span className="text-gradient-gold italic">Kumar Srivastava</span>
                 </div>
               </div>
               <div className="flex items-end justify-between gap-4">
-                <div className="font-display text-6xl sm:text-7xl text-gradient-gold leading-none">ND</div>
+                <div className="font-display text-6xl sm:text-7xl text-gradient-gold leading-none">
+                  ND
+                </div>
                 <div className="text-right text-[0.6rem] uppercase tracking-[0.25em] text-muted-foreground">
-                  Serving clients<br />worldwide
+                  Serving clients
+                  <br />
+                  worldwide
                 </div>
               </div>
             </div>
@@ -46,20 +51,19 @@ export function About() {
 
           <div className="lg:col-span-7 lg:pt-6 space-y-6 text-[1.02rem] text-muted-foreground leading-[1.85]">
             <p className="text-foreground/90 text-[1.15rem] leading-[1.7] font-display italic">
-              "I build websites the way I'd want my own business represented online —
-              clean, fast, and quietly impressive."
+              "I build websites the way I'd want my own business represented online — clean, fast,
+              and quietly impressive."
             </p>
             <p>
               I founded Nextgen Digital after watching too many small businesses — from
-              neighbourhood cafés to fast-growing startups — lose customers to outdated,
-              slow websites. Great brands deserve a digital presence that matches the
-              quality of what they offer offline.
+              neighbourhood cafés to fast-growing startups — lose customers to outdated, slow
+              websites. Great brands deserve a digital presence that matches the quality of what
+              they offer offline.
             </p>
             <p>
-              Today we work with founders across multiple countries, building modern,
-              SEO-friendly, AI-powered websites that feel premium and turn visitors into
-              real customers. Every project is hand-crafted, transparently priced and
-              backed by ongoing support.
+              Today we work with founders across multiple countries, building modern, SEO-friendly,
+              AI-powered websites that feel premium and turn visitors into real customers. Every
+              project is hand-crafted, transparently priced and backed by ongoing support.
             </p>
 
             <div className="grid grid-cols-2 gap-4 pt-8">
@@ -71,7 +75,9 @@ export function About() {
                     className={`glass rounded-2xl p-5 hover-lift ${i % 2 === 1 ? "translate-y-3" : ""}`}
                   >
                     <Icon size={20} className="text-gold mb-3" />
-                    <div className="font-display text-2xl text-foreground leading-none">{s.value}</div>
+                    <div className="font-display text-2xl text-foreground leading-none">
+                      {s.value}
+                    </div>
                     <div className="text-[0.7rem] uppercase tracking-[0.18em] mt-2">{s.label}</div>
                   </div>
                 );

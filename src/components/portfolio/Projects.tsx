@@ -94,12 +94,19 @@ export function Projects() {
                 </div>
               </div>
               <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-7">
-                <h3 className="font-display text-[1.4rem] sm:text-[1.7rem] mb-2 leading-tight">{p.title}</h3>
-                <p className="text-[0.82rem] sm:text-[0.88rem] text-muted-foreground mb-4 leading-relaxed line-clamp-3 sm:line-clamp-none">{p.desc}</p>
+                <h3 className="font-display text-[1.4rem] sm:text-[1.7rem] mb-2 leading-tight">
+                  {p.title}
+                </h3>
+                <p className="text-[0.82rem] sm:text-[0.88rem] text-muted-foreground mb-4 leading-relaxed line-clamp-3 sm:line-clamp-none">
+                  {p.desc}
+                </p>
                 <div className="flex items-center justify-between">
                   <div className="flex flex-wrap gap-1.5">
                     {p.tags.map((t) => (
-                      <span key={t} className="text-[0.65rem] uppercase tracking-wider text-muted-foreground/70 border border-border rounded-full px-2.5 py-0.5">
+                      <span
+                        key={t}
+                        className="text-[0.65rem] uppercase tracking-wider text-muted-foreground/70 border border-border rounded-full px-2.5 py-0.5"
+                      >
                         {t}
                       </span>
                     ))}

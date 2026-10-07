@@ -4,6 +4,11 @@ import tailwindcss from "@tailwindcss/vite";
 import tsConfigPaths from "vite-tsconfig-paths";
 
 export default defineConfig({
+  server: {
+    host: "0.0.0.0",
+    port: 3000,
+    allowedHosts: true,
+  },
   plugins: [react(), tailwindcss(), tsConfigPaths()],
   build: {
     outDir: "dist",
@@ -43,11 +48,21 @@ export default defineConfig({
             "@radix-ui/react-toggle-group",
             "@radix-ui/react-tooltip",
           ],
-          "lucide": ["lucide-react"],
-          "charts": ["recharts"],
-          "forms": ["react-hook-form", "zod"],
-          "carousel": ["embla-carousel-react", "vaul"],
-          "utils": ["class-variance-authority", "clsx", "tailwind-merge", "cmdk", "sonner", "date-fns", "input-otp", "react-day-picker", "react-resizable-panels"],
+          lucide: ["lucide-react"],
+          charts: ["recharts"],
+          forms: ["react-hook-form", "zod"],
+          carousel: ["embla-carousel-react", "vaul"],
+          utils: [
+            "class-variance-authority",
+            "clsx",
+            "tailwind-merge",
+            "cmdk",
+            "sonner",
+            "date-fns",
+            "input-otp",
+            "react-day-picker",
+            "react-resizable-panels",
+          ],
         },
       },
     },

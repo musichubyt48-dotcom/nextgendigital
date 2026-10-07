@@ -1,12 +1,12 @@
 import { useEffect } from "react";
 
 const SITE_URL = "https://nextgendigital.services";
-const ORG_NAME = "Nextgen Digital";
+const ORG_NAME = "NextGen Digital";
 const ORG_DESC =
-  "Nextgen Digital is a premium website development studio founded by Ashutosh Kumar Srivastava, building modern, SEO-friendly, AI-powered websites for small businesses, startups, hotels, clinics, gyms, agencies, creators and ecommerce brands worldwide.";
+  "NextGen Digital is an independent digital development studio founded by Ashutosh Kumar Srivastava, building high-conversion websites, booking engines, and digital systems for growing businesses across India.";
 const FOUNDER = "Ashutosh Kumar Srivastava";
 const PHONE = "+91 8509332038";
-const EMAIL = "demoemail@example.com";
+const EMAIL = "nextgendigitalofficial2026@gmail.com";
 
 const logoUrl = `${SITE_URL}/logo.svg`;
 const logoObject = {
@@ -50,9 +50,7 @@ const organization = {
     addressCountry: "IN",
     addressRegion: "India",
   },
-  sameAs: [
-    "https://wa.me/918509332038",
-  ],
+  sameAs: ["https://wa.me/918509332038"],
 };
 
 const website = {
@@ -105,13 +103,7 @@ const professionalService = {
   },
   openingHoursSpecification: {
     "@type": "OpeningHoursSpecification",
-    dayOfWeek: [
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday",
-    ],
+    dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
     opens: "09:00",
     closes: "18:00",
   },
@@ -133,8 +125,7 @@ const services = [
     "@type": "Service",
     "@id": `${SITE_URL}/#service-fast-builds`,
     name: "Fast Builds",
-    description:
-      "Modern tools, quick turnaround — without cutting corners on quality.",
+    description: "Modern tools, quick turnaround — without cutting corners on quality.",
     provider: { "@id": `${SITE_URL}/#organization` },
     serviceType: "Website Development",
     areaServed: ["Global"],
@@ -155,8 +146,7 @@ const services = [
     "@type": "Service",
     "@id": `${SITE_URL}/#service-custom-websites`,
     name: "Custom Websites",
-    description:
-      "Tailored web experiences built around your brand, workflow, and customers.",
+    description: "Tailored web experiences built around your brand, workflow, and customers.",
     provider: { "@id": `${SITE_URL}/#organization` },
     serviceType: "Custom Website Development",
     areaServed: ["Global"],
@@ -166,8 +156,7 @@ const services = [
     "@type": "Service",
     "@id": `${SITE_URL}/#service-seo`,
     name: "SEO Optimization",
-    description:
-      "On-page SEO baked in from day one so Google can actually find you.",
+    description: "On-page SEO baked in from day one so Google can actually find you.",
     provider: { "@id": `${SITE_URL}/#organization` },
     serviceType: "Search Engine Optimization",
     areaServed: ["Global"],
@@ -177,8 +166,7 @@ const services = [
     "@type": "Service",
     "@id": `${SITE_URL}/#service-uiux`,
     name: "Modern UI/UX",
-    description:
-      "Intuitive experiences that feel premium and keep customers coming back.",
+    description: "Intuitive experiences that feel premium and keep customers coming back.",
     provider: { "@id": `${SITE_URL}/#organization` },
     serviceType: "UI/UX Design",
     areaServed: ["Global"],

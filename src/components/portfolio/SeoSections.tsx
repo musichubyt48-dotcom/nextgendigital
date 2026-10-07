@@ -1,5 +1,24 @@
 import { SectionHeader } from "./SectionHeader";
-import { Compass, PenTool, Code as Code2, Rocket, LifeBuoy, Store, Dumbbell, Scissors, Stethoscope, Building2, UtensilsCrossed, Gauge, ShieldCheck, Sparkles, TrendingUp, Smartphone, Search, MessageCircle } from "lucide-react";
+import {
+  Compass,
+  PenTool,
+  Code as Code2,
+  Rocket,
+  LifeBuoy,
+  Store,
+  Dumbbell,
+  Scissors,
+  Stethoscope,
+  Building2,
+  UtensilsCrossed,
+  Gauge,
+  ShieldCheck,
+  Sparkles,
+  TrendingUp,
+  Smartphone,
+  Search,
+  MessageCircle,
+} from "lucide-react";
 
 /* ---------------- Website Development Process ---------------- */
 
@@ -40,7 +59,8 @@ export function Process() {
           eyebrow="Website Development Process"
           title={
             <>
-              A calm, considered way to <span className="text-gradient-gold italic">build your website</span>
+              A calm, considered way to{" "}
+              <span className="text-gradient-gold italic">build your website</span>
             </>
           }
           description="A proven five-step process used on every Nextgen Digital website development project — from first call to future support."
@@ -76,12 +96,36 @@ export function Process() {
 /* ---------------- Industries We Serve ---------------- */
 
 const industries = [
-  { icon: Store, title: "Local Retail & Shops", desc: "Boutique stores and neighbourhood businesses that need a premium online face." },
-  { icon: Dumbbell, title: "Gyms & Fitness Studios", desc: "Conversion-focused websites that turn walk-bys into signed-up members." },
-  { icon: Scissors, title: "Salons & Spas", desc: "Elegant business websites with online booking and gallery-style visuals." },
-  { icon: Stethoscope, title: "Clinics & Healthcare", desc: "Trustworthy, accessible websites for dentists, doctors and wellness brands." },
-  { icon: Building2, title: "Real Estate & Construction", desc: "Authority-driven websites that showcase projects and generate qualified leads." },
-  { icon: UtensilsCrossed, title: "Restaurants & Cafés", desc: "Menu-first, mobile-first designs that keep tables full and reviews glowing." },
+  {
+    icon: Store,
+    title: "Local Retail & Shops",
+    desc: "Boutique stores and neighbourhood businesses that need a premium online face.",
+  },
+  {
+    icon: Dumbbell,
+    title: "Gyms & Fitness Studios",
+    desc: "Conversion-focused websites that turn walk-bys into signed-up members.",
+  },
+  {
+    icon: Scissors,
+    title: "Salons & Spas",
+    desc: "Elegant business websites with online booking and gallery-style visuals.",
+  },
+  {
+    icon: Stethoscope,
+    title: "Clinics & Healthcare",
+    desc: "Trustworthy, accessible websites for dentists, doctors and wellness brands.",
+  },
+  {
+    icon: Building2,
+    title: "Real Estate & Construction",
+    desc: "Authority-driven websites that showcase projects and generate qualified leads.",
+  },
+  {
+    icon: UtensilsCrossed,
+    title: "Restaurants & Cafés",
+    desc: "Menu-first, mobile-first designs that keep tables full and reviews glowing.",
+  },
 ];
 
 export function Industries() {
@@ -135,11 +179,25 @@ const techGroups = [
   },
   {
     title: "AI & Automation",
-    items: ["OpenAI", "Gemini", "Vector Search", "Custom Chatbots", "Content Automation", "AI SEO Tools"],
+    items: [
+      "OpenAI",
+      "Gemini",
+      "Vector Search",
+      "Custom Chatbots",
+      "Content Automation",
+      "AI SEO Tools",
+    ],
   },
   {
     title: "SEO & Performance",
-    items: ["Core Web Vitals", "Schema Markup", "Semantic HTML", "Sitemap & Robots", "Lighthouse", "GSC & GA4"],
+    items: [
+      "Core Web Vitals",
+      "Schema Markup",
+      "Semantic HTML",
+      "Sitemap & Robots",
+      "Lighthouse",
+      "GSC & GA4",
+    ],
   },
 ];
 
@@ -189,12 +247,36 @@ export function Technologies() {
 /* ---------------- Benefits ---------------- */
 
 const benefits = [
-  { icon: Gauge, title: "Faster loading speeds", desc: "Optimised assets, clean code and modern hosting mean your website loads in under two seconds on real devices." },
-  { icon: TrendingUp, title: "Higher search rankings", desc: "Structured data, semantic HTML and on-page SEO are baked into every business website we ship." },
-  { icon: Smartphone, title: "Mobile-first design", desc: "Every layout is designed on mobile first, because that is where most of your customers actually find you." },
-  { icon: ShieldCheck, title: "Trust & credibility", desc: "A premium website design instantly signals professionalism and separates you from templated competitors." },
-  { icon: Sparkles, title: "AI-powered enhancements", desc: "From smart chat to content automation, we add AI website development features that quietly save you hours." },
-  { icon: Search, title: "Ready to be found", desc: "Sitemaps, canonical tags and Search Console setup are handled — so Google can index your pages from day one." },
+  {
+    icon: Gauge,
+    title: "Faster loading speeds",
+    desc: "Optimised assets, clean code and modern hosting mean your website loads in under two seconds on real devices.",
+  },
+  {
+    icon: TrendingUp,
+    title: "Higher search rankings",
+    desc: "Structured data, semantic HTML and on-page SEO are baked into every business website we ship.",
+  },
+  {
+    icon: Smartphone,
+    title: "Mobile-first design",
+    desc: "Every layout is designed on mobile first, because that is where most of your customers actually find you.",
+  },
+  {
+    icon: ShieldCheck,
+    title: "Trust & credibility",
+    desc: "A premium website design instantly signals professionalism and separates you from templated competitors.",
+  },
+  {
+    icon: Sparkles,
+    title: "AI-powered enhancements",
+    desc: "From smart chat to content automation, we add AI website development features that quietly save you hours.",
+  },
+  {
+    icon: Search,
+    title: "Ready to be found",
+    desc: "Sitemaps, canonical tags and Search Console setup are handled — so Google can index your pages from day one.",
+  },
 ];
 
 export function Benefits() {
@@ -205,7 +287,8 @@ export function Benefits() {
           eyebrow="Benefits"
           title={
             <>
-              Real outcomes from a <span className="text-gradient-gold italic">premium website</span>
+              Real outcomes from a{" "}
+              <span className="text-gradient-gold italic">premium website</span>
             </>
           }
           description="Working with a focused, senior-led team means every decision — from design to performance — protects your speed, rankings and reputation, wherever your customers are."
@@ -248,7 +331,8 @@ export function ClientExperience() {
           eyebrow="Client Experience"
           title={
             <>
-              A calm, transparent way to <span className="text-gradient-gold italic">work together</span>
+              A calm, transparent way to{" "}
+              <span className="text-gradient-gold italic">work together</span>
             </>
           }
           description="Working with Nextgen Digital should feel like hiring a trusted in-house team — not chasing an agency."
@@ -261,27 +345,31 @@ export function ClientExperience() {
             </h3>
             <p className="text-[0.95rem] text-muted-foreground leading-[1.8]">
               Every project starts with a real conversation about your business, budget and
-              timeline. You are always talking directly to the person building your website —
-              never a rotating account manager. Milestones are shared openly, revisions are
-              welcomed, and you approve every major step before it ships.
+              timeline. You are always talking directly to the person building your website — never
+              a rotating account manager. Milestones are shared openly, revisions are welcomed, and
+              you approve every major step before it ships.
             </p>
             <p className="mt-5 text-[0.95rem] text-muted-foreground leading-[1.8]">
-              As a boutique website development agency, we deliberately take on a small number
-              of projects each month so every client gets senior attention from first sketch to
-              final launch.
+              As a boutique website development agency, we deliberately take on a small number of
+              projects each month so every client gets senior attention from first sketch to final
+              launch.
             </p>
           </div>
 
           <div className="lg:col-span-5 space-y-5">
             <div className="glass-gold rounded-3xl p-6 sm:p-7 hover-lift">
-              <div className="text-[0.65rem] text-gold uppercase tracking-[0.3em] mb-2">Response</div>
+              <div className="text-[0.65rem] text-gold uppercase tracking-[0.3em] mb-2">
+                Response
+              </div>
               <div className="font-display text-3xl text-gradient-gold leading-none">Under 24h</div>
               <p className="mt-3 text-[0.9rem] text-muted-foreground leading-[1.65]">
                 Replies to every enquiry and update, on weekdays.
               </p>
             </div>
             <div className="glass rounded-3xl p-6 sm:p-7 hover-lift lg:translate-y-4">
-              <div className="text-[0.65rem] text-gold uppercase tracking-[0.3em] mb-2">Delivery</div>
+              <div className="text-[0.65rem] text-gold uppercase tracking-[0.3em] mb-2">
+                Delivery
+              </div>
               <div className="font-display text-3xl text-gradient-gold leading-none">2–4 Weeks</div>
               <p className="mt-3 text-[0.9rem] text-muted-foreground leading-[1.65]">
                 Typical turnaround for a premium business website.
@@ -322,10 +410,10 @@ export function FutureSupport() {
               Long-term care, not a handover and goodbye
             </h3>
             <p className="text-[0.95rem] text-muted-foreground leading-[1.8]">
-              Many website design companies disappear once the invoice is paid. We do the
-              opposite. Every Nextgen Digital client gets access to flexible monthly support so
-              their website evolves with the business — new offers, new pages, seasonal
-              campaigns and ongoing SEO refinements included.
+              Many website design companies disappear once the invoice is paid. We do the opposite.
+              Every Nextgen Digital client gets access to flexible monthly support so their website
+              evolves with the business — new offers, new pages, seasonal campaigns and ongoing SEO
+              refinements included.
             </p>
           </div>
           <ul className="space-y-4">
@@ -391,7 +479,8 @@ export function FAQ() {
           eyebrow="FAQ"
           title={
             <>
-              Common questions about our <span className="text-gradient-gold italic">website development</span>
+              Common questions about our{" "}
+              <span className="text-gradient-gold italic">website development</span>
             </>
           }
           description="Quick answers about pricing, timelines, SEO and AI website development at Nextgen Digital."
@@ -409,9 +498,7 @@ export function FAQ() {
                 <div className="shrink-0 h-10 w-10 rounded-lg glass-gold flex items-center justify-center text-gold">
                   <MessageCircle size={18} />
                 </div>
-                <h3 className="font-display text-[1.1rem] sm:text-[1.2rem] leading-tight">
-                  {f.q}
-                </h3>
+                <h3 className="font-display text-[1.1rem] sm:text-[1.2rem] leading-tight">{f.q}</h3>
               </summary>
               <p className="mt-4 pl-14 text-[0.92rem] text-muted-foreground leading-[1.75]">
                 {f.a}

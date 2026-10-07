@@ -34,9 +34,13 @@ export function Contact() {
                 <Phone size={18} />
               </div>
               <div>
-                <div className="text-xs uppercase tracking-wider text-muted-foreground">Call / WhatsApp</div>
+                <div className="text-xs uppercase tracking-wider text-muted-foreground">
+                  Call / WhatsApp
+                </div>
                 <div className="font-medium">+91 85093 32038</div>
-                <div className="text-[0.65rem] uppercase tracking-[0.2em] text-muted-foreground mt-1">Available worldwide · Mon–Fri</div>
+                <div className="text-[0.65rem] uppercase tracking-[0.2em] text-muted-foreground mt-1">
+                  Available worldwide · Mon–Fri
+                </div>
               </div>
             </a>
 
@@ -49,7 +53,9 @@ export function Contact() {
               </div>
               <div className="min-w-0 flex-1">
                 <div className="text-xs uppercase tracking-wider text-muted-foreground">Email</div>
-                <div className="font-medium text-sm sm:text-base break-all">nextgendigitalofficial2026@gmail.com</div>
+                <div className="font-medium text-sm sm:text-base break-all">
+                  nextgendigitalofficial2026@gmail.com
+                </div>
               </div>
             </a>
 
@@ -70,7 +76,9 @@ export function Contact() {
           >
             <div className="grid sm:grid-cols-2 gap-5">
               <div>
-                <label className="text-xs uppercase tracking-wider text-muted-foreground">Name</label>
+                <label className="text-xs uppercase tracking-wider text-muted-foreground">
+                  Name
+                </label>
                 <input
                   required
                   className="mt-2 w-full bg-transparent border-b border-border focus:border-gold outline-none py-2 text-foreground transition-colors"
@@ -78,7 +86,9 @@ export function Contact() {
                 />
               </div>
               <div>
-                <label className="text-xs uppercase tracking-wider text-muted-foreground">Email</label>
+                <label className="text-xs uppercase tracking-wider text-muted-foreground">
+                  Email
+                </label>
                 <input
                   required
                   type="email"
@@ -88,14 +98,18 @@ export function Contact() {
               </div>
             </div>
             <div>
-              <label className="text-xs uppercase tracking-wider text-muted-foreground">Business</label>
+              <label className="text-xs uppercase tracking-wider text-muted-foreground">
+                Business
+              </label>
               <input
                 className="mt-2 w-full bg-transparent border-b border-border focus:border-gold outline-none py-2 text-foreground transition-colors"
                 placeholder="Your business name"
               />
             </div>
             <div>
-              <label className="text-xs uppercase tracking-wider text-muted-foreground">Project Details</label>
+              <label className="text-xs uppercase tracking-wider text-muted-foreground">
+                Project Details
+              </label>
               <textarea
                 required
                 rows={4}

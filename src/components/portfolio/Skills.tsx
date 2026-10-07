@@ -24,7 +24,6 @@ export function Skills() {
           description="A small, sharp toolkit — chosen for quality, not for the buzzword list."
         />
 
-
         <div className="mt-12 md:mt-16 flex flex-wrap justify-center gap-3 sm:gap-4 max-w-4xl mx-auto">
           {skills.map((s) => {
             const Icon = s.icon;

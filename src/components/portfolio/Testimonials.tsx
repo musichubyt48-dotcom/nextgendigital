@@ -11,24 +11,21 @@ const testimonials = [
     span: "md:col-span-2",
   },
   {
-    quote:
-      "Smooth from brief to launch. Felt like working with a small agency, not a freelancer.",
+    quote: "Smooth from brief to launch. Felt like working with a small agency, not a freelancer.",
     name: "Priya S.",
     role: "Salon Owner",
     location: "Delhi",
     span: "",
   },
   {
-    quote:
-      "Loved the design taste. Looks expensive without being loud.",
+    quote: "Loved the design taste. Looks expensive without being loud.",
     name: "Aman K.",
     role: "Gym Owner",
     location: "Lucknow",
     span: "",
   },
   {
-    quote:
-      "Responsive, organized, and patient with the back and forth. Recommended.",
+    quote: "Responsive, organized, and patient with the back and forth. Recommended.",
     name: "Neha R.",
     role: "Boutique Founder",
     location: "Mumbai",

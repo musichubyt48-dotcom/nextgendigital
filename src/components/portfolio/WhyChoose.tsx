@@ -2,12 +2,36 @@ import { SectionHeader } from "./SectionHeader";
 import { Crown, Workflow, Smartphone, Search, TrendingUp, Wallet } from "lucide-react";
 
 const items = [
-  { icon: Crown, title: "Premium modern design", desc: "Designs that feel expensive and build instant trust." },
-  { icon: Workflow, title: "Fast, considered workflow", desc: "Quick turnaround without sacrificing craft." },
-  { icon: Smartphone, title: "Truly responsive", desc: "Flawless across every screen and device size." },
-  { icon: Search, title: "SEO-friendly structure", desc: "Built for Google from the first line of code." },
-  { icon: TrendingUp, title: "Built to convert", desc: "Every section engineered to turn visitors into customers." },
-  { icon: Wallet, title: "Honest pricing", desc: "Agency-grade quality without agency-grade invoices." },
+  {
+    icon: Crown,
+    title: "Premium modern design",
+    desc: "Designs that feel expensive and build instant trust.",
+  },
+  {
+    icon: Workflow,
+    title: "Fast, considered workflow",
+    desc: "Quick turnaround without sacrificing craft.",
+  },
+  {
+    icon: Smartphone,
+    title: "Truly responsive",
+    desc: "Flawless across every screen and device size.",
+  },
+  {
+    icon: Search,
+    title: "SEO-friendly structure",
+    desc: "Built for Google from the first line of code.",
+  },
+  {
+    icon: TrendingUp,
+    title: "Built to convert",
+    desc: "Every section engineered to turn visitors into customers.",
+  },
+  {
+    icon: Wallet,
+    title: "Honest pricing",
+    desc: "Agency-grade quality without agency-grade invoices.",
+  },
 ];
 
 export function WhyChoose() {

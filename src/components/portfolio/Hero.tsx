@@ -38,8 +38,8 @@ export function Hero() {
 
           <p className="mt-8 text-[1.05rem] text-muted-foreground max-w-[34rem] leading-[1.75]">
             Nextgen Digital is a premium website development studio helping small businesses,
-            startups, hotels, clinics, gyms, agencies, creators and ecommerce brands around
-            the world launch modern, fast and AI-powered digital experiences.
+            startups, hotels, clinics, gyms, agencies, creators and ecommerce brands around the
+            world launch modern, fast and AI-powered digital experiences.
           </p>
 
           <div className="mt-10 flex flex-wrap gap-4">
@@ -60,17 +60,23 @@ export function Hero() {
 
           <div className="mt-12 flex items-center gap-5 sm:gap-8 text-[0.7rem] sm:text-xs text-muted-foreground">
             <div>
-              <div className="font-display text-[1.4rem] sm:text-[1.7rem] text-gold leading-none">1.5+</div>
+              <div className="font-display text-[1.4rem] sm:text-[1.7rem] text-gold leading-none">
+                1.5+
+              </div>
               <div className="uppercase tracking-[0.18em] sm:tracking-[0.2em] mt-2">Years</div>
             </div>
             <div className="h-10 w-px bg-border" />
             <div>
-              <div className="font-display text-[1.4rem] sm:text-[1.7rem] text-gold leading-none">12+</div>
+              <div className="font-display text-[1.4rem] sm:text-[1.7rem] text-gold leading-none">
+                12+
+              </div>
               <div className="uppercase tracking-[0.18em] sm:tracking-[0.2em] mt-2">Projects</div>
             </div>
             <div className="h-10 w-px bg-border" />
             <div>
-              <div className="font-display text-[1.4rem] sm:text-[1.7rem] text-gold leading-none">100%</div>
+              <div className="font-display text-[1.4rem] sm:text-[1.7rem] text-gold leading-none">
+                100%
+              </div>
               <div className="uppercase tracking-[0.18em] sm:tracking-[0.2em] mt-2">Responsive</div>
             </div>
           </div>
