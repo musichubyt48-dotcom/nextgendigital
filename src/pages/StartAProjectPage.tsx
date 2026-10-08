@@ -163,12 +163,12 @@ export function StartAProjectPage({ initialBundle = "", onNavigate }: StartAProj
 
         // Also archive to localStorage as safety backup
         try {
-          const stored = JSON.parse(localStorage.getItem("nextgen_client_enquiries") || "[]");
+          const stored = JSON.parse(localStorage.getItem("jivdev_client_enquiries") || "[]");
           stored.unshift({
             ...formData,
             submittedAt: new Date().toISOString(),
           });
-          localStorage.setItem("nextgen_client_enquiries", JSON.stringify(stored));
+          localStorage.setItem("jivdev_client_enquiries", JSON.stringify(stored));
         } catch {
           // Storage fallback
         }
@@ -203,13 +203,13 @@ export function StartAProjectPage({ initialBundle = "", onNavigate }: StartAProj
 
   const generateWhatsAppHandoff = () => {
     const dataToUse = submittedData.name ? submittedData : formData;
-    const message = `Hello NextGen Digital!%0A%0A*Project Request Submission:*%0A*Name:* ${encodeURIComponent(dataToUse.name)}%0A*Business:* ${encodeURIComponent(dataToUse.businessName)}%0A*Email:* ${encodeURIComponent(dataToUse.email)}%0A*Phone:* ${encodeURIComponent(dataToUse.contact)}%0A*Project Type:* ${encodeURIComponent(dataToUse.projectType)}%0A*Budget Range:* ${encodeURIComponent(dataToUse.budgetRange)}%0A*Timeline:* ${encodeURIComponent(dataToUse.timeline)}%0A*Addons:* ${encodeURIComponent(dataToUse.extraFeatures.join(", ") || "None")}%0A*Details:* ${encodeURIComponent(dataToUse.projectDetails)}%0A%0AReady to discuss the architecture!`;
+    const message = `Hello JIVDEV!%0A%0A*Project Request Submission:*%0A*Name:* ${encodeURIComponent(dataToUse.name)}%0A*Business:* ${encodeURIComponent(dataToUse.businessName)}%0A*Email:* ${encodeURIComponent(dataToUse.email)}%0A*Phone:* ${encodeURIComponent(dataToUse.contact)}%0A*Project Type:* ${encodeURIComponent(dataToUse.projectType)}%0A*Budget Range:* ${encodeURIComponent(dataToUse.budgetRange)}%0A*Timeline:* ${encodeURIComponent(dataToUse.timeline)}%0A*Addons:* ${encodeURIComponent(dataToUse.extraFeatures.join(", ") || "None")}%0A*Details:* ${encodeURIComponent(dataToUse.projectDetails)}%0A%0AReady to discuss the architecture!`;
     return `https://wa.me/918509332038?text=${message}`;
   };
 
   const handleCopySummary = () => {
     const dataToUse = submittedData.name ? submittedData : formData;
-    const text = `NextGen Digital Project Brief\nName: ${dataToUse.name}\nBusiness: ${dataToUse.businessName}\nEmail: ${dataToUse.email}\nPhone: ${dataToUse.contact}\nType: ${dataToUse.projectType}\nBudget: ${dataToUse.budgetRange}\nTimeline: ${dataToUse.timeline}\nDetails: ${dataToUse.projectDetails}`;
+    const text = `JIVDEV Project Brief\nName: ${dataToUse.name}\nBusiness: ${dataToUse.businessName}\nEmail: ${dataToUse.email}\nPhone: ${dataToUse.contact}\nType: ${dataToUse.projectType}\nBudget: ${dataToUse.budgetRange}\nTimeline: ${dataToUse.timeline}\nDetails: ${dataToUse.projectDetails}`;
     navigator.clipboard.writeText(text);
     setCopiedBrief(true);
     setTimeout(() => setCopiedBrief(false), 2500);
@@ -330,7 +330,7 @@ export function StartAProjectPage({ initialBundle = "", onNavigate }: StartAProj
                   onClick={() => onNavigate("/")}
                   className="text-xs font-mono font-bold uppercase tracking-wider text-[#00D285] hover:text-[#041510] hover:underline cursor-pointer"
                 >
-                  ← Return to NextGen Digital Home
+                  ← Return to JIVDEV Home
                 </button>
               </div>
             </div>
@@ -590,7 +590,9 @@ export function StartAProjectPage({ initialBundle = "", onNavigate }: StartAProj
                         }`}
                       >
                         <div className="flex items-center justify-between w-full">
-                          <span className={`font-mono text-xs font-bold uppercase tracking-wider ${isSelected ? "text-[#00D285]" : "text-[#041510]"}`}>
+                          <span
+                            className={`font-mono text-xs font-bold uppercase tracking-wider ${isSelected ? "text-[#00D285]" : "text-[#041510]"}`}
+                          >
                             {range.tier}
                           </span>
                           {isSelected && (

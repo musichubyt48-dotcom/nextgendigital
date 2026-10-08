@@ -1,5 +1,5 @@
 import { Instagram, Linkedin, Twitter, Youtube } from "lucide-react";
-import logo from "@/assets/ChatGPT_Image_Jun_12,_2026,_02_34_28_PM.png";
+import logo from "@/assets/images/regenerated_image_1791471869963.jpg";
 
 export function Footer() {
   return (
@@ -8,17 +8,11 @@ export function Footer() {
         <div className="grid md:grid-cols-3 gap-10 pb-12">
           <div>
             <div className="flex items-center gap-2">
-              <img
-                src={logo}
-                alt="Nextgen Digital"
-                className="h-10 w-10 rounded-full object-cover"
-              />
-              <span className="font-display text-xl">
-                Nextgen <span className="text-gradient-gold">Digital</span>
-              </span>
+              <img src={logo} alt="JIVDEV" className="h-10 w-10 rounded-full object-cover" />
+              <span className="font-display text-xl">JIVDEV</span>
             </div>
             <p className="mt-4 text-sm text-muted-foreground max-w-xs">
-              Premium websites and AI-powered digital solutions for businesses worldwide.
+              Premium websites and digital systems built around your business.
             </p>
           </div>
 
@@ -38,12 +32,23 @@ export function Footer() {
           <div>
             <div className="text-xs uppercase tracking-[0.3em] text-gold mb-4">Connect</div>
             <div className="flex gap-3">
-              {[Instagram, Linkedin, Twitter, Youtube].map((Icon, i) => (
+              {[
+                {
+                  Icon: Instagram,
+                  href: "https://www.instagram.com/zivdevofficial?stkn=dDVtNHN6OGVrbHZ4",
+                  label: "Instagram",
+                },
+                { Icon: Linkedin, href: "#", label: "LinkedIn" },
+                { Icon: Twitter, href: "#", label: "Twitter" },
+                { Icon: Youtube, href: "#", label: "YouTube" },
+              ].map(({ Icon, href, label }, i) => (
                 <a
                   key={i}
-                  href="#"
+                  href={href}
+                  target={href.startsWith("http") ? "_blank" : undefined}
+                  rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
                   className="h-10 w-10 rounded-full glass flex items-center justify-center text-muted-foreground hover:text-gold hover:border-gold/40 transition-all"
-                  aria-label="Social link"
+                  aria-label={label}
                 >
                   <Icon size={16} />
                 </a>
@@ -58,8 +63,8 @@ export function Footer() {
         <div className="gold-divider" />
 
         <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-muted-foreground">
-          <div>© {new Date().getFullYear()} Nextgen Digital. All rights reserved.</div>
-          <div className="italic font-display">Nextgen Digital Official Page.</div>
+          <div>© {new Date().getFullYear()} JIVDEV. All rights reserved.</div>
+          <div className="italic font-display">JIVDEV Official Page.</div>
         </div>
       </div>
     </footer>

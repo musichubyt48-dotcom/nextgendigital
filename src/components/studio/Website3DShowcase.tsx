@@ -1,11 +1,10 @@
 import { useMemo } from "react";
 import { ArrowRight, Sparkles, Move3d } from "lucide-react";
 import { BooksShowcase, BookCfg } from "@/components/ui/books-showcase";
-import gymDemo from "@/assets/project-gym-demo.webp";
-import salonDemo from "@/assets/project-salon-demo.webp";
-import salonPhoto from "@/assets/project-salon.jpg";
-import dentalDemo from "@/assets/project-dental.webp";
-import constructionDemo from "@/assets/project-construction.webp";
+import sungavaImg from "@/assets/images/sungava_resort_real_1791467430511.jpg";
+import infinityImg from "@/assets/images/infinity_store_real_1791467450432.jpg";
+import gymImg from "@/assets/images/fitness_gym_real_1791467464759.jpg";
+import constructionImg from "@/assets/project-construction.webp";
 
 interface Website3DShowcaseProps {
   onViewWork?: () => void;
@@ -18,12 +17,12 @@ export function Website3DShowcase({ onViewWork, onSelectProject }: Website3DShow
       {
         id: "sungava-resort",
         title: "Sungava Resort & Spa",
-        author: "Hospitality & Boutique Retreat",
-        year: "2025",
+        author: "Luxury Himalayan Resort",
+        year: "2026",
         stars: 5,
-        desc: "A bespoke direct reservation engine, suite showcases, and WhatsApp concierge for a boutique mountain retreat in West Sikkim.",
+        desc: "A luxury Himalayan resort digital platform with direct booking engine, suite galleries, wellness spa showcases, and WhatsApp concierge routing.",
         images: {
-          front: salonPhoto,
+          front: sungavaImg,
         },
         spineBg: "#0B2B26",
         spineInk: "#DAF1DE",
@@ -38,14 +37,14 @@ export function Website3DShowcase({ onViewWork, onSelectProject }: Website3DShow
         ],
       },
       {
-        id: "rawfit-gym",
-        title: "Rawfit Conditioning Club",
-        author: "Athletic Conditioning & Gym",
-        year: "2025",
+        id: "infinity-store",
+        title: "Infinity Store",
+        author: "Campus Quick-Commerce Platform",
+        year: "2026",
         stars: 5,
-        desc: "High-octane digital platform with interactive class schedules, membership tiers, a real-time BMI calculator, and instant WhatsApp trial pass claims.",
+        desc: "Fast campus e-commerce platform engineered for immediate ordering and swift delivery of everyday daily essentials and snacks.",
         images: {
-          front: gymDemo,
+          front: infinityImg,
         },
         spineBg: "#163832",
         spineInk: "#8EB69B",
@@ -53,21 +52,21 @@ export function Website3DShowcase({ onViewWork, onSelectProject }: Website3DShow
         backInk: "142, 182, 155",
         edge: "#8EB69B",
         chapters: [
-          "Membership Tier Architecture",
-          "Interactive BMI Health Calculator",
-          "Filterable Class Timetable",
-          "Direct WhatsApp Pass Claims",
+          "Instant Product Discovery",
+          "Frictionless Fast Checkout",
+          "Campus Delivery Tracking",
+          "Mobile-First Shopping Flow",
         ],
       },
       {
-        id: "looks-salon",
-        title: "Looks Luxury Aesthetic Salon",
-        author: "Luxury Unisex Salon & Spa",
-        year: "2025",
+        id: "fitness-gym",
+        title: "Fitness Gym",
+        author: "Athletic Conditioning & Gym",
+        year: "2026",
         stars: 5,
-        desc: "Digital service directory with online appointment requests, treatment menus, bridal inquiry funnels, and stylist portfolios.",
+        desc: "Modern fitness website focused on gym services, training and membership conversion with timetable and trainer roster.",
         images: {
-          front: salonDemo,
+          front: gymImg,
         },
         spineBg: "#0B2B26",
         spineInk: "#DAF1DE",
@@ -75,43 +74,21 @@ export function Website3DShowcase({ onViewWork, onSelectProject }: Website3DShow
         backInk: "218, 241, 222",
         edge: "#DAF1DE",
         chapters: [
-          "Curated Treatment Directory",
-          "Stylist Portfolio & Booking Flow",
-          "Bridal & Grooming Packages",
-          "Location & Branch Locator",
+          "Membership Tier Architecture",
+          "Class Timetable & Schedule",
+          "Trainer Profiles & Workouts",
+          "Direct Trial Pass WhatsApp Claims",
         ],
       },
       {
-        id: "apex-dental",
-        title: "Apex Healthcare & Clinic",
-        author: "Specialist Dental & Clinic Portal",
-        year: "2025",
+        id: "ab-construction",
+        title: "A B Construction",
+        author: "Civil & Commercial Contracting",
+        year: "2026",
         stars: 5,
-        desc: "Modern healthcare consultation platform featuring specialist schedules, patient symptom triage, and automated appointment confirmations.",
+        desc: "Corporate contracting portfolio highlighting civil engineering projects, equipment fleet, credentials, and tender bidding enquiry portal.",
         images: {
-          front: dentalDemo,
-        },
-        spineBg: "#163832",
-        spineInk: "#8EB69B",
-        backBg: "#0B2B26",
-        backInk: "142, 182, 155",
-        edge: "#8EB69B",
-        chapters: [
-          "Doctor Roster & Specialties",
-          "Direct Consultation Scheduler",
-          "Patient Triage Intake System",
-          "Clear Tariff Transparency",
-        ],
-      },
-      {
-        id: "zenith-construction",
-        title: "Zenith Infrastructure Systems",
-        author: "Engineering & Construction",
-        year: "2025",
-        stars: 5,
-        desc: "Institutional engineering contractor portfolio showcasing civil infrastructure projects, RFP bidding forms, and safety certifications.",
-        images: {
-          front: constructionDemo,
+          front: constructionImg,
         },
         spineBg: "#051F20",
         spineInk: "#DAF1DE",
@@ -119,9 +96,9 @@ export function Website3DShowcase({ onViewWork, onSelectProject }: Website3DShow
         backInk: "218, 241, 222",
         edge: "#DAF1DE",
         chapters: [
-          "Heavy Civil Project Showcase",
-          "Government & Tender Portals",
-          "Equipment Fleet Catalog",
+          "Commercial Project Showcase",
+          "Contracting & Tenders Portal",
+          "Equipment & Engineering Catalog",
           "Safety & Compliance Audits",
         ],
       },

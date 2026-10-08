@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { SectionHeader } from "./SectionHeader";
-import { Phone, Mail, MessageCircle, Send } from "lucide-react";
+import { Phone, Mail, MessageCircle, Send, Instagram } from "lucide-react";
 
 export function Contact() {
   const [sent, setSent] = useState(false);
@@ -45,7 +45,7 @@ export function Contact() {
             </a>
 
             <a
-              href="mailto:nextgendigitalofficial2026@gmail.com"
+              href="mailto:zivdevofficial@gmail.com"
               className="flex items-center gap-4 glass rounded-2xl p-5 sm:p-6 hover-lift group min-w-0"
             >
               <div className="h-12 w-12 shrink-0 rounded-xl glass-gold flex items-center justify-center text-gold group-hover:scale-110 transition-transform">
@@ -54,7 +54,7 @@ export function Contact() {
               <div className="min-w-0 flex-1">
                 <div className="text-xs uppercase tracking-wider text-muted-foreground">Email</div>
                 <div className="font-medium text-sm sm:text-base break-all">
-                  nextgendigitalofficial2026@gmail.com
+                  zivdevofficial@gmail.com
                 </div>
               </div>
             </a>
@@ -67,6 +67,16 @@ export function Contact() {
             >
               <MessageCircle size={18} />
               Chat on WhatsApp
+            </a>
+
+            <a
+              href="https://www.instagram.com/zivdevofficial?stkn=dDVtNHN6OGVrbHZ4"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-3 rounded-2xl glass p-4 font-medium hover:text-gold hover:border-gold/40 transition-all text-sm"
+            >
+              <Instagram size={18} />
+              Instagram (@zivdevofficial)
             </a>
           </div>
 

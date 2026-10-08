@@ -112,7 +112,9 @@ export function CaseStudyPage({
               <span className="text-[#0A241D]/60 uppercase tracking-wider block text-[10px] sm:text-xs font-semibold">
                 Year
               </span>
-              <span className="font-bold text-xs sm:text-sm block text-[#041510]">{currentProject.year}</span>
+              <span className="font-bold text-xs sm:text-sm block text-[#041510]">
+                {currentProject.year}
+              </span>
             </div>
             <div className="space-y-0.5 sm:space-y-1">
               <span className="text-[#0A241D]/60 uppercase tracking-wider block text-[10px] sm:text-xs font-semibold">
@@ -233,7 +235,11 @@ export function CaseStudyPage({
                 key={idx}
                 className="p-3.5 sm:p-5 rounded-xl sm:rounded-2xl bg-[#F8FAF9] border border-[#00D285]/20 flex items-start gap-2.5 sm:gap-3"
               >
-                <CheckCircle2 size={16} className="text-[#00D285] shrink-0 mt-0.5" strokeWidth={2.5} />
+                <CheckCircle2
+                  size={16}
+                  className="text-[#00D285] shrink-0 mt-0.5"
+                  strokeWidth={2.5}
+                />
                 <span className="text-xs sm:text-sm font-sans text-[#041510] font-medium">
                   {feat}
                 </span>

@@ -21,12 +21,11 @@ export function PricingSection({ onSelectPlan, onExploreFullPricing }: PricingSe
       isPopular: false,
       badge: null,
       scope: [
-        "High-conversion single-page architecture",
-        "Mobile-first responsive fluid layout",
-        "Direct WhatsApp & phone click integration",
-        "Essential on-page local SEO setup",
-        "Domain & cloud hosting setup assistance",
-        "14 days post-launch technical warranty",
+        "1 Clean single-page website",
+        "Works smoothly on all mobile phones & computers",
+        "Direct WhatsApp & phone call buttons",
+        "Domain & fast hosting setup assistance",
+        "14 days free support after launch",
       ],
       cta: "SELECT STARTER",
     },
@@ -39,12 +38,11 @@ export function PricingSection({ onSelectPlan, onExploreFullPricing }: PricingSe
       isPopular: true,
       badge: "MOST POPULAR",
       scope: [
-        "Up to 5 bespoke pages (Home, About, Services, Work, Contact)",
-        "Tailored editorial design & refined micro-interactions",
-        "Advanced lead capture & WhatsApp enquiry funnel",
-        "Full technical SEO & Google indexing setup",
-        "Social media preview cards (OpenGraph)",
-        "30 days dedicated post-launch support",
+        "Up to 5 custom pages (Home, About, Services, Work, Contact)",
+        "Modern professional design made for your business",
+        "Customer contact form & instant WhatsApp buttons",
+        "Social media preview links",
+        "30 days free support after launch",
       ],
       cta: "SELECT GROWTH",
     },
@@ -53,16 +51,16 @@ export function PricingSection({ onSelectPlan, onExploreFullPricing }: PricingSe
       name: "PREMIUM",
       price: "₹24,999+",
       priceNote: "Starting investment",
-      idealFor: "Advanced website / system / booking / e-commerce",
+      idealFor: "Advanced website / booking / online store",
       isPopular: false,
       badge: "ENTERPRISE GRADE",
       scope: [
-        "Complete bespoke platform or booking engine",
-        "E-commerce storefront or dynamic service catalog",
-        "Interactive tools (calculators, schedules, portals)",
-        "Database & third-party API integrations",
-        "Performance engineering (95+ Core Web Vitals)",
-        "60 days priority technical support & updates",
+        "Complete custom website with online booking or store",
+        "Product catalog or service menus",
+        "Online payment gateway integration",
+        "Customer database & WhatsApp notifications",
+        "Super fast loading speed on all devices",
+        "60 days priority free support after launch",
       ],
       cta: "SELECT PREMIUM",
     },
@@ -136,9 +134,8 @@ export function PricingSection({ onSelectPlan, onExploreFullPricing }: PricingSe
               }}
               className="text-xs sm:text-base font-sans text-[#0A241D]/75 max-w-xl"
             >
-              Transparent baseline packages with subtle 3D interactive tilt cards. All contracts
-              include full code ownership, zero monthly licensing hostages, and guaranteed launch
-              milestones.
+              Simple, clear pricing with no hidden charges. Every website comes with 100% full
+              ownership, fast delivery, and free support after launch.
             </motion.p>
           </div>
 
@@ -158,7 +155,10 @@ export function PricingSection({ onSelectPlan, onExploreFullPricing }: PricingSe
               className="inline-flex items-center gap-1.5 sm:gap-2 text-[11px] sm:text-sm font-mono font-bold uppercase tracking-wider text-[#041510] hover:text-[#00D285] group self-start md:self-end cursor-pointer transition-colors"
             >
               <span>VIEW DETAILED MATRIX</span>
-              <ArrowRight size={14} className="group-hover:translate-x-1.5 transition-transform text-[#00D285]" />
+              <ArrowRight
+                size={14}
+                className="group-hover:translate-x-1.5 transition-transform text-[#00D285]"
+              />
             </button>
           </motion.div>
         </motion.div>

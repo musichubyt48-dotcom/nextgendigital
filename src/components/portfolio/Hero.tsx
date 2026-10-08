@@ -1,5 +1,5 @@
 import { ArrowRight, Sparkles, Bot, Search, Zap } from "lucide-react";
-import logo from "@/assets/ChatGPT_Image_Jun_12,_2026,_02_34_28_PM.png";
+import logo from "@/assets/images/regenerated_image_1791471865065.jpg";
 
 const floatingCards = [
   { icon: Sparkles, title: "Premium Design", delay: "0s" },
@@ -37,9 +37,9 @@ export function Hero() {
           </h1>
 
           <p className="mt-8 text-[1.05rem] text-muted-foreground max-w-[34rem] leading-[1.75]">
-            Nextgen Digital is a premium website development studio helping small businesses,
-            startups, hotels, clinics, gyms, agencies, creators and ecommerce brands around the
-            world launch modern, fast and AI-powered digital experiences.
+            JIVDEV is a professional website development studio helping businesses, startups,
+            hotels, clinics, gyms, agencies, creators and ecommerce brands around the world launch
+            modern, fast and high-converting digital experiences.
           </p>
 
           <div className="mt-10 flex flex-wrap gap-4">
@@ -115,7 +115,7 @@ export function Hero() {
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-44 w-44 rounded-full glass-gold animate-glow-pulse flex items-center justify-center overflow-hidden p-3">
             <img
               src={logo}
-              alt="Nextgen Digital"
+              alt="JIVDEV"
               width={176}
               height={176}
               fetchPriority="high"

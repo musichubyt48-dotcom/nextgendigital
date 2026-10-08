@@ -11,6 +11,7 @@ import {
   AlertCircle,
   Send,
   Sparkles,
+  Instagram,
 } from "lucide-react";
 import { motion, useReducedMotion } from "motion/react";
 import { submitContactForm } from "@/lib/leadService";
@@ -48,6 +49,14 @@ export function ContactPage({ onNavigate }: ContactPageProps) {
       sub: "Typical response: Under 15 mins",
       link: "https://wa.me/918509332038?text=Hello%20JIVDEV,%20I%20would%20like%20to%20discuss%20a%20website%20project.",
       cta: "Chat on WhatsApp",
+    },
+    {
+      icon: Instagram,
+      title: "Instagram Official",
+      value: "@zivdevofficial",
+      sub: "Follow updates, showcases & direct messages",
+      link: "https://www.instagram.com/zivdevofficial?stkn=dDVtNHN6OGVrbHZ4",
+      cta: "Open Instagram",
     },
     {
       icon: Mail,

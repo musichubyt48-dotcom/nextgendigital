@@ -1,4 +1,4 @@
-import { ArrowRight, MessageCircle, Mail } from "lucide-react";
+import { ArrowRight, MessageCircle, Mail, Instagram } from "lucide-react";
 import { motion, useReducedMotion } from "motion/react";
 import { MagneticButton } from "@/components/motion/MagneticButton";
 import { ExploreWorkButton } from "@/components/studio/ExploreWorkButton";
@@ -132,6 +132,16 @@ export function FinalCtaSection({ onStartProject, onExploreWork }: FinalCtaSecti
             >
               <Mail size={14} className="text-[#8EB69B]" />
               <span>zivdevofficial@gmail.com</span>
+            </a>
+            <span className="hidden sm:inline">·</span>
+            <a
+              href="https://www.instagram.com/zivdevofficial?stkn=dDVtNHN6OGVrbHZ4"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 hover:text-[#FFFFFF] transition-colors"
+            >
+              <Instagram size={14} className="text-[#8EB69B]" />
+              <span>Instagram: @zivdevofficial</span>
             </a>
           </motion.div>
         </motion.div>

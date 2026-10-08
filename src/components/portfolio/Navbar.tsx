@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
-import logo from "@/assets/ChatGPT_Image_Jun_12,_2026,_02_34_28_PM.png";
+import logo from "@/assets/images/regenerated_image_1791471865065.jpg";
 
 const links = [
   { label: "Home", href: "#home" },
@@ -38,15 +38,13 @@ export function Navbar() {
           <a href="#home" className="flex items-center gap-2 group">
             <img
               src={logo}
-              alt="Nextgen Digital"
+              alt="JIVDEV"
               width={40}
               height={40}
               decoding="async"
               className="h-10 w-10 rounded-full object-cover group-hover:scale-105 transition-transform"
             />
-            <span className="font-display text-xl tracking-tight">
-              Nextgen <span className="text-gradient-gold">Digital</span>
-            </span>
+            <span className="font-display text-xl tracking-tight">JIVDEV</span>
           </a>
 
           <ul className="hidden lg:flex items-center gap-8">

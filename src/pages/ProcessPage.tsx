@@ -18,7 +18,10 @@ export function ProcessPage({ onNavigate }: ProcessPageProps) {
             </span>
           </div>
           <h1 className="font-display text-4xl sm:text-6xl text-[#041510] leading-[1.1] font-bold">
-            Disciplined execution with <span className="underline decoration-[#00D285] decoration-4 underline-offset-8">zero guesswork.</span>
+            Disciplined execution with{" "}
+            <span className="underline decoration-[#00D285] decoration-4 underline-offset-8">
+              zero guesswork.
+            </span>
           </h1>
           <p className="text-base sm:text-lg text-[#0A241D]/75 leading-relaxed max-w-2xl font-sans">
             We follow an architectural framework refined over dozens of commercial deployments.
@@ -52,9 +55,15 @@ export function ProcessPage({ onNavigate }: ProcessPageProps) {
 
                 {/* Content description */}
                 <div className="lg:col-span-5 space-y-3">
-                  <h2 className="font-display text-2xl sm:text-3xl text-[#041510] font-bold">{step.name}</h2>
-                  <p className="font-mono text-xs text-[#00D285] font-semibold tracking-wide">{step.tagline}</p>
-                  <p className="text-sm text-[#0A241D]/80 leading-relaxed font-sans">{step.description}</p>
+                  <h2 className="font-display text-2xl sm:text-3xl text-[#041510] font-bold">
+                    {step.name}
+                  </h2>
+                  <p className="font-mono text-xs text-[#00D285] font-semibold tracking-wide">
+                    {step.tagline}
+                  </p>
+                  <p className="text-sm text-[#0A241D]/80 leading-relaxed font-sans">
+                    {step.description}
+                  </p>
                 </div>
 
                 {/* Deliverables Checklist */}

@@ -42,7 +42,7 @@ export function WhyChoose() {
           eyebrow="Why Work With Me"
           title={
             <>
-              The Nextgen <span className="text-gradient-gold italic">difference</span>
+              The JIVDEV <span className="text-gradient-gold italic">difference</span>
             </>
           }
         />

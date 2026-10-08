@@ -7,6 +7,7 @@ import {
   Headphones,
   ArrowRight,
   Sparkles,
+  Instagram,
 } from "lucide-react";
 import { motion, useReducedMotion } from "motion/react";
 import { HowWeWorkSection } from "@/components/studio/HowWeWorkSection";
@@ -124,9 +125,9 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
               className="text-sm sm:text-xl md:text-2xl font-sans text-[#0A241D]/85 leading-relaxed max-w-3xl"
             >
               Most websites fail because they are built from rigid generic templates that force
-              businesses into pre-made boxes. At JIVDEV, we architect direct booking
-              engines, high-converting product pages, and digital systems tailored to how your
-              business actually operates.
+              businesses into pre-made boxes. At JIVDEV, we architect direct booking engines,
+              high-converting product pages, and digital systems tailored to how your business
+              actually operates.
             </motion.p>
           </motion.div>
         </div>
@@ -317,8 +318,8 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
               </h2>
               <p className="text-xs sm:text-base text-[#0A241D]/80 font-sans leading-relaxed">
                 Traditional agencies mark up low-grade WordPress templates and leave clients with
-                recurring monthly retainer dependencies. JIVDEV operates like an in-house
-                product engineering team.
+                recurring monthly retainer dependencies. JIVDEV operates like an in-house product
+                engineering team.
               </p>
             </div>
 
@@ -372,6 +373,17 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
               <p className="text-sm sm:text-base font-mono text-[#00D285] font-bold uppercase tracking-wider">
                 Founder
               </p>
+              <div className="pt-2">
+                <a
+                  href="https://www.instagram.com/zivdevofficial?stkn=dDVtNHN6OGVrbHZ4"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-xs font-mono text-[#0A241D]/80 hover:text-[#00D285] transition-colors py-1 px-3 rounded-full bg-[#00D285]/10 border border-[#00D285]/20 hover:border-[#00D285]/50"
+                >
+                  <Instagram size={13} className="text-[#00D285]" />
+                  <span>@zivdevofficial</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>

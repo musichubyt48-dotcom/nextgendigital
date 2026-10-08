@@ -1,7 +1,7 @@
 import constructionImg from "@/assets/project-construction.webp";
-import sungavaImg from "@/assets/images/project_sungava_1791398650463.jpg";
-import infinityImg from "@/assets/images/project_infinity_1791398661182.jpg";
-import gymImg from "@/assets/images/project_fitness_1791398674269.jpg";
+import sungavaImg from "@/assets/images/sungava_resort_real_1791467430511.jpg";
+import infinityImg from "@/assets/images/infinity_store_real_1791467450432.jpg";
+import gymImg from "@/assets/images/fitness_gym_real_1791467464759.jpg";
 
 export interface ProjectItem {
   id: string;
@@ -40,7 +40,7 @@ export const projectsData: ProjectItem[] = [
     industry: "Luxury Hospitality & Spa",
     client: "Sungava Resort & Spa",
     location: "Sikkim, India",
-    year: "2025",
+    year: "2026",
     shortDesc:
       "Luxury Himalayan resort website with rooms, experiences, services and booking-focused design.",
     overview:
@@ -71,7 +71,7 @@ export const projectsData: ProjectItem[] = [
     industry: "Quick Commerce & Retail",
     client: "Infinity Store",
     location: "India",
-    year: "2025",
+    year: "2026",
     shortDesc:
       "Campus quick-commerce platform designed for fast ordering and delivery of everyday essentials.",
     overview:
@@ -102,7 +102,7 @@ export const projectsData: ProjectItem[] = [
     industry: "Athletic Conditioning & Gym",
     client: "Fitness Gym",
     location: "India",
-    year: "2025",
+    year: "2026",
     shortDesc:
       "Modern fitness website focused on gym services, training and membership conversion.",
     overview:
@@ -133,7 +133,7 @@ export const projectsData: ProjectItem[] = [
     industry: "Civil & Commercial Contracting",
     client: "A B Construction",
     location: "India",
-    year: "2025",
+    year: "2026",
     shortDesc:
       "Professional construction website showcasing projects, services and enquiry-focused experience.",
     overview:
@@ -156,4 +156,3 @@ export const projectsData: ProjectItem[] = [
     featured: true,
   },
 ];
-

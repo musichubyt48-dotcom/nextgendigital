@@ -15,7 +15,7 @@ export function LegalPage({ type, onNavigate }: LegalPageProps) {
       sections: [
         {
           heading: "1. Studio Commitment",
-          body: "NextGen Digital ('we', 'us', or 'the Studio') respects the confidential nature of client data and enterprise projects. This Privacy Policy outlines our transparent standards for collecting, managing, and protecting information submitted through https://nextgendigital.services/ or direct communication channels.",
+          body: "JIVDEV ('we', 'us', or 'the Studio') respects the confidential nature of client data and enterprise projects. This Privacy Policy outlines our transparent standards for collecting, managing, and protecting information submitted through official studio channels or direct communication channels.",
         },
         {
           heading: "2. Information We Collect",

@@ -1,5 +1,5 @@
 import { ArrowUpRight, MessageCircle, Mail, Instagram, ArrowUp } from "lucide-react";
-import logo from "@/assets/ChatGPT_Image_Jun_12,_2026,_02_34_28_PM.png";
+import logo from "@/assets/images/regenerated_image_1791471869963.jpg";
 
 interface FooterProps {
   onNavigate: (path: string) => void;
@@ -130,7 +130,7 @@ export function Footer({ onNavigate }: FooterProps) {
               </li>
               <li>
                 <a
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/zivdevofficial?stkn=dDVtNHN6OGVrbHZ4"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 text-[#E8F7EE]/80 hover:text-[#00D285] transition-colors"

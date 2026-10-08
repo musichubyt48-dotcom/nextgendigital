@@ -19,7 +19,7 @@ export function About() {
           title={
             <>
               Meet <span className="text-gradient-gold italic">Ashutosh</span>,
-              <br /> founder of Nextgen Digital.
+              <br /> founder of JIVDEV.
             </>
           }
         />
@@ -38,7 +38,7 @@ export function About() {
               </div>
               <div className="flex items-end justify-between gap-4">
                 <div className="font-display text-6xl sm:text-7xl text-gradient-gold leading-none">
-                  ND
+                  JD
                 </div>
                 <div className="text-right text-[0.6rem] uppercase tracking-[0.25em] text-muted-foreground">
                   Serving clients
@@ -55,10 +55,9 @@ export function About() {
               and quietly impressive."
             </p>
             <p>
-              I founded Nextgen Digital after watching too many small businesses — from
-              neighbourhood cafés to fast-growing startups — lose customers to outdated, slow
-              websites. Great brands deserve a digital presence that matches the quality of what
-              they offer offline.
+              I founded JIVDEV after watching too many small businesses — from neighbourhood cafés
+              to fast-growing startups — lose customers to outdated, slow websites. Great brands
+              deserve a digital presence that matches the quality of what they offer offline.
             </p>
             <p>
               Today we work with founders across multiple countries, building modern, SEO-friendly,

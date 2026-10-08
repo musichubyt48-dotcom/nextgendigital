@@ -2080,7 +2080,7 @@ export const DEMO_BOOKS: BookCfg[] = [
     id: "sungava-resort",
     title: "Sungava Resort & Spa",
     author: "Hospitality & Retreat Platform",
-    year: "2025",
+    year: "2026",
     stars: 5,
     desc: "A boutique Himalayan retreat platform with tailored direct booking workflows, panoramic suite previews, and automated WhatsApp guest concierge routing.",
     spineBg: "#0B2B26",
@@ -2099,7 +2099,7 @@ export const DEMO_BOOKS: BookCfg[] = [
     id: "rawfit-gym",
     title: "Rawfit Conditioning Club",
     author: "Athletics & Membership Engine",
-    year: "2025",
+    year: "2026",
     stars: 5,
     desc: "A bold, high-energy digital headquarters for an athletic conditioning gym featuring interactive workout schedules, membership tiers, a BMI health tool, and WhatsApp pass claims.",
     spineBg: "#163832",
@@ -2115,22 +2115,22 @@ export const DEMO_BOOKS: BookCfg[] = [
     ],
   },
   {
-    id: "looks-salon",
-    title: "Looks Luxury Aesthetic Salon",
-    author: "Service Directory & Booking Flow",
-    year: "2025",
+    id: "infinity-store",
+    title: "Infinity Store",
+    author: "Campus Quick-Commerce",
+    year: "2026",
     stars: 5,
-    desc: "A luxurious unisex salon digital catalog with online appointment requests, service menus, bridal inquiries, and stylist spotlights.",
+    desc: "A swift campus quick-commerce store with catalog navigation, quick checkout, and direct delivery dispatch.",
     spineBg: "#0B2B26",
     spineInk: "#DAF1DE",
     backBg: "#163832",
     backInk: "218, 241, 222",
     edge: "#DAF1DE",
     chapters: [
-      "Digital Treatment Catalog",
-      "Stylist Portfolio & Booking Flow",
-      "Bridal & Grooming Packages",
-      "Multi-Branch Directory & Map",
+      "Quick Product Catalog",
+      "Instant Cart & Checkout",
+      "Campus Order Routing",
+      "Fast Mobile Navigation",
     ],
   },
 ];
@@ -2140,7 +2140,7 @@ export function BooksShowcaseDemo() {
     <div className="h-[680px] w-full">
       <BooksShowcase
         books={DEMO_BOOKS}
-        heroTitle="NextGen"
+        heroTitle="JIVDEV"
         navTitle="Selected Platforms"
         className="min-h-0"
         themeColors={{

@@ -26,13 +26,7 @@ export function WorkPage({ onOpenCaseStudy, onNavigate }: WorkPageProps) {
   const horizontalScrollRef = useRef<HTMLDivElement>(null);
   const shouldReduceMotion = useReducedMotion();
 
-  const categories = [
-    "All",
-    "Hospitality",
-    "E-Commerce",
-    "Fitness",
-    "Construction",
-  ];
+  const categories = ["All", "Hospitality", "E-Commerce", "Fitness", "Construction"];
 
   const featuredProjects = projectsData.filter((p) => p.featured);
 

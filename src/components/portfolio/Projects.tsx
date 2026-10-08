@@ -1,52 +1,52 @@
 import { SectionHeader } from "./SectionHeader";
 import { ArrowUpRight } from "lucide-react";
 import constructionImg from "@/assets/project-construction.webp";
-import dentalImg from "@/assets/project-dental.webp";
-import gymImg from "@/assets/project-gym-demo.webp";
-import salonImg from "@/assets/project-salon-demo.webp";
+import sungavaImg from "@/assets/images/sungava_resort_real_1791467430511.jpg";
+import infinityImg from "@/assets/images/infinity_store_real_1791467450432.jpg";
+import gymImg from "@/assets/images/fitness_gym_real_1791467464759.jpg";
 
 const projects = [
   {
-    img: constructionImg,
-    category: "Construction",
-    title: "A B Construction",
-    year: "2025",
-    desc: "Premium dark-theme site for a South Sikkim construction firm — built to project trust, scale, and 25+ years of heritage.",
-    tags: ["Branding", "Editorial", "Lead-gen"],
-    href: "https://ab-build-trust.musichubyt48.workers.dev/",
+    img: sungavaImg,
+    category: "Hospitality",
+    title: "Sungava Resort & Spa",
+    year: "2026",
+    desc: "Luxury Himalayan resort website with rooms, experiences, wellness spa and direct booking flow.",
+    tags: ["Hospitality", "Booking", "Luxury"],
+    href: "https://sungava-resort-spa.ai.studio/",
     span: "lg:col-span-2 lg:row-span-2",
     aspect: "aspect-[4/5]",
   },
   {
-    img: dentalImg,
-    category: "Healthcare",
-    title: "Gayatri Dental Clinic",
-    year: "2025",
-    desc: "Clean, calming clinic site with online appointment booking, services, and gallery.",
-    tags: ["Booking", "SEO", "Local"],
-    href: "https://gayatridentalclinic.musichubyt48.workers.dev/",
+    img: infinityImg,
+    category: "E-Commerce",
+    title: "Infinity Store",
+    year: "2026",
+    desc: "Campus quick-commerce platform designed for fast ordering and delivery of everyday essentials.",
+    tags: ["E-Commerce", "Quick-Commerce", "Cart"],
+    href: "https://infinitystore-xi.vercel.app/",
     span: "",
     aspect: "aspect-[4/3]",
   },
   {
     img: gymImg,
     category: "Fitness",
-    title: "Fit Fitness Gym",
-    year: "2025",
-    desc: "Bold, high-energy gym website with membership plans, BMI tool, and trainer call-to-actions.",
-    tags: ["Conversion", "Mobile-first"],
+    title: "Fitness Gym",
+    year: "2026",
+    desc: "Modern fitness website focused on gym services, training and membership conversion.",
+    tags: ["Fitness", "Memberships", "Training"],
     href: "https://gymwebsite.musichubyt48.workers.dev/",
     span: "",
     aspect: "aspect-[4/3]",
   },
   {
-    img: salonImg,
-    category: "Beauty",
-    title: "Looks Salon",
-    year: "2025",
-    desc: "Luxurious unisex salon experience with online appointments, services, and franchise inquiries.",
-    tags: ["Luxury", "Booking", "Multi-branch"],
-    href: "https://salonwebsitedemo.musichubyt48.workers.dev/",
+    img: constructionImg,
+    category: "Construction",
+    title: "A B Construction",
+    year: "2026",
+    desc: "Professional construction website showcasing projects, contracting services and commercial enquiries.",
+    tags: ["Corporate", "Contracting", "Enquiry"],
+    href: "https://abconstrution.com/",
     span: "lg:col-span-2",
     aspect: "aspect-[16/9]",
   },

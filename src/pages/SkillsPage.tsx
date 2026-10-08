@@ -109,7 +109,10 @@ export function SkillsPage({ onNavigate }: SkillsPageProps) {
           align="center"
           title={
             <>
-              Engineered for <span className="underline decoration-[#00D285] decoration-4 underline-offset-8">business performance</span>
+              Engineered for{" "}
+              <span className="underline decoration-[#00D285] decoration-4 underline-offset-8">
+                business performance
+              </span>
               .
             </>
           }
@@ -172,7 +175,7 @@ export function SkillsPage({ onNavigate }: SkillsPageProps) {
 
             <div className="space-y-2 p-5 rounded-2xl bg-[#F8FAF9] border border-[#00D285]/30">
               <div className="font-mono text-xs text-[#00D285] font-bold uppercase">
-                NextGen Digital Custom Code
+                JIVDEV Custom Code
               </div>
               <p className="text-xs text-[#041510] leading-relaxed">
                 Lightweight, hand-crafted code running on global edge CDNs. Loads in milliseconds,

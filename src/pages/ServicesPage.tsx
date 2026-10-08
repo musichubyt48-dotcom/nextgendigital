@@ -422,7 +422,7 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
             className="text-center max-w-3xl mx-auto space-y-3 sm:space-y-4 mb-8 sm:mb-16"
           >
             <div className="inline-flex items-center gap-1.5 sm:gap-2 rounded-full bg-[#00D285]/10 px-3 sm:px-3.5 py-0.5 sm:py-1 text-[11px] sm:text-xs font-mono uppercase tracking-widest text-[#00D285] border border-[#00D285]/25">
-              <span>Why Choose NextGen Digital</span>
+              <span>Why Choose JIVDEV</span>
             </div>
             <h2 className="text-2xl sm:text-4xl md:text-5xl font-display font-extrabold uppercase text-[#041510] tracking-tight leading-tight">
               Engineering Value Over <br />

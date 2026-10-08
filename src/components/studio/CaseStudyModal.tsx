@@ -68,7 +68,9 @@ export function CaseStudyModal({ project, onClose, onStartProject }: CaseStudyMo
             <h2 className="font-display font-bold text-3xl sm:text-4xl text-[#041510] leading-tight">
               {project.title}
             </h2>
-            <p className="text-base text-[#0A241D]/80 leading-relaxed font-sans">{project.subtitle}</p>
+            <p className="text-base text-[#0A241D]/80 leading-relaxed font-sans">
+              {project.subtitle}
+            </p>
           </div>
 
           {/* Project Preview Image */}
@@ -95,7 +97,9 @@ export function CaseStudyModal({ project, onClose, onStartProject }: CaseStudyMo
               <span className="h-2 w-2 rounded-full bg-[#00D285]" />
               Executive Case Summary
             </h3>
-            <p className="text-sm sm:text-base text-[#0A241D]/85 leading-relaxed font-sans">{project.summary}</p>
+            <p className="text-sm sm:text-base text-[#0A241D]/85 leading-relaxed font-sans">
+              {project.summary}
+            </p>
           </div>
 
           {/* The Challenge & The Studio Solution */}
@@ -104,14 +108,18 @@ export function CaseStudyModal({ project, onClose, onStartProject }: CaseStudyMo
               <div className="font-mono text-xs uppercase tracking-wider text-red-600 font-bold">
                 The Commercial Challenge
               </div>
-              <p className="text-sm text-[#0A241D]/75 leading-relaxed font-sans">{project.challenge}</p>
+              <p className="text-sm text-[#0A241D]/75 leading-relaxed font-sans">
+                {project.challenge}
+              </p>
             </div>
 
             <div className="border border-[#00D285]/25 rounded-2xl p-6 bg-[#F8FAF9] space-y-2">
               <div className="font-mono text-xs uppercase tracking-wider text-[#00D285] font-bold">
-                NextGen Studio Architecture
+                JIVDEV Studio Architecture
               </div>
-              <p className="text-sm text-[#0A241D]/85 leading-relaxed font-sans">{project.solution}</p>
+              <p className="text-sm text-[#0A241D]/85 leading-relaxed font-sans">
+                {project.solution}
+              </p>
             </div>
           </div>
 
@@ -145,7 +153,9 @@ export function CaseStudyModal({ project, onClose, onStartProject }: CaseStudyMo
 
           {/* Tech Stack */}
           <div className="pt-2 border-t border-[#00D285]/15 flex flex-wrap items-center gap-2">
-            <span className="font-mono text-xs text-[#0A241D]/70 font-semibold">Technology Stack:</span>
+            <span className="font-mono text-xs text-[#0A241D]/70 font-semibold">
+              Technology Stack:
+            </span>
             {project.techStack.map((tech) => (
               <span
                 key={tech}

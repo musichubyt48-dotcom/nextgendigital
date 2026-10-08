@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-const SITE_URL = "https://nextgendigital.services";
+const SITE_URL = "https://jivdev.com";
 const ORG_NAME = "JIVDEV";
 const ORG_DESC =
   "JIVDEV is an independent digital development studio founded by Ashutosh Kumar Srivastava, building modern websites, booking engines, and digital systems for growing businesses.";
@@ -50,7 +50,10 @@ const organization = {
     addressCountry: "IN",
     addressRegion: "India",
   },
-  sameAs: ["https://wa.me/918509332038"],
+  sameAs: [
+    "https://wa.me/918509332038",
+    "https://www.instagram.com/zivdevofficial?stkn=dDVtNHN6OGVrbHZ4",
+  ],
 };
 
 const website = {
@@ -310,8 +313,7 @@ const collectionPage = {
   "@id": `${SITE_URL}/#projects-page`,
   url: `${SITE_URL}/#projects`,
   name: `Projects by ${ORG_NAME}`,
-  description:
-    "A collection of website projects built by JIVDEV for businesses worldwide.",
+  description: "A collection of website projects built by JIVDEV for businesses worldwide.",
   isPartOf: { "@id": `${SITE_URL}/#website` },
   inLanguage: "en",
   hasPart: [
@@ -358,7 +360,7 @@ const articleTemplate = {
   "@type": "Article",
   "@id": `${SITE_URL}/blog/sample-article#article`,
   headline: "Sample Article",
-  description: "Template article schema for future Nextgen Digital blog posts.",
+  description: "Template article schema for future JIVDEV blog posts.",
   image: logoObject,
   author: {
     "@type": "Person",
@@ -397,7 +399,7 @@ const graph = {
 
 export function StructuredData() {
   useEffect(() => {
-    const id = "nextgen-structured-data";
+    const id = "jivdev-structured-data";
     if (document.getElementById(id)) return;
     const script = document.createElement("script");
     script.type = "application/ld+json";

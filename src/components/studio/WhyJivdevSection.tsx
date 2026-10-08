@@ -1,6 +1,6 @@
 import { UserCheck, CheckCircle2 } from "lucide-react";
 
-export function WhyNextGenSection() {
+export function WhyJivdevSection() {
   const points = [
     {
       code: "01 // REVENUE",
@@ -104,4 +104,4 @@ export function WhyNextGenSection() {
   );
 }
 
-export default WhyNextGenSection;
+export default WhyJivdevSection;

@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
-import { Menu, X, ArrowRight, Phone, MessageCircle } from "lucide-react";
+import { Menu, X, ArrowRight, Phone, MessageCircle, Instagram } from "lucide-react";
 import { motion, AnimatePresence, useReducedMotion } from "motion/react";
 import { MagneticButton } from "@/components/motion/MagneticButton";
-import logo from "@/assets/ChatGPT_Image_Jun_12,_2026,_02_34_28_PM.png";
+import logo from "@/assets/images/regenerated_image_1791471865065.jpg";
 
 interface NavbarProps {
   currentPath: string;
@@ -50,10 +50,10 @@ export function Navbar({ currentPath, onNavigate }: NavbarProps) {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-out ${
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-out bg-[#041510]/95 backdrop-blur-md border-b border-[#00D285]/20 ${
           isScrolled
-            ? "bg-[#041510]/90 backdrop-blur-md border-b border-[#00D285]/15 py-3 shadow-[0_4px_28px_rgba(0,0,0,0.45)]"
-            : "bg-transparent py-5 sm:py-6"
+            ? "py-3 shadow-[0_4px_28px_rgba(0,0,0,0.5)]"
+            : "py-4 sm:py-4.5 shadow-[0_2px_20px_rgba(0,0,0,0.35)]"
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -178,22 +178,31 @@ export function Navbar({ currentPath, onNavigate }: NavbarProps) {
                 <ArrowRight size={16} />
               </button>
 
-              <div className="grid grid-cols-2 gap-2 pt-2">
+              <div className="grid grid-cols-3 gap-2 pt-2">
                 <a
                   href="https://wa.me/918509332038?text=Hello%20JIVDEV,%20I%20would%20like%20to%20discuss%20a%20website%20project."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 py-3 px-3 rounded-xl border border-[#00D285]/30 text-xs font-mono font-medium text-[#E8F7EE] bg-[#06211a] hover:bg-[#00D285] hover:text-[#041510] transition-colors"
+                  className="flex items-center justify-center gap-1.5 py-3 px-2 rounded-xl border border-[#00D285]/30 text-xs font-mono font-medium text-[#E8F7EE] bg-[#06211a] hover:bg-[#00D285] hover:text-[#041510] transition-colors"
                 >
-                  <MessageCircle size={14} />
+                  <MessageCircle size={13} />
                   <span>WhatsApp</span>
                 </a>
                 <a
-                  href="tel:+918509332038"
-                  className="flex items-center justify-center gap-2 py-3 px-3 rounded-xl border border-[#00D285]/30 text-xs font-mono font-medium text-[#E8F7EE] bg-[#06211a] hover:bg-[#00D285] hover:text-[#041510] transition-colors"
+                  href="https://www.instagram.com/zivdevofficial?stkn=dDVtNHN6OGVrbHZ4"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-1.5 py-3 px-2 rounded-xl border border-[#00D285]/30 text-xs font-mono font-medium text-[#E8F7EE] bg-[#06211a] hover:bg-[#00D285] hover:text-[#041510] transition-colors"
                 >
-                  <Phone size={14} />
-                  <span>Call Studio</span>
+                  <Instagram size={13} />
+                  <span>Instagram</span>
+                </a>
+                <a
+                  href="tel:+918509332038"
+                  className="flex items-center justify-center gap-1.5 py-3 px-2 rounded-xl border border-[#00D285]/30 text-xs font-mono font-medium text-[#E8F7EE] bg-[#06211a] hover:bg-[#00D285] hover:text-[#041510] transition-colors"
+                >
+                  <Phone size={13} />
+                  <span>Call</span>
                 </a>
               </div>
             </div>

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence, useReducedMotion } from "motion/react";
-import logo from "@/assets/ChatGPT_Image_Jun_12,_2026,_02_34_28_PM.png";
+import logo from "@/assets/images/regenerated_image_1791471865065.jpg";
 
 interface LogoIntroProps {
   onComplete?: () => void;
@@ -71,11 +71,7 @@ export function LogoIntro({ onComplete }: LogoIntroProps) {
               transition={{ duration: 0.45, ease: [0.16, 1, 0.3, 1] }}
               className="relative h-16 w-16 sm:h-20 sm:w-20 rounded-2xl bg-[#041510] flex items-center justify-center shadow-xl border border-[#00D285]/35 p-2.5"
             >
-              <img
-                src={logo}
-                alt="JIVDEV"
-                className="w-full h-full object-contain"
-              />
+              <img src={logo} alt="JIVDEV" className="w-full h-full object-contain" />
               <span className="absolute -top-1 -right-1 h-3 w-3 rounded-full bg-[#00D285] shadow-[0_0_10px_rgba(0,210,133,0.6)]" />
             </motion.div>
 

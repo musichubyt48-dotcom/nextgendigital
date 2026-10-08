@@ -157,9 +157,7 @@ export function PricingCard3D({ plan, onSelect }: PricingCard3DProps) {
                   >
                     <Check size={11} strokeWidth={3} />
                   </span>
-                  <span className={isGrowth ? "text-[#E8F7EE]" : "text-[#0A241D]/85"}>
-                    {item}
-                  </span>
+                  <span className={isGrowth ? "text-[#E8F7EE]" : "text-[#0A241D]/85"}>{item}</span>
                 </li>
               ))}
             </ul>

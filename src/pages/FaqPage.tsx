@@ -43,7 +43,10 @@ export function FaqPage({ onNavigate }: FaqPageProps) {
             </span>
           </div>
           <h1 className="font-display text-2xl sm:text-5xl md:text-6xl text-[#041510] leading-[1.15] font-bold">
-            Clear answers to <span className="underline decoration-[#00D285] decoration-4 underline-offset-8">common questions.</span>
+            Clear answers to{" "}
+            <span className="underline decoration-[#00D285] decoration-4 underline-offset-8">
+              common questions.
+            </span>
           </h1>
           <p className="text-xs sm:text-base md:text-lg text-[#0A241D]/75 leading-relaxed max-w-xl mx-auto">
             Everything you need to know about pricing, project timelines, code ownership, hosting

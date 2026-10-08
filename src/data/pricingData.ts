@@ -56,8 +56,6 @@ export const pricingPlans: PricingPlan[] = [
       "Up to 7 Bespoke System Pages with Custom Layouts",
       "Conversion Architecture & High-Intent Copywriting Guidance",
       "Speed & Core Web Vitals Optimization (95+ Lighthouse Score)",
-      "Google Search Console Verification & XML Sitemap Setup",
-      "Local SEO Schema & Semantic HTML for Business Queries",
       "Interactive Product / Service Showcases & Visual Filtering",
       "Lead Capture Form with Auto-Format for WhatsApp / Email",
       "30 Days Priority Technical Care & Staff Onboarding",
