@@ -37,6 +37,39 @@ export function sanitizeClientValue(value: unknown): string {
 }
 
 /**
+ * Fallback serverless API submission in case client direct connection is blocked
+ */
+async function fallbackApiSubmit(
+  endpoint: string,
+  payload: Record<string, unknown>,
+): Promise<SubmissionResult | null> {
+  try {
+    const res = await fetch(endpoint, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(payload),
+    });
+
+    const contentType = res.headers.get("content-type") || "";
+    if (contentType.includes("application/json")) {
+      const data = await res.json();
+      return {
+        success: Boolean(data.success),
+        message:
+          data.message ||
+          (data.success ? "Submission successful." : "Submission could not be completed."),
+        error: data.error,
+      };
+    }
+  } catch (err) {
+    console.warn(`[Fallback API] Failed calling ${endpoint}:`, err);
+  }
+  return null;
+}
+
+/**
  * Submits "Send Us a Message" contact form directly to Supabase contact_messages table
  */
 export async function submitContactForm(data: ContactFormData): Promise<SubmissionResult> {
@@ -56,7 +89,7 @@ export async function submitContactForm(data: ContactFormData): Promise<Submissi
   }
 
   try {
-    // Insert into dedicated contact_messages table
+    // 1. Primary: Direct Supabase insert
     const { error } = await supabase.from("contact_messages").insert({
       name,
       business_name: businessName,
@@ -69,7 +102,21 @@ export async function submitContactForm(data: ContactFormData): Promise<Submissi
     });
 
     if (error) {
-      console.error("[Supabase] Error inserting contact message:", error);
+      console.warn("[Supabase] Direct contact insert error, trying API fallback:", error);
+      const fallbackResult = await fallbackApiSubmit("/api/contact", {
+        name,
+        businessName,
+        email,
+        phone,
+        projectType,
+        investmentPreference,
+        projectDetails,
+      });
+
+      if (fallbackResult && fallbackResult.success) {
+        return fallbackResult;
+      }
+
       return {
         success: false,
         message:
@@ -101,8 +148,22 @@ export async function submitContactForm(data: ContactFormData): Promise<Submissi
         "Your message has been received successfully! Our team will get back to you shortly.",
     };
   } catch (err: unknown) {
+    console.warn("[Supabase] Exception during direct insert, trying API fallback:", err);
+    const fallbackResult = await fallbackApiSubmit("/api/contact", {
+      name,
+      businessName,
+      email,
+      phone,
+      projectType,
+      investmentPreference,
+      projectDetails,
+    });
+
+    if (fallbackResult && fallbackResult.success) {
+      return fallbackResult;
+    }
+
     const errorObj = err as Error;
-    console.error("[Supabase] Unexpected error during contact submission:", errorObj);
     return {
       success: false,
       message:
@@ -138,7 +199,7 @@ export async function submitProjectForm(data: ProjectFormData): Promise<Submissi
   }
 
   try {
-    // Insert into dedicated project_inquiries table
+    // 1. Primary: Direct Supabase insert
     const { error } = await supabase.from("project_inquiries").insert({
       name,
       business_name: businessName,
@@ -153,7 +214,23 @@ export async function submitProjectForm(data: ProjectFormData): Promise<Submissi
     });
 
     if (error) {
-      console.error("[Supabase] Error inserting project inquiry:", error);
+      console.warn("[Supabase] Direct project insert error, trying API fallback:", error);
+      const fallbackResult = await fallbackApiSubmit("/api/start-project", {
+        name,
+        businessName,
+        email,
+        phone,
+        projectType,
+        budgetRange,
+        timeline,
+        businessIntegrations,
+        projectDetails,
+      });
+
+      if (fallbackResult && fallbackResult.success) {
+        return fallbackResult;
+      }
+
       return {
         success: false,
         message:
@@ -188,8 +265,24 @@ export async function submitProjectForm(data: ProjectFormData): Promise<Submissi
         "Your project brief has been submitted successfully! We will prepare your proposal and reach out soon.",
     };
   } catch (err: unknown) {
+    console.warn("[Supabase] Exception during direct insert, trying API fallback:", err);
+    const fallbackResult = await fallbackApiSubmit("/api/start-project", {
+      name,
+      businessName,
+      email,
+      phone,
+      projectType,
+      budgetRange,
+      timeline,
+      businessIntegrations,
+      projectDetails,
+    });
+
+    if (fallbackResult && fallbackResult.success) {
+      return fallbackResult;
+    }
+
     const errorObj = err as Error;
-    console.error("[Supabase] Unexpected error during project submission:", errorObj);
     return {
       success: false,
       message:

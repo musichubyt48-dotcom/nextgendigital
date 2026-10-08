@@ -1,7 +1,7 @@
 import constructionImg from "@/assets/project-construction.webp";
-import sungavaImg from "@/assets/images/sungava_resort_real_1791467430511.jpg";
-import infinityImg from "@/assets/images/infinity_store_real_1791467450432.jpg";
-import gymImg from "@/assets/images/fitness_gym_real_1791467464759.jpg";
+import sungavaImg from "@/assets/images/regenerated_image_1791480447848.png";
+import infinityImg from "@/assets/images/regenerated_image_1791480451636.png";
+import gymImg from "@/assets/images/regenerated_image_1791480455234.png";
 
 export interface ProjectItem {
   id: string;

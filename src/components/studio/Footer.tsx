@@ -1,5 +1,5 @@
 import { ArrowUpRight, MessageCircle, Mail, Instagram, ArrowUp } from "lucide-react";
-import logo from "@/assets/images/regenerated_image_1791471869963.jpg";
+import logo from "@/assets/images/jivdev_main_logo_1791467409219.jpg";
 
 interface FooterProps {
   onNavigate: (path: string) => void;

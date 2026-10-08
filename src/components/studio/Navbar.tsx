@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Menu, X, ArrowRight, Phone, MessageCircle, Instagram } from "lucide-react";
 import { motion, AnimatePresence, useReducedMotion } from "motion/react";
 import { MagneticButton } from "@/components/motion/MagneticButton";
-import logo from "@/assets/images/regenerated_image_1791471865065.jpg";
+import logo from "@/assets/images/jivdev_main_logo_1791467409219.jpg";
 
 interface NavbarProps {
   currentPath: string;

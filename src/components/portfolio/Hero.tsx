@@ -1,5 +1,5 @@
 import { ArrowRight, Sparkles, Bot, Search, Zap } from "lucide-react";
-import logo from "@/assets/images/regenerated_image_1791471865065.jpg";
+import logo from "@/assets/images/jivdev_main_logo_1791467409219.jpg";
 
 const floatingCards = [
   { icon: Sparkles, title: "Premium Design", delay: "0s" },
