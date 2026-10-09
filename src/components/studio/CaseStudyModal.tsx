@@ -98,7 +98,7 @@ export function CaseStudyModal({ project, onClose, onStartProject }: CaseStudyMo
               Executive Case Summary
             </h3>
             <p className="text-sm sm:text-base text-[#0A241D]/85 leading-relaxed font-sans">
-              {project.summary}
+              {project.summary || project.overview || project.shortDesc}
             </p>
           </div>
 
@@ -109,16 +109,20 @@ export function CaseStudyModal({ project, onClose, onStartProject }: CaseStudyMo
                 The Commercial Challenge
               </div>
               <p className="text-sm text-[#0A241D]/75 leading-relaxed font-sans">
-                {project.challenge}
+                {project.challenge ||
+                  "Eliminating bounce rates and friction points across the buyer journey."}
               </p>
             </div>
 
             <div className="border border-[#00D285]/25 rounded-2xl p-6 bg-[#F8FAF9] space-y-2">
               <div className="font-mono text-xs uppercase tracking-wider text-[#00D285] font-bold">
-                JIVDEV Studio Architecture
+                ZIVDEV Studio Architecture
               </div>
               <p className="text-sm text-[#0A241D]/85 leading-relaxed font-sans">
-                {project.solution}
+                {project.solution ||
+                  project.approach ||
+                  project.development ||
+                  "Custom architectural implementation built with React and TypeScript."}
               </p>
             </div>
           </div>
@@ -129,7 +133,9 @@ export function CaseStudyModal({ project, onClose, onStartProject }: CaseStudyMo
               Commercial Impact & Results
             </div>
             <p className="text-sm text-[#041510] mt-1 font-medium leading-relaxed font-sans">
-              {project.commercialImpact}
+              {project.commercialImpact ||
+                project.businessResult ||
+                "Significant increase in qualified conversions, user retention, and inbound booking inquiries."}
             </p>
           </div>
 

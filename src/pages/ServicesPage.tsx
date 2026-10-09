@@ -19,11 +19,14 @@ import studioEngineeringImg from "@/assets/images/studio_engineering_17902494012
 
 interface ServicesPageProps {
   onNavigate: (path: string) => void;
+  initialService?: string;
 }
 
-export function ServicesPage({ onNavigate }: ServicesPageProps) {
-  const [activeFilter, setActiveFilter] = useState<string>("all");
-  const [highlightedService, setHighlightedService] = useState<string | null>(null);
+export function ServicesPage({ onNavigate, initialService }: ServicesPageProps) {
+  const [activeFilter, setActiveFilter] = useState<string>(initialService || "all");
+  const [highlightedService, setHighlightedService] = useState<string | null>(
+    initialService || null,
+  );
   const shouldReduceMotion = useReducedMotion();
 
   const serviceCategories = [
@@ -418,11 +421,11 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
             initial={{ opacity: 0, y: shouldReduceMotion ? 0 : 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 0.55, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 0.55, ease: [0.16, 1, 0.3, 1] as const }}
             className="text-center max-w-3xl mx-auto space-y-3 sm:space-y-4 mb-8 sm:mb-16"
           >
             <div className="inline-flex items-center gap-1.5 sm:gap-2 rounded-full bg-[#00D285]/10 px-3 sm:px-3.5 py-0.5 sm:py-1 text-[11px] sm:text-xs font-mono uppercase tracking-widest text-[#00D285] border border-[#00D285]/25">
-              <span>Why Choose JIVDEV</span>
+              <span>Why Choose ZIVDEV</span>
             </div>
             <h2 className="text-2xl sm:text-4xl md:text-5xl font-display font-extrabold uppercase text-[#041510] tracking-tight leading-tight">
               Engineering Value Over <br />

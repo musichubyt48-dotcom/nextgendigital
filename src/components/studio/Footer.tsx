@@ -1,5 +1,5 @@
 import { ArrowUpRight, MessageCircle, Mail, Instagram, ArrowUp } from "lucide-react";
-import logo from "@/assets/images/jivdev_main_logo_1791467409219.jpg";
+import logo from "@/assets/images/zivdev_main_logo.png";
 
 interface FooterProps {
   onNavigate: (path: string) => void;
@@ -19,11 +19,11 @@ export function Footer({ onNavigate }: FooterProps) {
             <div className="flex items-center gap-2.5">
               <img
                 src={logo}
-                alt="JIVDEV"
+                alt="ZIVDEV"
                 className="h-9 w-9 object-contain rounded-xl shadow-[0_0_15px_rgba(0,210,133,0.35)]"
               />
               <span className="font-display font-bold text-xl uppercase tracking-tight text-[#FFFFFF]">
-                JIVDEV
+                ZIVDEV
               </span>
             </div>
             <p className="text-sm text-[#A4CBB7] max-w-sm leading-relaxed font-sans">
@@ -146,7 +146,7 @@ export function Footer({ onNavigate }: FooterProps) {
 
         {/* Sub-footer */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-[#A4CBB7]/60">
-          <p>© {new Date().getFullYear()} JIVDEV. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} ZIVDEV. All rights reserved.</p>
           <button
             type="button"
             onClick={scrollToTop}

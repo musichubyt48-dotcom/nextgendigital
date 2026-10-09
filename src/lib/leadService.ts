@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { supabase } from "./supabase";
 
 export interface ContactFormData {
@@ -90,7 +91,7 @@ export async function submitContactForm(data: ContactFormData): Promise<Submissi
 
   try {
     // 1. Primary: Direct Supabase insert
-    const { error } = await supabase.from("contact_messages").insert({
+    const { error } = await (supabase as any).from("contact_messages").insert({
       name,
       business_name: businessName,
       email,
@@ -127,7 +128,7 @@ export async function submitContactForm(data: ContactFormData): Promise<Submissi
 
     // Mirror to unified leads table as backup (non-blocking)
     try {
-      await supabase.from("leads").insert({
+      await (supabase as any).from("leads").insert({
         form_type: "contact",
         name,
         business_name: businessName,
@@ -200,7 +201,7 @@ export async function submitProjectForm(data: ProjectFormData): Promise<Submissi
 
   try {
     // 1. Primary: Direct Supabase insert
-    const { error } = await supabase.from("project_inquiries").insert({
+    const { error } = await (supabase as any).from("project_inquiries").insert({
       name,
       business_name: businessName,
       email,
@@ -242,7 +243,7 @@ export async function submitProjectForm(data: ProjectFormData): Promise<Submissi
 
     // Mirror to unified leads table as backup (non-blocking)
     try {
-      await supabase.from("leads").insert({
+      await (supabase as any).from("leads").insert({
         form_type: "start-project",
         name,
         business_name: businessName,

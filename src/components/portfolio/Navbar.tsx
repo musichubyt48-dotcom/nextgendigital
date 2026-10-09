@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
-import logo from "@/assets/images/jivdev_main_logo_1791467409219.jpg";
+import logo from "@/assets/images/zivdev_main_logo.png";
 
 const links = [
   { label: "Home", href: "#home" },
@@ -38,13 +38,13 @@ export function Navbar() {
           <a href="#home" className="flex items-center gap-2 group">
             <img
               src={logo}
-              alt="JIVDEV"
+              alt="ZIVDEV"
               width={40}
               height={40}
               decoding="async"
               className="h-10 w-10 rounded-full object-cover group-hover:scale-105 transition-transform"
             />
-            <span className="font-display text-xl tracking-tight">JIVDEV</span>
+            <span className="font-display text-xl tracking-tight">ZIVDEV</span>
           </a>
 
           <ul className="hidden lg:flex items-center gap-8">

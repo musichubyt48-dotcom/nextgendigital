@@ -1,6 +1,6 @@
 import { UserCheck, CheckCircle2 } from "lucide-react";
 
-export function WhyJivdevSection() {
+export function WhyZivdevSection() {
   const points = [
     {
       code: "01 // REVENUE",
@@ -94,7 +94,7 @@ export function WhyJivdevSection() {
 
               <div className="pt-4 mt-4 border-t border-[#235347]/10 flex items-center gap-1.5 text-xs text-[#163832] font-mono">
                 <CheckCircle2 size={13} className="text-[#235347]" />
-                <span>JIVDEV Standard</span>
+                <span>ZIVDEV Standard</span>
               </div>
             </div>
           ))}
@@ -104,4 +104,4 @@ export function WhyJivdevSection() {
   );
 }
 
-export default WhyJivdevSection;
+export default WhyZivdevSection;

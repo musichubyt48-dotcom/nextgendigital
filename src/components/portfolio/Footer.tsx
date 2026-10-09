@@ -1,5 +1,5 @@
 import { Instagram, Linkedin, Twitter, Youtube } from "lucide-react";
-import logo from "@/assets/images/jivdev_main_logo_1791467409219.jpg";
+import logo from "@/assets/images/zivdev_main_logo.png";
 
 export function Footer() {
   return (
@@ -8,8 +8,8 @@ export function Footer() {
         <div className="grid md:grid-cols-3 gap-10 pb-12">
           <div>
             <div className="flex items-center gap-2">
-              <img src={logo} alt="JIVDEV" className="h-10 w-10 rounded-full object-cover" />
-              <span className="font-display text-xl">JIVDEV</span>
+              <img src={logo} alt="ZIVDEV" className="h-10 w-10 rounded-full object-cover" />
+              <span className="font-display text-xl">ZIVDEV</span>
             </div>
             <p className="mt-4 text-sm text-muted-foreground max-w-xs">
               Premium websites and digital systems built around your business.
@@ -63,8 +63,8 @@ export function Footer() {
         <div className="gold-divider" />
 
         <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-muted-foreground">
-          <div>© {new Date().getFullYear()} JIVDEV. All rights reserved.</div>
-          <div className="italic font-display">JIVDEV Official Page.</div>
+          <div>© {new Date().getFullYear()} ZIVDEV. All rights reserved.</div>
+          <div className="italic font-display">ZIVDEV Official Page.</div>
         </div>
       </div>
     </footer>

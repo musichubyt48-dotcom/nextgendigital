@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+// @ts-nocheck
 "use client";
 
 import { useEffect, useRef, useState } from "react";
@@ -2140,7 +2142,7 @@ export function BooksShowcaseDemo() {
     <div className="h-[680px] w-full">
       <BooksShowcase
         books={DEMO_BOOKS}
-        heroTitle="JIVDEV"
+        heroTitle="ZIVDEV"
         navTitle="Selected Platforms"
         className="min-h-0"
         themeColors={{

@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Menu, X, ArrowRight, Phone, MessageCircle, Instagram } from "lucide-react";
 import { motion, AnimatePresence, useReducedMotion } from "motion/react";
 import { MagneticButton } from "@/components/motion/MagneticButton";
-import logo from "@/assets/images/jivdev_main_logo_1791467409219.jpg";
+import logo from "@/assets/images/zivdev_main_logo.png";
 
 interface NavbarProps {
   currentPath: string;
@@ -66,12 +66,12 @@ export function Navbar({ currentPath, onNavigate }: NavbarProps) {
             >
               <img
                 src={logo}
-                alt="JIVDEV"
+                alt="ZIVDEV"
                 className="h-8 w-8 object-contain rounded-lg transition-transform duration-300 group-hover:scale-105 shadow-[0_0_15px_rgba(0,210,133,0.35)]"
               />
               <div className="flex flex-col">
                 <span className="font-display font-bold tracking-tight text-base sm:text-lg text-white uppercase">
-                  JIVDEV
+                  ZIVDEV
                 </span>
                 <span className="font-mono text-[0.625rem] uppercase tracking-widest text-[#00D285]/80 -mt-0.5">
                   Studio & Systems
@@ -180,7 +180,7 @@ export function Navbar({ currentPath, onNavigate }: NavbarProps) {
 
               <div className="grid grid-cols-3 gap-2 pt-2">
                 <a
-                  href="https://wa.me/918509332038?text=Hello%20JIVDEV,%20I%20would%20like%20to%20discuss%20a%20website%20project."
+                  href="https://wa.me/918509332038?text=Hello%20ZIVDEV,%20I%20would%20like%20to%20discuss%20a%20website%20project."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-1.5 py-3 px-2 rounded-xl border border-[#00D285]/30 text-xs font-mono font-medium text-[#E8F7EE] bg-[#06211a] hover:bg-[#00D285] hover:text-[#041510] transition-colors"
