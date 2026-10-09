@@ -1,6 +1,6 @@
 import { ArrowRight, Sparkles, Clock, ShieldCheck, Headphones, Zap } from "lucide-react";
 import { motion, useReducedMotion } from "motion/react";
-import heroDevicesImg from "@/assets/images/hero_devices_showcase_1791390832079.jpg";
+import heroDevicesImg from "@/assets/images/regenerated_image_1791527216389.png";
 import heroMountainsImg from "@/assets/images/hero_misty_mountains_1791390846280.jpg";
 
 interface HeroSectionProps {
@@ -156,28 +156,82 @@ export function HeroSection({ onStartProject, onViewWork }: HeroSectionProps) {
             className="lg:col-span-5 relative mt-4 lg:mt-0 flex items-center justify-center"
           >
             <div className="relative w-full max-w-[540px] group">
-              {/* Soft atmospheric green back-glow */}
-              <div className="absolute inset-0 bg-[#00D285]/20 rounded-3xl blur-[60px] transform group-hover:scale-105 transition-transform duration-700 pointer-events-none" />
+              {/* Soft atmospheric emerald back-glow with breathing pulse */}
+              <motion.div
+                animate={
+                  shouldReduceMotion
+                    ? {}
+                    : {
+                        opacity: [0.4, 0.75, 0.4],
+                        scale: [0.97, 1.04, 0.97],
+                      }
+                }
+                transition={
+                  shouldReduceMotion
+                    ? {}
+                    : {
+                        duration: 6,
+                        repeat: Infinity,
+                        ease: "easeInOut",
+                      }
+                }
+                className="absolute inset-0 bg-[#00D285]/25 rounded-3xl blur-[60px] pointer-events-none"
+              />
 
-              {/* High-Fidelity 3D Devices Showcase Image */}
-              <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden border border-[#00D285]/25 bg-[#06211A]/60 shadow-[0_20px_50px_rgba(0,0,0,0.7)] backdrop-blur-sm">
+              {/* High-Fidelity 3D Devices Showcase Card with smooth floating animation */}
+              <motion.div
+                animate={
+                  shouldReduceMotion
+                    ? {}
+                    : {
+                        y: [-7, 7, -7],
+                      }
+                }
+                transition={
+                  shouldReduceMotion
+                    ? {}
+                    : {
+                        duration: 6,
+                        repeat: Infinity,
+                        ease: "easeInOut",
+                      }
+                }
+                className="relative rounded-2xl sm:rounded-3xl overflow-hidden border border-[#00D285]/30 bg-[#06211A]/70 shadow-[0_20px_50px_rgba(0,0,0,0.7),0_0_35px_rgba(0,210,133,0.18)] hover:shadow-[0_25px_60px_rgba(0,0,0,0.85),0_0_50px_rgba(0,210,133,0.3)] transition-shadow duration-500 backdrop-blur-sm will-change-transform"
+              >
                 <img
                   src={heroDevicesImg}
                   alt="JIVDEV 3D Website Showcase"
                   referrerPolicy="no-referrer"
-                  className="w-full h-auto object-cover transform transition-transform duration-700 group-hover:scale-[1.02]"
+                  className="w-full h-auto object-cover transform transition-transform duration-700 group-hover:scale-[1.02] filter drop-shadow-[0_10px_25px_rgba(0,210,133,0.12)]"
                 />
 
                 {/* Subtle dark gradient overlay at bottom edge */}
                 <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-[#041510]/80 to-transparent pointer-events-none" />
-              </div>
+              </motion.div>
 
               {/* Floating Frosted Glass Feature Pill (⚡ Modern · Fast · Secure) */}
               <motion.div
                 initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.45, duration: 0.6 }}
-                className="absolute -top-3 sm:-top-4 -right-2 sm:-right-4 bg-[#06261E]/90 border border-[#00D285]/40 rounded-xl px-3 sm:px-4 py-1.5 sm:py-2 backdrop-blur-xl shadow-[0_8px_24px_rgba(0,0,0,0.6)] flex items-center gap-2"
+                animate={
+                  shouldReduceMotion
+                    ? { opacity: 1, y: 0 }
+                    : {
+                        opacity: 1,
+                        y: [-3, 7, -3],
+                      }
+                }
+                transition={{
+                  opacity: { delay: 0.45, duration: 0.6 },
+                  y: shouldReduceMotion
+                    ? undefined
+                    : {
+                        duration: 5.5,
+                        repeat: Infinity,
+                        ease: "easeInOut",
+                        delay: 0.3,
+                      },
+                }}
+                className="absolute -top-3 sm:-top-4 -right-2 sm:-right-4 bg-[#06261E]/90 border border-[#00D285]/40 rounded-xl px-3 sm:px-4 py-1.5 sm:py-2 backdrop-blur-xl shadow-[0_8px_24px_rgba(0,0,0,0.6),0_0_15px_rgba(0,210,133,0.2)] flex items-center gap-2 will-change-transform"
               >
                 <div className="h-6 w-6 rounded-lg bg-[#00D285]/20 flex items-center justify-center text-[#00D285]">
                   <Zap size={13} className="fill-[#00D285]" />
