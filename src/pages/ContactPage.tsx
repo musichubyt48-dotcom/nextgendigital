@@ -145,7 +145,7 @@ export function ContactPage({ onNavigate }: ContactPageProps) {
   };
 
   return (
-    <div className="w-full min-h-screen flex flex-col bg-[#FFFFFF] grain-overlay">
+    <div className="w-full min-h-screen flex flex-col bg-[#FAF9F6] grain-overlay">
       {/* Subtle moving ambient glows */}
       <motion.div
         animate={

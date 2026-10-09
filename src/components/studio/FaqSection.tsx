@@ -53,7 +53,7 @@ export function FaqSection({ onContactClick }: FaqSectionProps) {
   };
 
   return (
-    <section id="faq" className="py-20 md:py-32 bg-[#FFFFFF] border-t border-[#00D285]/15 relative">
+    <section id="faq" className="py-20 md:py-32 bg-[#FAF9F6] border-t border-[#00D285]/15 relative">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center space-y-4 pb-14 border-b border-[#00D285]/15">

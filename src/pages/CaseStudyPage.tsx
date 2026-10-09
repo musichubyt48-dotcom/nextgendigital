@@ -41,9 +41,9 @@ export function CaseStudyPage({
   };
 
   return (
-    <div className="w-full flex flex-col bg-[#FFFFFF]">
+    <div className="w-full flex flex-col bg-[#FAF9F6]">
       {/* Top Breadcrumb Header */}
-      <div className="pt-20 pb-3.5 sm:pt-28 sm:pb-6 border-b border-[#00D285]/15 bg-white/60">
+      <div className="pt-20 pb-3.5 sm:pt-28 sm:pb-6 border-b border-[#00D285]/15 bg-[#FAF9F6]/80">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-2">
           <button
             type="button"
@@ -233,7 +233,7 @@ export function CaseStudyPage({
             {currentProject.keyFeatures.map((feat, idx) => (
               <div
                 key={idx}
-                className="p-3.5 sm:p-5 rounded-xl sm:rounded-2xl bg-[#F8FAF9] border border-[#00D285]/20 flex items-start gap-2.5 sm:gap-3"
+                className="p-3.5 sm:p-5 rounded-xl sm:rounded-2xl bg-[#FAF9F6] border border-[#00D285]/20 flex items-start gap-2.5 sm:gap-3"
               >
                 <CheckCircle2
                   size={16}

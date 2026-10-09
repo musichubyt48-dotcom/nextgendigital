@@ -101,7 +101,7 @@ const skillCategories = [
 
 export function SkillsPage({ onNavigate }: SkillsPageProps) {
   return (
-    <div className="min-h-screen bg-[#FFFFFF] text-[#041510] pt-24 pb-12 sm:pt-32 sm:pb-24 animate-in fade-in duration-500">
+    <div className="min-h-screen bg-[#FAF9F6] text-[#041510] pt-24 pb-12 sm:pt-32 sm:pb-24 animate-in fade-in duration-500">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-20">
         {/* Page Header */}
         <SectionHeader
@@ -124,7 +124,7 @@ export function SkillsPage({ onNavigate }: SkillsPageProps) {
           {skillCategories.map((cat, idx) => (
             <div
               key={idx}
-              className="bg-[#FFFFFF] rounded-3xl p-7 sm:p-8 hover-lift flex flex-col justify-between border border-[#00D285]/20 shadow-sm hover:border-[#00D285]/60 hover:shadow-md transition-all group"
+              className="bg-[#F8FAF9] rounded-3xl p-7 sm:p-8 hover-lift flex flex-col justify-between border border-[#00D285]/20 shadow-sm hover:border-[#00D285]/60 hover:shadow-md transition-all group"
             >
               <div className="space-y-4">
                 <span className="font-mono text-xs uppercase tracking-widest text-[#00D285] font-semibold block">
@@ -153,7 +153,7 @@ export function SkillsPage({ onNavigate }: SkillsPageProps) {
         </div>
 
         {/* Custom Code vs Page Builder Note */}
-        <div className="bg-[#FFFFFF] rounded-3xl p-8 sm:p-12 border border-[#00D285]/25 max-w-4xl mx-auto space-y-6 shadow-sm">
+        <div className="bg-[#F8FAF9] rounded-3xl p-8 sm:p-12 border border-[#00D285]/25 max-w-4xl mx-auto space-y-6 shadow-sm">
           <div className="inline-flex items-center gap-2 rounded-full bg-[#00D285]/10 border border-[#00D285]/25 px-3.5 py-1 text-[0.6875rem] font-mono uppercase tracking-wider text-[#00D285] font-semibold">
             Why Custom Engineering Matters
           </div>
@@ -173,7 +173,7 @@ export function SkillsPage({ onNavigate }: SkillsPageProps) {
               </p>
             </div>
 
-            <div className="space-y-2 p-5 rounded-2xl bg-[#F8FAF9] border border-[#00D285]/30">
+            <div className="space-y-2 p-5 rounded-2xl bg-[#FAF9F6] border border-[#00D285]/30">
               <div className="font-mono text-xs text-[#00D285] font-bold uppercase">
                 JIVDEV Custom Code
               </div>

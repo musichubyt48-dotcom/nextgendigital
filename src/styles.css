@@ -66,9 +66,9 @@
      Vibrant Emerald:   #00D285
      Soft Sage:         #74B28F
      Crisp Light Mint:  #E8F7EE
-     Pure Background:   #FFFFFF
+     Pure Background:   #FAF9F6 (Warm Off-White)
      ================================================== */
-  --background: #ffffff;
+  --background: #FAF9F6;
   --background-secondary: #f4faf6;
   --primary: #00d285;
   --accent: #10b981;
@@ -83,8 +83,8 @@
   --border-sage: rgba(116, 178, 143, 0.4);
   --border-emerald: rgba(0, 210, 133, 0.35);
 
-  --surface: #ffffff;
-  --surface-card: #ffffff;
+  --surface: #FAF9F6;
+  --surface-card: #FAF9F6;
   --surface-mint: #e8f7ee;
   --surface-secondary: rgba(14, 61, 48, 0.04);
 
@@ -155,7 +155,7 @@
 
 /* Glass & Card Surfaces */
 .glass-surface {
-  background: rgba(255, 255, 255, 0.92);
+  background: rgba(250, 249, 246, 0.92);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border: 1px solid var(--border);
@@ -232,7 +232,7 @@
   height: 5px;
 }
 ::-webkit-scrollbar-track {
-  background: #ffffff;
+  background: #FAF9F6;
 }
 ::-webkit-scrollbar-thumb {
   background: rgba(35, 83, 71, 0.28);
@@ -240,6 +240,11 @@
 }
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(35, 83, 71, 0.48);
+}
+
+/* Ensure pure white background classes map to warm off-white #FAF9F6 */
+.bg-white {
+  background-color: #FAF9F6;
 }
 
 /* Accessibility Reduced Motion */

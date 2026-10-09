@@ -32,7 +32,7 @@ export function FaqPage({ onNavigate }: FaqPageProps) {
   });
 
   return (
-    <div className="min-h-screen bg-[#FFFFFF] text-[#041510] pt-24 pb-12 sm:pt-32 sm:pb-24">
+    <div className="min-h-screen bg-[#FAF9F6] text-[#041510] pt-24 pb-12 sm:pt-32 sm:pb-24">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Page Header */}
         <div className="text-center space-y-3 sm:space-y-4 pb-8 sm:pb-12 border-b border-[#00D285]/15">
@@ -66,7 +66,7 @@ export function FaqPage({ onNavigate }: FaqPageProps) {
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               placeholder="Search by keyword (e.g., hosting, price, booking)..."
-              className="w-full bg-[#F8FAF9] border border-[#00D285]/20 rounded-xl sm:rounded-2xl pl-10 sm:pl-11 pr-4 py-2.5 sm:py-3 text-base sm:text-sm text-[#041510] placeholder-[#0A241D]/45 focus:outline-none focus:ring-2 focus:ring-[#00D285]/40 transition-all"
+              className="w-full bg-[#FAF9F6] border border-[#00D285]/20 rounded-xl sm:rounded-2xl pl-10 sm:pl-11 pr-4 py-2.5 sm:py-3 text-base sm:text-sm text-[#041510] placeholder-[#0A241D]/45 focus:outline-none focus:ring-2 focus:ring-[#00D285]/40 transition-all"
             />
           </div>
         </div>
@@ -83,7 +83,7 @@ export function FaqPage({ onNavigate }: FaqPageProps) {
                 className={`px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs font-mono font-medium whitespace-nowrap transition-all cursor-pointer ${
                   isSelected
                     ? "bg-[#06211A] text-[#00D285] border border-[#00D285] shadow-xs"
-                    : "bg-[#F8FAF9] text-[#0A241D]/80 border border-[#00D285]/15 hover:bg-[#E8F7EE]"
+                    : "bg-[#FAF9F6] text-[#0A241D]/80 border border-[#00D285]/15 hover:bg-[#E8F7EE]"
                 }`}
               >
                 {cat}
@@ -100,7 +100,7 @@ export function FaqPage({ onNavigate }: FaqPageProps) {
               return (
                 <div
                   key={item.id}
-                  className="bg-[#FFFFFF] border border-[#00D285]/20 rounded-xl sm:rounded-2xl overflow-hidden transition-all duration-200 shadow-xs hover:border-[#00D285]/40"
+                  className="bg-[#F8FAF9] border border-[#00D285]/20 rounded-xl sm:rounded-2xl overflow-hidden transition-all duration-200 shadow-xs hover:border-[#00D285]/40"
                 >
                   <button
                     type="button"

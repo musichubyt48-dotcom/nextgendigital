@@ -35,7 +35,7 @@ export function WhyNextGenSection() {
   ];
 
   return (
-    <section className="py-20 md:py-28 bg-[#FFFFFF] border-t border-[#235347]/15">
+    <section className="py-20 md:py-28 bg-[#FAF9F6] border-t border-[#235347]/15">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="max-w-3xl space-y-3 pb-12 border-b border-[#235347]/15">

@@ -7,7 +7,7 @@ interface ProcessPageProps {
 
 export function ProcessPage({ onNavigate }: ProcessPageProps) {
   return (
-    <div className="min-h-screen bg-[#FFFFFF] text-[#041510] pt-24 pb-12 sm:pt-32 sm:pb-24">
+    <div className="min-h-screen bg-[#FAF9F6] text-[#041510] pt-24 pb-12 sm:pt-32 sm:pb-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Page Header */}
         <div className="max-w-4xl space-y-4 pb-12 border-b border-[#00D285]/15">
@@ -34,7 +34,7 @@ export function ProcessPage({ onNavigate }: ProcessPageProps) {
           {processSteps.map((step) => (
             <div
               key={step.number}
-              className="bg-[#FFFFFF] border border-[#00D285]/20 rounded-3xl p-8 sm:p-10 shadow-sm hover:border-[#00D285]/60 hover:shadow-md transition-all"
+              className="bg-[#F8FAF9] border border-[#00D285]/20 rounded-3xl p-8 sm:p-10 shadow-sm hover:border-[#00D285]/60 hover:shadow-md transition-all"
             >
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
                 {/* Step number badge */}
@@ -67,7 +67,7 @@ export function ProcessPage({ onNavigate }: ProcessPageProps) {
                 </div>
 
                 {/* Deliverables Checklist */}
-                <div className="lg:col-span-4 bg-[#F8FAF9] border border-[#00D285]/20 rounded-2xl p-5 space-y-2.5">
+                <div className="lg:col-span-4 bg-[#FAF9F6] border border-[#00D285]/20 rounded-2xl p-5 space-y-2.5">
                   <div className="font-mono text-[0.6875rem] uppercase tracking-wider text-[#041510] font-bold">
                     Phase Deliverables:
                   </div>

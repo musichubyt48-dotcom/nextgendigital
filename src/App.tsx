@@ -127,7 +127,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#FFFFFF] text-[#0A241D] flex flex-col selection:bg-[#00D285] selection:text-[#041510] font-sans antialiased">
+    <div className="min-h-screen bg-[#FAF9F6] text-[#0A241D] flex flex-col selection:bg-[#00D285] selection:text-[#041510] font-sans antialiased">
       <LogoIntro />
       <StructuredData />
       <Navbar currentPath={currentPath} onNavigate={navigate} />

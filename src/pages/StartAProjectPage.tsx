@@ -216,7 +216,7 @@ export function StartAProjectPage({ initialBundle = "", onNavigate }: StartAProj
   };
 
   return (
-    <div className="pt-24 pb-12 sm:py-28 md:py-36 bg-[#FFFFFF] min-h-screen grain-overlay">
+    <div className="pt-24 pb-12 sm:py-28 md:py-36 bg-[#FAF9F6] min-h-screen grain-overlay">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center space-y-3 sm:space-y-4 mb-8 sm:mb-12">

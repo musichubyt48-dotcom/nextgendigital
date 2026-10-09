@@ -190,7 +190,7 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
       : serviceCategories.filter((s) => s.id === activeFilter);
 
   return (
-    <div className="w-full flex flex-col bg-[#FFFFFF]">
+    <div className="w-full flex flex-col bg-[#FAF9F6]">
       {/* 1. Services Header */}
       <section className="pt-24 pb-10 sm:pt-32 md:pt-40 md:pb-24 border-b border-[#00D285]/15 grain-overlay">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

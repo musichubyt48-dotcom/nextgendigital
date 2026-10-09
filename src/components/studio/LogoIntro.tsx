@@ -46,7 +46,7 @@ export function LogoIntro({ onComplete }: LogoIntroProps) {
           initial={{ opacity: 1 }}
           exit={{ opacity: 0, transition: { duration: 0.45, ease: [0.16, 1, 0.3, 1] } }}
           onClick={handleSkip}
-          className="fixed inset-0 z-[9999] flex items-center justify-center bg-[#FFFFFF] select-none cursor-pointer overflow-hidden grain-overlay"
+          className="fixed inset-0 z-[9999] flex items-center justify-center bg-[#FAF9F6] select-none cursor-pointer overflow-hidden grain-overlay"
         >
           {/* Subtle ambient blur glow */}
           <div className="absolute w-80 h-80 rounded-full bg-[#DAF1DE]/70 blur-3xl pointer-events-none" />

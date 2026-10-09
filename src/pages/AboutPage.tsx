@@ -94,7 +94,7 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
   ];
 
   return (
-    <div className="w-full flex flex-col bg-[#FFFFFF]">
+    <div className="w-full flex flex-col bg-[#FAF9F6]">
       {/* 1. Hero & Storytelling Header */}
       <section className="pt-24 pb-10 sm:pt-32 md:pt-40 md:pb-24 border-b border-[#00D285]/15 grain-overlay">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -352,7 +352,7 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
       </section>
 
       {/* Founder Section */}
-      <section className="py-12 sm:py-20 bg-white border-t border-[#00D285]/15">
+      <section className="py-12 sm:py-20 bg-[#FAF9F6] border-t border-[#00D285]/15">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-xl mx-auto bg-[#F8FAF9] rounded-3xl p-6 sm:p-10 border border-[#00D285]/20 shadow-card flex flex-col sm:flex-row items-center gap-6 sm:gap-8">
             <div className="relative w-32 h-32 sm:w-36 sm:h-36 rounded-2xl overflow-hidden shrink-0 border-2 border-[#00D285]/30 shadow-md bg-[#041510]">

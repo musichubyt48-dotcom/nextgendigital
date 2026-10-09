@@ -106,7 +106,7 @@ export function Website3DShowcase({ onViewWork, onSelectProject }: Website3DShow
   }, []);
 
   return (
-    <section className="py-20 md:py-32 bg-[#FFFFFF] border-t border-[#235347]/15 relative overflow-hidden">
+    <section className="py-20 md:py-32 bg-[#FAF9F6] border-t border-[#235347]/15 relative overflow-hidden">
       {/* Ambient glow discs */}
       <div className="absolute top-10 left-1/4 w-[36rem] h-[20rem] bg-[#DAF1DE]/60 rounded-full blur-[120px] pointer-events-none -z-10" />
       <div className="absolute bottom-10 right-1/4 w-[30rem] h-[20rem] bg-[#8EB69B]/15 rounded-full blur-[100px] pointer-events-none -z-10" />

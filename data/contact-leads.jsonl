@@ -1,0 +1,2 @@
+{"name":"Test User","businessName":"Test Studio","email":"test@example.com","phone":"'+919876543210","projectType":"Business Website","investmentPreference":"Growth (₹14,999 - ₹24,999)","projectDetails":"Looking to build a modern web app","savedAt":"2026-10-09T13:40:46.883Z"}
+{"name":"Backend Integration Test","businessName":"Test Studio","email":"studio@test.com","phone":"9876543210","projectType":"E-Commerce","investmentPreference":"Custom Enterprise","projectDetails":"Testing backend connection to Supabase","savedAt":"2026-10-09T14:11:40.341Z"}

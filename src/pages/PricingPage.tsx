@@ -99,7 +99,7 @@ export function PricingPage({ onNavigate }: PricingPageProps) {
   ];
 
   return (
-    <div className="w-full flex flex-col bg-[#FFFFFF]">
+    <div className="w-full flex flex-col bg-[#FAF9F6]">
       {/* 
         PRICING SECTION AS MAIN FOCUS
         Clean, spacious layout with elegant typographic hierarchy

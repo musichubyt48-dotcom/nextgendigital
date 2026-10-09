@@ -21,9 +21,9 @@ export function CaseStudyModal({ project, onClose, onStartProject }: CaseStudyMo
 
   return (
     <div className="fixed inset-0 z-50 overflow-y-auto bg-[#041510]/80 backdrop-blur-sm flex items-center justify-center p-4 sm:p-6">
-      <div className="relative w-full max-w-4xl bg-[#FFFFFF] border border-[#00D285]/25 rounded-3xl shadow-2xl overflow-hidden animate-in fade-in zoom-in-95 duration-200">
+      <div className="relative w-full max-w-4xl bg-[#FAF9F6] border border-[#00D285]/25 rounded-3xl shadow-2xl overflow-hidden animate-in fade-in zoom-in-95 duration-200">
         {/* Header Bar */}
-        <div className="sticky top-0 z-10 bg-[#FFFFFF]/95 backdrop-blur-md border-b border-[#00D285]/15 px-6 py-4 flex items-center justify-between">
+        <div className="sticky top-0 z-10 bg-[#FAF9F6]/95 backdrop-blur-md border-b border-[#00D285]/15 px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <span className="font-mono text-xs uppercase tracking-widest text-[#00D285] font-bold">
               Case Archive // {project.id.toUpperCase()}
@@ -168,7 +168,7 @@ export function CaseStudyModal({ project, onClose, onStartProject }: CaseStudyMo
         </div>
 
         {/* Footer CTA */}
-        <div className="sticky bottom-0 bg-[#F8FAF9] border-t border-[#00D285]/15 px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-3">
+        <div className="sticky bottom-0 bg-[#FAF9F6] border-t border-[#00D285]/15 px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-3">
           <div className="text-xs text-[#0A241D]/70 text-center sm:text-left font-sans">
             Need similar custom web architecture for your business?
           </div>

@@ -41,7 +41,7 @@ export function HomePage({ onNavigate, onOpenCaseStudy }: HomePageProps) {
   };
 
   return (
-    <div className="w-full flex flex-col bg-[#FFFFFF]">
+    <div className="w-full flex flex-col bg-[#FAF9F6]">
       {/* 1. Hero */}
       <HeroSection onStartProject={handleStartProject} onViewWork={handleExploreWork} />
 

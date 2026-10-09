@@ -69,7 +69,7 @@ export function PricingSection({ onSelectPlan, onExploreFullPricing }: PricingSe
   return (
     <section
       id="pricing"
-      className="py-14 sm:py-20 md:py-32 bg-[#FFFFFF] border-t border-[#00D285]/15 relative overflow-hidden"
+      className="py-14 sm:py-20 md:py-32 bg-[#FAF9F6] border-t border-[#00D285]/15 relative overflow-hidden"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header with Coordinated Staggered Reveal */}

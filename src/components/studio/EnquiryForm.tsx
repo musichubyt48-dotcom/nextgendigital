@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Send, CheckCircle2, MessageCircle, AlertCircle, Sparkles, ArrowRight } from "lucide-react";
+import { submitProjectForm } from "@/lib/leadService";
 
 export interface EnquiryPayload {
   name: string;
@@ -96,7 +97,7 @@ export function EnquiryForm({ initialProjectType, initialBudget, onSubmitted }: 
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!validate()) return;
 
@@ -107,11 +108,25 @@ export function EnquiryForm({ initialProjectType, initialBudget, onSubmitted }: 
       submittedAt: new Date().toISOString(),
     };
 
-    setTimeout(() => {
-      setSubmitting(false);
-      setSubmittedData(payload);
-      if (onSubmitted) onSubmitted(payload);
-    }, 400);
+    try {
+      await submitProjectForm({
+        name: formData.name,
+        businessName: `${formData.businessName}${formData.businessType ? ` (${formData.businessType})` : ""}`,
+        email: formData.email,
+        contact: formData.phone,
+        projectType: formData.projectType,
+        budgetRange: formData.budget,
+        timeline: "Standard (2–4 Weeks)",
+        extraFeatures: [],
+        projectDetails: formData.requirements,
+      });
+    } catch (err) {
+      console.warn("[EnquiryForm] Background sync notice:", err);
+    }
+
+    setSubmitting(false);
+    setSubmittedData(payload);
+    if (onSubmitted) onSubmitted(payload);
   };
 
   const generateWhatsAppUrl = () => {
