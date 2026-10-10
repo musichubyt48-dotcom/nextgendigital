@@ -132,7 +132,7 @@ export function EnquiryForm({ initialProjectType, initialBudget, onSubmitted }: 
   const generateWhatsAppUrl = () => {
     if (!submittedData) return "https://wa.me/918509332038";
 
-    const text = `*New Project Inquiry — JIVDEV*
+    const text = `*New Project Inquiry — ZIVDEV*
 ---------------------------------------
 • *Name:* ${submittedData.name}
 • *Business:* ${submittedData.businessName} (${submittedData.businessType})
@@ -144,7 +144,7 @@ export function EnquiryForm({ initialProjectType, initialBudget, onSubmitted }: 
 *Project Requirements:*
 ${submittedData.requirements}
 ---------------------------------------
-Sent via JIVDEV Inquiry Portal`;
+Sent via ZIVDEV Inquiry Portal`;
 
     return `https://wa.me/918509332038?text=${encodeURIComponent(text)}`;
   };

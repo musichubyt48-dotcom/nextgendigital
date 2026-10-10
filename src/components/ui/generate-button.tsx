@@ -23,7 +23,7 @@ export interface GenerateButtonProps extends React.ButtonHTMLAttributes<HTMLButt
    */
   activeText?: string;
   /**
-   * Button core background color (e.g. JIVDEV forest green #235347)
+   * Button core background color (e.g. ZIVDEV forest green #235347)
    */
   buttonColor?: string;
 }

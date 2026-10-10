@@ -63,7 +63,7 @@ export function Process() {
               <span className="text-gradient-gold italic">build your website</span>
             </>
           }
-          description="A proven five-step process used on every JIVDEV website development project — from first call to future support."
+          description="A proven five-step process used on every ZIVDEV website development project — from first call to future support."
         />
 
         <div className="mt-14 md:mt-20 grid md:grid-cols-2 lg:grid-cols-5 gap-5">
@@ -139,7 +139,7 @@ export function Industries() {
               Websites built for <span className="text-gradient-gold italic">real businesses</span>
             </>
           }
-          description="From neighbourhood cafés to fast-growing startups, JIVDEV works with founders across service, retail, hospitality and lifestyle industries around the world."
+          description="From neighbourhood cafés to fast-growing startups, ZIVDEV works with founders across service, retail, hospitality and lifestyle industries around the world."
         />
 
         <div className="mt-14 md:mt-20 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -213,7 +213,7 @@ export function Technologies() {
               A modern stack for <span className="text-gradient-gold italic">premium websites</span>
             </>
           }
-          description="Every JIVDEV business website is built on a proven set of tools chosen for speed, scalability and long-term maintainability."
+          description="Every ZIVDEV business website is built on a proven set of tools chosen for speed, scalability and long-term maintainability."
         />
 
         <div className="mt-14 md:mt-20 grid md:grid-cols-2 gap-5">
@@ -335,7 +335,7 @@ export function ClientExperience() {
               <span className="text-gradient-gold italic">work together</span>
             </>
           }
-          description="Working with JIVDEV should feel like hiring a trusted in-house team — not chasing an agency."
+          description="Working with ZIVDEV should feel like hiring a trusted in-house team — not chasing an agency."
         />
 
         <div className="mt-14 md:mt-20 grid lg:grid-cols-12 gap-6 items-start">
@@ -401,7 +401,7 @@ export function FutureSupport() {
               We are here <span className="text-gradient-gold italic">after launch</span>, too
             </>
           }
-          description="A website is a living asset. JIVDEV offers ongoing support plans so your business website keeps improving long after go-live."
+          description="A website is a living asset. ZIVDEV offers ongoing support plans so your business website keeps improving long after go-live."
         />
 
         <div className="mt-14 md:mt-20 grid lg:grid-cols-2 gap-6 items-start">
@@ -411,7 +411,7 @@ export function FutureSupport() {
             </h3>
             <p className="text-[0.95rem] text-muted-foreground leading-[1.8]">
               Many website design companies disappear once the invoice is paid. We do the opposite.
-              Every JIVDEV client gets access to flexible monthly support so their website evolves
+              Every ZIVDEV client gets access to flexible monthly support so their website evolves
               with the business — new offers, new pages, seasonal campaigns and ongoing SEO
               refinements included.
             </p>
@@ -441,8 +441,8 @@ export function FutureSupport() {
 
 const faqs = [
   {
-    q: "What makes JIVDEV a premium website development agency?",
-    a: "Every JIVDEV website is hand-crafted rather than templated. We combine premium design, modern frameworks like React and Next.js, AI-powered features and on-page SEO to deliver business websites that feel expensive and perform under real traffic.",
+    q: "What makes ZIVDEV a premium website development agency?",
+    a: "Every ZIVDEV website is hand-crafted rather than templated. We combine premium design, modern frameworks like React and Next.js, AI-powered features and on-page SEO to deliver business websites that feel expensive and perform under real traffic.",
   },
   {
     q: "How much does a premium business website cost?",
@@ -454,7 +454,7 @@ const faqs = [
   },
   {
     q: "How long does it take to build a website?",
-    a: "A typical premium business website from JIVDEV takes two to four weeks from kickoff to launch, depending on how quickly content, images and feedback are shared.",
+    a: "A typical premium business website from ZIVDEV takes two to four weeks from kickoff to launch, depending on how quickly content, images and feedback are shared.",
   },
   {
     q: "Are your websites SEO friendly?",
@@ -462,7 +462,7 @@ const faqs = [
   },
   {
     q: "Do you work with clients internationally?",
-    a: "Yes. JIVDEV serves clients worldwide. Our work is delivered fully online and we regularly collaborate with founders across North America, Europe, the Middle East, Africa, Asia and Australia — communicating in your time zone.",
+    a: "Yes. ZIVDEV serves clients worldwide. Our work is delivered fully online and we regularly collaborate with founders across North America, Europe, the Middle East, Africa, Asia and Australia — communicating in your time zone.",
   },
   {
     q: "Can you build multilingual websites?",
@@ -483,7 +483,7 @@ export function FAQ() {
               <span className="text-gradient-gold italic">website development</span>
             </>
           }
-          description="Quick answers about pricing, timelines, SEO and AI website development at JIVDEV."
+          description="Quick answers about pricing, timelines, SEO and AI website development at ZIVDEV."
         />
 
         <div className="mt-14 md:mt-20 grid md:grid-cols-2 gap-5">

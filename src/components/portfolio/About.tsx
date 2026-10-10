@@ -19,7 +19,7 @@ export function About() {
           title={
             <>
               Meet <span className="text-gradient-gold italic">Ashutosh</span>,
-              <br /> founder of JIVDEV.
+              <br /> founder of ZIVDEV.
             </>
           }
         />
@@ -55,7 +55,7 @@ export function About() {
               and quietly impressive."
             </p>
             <p>
-              I founded JIVDEV after watching too many small businesses — from neighbourhood cafés
+              I founded ZIVDEV after watching too many small businesses — from neighbourhood cafés
               to fast-growing startups — lose customers to outdated, slow websites. Great brands
               deserve a digital presence that matches the quality of what they offer offline.
             </p>

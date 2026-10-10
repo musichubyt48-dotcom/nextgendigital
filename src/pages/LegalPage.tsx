@@ -15,7 +15,7 @@ export function LegalPage({ type, onNavigate }: LegalPageProps) {
       sections: [
         {
           heading: "1. Studio Commitment",
-          body: "JIVDEV ('we', 'us', or 'the Studio') respects the confidential nature of client data and enterprise projects. This Privacy Policy outlines our transparent standards for collecting, managing, and protecting information submitted through official studio channels or direct communication channels.",
+          body: "ZIVDEV ('we', 'us', or 'the Studio') respects the confidential nature of client data and enterprise projects. This Privacy Policy outlines our transparent standards for collecting, managing, and protecting information submitted through official studio channels or direct communication channels.",
         },
         {
           heading: "2. Information We Collect",
@@ -47,7 +47,7 @@ export function LegalPage({ type, onNavigate }: LegalPageProps) {
       sections: [
         {
           heading: "1. Engagement Structure",
-          body: "JIVDEV provides professional digital design, software engineering, and website development services. Each engagement is governed by an agreed written scope specifying deliverables, timeline estimates, and fixed commercial fees.",
+          body: "ZIVDEV provides professional digital design, software engineering, and website development services. Each engagement is governed by an agreed written scope specifying deliverables, timeline estimates, and fixed commercial fees.",
         },
         {
           heading: "2. Payment Milestones",
@@ -55,7 +55,7 @@ export function LegalPage({ type, onNavigate }: LegalPageProps) {
         },
         {
           heading: "3. Intellectual Property Transfer",
-          body: "Upon full settlement of project fees, 100% of the custom design files, frontend source code, stylesheets, and authored digital assets are transferred to the client. JIVDEV retains no proprietary hostage claims, vendor lock-ins, or mandatory recurring royalties.",
+          body: "Upon full settlement of project fees, 100% of the custom design files, frontend source code, stylesheets, and authored digital assets are transferred to the client. ZIVDEV retains no proprietary hostage claims, vendor lock-ins, or mandatory recurring royalties.",
         },
         {
           heading: "4. Client Assets & Approvals",

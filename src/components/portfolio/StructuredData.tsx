@@ -1,9 +1,9 @@
 import { useEffect } from "react";
 
-const SITE_URL = "https://jivdev.com";
-const ORG_NAME = "JIVDEV";
+const SITE_URL = "https://zivdev.com";
+const ORG_NAME = "ZIVDEV";
 const ORG_DESC =
-  "JIVDEV is an independent digital development studio founded by Ashutosh Kumar Srivastava, building modern websites, booking engines, and digital systems for growing businesses.";
+  "ZIVDEV is an independent digital development studio founded by Ashutosh Kumar Srivastava, building modern websites, booking engines, and digital systems for growing businesses.";
 const FOUNDER = "Ashutosh Kumar Srivastava";
 const PHONE = "+91 8509332038";
 const EMAIL = "zivdevofficial@gmail.com";
@@ -23,7 +23,7 @@ const organization = {
   "@type": "Organization",
   "@id": `${SITE_URL}/#organization`,
   name: ORG_NAME,
-  alternateName: "JIVDEV Studio",
+  alternateName: "ZIVDEV Studio",
   url: SITE_URL,
   logo: logoObject,
   image: logoObject,
@@ -217,8 +217,8 @@ const breadcrumbs = {
 
 const faqs = [
   {
-    q: "What makes JIVDEV a premium website development studio?",
-    a: "Every JIVDEV website is hand-crafted rather than templated. We combine premium design, modern frameworks like React and Next.js, and clean code to deliver business websites that feel expensive and perform under real traffic.",
+    q: "What makes ZIVDEV a premium website development studio?",
+    a: "Every ZIVDEV website is hand-crafted rather than templated. We combine premium design, modern frameworks like React and Next.js, and clean code to deliver business websites that feel expensive and perform under real traffic.",
   },
   {
     q: "How much does a premium business website cost?",
@@ -230,7 +230,7 @@ const faqs = [
   },
   {
     q: "How long does it take to build a website?",
-    a: "A typical business website from JIVDEV takes two to four weeks from kickoff to launch, depending on how quickly content, images and feedback are shared.",
+    a: "A typical business website from ZIVDEV takes two to four weeks from kickoff to launch, depending on how quickly content, images and feedback are shared.",
   },
   {
     q: "Are your websites SEO friendly?",
@@ -238,7 +238,7 @@ const faqs = [
   },
   {
     q: "Do you work with clients internationally?",
-    a: "Yes. JIVDEV serves clients worldwide. Our work is delivered fully online and we regularly collaborate with founders globally — communicating in your time zone.",
+    a: "Yes. ZIVDEV serves clients worldwide. Our work is delivered fully online and we regularly collaborate with founders globally — communicating in your time zone.",
   },
   {
     q: "Can you build responsive websites?",
@@ -313,7 +313,7 @@ const collectionPage = {
   "@id": `${SITE_URL}/#projects-page`,
   url: `${SITE_URL}/#projects`,
   name: `Projects by ${ORG_NAME}`,
-  description: "A collection of website projects built by JIVDEV for businesses worldwide.",
+  description: "A collection of website projects built by ZIVDEV for businesses worldwide.",
   isPartOf: { "@id": `${SITE_URL}/#website` },
   inLanguage: "en",
   hasPart: [
@@ -360,7 +360,7 @@ const articleTemplate = {
   "@type": "Article",
   "@id": `${SITE_URL}/blog/sample-article#article`,
   headline: "Sample Article",
-  description: "Template article schema for future JIVDEV blog posts.",
+  description: "Template article schema for future ZIVDEV blog posts.",
   image: logoObject,
   author: {
     "@type": "Person",
@@ -399,7 +399,7 @@ const graph = {
 
 export function StructuredData() {
   useEffect(() => {
-    const id = "jivdev-structured-data";
+    const id = "zivdev-structured-data";
     if (document.getElementById(id)) return;
     const script = document.createElement("script");
     script.type = "application/ld+json";

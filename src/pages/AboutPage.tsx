@@ -125,7 +125,7 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
               className="text-sm sm:text-xl md:text-2xl font-sans text-[#0A241D]/85 leading-relaxed max-w-3xl"
             >
               Most websites fail because they are built from rigid generic templates that force
-              businesses into pre-made boxes. At JIVDEV, we architect direct booking engines,
+              businesses into pre-made boxes. At ZIVDEV, we architect direct booking engines,
               high-converting product pages, and digital systems tailored to how your business
               actually operates.
             </motion.p>
@@ -146,7 +146,7 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
           >
             <img
               src={studioWorkspaceImg}
-              alt="JIVDEV Creative Studio Environment"
+              alt="ZIVDEV Creative Studio Environment"
               className="w-full h-full object-cover object-center group-hover:scale-103 transition-transform duration-700"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#041510]/95 via-[#06211A]/40 to-transparent" />
@@ -318,7 +318,7 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
               </h2>
               <p className="text-xs sm:text-base text-[#0A241D]/80 font-sans leading-relaxed">
                 Traditional agencies mark up low-grade WordPress templates and leave clients with
-                recurring monthly retainer dependencies. JIVDEV operates like an in-house product
+                recurring monthly retainer dependencies. ZIVDEV operates like an in-house product
                 engineering team.
               </p>
             </div>

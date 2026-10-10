@@ -175,7 +175,7 @@ export function SkillsPage({ onNavigate }: SkillsPageProps) {
 
             <div className="space-y-2 p-5 rounded-2xl bg-[#FAF9F6] border border-[#00D285]/30">
               <div className="font-mono text-xs text-[#00D285] font-bold uppercase">
-                JIVDEV Custom Code
+                ZIVDEV Custom Code
               </div>
               <p className="text-xs text-[#041510] leading-relaxed">
                 Lightweight, hand-crafted code running on global edge CDNs. Loads in milliseconds,

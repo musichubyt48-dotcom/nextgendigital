@@ -7,7 +7,7 @@ export function StudioMarquee() {
     "BOOKING SYSTEMS",
     "E-COMMERCE",
     "CUSTOM DEVELOPMENT",
-    "JIVDEV",
+    "ZIVDEV",
     "HIGH PERFORMANCE",
     "LEAD ENGINES",
   ];

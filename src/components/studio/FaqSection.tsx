@@ -36,7 +36,7 @@ export function FaqSection({ onContactClick }: FaqSectionProps) {
     },
     {
       q: "Can you build booking systems?",
-      a: "Yes. Direct booking and appointment scheduling are core JIVDEV specialties. We build custom booking workflows for hotels, wellness resorts, dental clinics, fitness studios, and salons that route bookings directly to your staff's WhatsApp or calendar without third-party commission overhead.",
+      a: "Yes. Direct booking and appointment scheduling are core ZIVDEV specialties. We build custom booking workflows for hotels, wellness resorts, dental clinics, fitness studios, and salons that route bookings directly to your staff's WhatsApp or calendar without third-party commission overhead.",
     },
     {
       q: "How many revisions are included?",

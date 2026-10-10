@@ -155,7 +155,7 @@ export function Website3DShowcase({ onViewWork, onSelectProject }: Website3DShow
           <div className="h-[620px] sm:h-[680px] w-full relative">
             <BooksShowcase
               books={showcaseProjects}
-              heroTitle="JIVDEV"
+              heroTitle="ZIVDEV"
               navTitle="Selected Platforms"
               showNav={true}
               showDetailPanel={true}

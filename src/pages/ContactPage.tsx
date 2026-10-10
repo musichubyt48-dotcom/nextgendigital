@@ -47,7 +47,7 @@ export function ContactPage({ onNavigate }: ContactPageProps) {
       title: "WhatsApp Direct",
       value: "+91 85093 32038",
       sub: "Typical response: Under 15 mins",
-      link: "https://wa.me/918509332038?text=Hello%20JIVDEV,%20I%20would%20like%20to%20discuss%20a%20website%20project.",
+      link: "https://wa.me/918509332038?text=Hello%20ZIVDEV,%20I%20would%20like%20to%20discuss%20a%20website%20project.",
       cta: "Chat on WhatsApp",
     },
     {

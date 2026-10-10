@@ -200,7 +200,7 @@ export function HeroSection({ onStartProject, onViewWork }: HeroSectionProps) {
               >
                 <img
                   src={heroDevicesImg}
-                  alt="JIVDEV 3D Website Showcase"
+                  alt="ZIVDEV 3D Website Showcase"
                   referrerPolicy="no-referrer"
                   className="w-full h-auto object-cover transform transition-transform duration-700 group-hover:scale-[1.02] filter drop-shadow-[0_10px_25px_rgba(0,210,133,0.12)]"
                 />
@@ -238,7 +238,7 @@ export function HeroSection({ onStartProject, onViewWork }: HeroSectionProps) {
                 </div>
                 <div className="flex flex-col">
                   <span className="font-mono text-[9px] sm:text-[10px] text-[#00D285] font-bold uppercase tracking-wider">
-                    JIVDEV Performance
+                    ZIVDEV Performance
                   </span>
                   <span className="font-sans text-[10px] sm:text-xs text-white font-medium">
                     Modern · Fast · Secure

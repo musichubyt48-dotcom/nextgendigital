@@ -117,7 +117,7 @@ export function FinalCtaSection({ onStartProject, onExploreWork }: FinalCtaSecti
             className="pt-6 sm:pt-8 border-t border-[#8EB69B]/15 flex flex-col sm:flex-row items-center justify-center gap-2.5 sm:gap-6 text-[11px] sm:text-xs font-mono text-[#DAF1DE]/70"
           >
             <a
-              href="https://wa.me/918509332038?text=Hello%20JIVDEV,%20I%20would%20like%20to%20discuss%20a%20website%20project."
+              href="https://wa.me/918509332038?text=Hello%20ZIVDEV,%20I%20would%20like%20to%20discuss%20a%20website%20project."
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 hover:text-[#FFFFFF] transition-colors"

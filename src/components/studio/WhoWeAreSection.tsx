@@ -127,7 +127,7 @@ export function WhoWeAreSection({ onExploreAbout }: WhoWeAreSectionProps) {
             <div className="bg-white rounded-3xl p-6 sm:p-10 border border-[#00D285]/20 shadow-[0_4px_24px_rgba(4,21,16,0.06)] space-y-8 transition-shadow duration-300 hover:shadow-[0_8px_32px_rgba(4,21,16,0.1)]">
               <ScrollRevealText className="text-base sm:text-lg text-[#0A241D]/80 leading-relaxed">
                 Most websites fail because they are built from generic templates that force
-                businesses into rigid boxes. At JIVDEV, we architect direct booking flows,
+                businesses into rigid boxes. At ZIVDEV, we architect direct booking flows,
                 high-converting product pages, and digital systems that reflect how your business
                 actually operates.
               </ScrollRevealText>

@@ -1,5 +1,5 @@
 -- ==============================================================================
--- SUPABASE SCHEMA FOR JIVDEV / NEXTGEN DIGITAL
+-- SUPABASE SCHEMA FOR ZIVDEV / NEXTGEN DIGITAL
 -- Run this in the Supabase Dashboard -> SQL Editor (Click "New query" -> "Run")
 -- Project: https://ydodkggouwxfywsrvbat.supabase.co
 -- ==============================================================================
